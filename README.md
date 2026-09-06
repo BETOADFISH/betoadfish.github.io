@@ -20,7 +20,9 @@ Both site routes are static: `/` and `/projects/hubisco`. Keep `output: 'export'
 
 Primary protein/accent colour: `#CBF6C1`. Structure explorer: NGL with locally bundled experimental 9RUB/5RUB files, explicit rotation/zoom/residue controls and a static fallback. Fonts are self-hosted.
 
-Original dissertations and spreadsheets are excluded. Public source and public website contain only the curated case study, supplied protein imagery, reference structures and selected reported values. Unverified contact/degree/CV fields remain pending.
+Original dissertations and spreadsheets are excluded. Public source and website contain the curated case study, supplied protein imagery, reference structures, selected reported values and a two-page project brief. Identity and education are based on the supplied CV; the October 2026 MSci start is identified as planned. LinkedIn uses the owner-supplied URL. The original CV, email and telephone are not published.
+
+Download assets live in `public/downloads`. Replace `HuBisCO-project-brief.pdf` to update the download without changing its link. The project brief uses the dissertation's conservative scientific conclusions.
 
 Alternative-substrate turnover was not established in the dissertation; HuBP was unavailable and exploratory assays used Hu6P/Ru5P. NMR reports PHI precursor chemistry. The calculated two-point slope is not a mechanistic kinetic constant. Concentration and Vmax values are owner-brief-supplied. 9RUB is wild type, binds RuBP rather than HuBP, and represents carbamylated Lys191 through LYS plus covalently linked FMT records.
 

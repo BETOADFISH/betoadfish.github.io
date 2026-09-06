@@ -406,9 +406,9 @@ export default function HuBisCO() {
             still required.
           </p>
           <div className="actions">
-            <span className="button disabled" aria-disabled="true">
-              Project brief coming soon
-            </span>
+            <a className="button primary" href="/downloads/HuBisCO-project-brief.pdf" download>
+              Download project brief (PDF) ↓
+            </a>
             <a href="#contact" className="text-link">
               Contact <ArrowUpRight size={18} />
             </a>

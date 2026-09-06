@@ -155,14 +155,18 @@ export default function Home() {
         </div>
         <div>
           <p>
-            I work across experimental biochemistry, enzyme engineering,
-            structural reasoning and biotechnology analysis. This portfolio
-            presents how I form hypotheses, evaluate evidence and make
-            scientific decisions.
+            I’m Bill Huang, a Cambridge Natural Sciences graduate with a
+            background in biochemistry. My experience spans enzyme engineering,
+            antimicrobial research, molecular recognition and biotechnology
+            due diligence. I connect experimental work with structural reasoning
+            to evaluate evidence and guide the next scientific decision.
           </p>
           <p>
-            My current case study explores the limits of alternative
+            My featured project in the Prywes Lab explores alternative
             sugar-phosphate chemistry in a RuBisCO-based experimental system.
+            Previous research placements took me to Melbourne, Portsmouth and
+            Xiamen. I also developed a biotechnology evaluation framework during
+            a private-equity internship.
           </p>
           <div className="bio-meta">
             <span>Research context</span>
@@ -173,9 +177,10 @@ export default function Home() {
             </strong>
           </div>
           <p className="small muted">
-            Independent personal portfolio. Degree and CV details will be added
-            when confirmed.
+            BA Natural Sciences, Cambridge · 2023–2026.
+            Planned MSci Biochemistry, Cambridge · October 2026–July 2027.
           </p>
+
         </div>
       </section>
     </main>

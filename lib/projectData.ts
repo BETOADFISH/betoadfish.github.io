@@ -1,10 +1,10 @@
 // Scientific content is separate from presentation. Unknown identity fields stay null.
 export const profile = {
-  name: 'Bill',
-  degree: null,
+  name: 'Bill Huang',
+  degree: 'BA Natural Sciences (2023–2026); planned MSci Biochemistry (2026–2027)',
   institution: 'University of Cambridge, Department of Biochemistry',
   email: null,
-  linkedin: null,
+  linkedin: 'https://www.linkedin.com/in/bill-huang-bb0160302/',
   github: null,
   cv: null,
 };

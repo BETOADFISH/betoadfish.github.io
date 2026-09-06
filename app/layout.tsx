@@ -6,7 +6,7 @@ import '@fontsource/inter/latin-600.css';
 import '@fontsource/inter/latin-700.css';
 import './globals.css';
 export const metadata: Metadata = {
-  title: 'Bill | Molecular Science & Biotech Intelligence',
+  title: 'Bill Huang | Molecular Science & Biotech Intelligence',
   description:
     'From molecular mechanisms to decision-ready evidence. An evidence-led portfolio in biochemistry, enzyme engineering and biotechnology intelligence.',
   icons: { icon: '/favicon.svg' },
@@ -50,11 +50,9 @@ export default function RootLayout({
               </div>
               <div>
                 <p>Research · Biotech R&D · Strategy</p>
-                <p className="small">Contact details are being prepared.</p>
+                <p className="small">For research opportunities and biotechnology conversations.</p>
                 <div className="contact-links">
-                  <span>Email — to be added</span>
-                  <span>LinkedIn — to be added</span>
-                  <span>Code portfolio — to be added</span>
+                  <a href="https://www.linkedin.com/in/bill-huang-bb0160302/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
                 </div>
               </div>
             </div>

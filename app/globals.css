@@ -467,9 +467,12 @@ footer {
   font-size: 12px;
   color: var(--muted);
 }
-.contact-links span {
+.contact-links a {
   border-bottom: 1px solid #bacab9;
   padding-bottom: 4px;
+}
+.contact-links a:hover {
+  color: var(--ink);
 }
 .footer-bottom {
   padding: 22px 0;
