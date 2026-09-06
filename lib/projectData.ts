@@ -3,10 +3,10 @@ export const profile = {
   name: 'Bill Huang',
   degree: 'BA Natural Sciences (2023–2026); planned MSci Biochemistry (2026–2027)',
   institution: 'University of Cambridge, Department of Biochemistry',
-  email: null,
+  email: 'zh392@cam.ac.uk',
   linkedin: 'https://www.linkedin.com/in/bill-huang-bb0160302/',
   github: null,
-  cv: null,
+  cv: '/downloads/Bill-Huang-CV.pdf',
 };
 export const project = {
   slug: 'hubisco',

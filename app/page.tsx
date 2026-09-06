@@ -180,7 +180,9 @@ export default function Home() {
             BA Natural Sciences, Cambridge · 2023–2026.
             Planned MSci Biochemistry, Cambridge · October 2026–July 2027.
           </p>
-
+          <a className="button primary" href="/downloads/Bill-Huang-CV.pdf" download>
+            Download CV <ArrowUpRight size={18} />
+          </a>
         </div>
       </section>
     </main>

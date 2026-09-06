@@ -52,7 +52,9 @@ export default function RootLayout({
                 <p>Research · Biotech R&D · Strategy</p>
                 <p className="small">For research opportunities and biotechnology conversations.</p>
                 <div className="contact-links">
+                  <a href="mailto:zh392@cam.ac.uk">zh392@cam.ac.uk ↗</a>
                   <a href="https://www.linkedin.com/in/bill-huang-bb0160302/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+                  <a href="/downloads/Bill-Huang-CV.pdf" download>Download CV ↓</a>
                 </div>
               </div>
             </div>
