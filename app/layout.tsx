@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import '@fontsource/inter/latin-400.css';
 import '@fontsource/inter/latin-500.css';
 import '@fontsource/inter/latin-600.css';
@@ -8,7 +7,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Bill Huang | Molecular Science & Biotech Intelligence',
   description:
-    'From molecular mechanisms to decision-ready evidence. An evidence-led portfolio in biochemistry, enzyme engineering and biotechnology intelligence.',
+    'Bill Huang’s work in enzyme engineering, antimicrobial research and biotechnology assessment, with experimental data and interactive molecular structures.',
   icons: { icon: '/favicon.svg' },
 };
 export default function RootLayout({
@@ -22,13 +21,13 @@ export default function RootLayout({
         </a>
         <header className="site-header">
           <div className="wrap header-inner">
-            <Link className="brand" href="/">
+            <a className="brand" href="/">
               Bill<span className="brand-dot">.</span>
               <span className="brand-caption">Molecular Science</span>
-            </Link>
+            </a>
             <nav aria-label="Main navigation">
-              <a href="/#projects">Projects</a>
-              <a href="/#approach">Approach</a>
+              <a href="/projects">Research</a>
+              <a href="/intelligence">Biotech intelligence</a>
               <a href="/#about">About</a>
               <a href="#contact" className="nav-contact">
                 Contact <span aria-hidden="true">↗</span>
@@ -43,9 +42,9 @@ export default function RootLayout({
               <div>
                 <p className="eyebrow">Let’s connect</p>
                 <h2>
-                  Good science starts
+                  Research opportunities
                   <br />
-                  with a good question.
+                  and biotechnology discussions.
                 </h2>
               </div>
               <div>
@@ -62,7 +61,7 @@ export default function RootLayout({
               <span>
                 <b>Bill.</b> Molecular Science & Biotech Intelligence
               </span>
-              <span>Designed as an evidence-led scientific portfolio.</span>
+              <span>© 2026 Bill Huang · Independent portfolio</span>
             </div>
           </div>
         </footer>

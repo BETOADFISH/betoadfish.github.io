@@ -34,7 +34,7 @@ export function StructureViewer({ compact = false }: { compact?: boolean }) {
     [activated, setActivated] = useState(compact);
   const residue = project.residues.find((r) => r.id === selected) ?? {
     kind: 'Experimental reference',
-    title: 'A reference, not a result.',
+    title: 'The deposited wild-type structure.',
     description:
       'Explore the deposited wild-type dimer. Select a residue to highlight its local environment and inspect the hypothesis it informed.',
   };

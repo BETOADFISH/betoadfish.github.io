@@ -1,34 +1,21 @@
-import Link from 'next/link';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import { StructureViewer } from '@/components/structure-viewer';
-import { MotionEnhancement } from '@/components/motion';
+import { WorkGrid } from '@/components/work-grid';
 export default function Home() {
   return (
     <main>
-      <MotionEnhancement />
-      <section className="hero wrap">
+
+      <section className="hero wrap home-hero">
         <div>
           <p className="eyebrow">
-            <span className="status-dot" /> Molecular science & biotech
-            intelligence
+            <span className="status-dot" /> Bill Huang / Cambridge
           </p>
-          <h1>
-            From molecular
-            <br />
-            mechanisms to
-            <br />
-            <span className="highlight">decision-ready</span>
-            <br />
-            evidence.
-          </h1>
-          <p className="hero-description">
-            I connect experimental biochemistry, structural reasoning and data
-            to ask better questions—and decide what to test next.
-          </p>
+          <h1>Biochemistry<br />and <span className="highlight">biotechnology.</span></h1>
+          <p className="hero-description">I study enzymes and antimicrobial systems, and assess the evidence behind emerging biotechnology. This portfolio documents my experiments, the decisions I made and the questions that remain.</p>
           <div className="actions">
-            <Link className="button primary" href="/projects/hubisco">
-              Explore HuBisCO <ArrowUpRight size={19} />
-            </Link>
+            <a className="button primary" href="/projects">
+              Explore my research <ArrowUpRight size={19} />
+            </a>
             <a className="text-link" href="#approach">
               My scientific approach <ArrowRight size={18} />
             </a>
@@ -69,55 +56,20 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <section className="section wrap" id="projects">
-        <div className="section-top">
-          <p className="eyebrow">01 / Selected research</p>
-          <span className="tiny">
-            ONE QUESTION. MULTIPLE LINES OF EVIDENCE.
-          </span>
-        </div>
-        <Link href="/projects/hubisco" className="feature">
-          <div className="feature-copy">
-            <span className="pill">Enzyme engineering</span>
-            <h2>
-              HuBisCO<span className="green-period">.</span>
-            </h2>
-            <h3>
-              Probing alternative substrate
-              <br />
-              compatibility in RuBisCO
-            </h3>
-            <p>
-              A structure-guided project connecting active-site hypotheses,
-              rational mutagenesis, coupled assays and ³¹P NMR.
-            </p>
-            <span className="text-link">
-              Read the case study <ArrowUpRight size={20} />
-            </span>
-          </div>
-          <div className="feature-visual">
-            <img
-              src="/I164-S368-interaction.webp"
-              alt="Supplied rendering of the I164 and S368 active-site environment"
-              loading="lazy"
-            />
-            <span className="image-label">9RUB · Active-site context</span>
-          </div>
-        </Link>
-      </section>
+      <section className="section wrap" id="projects"><div className="section-heading"><div><p className="eyebrow">Selected work</p><h2>Questions I have worked on.</h2></div><p>Each case follows a different part of my work, with the relevant experimental or analytical evidence.</p></div><WorkGrid /></section>
       <section className="section approach-section" id="approach">
         <div className="wrap">
           <p className="eyebrow">02 / How I work</p>
           <div className="section-heading">
             <h2>
-              Follow the question.
+              How I approach
               <br />
-              Respect the evidence.
+              an uncertain result.
             </h2>
             <p>
-              A useful result moves a decision forward.
+              I revisit the controls, the measurement and the assumptions.
               <br />
-              So does a well-understood limitation.
+              Then I decide what the result can support.
             </p>
           </div>
           <div className="approach-steps">
@@ -148,9 +100,9 @@ export default function Home() {
         <div>
           <p className="eyebrow">03 / About</p>
           <h2>
-            At the intersection of
+            A background in
             <br />
-            molecules and decisions.
+            experimental science.
           </h2>
         </div>
         <div>

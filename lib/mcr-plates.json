@@ -1,0 +1,2413 @@
+{
+  "notice": "Exploratory endpoint readouts, not calculated FIC indices. Each displayed cell is one recorded well. Replicate structure and endpoint thresholds have not been established for publication. Concentration units corroborated against the matching End Project Summary figures.",
+  "plates": [
+    {
+      "id": "2025-08-21-BL21(DE3)",
+      "date": "2025-08-21",
+      "compound": "Honokiol",
+      "strainLabel": "BL21(DE3)",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-21_HonokiolColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D6:K13",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "values": [
+        [
+          0.343,
+          0.052,
+          0.049,
+          0.058,
+          0.052,
+          0.056,
+          0.045,
+          0.044
+        ],
+        [
+          0.507,
+          0.051,
+          0.055,
+          0.059,
+          0.048,
+          0.056,
+          0.047,
+          0.054
+        ],
+        [
+          0.7,
+          0.048,
+          0.06,
+          0.057,
+          0.055,
+          0.052,
+          0.049,
+          0.043
+        ],
+        [
+          0.828,
+          0.047,
+          0.229,
+          0.039,
+          0.052,
+          0.041,
+          0.043,
+          0.043
+        ],
+        [
+          0.839,
+          0.892,
+          0.994,
+          0.606,
+          0.057,
+          0.039,
+          0.037,
+          0.041
+        ],
+        [
+          0.854,
+          0.961,
+          0.782,
+          0.637,
+          0.414,
+          0.034,
+          0.032,
+          0.044
+        ],
+        [
+          0.874,
+          0.864,
+          0.864,
+          0.69,
+          0.573,
+          0.045,
+          0.038,
+          0.035
+        ],
+        [
+          0.944,
+          0.835,
+          0.726,
+          0.624,
+          0.578,
+          0.036,
+          0.035,
+          0.035
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.883,
+          "growth": 0.92,
+          "empty": 0.042,
+          "sterility": 0.056
+        },
+        {
+          "row": 1,
+          "DMSO": 0.955,
+          "growth": 1.058,
+          "empty": 0.042,
+          "sterility": 0.044
+        },
+        {
+          "row": 2,
+          "DMSO": 0.866,
+          "growth": 1.001,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 3,
+          "DMSO": 0.872,
+          "growth": 1.013,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 4,
+          "DMSO": 0.845,
+          "growth": 0.99,
+          "empty": 0.043,
+          "sterility": 0.043
+        },
+        {
+          "row": 5,
+          "DMSO": 0.837,
+          "growth": 0.988,
+          "empty": 0.041,
+          "sterility": 0.044
+        },
+        {
+          "row": 6,
+          "DMSO": 0.667,
+          "growth": 0.914,
+          "empty": 0.042,
+          "sterility": 0.044
+        },
+        {
+          "row": 7,
+          "DMSO": 0.499,
+          "growth": 0.789,
+          "empty": 0.04,
+          "sterility": 0.043
+        }
+      ]
+    },
+    {
+      "id": "2025-08-21-DH5α",
+      "date": "2025-08-21",
+      "compound": "Honokiol",
+      "strainLabel": "DH5α",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-21_HonokiolColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D18:K25",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "values": [
+        [
+          0.397,
+          0.044,
+          0.044,
+          0.043,
+          0.04,
+          0.043,
+          0.044,
+          0.043
+        ],
+        [
+          0.526,
+          0.041,
+          0.037,
+          0.039,
+          0.041,
+          0.041,
+          0.042,
+          0.046
+        ],
+        [
+          0.536,
+          0.042,
+          0.044,
+          0.041,
+          0.04,
+          0.043,
+          0.041,
+          0.046
+        ],
+        [
+          0.564,
+          0.036,
+          0.04,
+          0.036,
+          0.034,
+          0.035,
+          0.039,
+          0.036
+        ],
+        [
+          0.511,
+          0.036,
+          0.044,
+          0.038,
+          0.036,
+          0.036,
+          0.036,
+          0.034
+        ],
+        [
+          0.534,
+          0.036,
+          0.042,
+          0.039,
+          0.038,
+          0.038,
+          0.038,
+          0.045
+        ],
+        [
+          0.533,
+          0.036,
+          0.041,
+          0.041,
+          0.034,
+          0.039,
+          0.037,
+          0.043
+        ],
+        [
+          0.551,
+          0.035,
+          0.039,
+          0.037,
+          0.034,
+          0.035,
+          0.034,
+          0.033
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.405,
+          "growth": 0.425,
+          "empty": 0.043,
+          "sterility": 0.044
+        },
+        {
+          "row": 1,
+          "DMSO": 0.499,
+          "growth": 0.469,
+          "empty": 0.043,
+          "sterility": 0.046
+        },
+        {
+          "row": 2,
+          "DMSO": 0.494,
+          "growth": 0.44,
+          "empty": 0.043,
+          "sterility": 0.044
+        },
+        {
+          "row": 3,
+          "DMSO": 0.05,
+          "growth": 0.317,
+          "empty": 0.044,
+          "sterility": 0.044
+        },
+        {
+          "row": 4,
+          "DMSO": 0.516,
+          "growth": 0.441,
+          "empty": 0.042,
+          "sterility": 0.044
+        },
+        {
+          "row": 5,
+          "DMSO": 0.5,
+          "growth": 0.446,
+          "empty": 0.042,
+          "sterility": 0.045
+        },
+        {
+          "row": 6,
+          "DMSO": 0.531,
+          "growth": 0.461,
+          "empty": 0.043,
+          "sterility": 0.044
+        },
+        {
+          "row": 7,
+          "DMSO": 0.515,
+          "growth": 0.472,
+          "empty": 0.042,
+          "sterility": 0.044
+        }
+      ]
+    },
+    {
+      "id": "2025-08-22-BL21(DE3)",
+      "date": "2025-08-22",
+      "compound": "Pterostilbene",
+      "strainLabel": "BL21(DE3)",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-22_FIC_PterostilbeneColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D6:K13",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "values": [
+        [
+          0.481,
+          0.046,
+          0.047,
+          0.047,
+          0.051,
+          0.046,
+          0.048,
+          0.046
+        ],
+        [
+          0.733,
+          0.049,
+          0.049,
+          0.054,
+          0.051,
+          0.048,
+          0.046,
+          0.049
+        ],
+        [
+          0.854,
+          0.792,
+          0.047,
+          0.048,
+          0.048,
+          0.054,
+          0.047,
+          0.066
+        ],
+        [
+          0.868,
+          0.775,
+          0.367,
+          0.058,
+          0.055,
+          0.042,
+          0.039,
+          0.036
+        ],
+        [
+          0.909,
+          0.837,
+          0.732,
+          0.043,
+          0.041,
+          0.038,
+          0.035,
+          0.036
+        ],
+        [
+          0.966,
+          0.962,
+          0.888,
+          0.791,
+          0.042,
+          0.038,
+          0.039,
+          0.037
+        ],
+        [
+          0.924,
+          0.775,
+          0.773,
+          0.63,
+          0.045,
+          0.041,
+          0.042,
+          0.042
+        ],
+        [
+          0.965,
+          0.799,
+          0.735,
+          0.716,
+          0.224,
+          0.037,
+          0.038,
+          0.038
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.756,
+          "growth": 0.842,
+          "empty": 0.042,
+          "sterility": 0.05
+        },
+        {
+          "row": 1,
+          "DMSO": 0.868,
+          "growth": 0.702,
+          "empty": 0.041,
+          "sterility": 0.043
+        },
+        {
+          "row": 2,
+          "DMSO": 0.83,
+          "growth": 0.948,
+          "empty": 0.041,
+          "sterility": 0.042
+        },
+        {
+          "row": 3,
+          "DMSO": 0.834,
+          "growth": 1.058,
+          "empty": 0.042,
+          "sterility": 0.04
+        },
+        {
+          "row": 4,
+          "DMSO": 0.79,
+          "growth": 0.882,
+          "empty": 0.04,
+          "sterility": 0.04
+        },
+        {
+          "row": 5,
+          "DMSO": 0.826,
+          "growth": 0.85,
+          "empty": 0.04,
+          "sterility": 0.042
+        },
+        {
+          "row": 6,
+          "DMSO": 0.711,
+          "growth": 0.808,
+          "empty": 0.041,
+          "sterility": 0.041
+        },
+        {
+          "row": 7,
+          "DMSO": 0.496,
+          "growth": 0.759,
+          "empty": 0.04,
+          "sterility": 0.04
+        }
+      ]
+    },
+    {
+      "id": "2025-08-22-DH5α",
+      "date": "2025-08-22",
+      "compound": "Pterostilbene",
+      "strainLabel": "DH5α",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-22_FIC_PterostilbeneColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D18:K25",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "values": [
+        [
+          0.531,
+          0.047,
+          0.05,
+          0.048,
+          0.049,
+          0.047,
+          0.047,
+          0.046
+        ],
+        [
+          0.539,
+          0.047,
+          0.045,
+          0.046,
+          0.046,
+          0.045,
+          0.044,
+          0.043
+        ],
+        [
+          0.453,
+          0.042,
+          0.041,
+          0.042,
+          0.042,
+          0.043,
+          0.04,
+          0.041
+        ],
+        [
+          0.478,
+          0.037,
+          0.036,
+          0.037,
+          0.035,
+          0.036,
+          0.036,
+          0.036
+        ],
+        [
+          0.489,
+          0.042,
+          0.035,
+          0.035,
+          0.034,
+          0.034,
+          0.034,
+          0.033
+        ],
+        [
+          0.52,
+          0.035,
+          0.036,
+          0.035,
+          0.034,
+          0.034,
+          0.033,
+          0.033
+        ],
+        [
+          0.532,
+          0.035,
+          0.033,
+          0.036,
+          0.034,
+          0.035,
+          0.033,
+          0.032
+        ],
+        [
+          0.588,
+          0.035,
+          0.034,
+          0.034,
+          0.034,
+          0.033,
+          0.034,
+          0.032
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.58,
+          "growth": 0.523,
+          "empty": 0.043,
+          "sterility": 0.044
+        },
+        {
+          "row": 1,
+          "DMSO": 0.501,
+          "growth": 0.44,
+          "empty": 0.041,
+          "sterility": 0.044
+        },
+        {
+          "row": 2,
+          "DMSO": 0.536,
+          "growth": 0.445,
+          "empty": 0.042,
+          "sterility": 0.046
+        },
+        {
+          "row": 3,
+          "DMSO": 0.578,
+          "growth": 0.38,
+          "empty": 0.042,
+          "sterility": 0.045
+        },
+        {
+          "row": 4,
+          "DMSO": 0.636,
+          "growth": 0.431,
+          "empty": 0.041,
+          "sterility": 0.043
+        },
+        {
+          "row": 5,
+          "DMSO": 0.593,
+          "growth": 0.476,
+          "empty": 0.041,
+          "sterility": 0.044
+        },
+        {
+          "row": 6,
+          "DMSO": 0.577,
+          "growth": 0.448,
+          "empty": 0.042,
+          "sterility": 0.044
+        },
+        {
+          "row": 7,
+          "DMSO": 0.622,
+          "growth": 0.41,
+          "empty": 0.041,
+          "sterility": 0.045
+        }
+      ]
+    },
+    {
+      "id": "2025-08-22-pBAD",
+      "date": "2025-08-22",
+      "compound": "Pterostilbene",
+      "strainLabel": "pBAD",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-22_FIC_PterostilbeneColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D30:K37",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "values": [
+        [
+          0.437,
+          0.049,
+          0.048,
+          0.047,
+          0.047,
+          0.046,
+          0.048,
+          0.045
+        ],
+        [
+          0.433,
+          0.048,
+          0.046,
+          0.048,
+          0.048,
+          0.046,
+          0.044,
+          0.048
+        ],
+        [
+          0.458,
+          0.045,
+          0.043,
+          0.044,
+          0.047,
+          0.046,
+          0.043,
+          0.046
+        ],
+        [
+          0.431,
+          0.042,
+          0.038,
+          0.04,
+          0.039,
+          0.04,
+          0.04,
+          0.039
+        ],
+        [
+          0.497,
+          0.04,
+          0.036,
+          0.038,
+          0.038,
+          0.036,
+          0.036,
+          0.038
+        ],
+        [
+          0.496,
+          0.04,
+          0.039,
+          0.043,
+          0.044,
+          0.038,
+          0.036,
+          0.043
+        ],
+        [
+          0.462,
+          0.037,
+          0.036,
+          0.042,
+          0.04,
+          0.037,
+          0.036,
+          0.04
+        ],
+        [
+          0.446,
+          0.035,
+          0.034,
+          0.035,
+          0.033,
+          0.033,
+          0.039,
+          0.036
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.463,
+          "growth": 0.332,
+          "empty": 0.044,
+          "sterility": 0.048
+        },
+        {
+          "row": 1,
+          "DMSO": 0.425,
+          "growth": 0.283,
+          "empty": 0.065,
+          "sterility": 0.046
+        },
+        {
+          "row": 2,
+          "DMSO": 0.422,
+          "growth": 0.388,
+          "empty": 0.146,
+          "sterility": 0.044
+        },
+        {
+          "row": 3,
+          "DMSO": 0.495,
+          "growth": 0.385,
+          "empty": 0.148,
+          "sterility": 0.043
+        },
+        {
+          "row": 4,
+          "DMSO": 0.452,
+          "growth": 0.348,
+          "empty": 0.146,
+          "sterility": 0.046
+        },
+        {
+          "row": 5,
+          "DMSO": 0.451,
+          "growth": 0.384,
+          "empty": 0.047,
+          "sterility": 0.045
+        },
+        {
+          "row": 6,
+          "DMSO": 0.469,
+          "growth": 0.35,
+          "empty": 0.041,
+          "sterility": 0.044
+        },
+        {
+          "row": 7,
+          "DMSO": 0.458,
+          "growth": 0.365,
+          "empty": 0.041,
+          "sterility": 0.044
+        }
+      ]
+    },
+    {
+      "id": "2025-08-22-pBAD + 0.2% arabinose",
+      "date": "2025-08-22",
+      "compound": "Pterostilbene",
+      "strainLabel": "pBAD + 0.2% arabinose",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-22_FIC_PterostilbeneColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D42:K49",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "values": [
+        [
+          0.289,
+          0.041,
+          0.049,
+          0.042,
+          0.039,
+          0.054,
+          0.039,
+          0.038
+        ],
+        [
+          0.212,
+          0.04,
+          0.036,
+          0.038,
+          0.036,
+          0.038,
+          0.038,
+          0.04
+        ],
+        [
+          0.232,
+          0.035,
+          0.035,
+          0.035,
+          0.034,
+          0.035,
+          0.035,
+          0.034
+        ],
+        [
+          0.189,
+          0.084,
+          0.034,
+          0.035,
+          0.034,
+          0.034,
+          0.034,
+          0.034
+        ],
+        [
+          0.228,
+          0.192,
+          0.184,
+          0.035,
+          0.037,
+          0.036,
+          0.035,
+          0.034
+        ],
+        [
+          0.193,
+          0.207,
+          0.108,
+          0.036,
+          0.037,
+          0.036,
+          0.033,
+          0.033
+        ],
+        [
+          0.19,
+          0.243,
+          0.036,
+          0.034,
+          0.034,
+          0.035,
+          0.033,
+          0.034
+        ],
+        [
+          0.291,
+          0.228,
+          0.141,
+          0.036,
+          0.034,
+          0.033,
+          0.033,
+          0.036
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.22,
+          "growth": 0.268,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 1,
+          "DMSO": 0.227,
+          "growth": 0.242,
+          "empty": 0.043,
+          "sterility": 0.045
+        },
+        {
+          "row": 2,
+          "DMSO": 0.18,
+          "growth": 0.223,
+          "empty": 0.046,
+          "sterility": 0.045
+        },
+        {
+          "row": 3,
+          "DMSO": 0.171,
+          "growth": 0.251,
+          "empty": 0.045,
+          "sterility": 0.044
+        },
+        {
+          "row": 4,
+          "DMSO": 0.179,
+          "growth": 0.228,
+          "empty": 0.042,
+          "sterility": 0.044
+        },
+        {
+          "row": 5,
+          "DMSO": 0.216,
+          "growth": 0.263,
+          "empty": 0.041,
+          "sterility": 0.046
+        },
+        {
+          "row": 6,
+          "DMSO": 0.208,
+          "growth": 0.24,
+          "empty": 0.041,
+          "sterility": 0.044
+        },
+        {
+          "row": 7,
+          "DMSO": 0.277,
+          "growth": 0.264,
+          "empty": 0.041,
+          "sterility": 0.045
+        }
+      ]
+    },
+    {
+      "id": "2025-08-27-BL21(DE3)",
+      "date": "2025-08-27",
+      "compound": "Osthol",
+      "strainLabel": "BL21(DE3)",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-27_FIC_OstholColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D6:K13",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        0.25,
+        0.5,
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "values": [
+        [
+          0.72,
+          0.717,
+          0.711,
+          0.949,
+          0.76,
+          0.394,
+          0.603,
+          0.522
+        ],
+        [
+          1.183,
+          0.92,
+          0.946,
+          0.897,
+          0.924,
+          0.164,
+          0.126,
+          0.284
+        ],
+        [
+          1.071,
+          0.891,
+          0.926,
+          0.931,
+          0.909,
+          0.76,
+          0.218,
+          0.125
+        ],
+        [
+          0.959,
+          0.79,
+          0.796,
+          0.811,
+          0.778,
+          0.745,
+          0.517,
+          0.112
+        ],
+        [
+          0.929,
+          0.777,
+          0.753,
+          0.776,
+          0.77,
+          0.747,
+          0.618,
+          0.089
+        ],
+        [
+          0.976,
+          0.764,
+          0.772,
+          0.794,
+          0.778,
+          0.706,
+          0.536,
+          0.066
+        ],
+        [
+          0.932,
+          0.785,
+          0.686,
+          0.594,
+          0.582,
+          0.694,
+          0.281,
+          0.217
+        ],
+        [
+          0.947,
+          0.613,
+          0.607,
+          0.567,
+          0.565,
+          0.485,
+          0.179,
+          0.061
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.964,
+          "growth": 0.948,
+          "empty": 0.051,
+          "sterility": 0.048
+        },
+        {
+          "row": 1,
+          "DMSO": 0.831,
+          "growth": 1.05,
+          "empty": 0.041,
+          "sterility": 0.042
+        },
+        {
+          "row": 2,
+          "DMSO": 0.981,
+          "growth": 1.162,
+          "empty": 0.041,
+          "sterility": 0.042
+        },
+        {
+          "row": 3,
+          "DMSO": 0.984,
+          "growth": 1.041,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 4,
+          "DMSO": 0.913,
+          "growth": 1.003,
+          "empty": 0.04,
+          "sterility": 0.042
+        },
+        {
+          "row": 5,
+          "DMSO": 1.04,
+          "growth": 1.051,
+          "empty": 0.04,
+          "sterility": 0.041
+        },
+        {
+          "row": 6,
+          "DMSO": 0.976,
+          "growth": 1.029,
+          "empty": 0.041,
+          "sterility": 0.041
+        },
+        {
+          "row": 7,
+          "DMSO": 0.944,
+          "growth": 0.968,
+          "empty": 0.04,
+          "sterility": 0.042
+        }
+      ]
+    },
+    {
+      "id": "2025-08-27-DH5α",
+      "date": "2025-08-27",
+      "compound": "Osthol",
+      "strainLabel": "DH5α",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-27_FIC_OstholColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D18:K25",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        0.25,
+        0.5,
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "values": [
+        [
+          0.414,
+          0.053,
+          0.208,
+          0.086,
+          0.06,
+          0.064,
+          0.073,
+          0.055
+        ],
+        [
+          0.541,
+          0.197,
+          0.044,
+          0.045,
+          0.045,
+          0.046,
+          0.05,
+          0.054
+        ],
+        [
+          0.565,
+          0.152,
+          0.046,
+          0.177,
+          0.045,
+          0.049,
+          0.05,
+          0.058
+        ],
+        [
+          0.544,
+          0.236,
+          0.154,
+          0.044,
+          0.043,
+          0.044,
+          0.049,
+          0.051
+        ],
+        [
+          0.539,
+          0.233,
+          0.197,
+          0.198,
+          0.044,
+          0.195,
+          0.046,
+          0.06
+        ],
+        [
+          0.558,
+          0.048,
+          0.206,
+          0.232,
+          0.23,
+          0.227,
+          0.05,
+          0.063
+        ],
+        [
+          0.555,
+          0.233,
+          0.232,
+          0.578,
+          0.233,
+          0.129,
+          0.045,
+          0.055
+        ],
+        [
+          0.584,
+          0.235,
+          0.246,
+          0.246,
+          0.256,
+          0.243,
+          0.045,
+          0.05
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.575,
+          "growth": 0.502,
+          "empty": 0.042,
+          "sterility": 0.042
+        },
+        {
+          "row": 1,
+          "DMSO": 0.578,
+          "growth": 0.503,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 2,
+          "DMSO": 0.576,
+          "growth": 0.482,
+          "empty": 0.042,
+          "sterility": 0.042
+        },
+        {
+          "row": 3,
+          "DMSO": 0.569,
+          "growth": 0.515,
+          "empty": 0.042,
+          "sterility": 0.047
+        },
+        {
+          "row": 4,
+          "DMSO": 0.56,
+          "growth": 0.525,
+          "empty": 0.042,
+          "sterility": 0.041
+        },
+        {
+          "row": 5,
+          "DMSO": 0.572,
+          "growth": 0.53,
+          "empty": 0.041,
+          "sterility": 0.044
+        },
+        {
+          "row": 6,
+          "DMSO": 0.55,
+          "growth": 0.501,
+          "empty": 0.04,
+          "sterility": 0.042
+        },
+        {
+          "row": 7,
+          "DMSO": 0.556,
+          "growth": 0.494,
+          "empty": 0.041,
+          "sterility": 0.042
+        }
+      ]
+    },
+    {
+      "id": "2025-08-27-pBAD",
+      "date": "2025-08-27",
+      "compound": "Osthol",
+      "strainLabel": "pBAD",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-27_FIC_OstholColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D30:K37",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        0.25,
+        0.5,
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "values": [
+        [
+          0.464,
+          0.059,
+          0.057,
+          0.053,
+          0.058,
+          0.069,
+          0.066,
+          0.071
+        ],
+        [
+          0.544,
+          0.049,
+          0.05,
+          0.047,
+          0.049,
+          0.05,
+          0.054,
+          0.061
+        ],
+        [
+          0.518,
+          0.096,
+          0.045,
+          0.048,
+          0.049,
+          0.049,
+          0.052,
+          0.065
+        ],
+        [
+          0.533,
+          0.047,
+          0.046,
+          0.049,
+          0.053,
+          0.05,
+          0.047,
+          0.051
+        ],
+        [
+          0.563,
+          0.048,
+          0.047,
+          0.046,
+          0.045,
+          0.047,
+          0.045,
+          0.05
+        ],
+        [
+          0.546,
+          0.144,
+          0.047,
+          0.046,
+          0.046,
+          0.044,
+          0.046,
+          0.052
+        ],
+        [
+          0.562,
+          0.046,
+          0.051,
+          0.045,
+          0.048,
+          0.043,
+          0.045,
+          0.053
+        ],
+        [
+          0.544,
+          0.04,
+          0.042,
+          0.042,
+          0.044,
+          0.043,
+          0.042,
+          0.047
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.509,
+          "growth": 0.468,
+          "empty": 0.042,
+          "sterility": 0.042
+        },
+        {
+          "row": 1,
+          "DMSO": 0.53,
+          "growth": 0.466,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 2,
+          "DMSO": 0.544,
+          "growth": 0.453,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 3,
+          "DMSO": 0.568,
+          "growth": 0.483,
+          "empty": 0.043,
+          "sterility": 0.043
+        },
+        {
+          "row": 4,
+          "DMSO": 0.572,
+          "growth": 0.472,
+          "empty": 0.041,
+          "sterility": 0.043
+        },
+        {
+          "row": 5,
+          "DMSO": 0.592,
+          "growth": 0.475,
+          "empty": 0.041,
+          "sterility": 0.043
+        },
+        {
+          "row": 6,
+          "DMSO": 0.563,
+          "growth": 0.453,
+          "empty": 0.073,
+          "sterility": 0.043
+        },
+        {
+          "row": 7,
+          "DMSO": 0.558,
+          "growth": 0.438,
+          "empty": 0.04,
+          "sterility": 0.042
+        }
+      ]
+    },
+    {
+      "id": "2025-08-27-pBAD + 0.2% arabinose",
+      "date": "2025-08-27",
+      "compound": "Osthol",
+      "strainLabel": "pBAD + 0.2% arabinose",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-27_FIC_OstholColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D42:K49",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        0.25,
+        0.5,
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "values": [
+        [
+          0.21,
+          0.162,
+          0.168,
+          0.046,
+          0.061,
+          0.061,
+          0.062,
+          0.068
+        ],
+        [
+          0.307,
+          0.215,
+          0.184,
+          0.047,
+          0.048,
+          0.054,
+          0.056,
+          0.073
+        ],
+        [
+          0.482,
+          0.167,
+          0.202,
+          0.18,
+          0.053,
+          0.053,
+          0.058,
+          0.076
+        ],
+        [
+          0.362,
+          0.22,
+          0.247,
+          0.222,
+          0.084,
+          0.075,
+          0.062,
+          0.071
+        ],
+        [
+          0.455,
+          0.223,
+          0.22,
+          0.235,
+          0.049,
+          0.048,
+          0.057,
+          0.103
+        ],
+        [
+          0.476,
+          0.216,
+          0.248,
+          0.198,
+          0.091,
+          0.054,
+          0.057,
+          0.066
+        ],
+        [
+          0.43,
+          0.176,
+          0.198,
+          0.242,
+          0.21,
+          0.048,
+          0.054,
+          0.064
+        ],
+        [
+          0.228,
+          0.218,
+          0.238,
+          0.196,
+          0.053,
+          0.046,
+          0.048,
+          0.06
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.467,
+          "growth": 0.444,
+          "empty": 0.042,
+          "sterility": 0.042
+        },
+        {
+          "row": 1,
+          "DMSO": 0.386,
+          "growth": 0.379,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 2,
+          "DMSO": 0.408,
+          "growth": 0.393,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 3,
+          "DMSO": 0.255,
+          "growth": 0.4,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 4,
+          "DMSO": 0.354,
+          "growth": 0.366,
+          "empty": 0.041,
+          "sterility": 0.042
+        },
+        {
+          "row": 5,
+          "DMSO": 0.376,
+          "growth": 0.376,
+          "empty": 0.047,
+          "sterility": 0.044
+        },
+        {
+          "row": 6,
+          "DMSO": 0.387,
+          "growth": 0.39,
+          "empty": 0.04,
+          "sterility": 0.043
+        },
+        {
+          "row": 7,
+          "DMSO": 0.41,
+          "growth": 0.399,
+          "empty": 0.04,
+          "sterility": 0.042
+        }
+      ]
+    },
+    {
+      "id": "2025-08-28-BL21(DE3)",
+      "date": "2025-08-28",
+      "compound": "Honokiol",
+      "strainLabel": "BL21(DE3)",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-28_FIC_HonokiolColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D6:K13",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        0.25,
+        0.5,
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "values": [
+        [
+          0.438,
+          0.045,
+          0.05,
+          0.045,
+          0.043,
+          0.056,
+          0.044,
+          0.042
+        ],
+        [
+          0.609,
+          0.051,
+          0.052,
+          0.061,
+          0.055,
+          0.06,
+          0.048,
+          0.064
+        ],
+        [
+          0.828,
+          0.762,
+          0.049,
+          0.059,
+          0.103,
+          0.065,
+          0.067,
+          0.103
+        ],
+        [
+          0.816,
+          0.905,
+          0.761,
+          0.05,
+          0.056,
+          0.074,
+          0.069,
+          0.125
+        ],
+        [
+          0.882,
+          0.898,
+          0.858,
+          0.728,
+          0.649,
+          0.091,
+          0.096,
+          0.071
+        ],
+        [
+          1.017,
+          0.843,
+          0.866,
+          0.765,
+          0.67,
+          0.49,
+          0.085,
+          0.055
+        ],
+        [
+          0.943,
+          0.828,
+          1.097,
+          0.732,
+          0.528,
+          0.457,
+          0.28,
+          0.046
+        ],
+        [
+          0.868,
+          0.718,
+          1.044,
+          0.645,
+          0.481,
+          0.397,
+          0.066,
+          0.05
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.744,
+          "growth": 0.828,
+          "empty": 0.042,
+          "sterility": 0.042
+        },
+        {
+          "row": 1,
+          "DMSO": 0.79,
+          "growth": 0.975,
+          "empty": 0.042,
+          "sterility": 0.042
+        },
+        {
+          "row": 2,
+          "DMSO": 0.833,
+          "growth": 1.02,
+          "empty": 0.041,
+          "sterility": 0.042
+        },
+        {
+          "row": 3,
+          "DMSO": 0.827,
+          "growth": 1.041,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 4,
+          "DMSO": 0.736,
+          "growth": 0.841,
+          "empty": 0.04,
+          "sterility": 0.043
+        },
+        {
+          "row": 5,
+          "DMSO": 0.758,
+          "growth": 0.056,
+          "empty": 0.04,
+          "sterility": 0.045
+        },
+        {
+          "row": 6,
+          "DMSO": 0.839,
+          "growth": 0.881,
+          "empty": 0.041,
+          "sterility": 0.042
+        },
+        {
+          "row": 7,
+          "DMSO": 0.446,
+          "growth": 0.694,
+          "empty": 0.04,
+          "sterility": 0.04
+        }
+      ]
+    },
+    {
+      "id": "2025-08-28-DH5α",
+      "date": "2025-08-28",
+      "compound": "Honokiol",
+      "strainLabel": "DH5α",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-28_FIC_HonokiolColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D18:K25",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        0.25,
+        0.5,
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "values": [
+        [
+          0.506,
+          0.049,
+          0.044,
+          0.044,
+          0.044,
+          0.044,
+          0.044,
+          0.042
+        ],
+        [
+          0.53,
+          0.045,
+          0.044,
+          0.045,
+          0.047,
+          0.05,
+          0.045,
+          0.046
+        ],
+        [
+          0.517,
+          0.045,
+          0.043,
+          0.044,
+          0.044,
+          0.05,
+          0.048,
+          0.046
+        ],
+        [
+          0.522,
+          0.044,
+          0.042,
+          0.044,
+          0.043,
+          0.046,
+          0.047,
+          0.047
+        ],
+        [
+          0.532,
+          0.044,
+          0.042,
+          0.044,
+          0.052,
+          0.058,
+          0.041,
+          0.043
+        ],
+        [
+          0.546,
+          0.044,
+          0.042,
+          0.045,
+          0.04,
+          0.048,
+          0.041,
+          0.042
+        ],
+        [
+          0.515,
+          0.041,
+          0.04,
+          0.039,
+          0.038,
+          0.041,
+          0.044,
+          0.041
+        ],
+        [
+          0.534,
+          0.199,
+          0.038,
+          0.038,
+          0.041,
+          0.045,
+          0.042,
+          0.043
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.522,
+          "growth": 0.423,
+          "empty": 0.043,
+          "sterility": 0.042
+        },
+        {
+          "row": 1,
+          "DMSO": 0.534,
+          "growth": 0.37,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 2,
+          "DMSO": 0.451,
+          "growth": 0.358,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 3,
+          "DMSO": 0.51,
+          "growth": 0.37,
+          "empty": 0.042,
+          "sterility": 0.041
+        },
+        {
+          "row": 4,
+          "DMSO": 0.479,
+          "growth": 0.381,
+          "empty": 0.041,
+          "sterility": 0.043
+        },
+        {
+          "row": 5,
+          "DMSO": 0.525,
+          "growth": 0.382,
+          "empty": 0.041,
+          "sterility": 0.042
+        },
+        {
+          "row": 6,
+          "DMSO": 0.538,
+          "growth": 0.402,
+          "empty": 0.04,
+          "sterility": 0.041
+        },
+        {
+          "row": 7,
+          "DMSO": 0.552,
+          "growth": 0.424,
+          "empty": 0.04,
+          "sterility": 0.043
+        }
+      ]
+    },
+    {
+      "id": "2025-08-28-pBAD",
+      "date": "2025-08-28",
+      "compound": "Honokiol",
+      "strainLabel": "pBAD",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-28_FIC_HonokiolColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D30:K37",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        0.25,
+        0.5,
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "values": [
+        [
+          0.406,
+          0.044,
+          0.046,
+          0.045,
+          0.044,
+          0.045,
+          0.044,
+          0.043
+        ],
+        [
+          0.251,
+          0.046,
+          0.047,
+          0.048,
+          0.047,
+          0.046,
+          0.049,
+          0.051
+        ],
+        [
+          0.318,
+          0.047,
+          0.047,
+          0.053,
+          0.049,
+          0.056,
+          0.058,
+          0.059
+        ],
+        [
+          0.409,
+          0.05,
+          0.054,
+          0.053,
+          0.049,
+          0.054,
+          0.056,
+          0.07
+        ],
+        [
+          0.423,
+          0.054,
+          0.058,
+          0.055,
+          0.052,
+          0.054,
+          0.06,
+          0.059
+        ],
+        [
+          0.504,
+          0.051,
+          0.052,
+          0.263,
+          0.049,
+          0.105,
+          0.055,
+          0.059
+        ],
+        [
+          0.467,
+          0.052,
+          0.052,
+          0.053,
+          0.053,
+          0.063,
+          0.055,
+          0.06
+        ],
+        [
+          0.502,
+          0.049,
+          0.266,
+          0.05,
+          0.048,
+          0.067,
+          0.052,
+          0.064
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.468,
+          "growth": 0.405,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 1,
+          "DMSO": 0.428,
+          "growth": 0.412,
+          "empty": 0.043,
+          "sterility": 0.044
+        },
+        {
+          "row": 2,
+          "DMSO": 0.482,
+          "growth": 0.39,
+          "empty": 0.041,
+          "sterility": 0.044
+        },
+        {
+          "row": 3,
+          "DMSO": 0.442,
+          "growth": 0.358,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 4,
+          "DMSO": 0.441,
+          "growth": 0.357,
+          "empty": 0.041,
+          "sterility": 0.045
+        },
+        {
+          "row": 5,
+          "DMSO": 0.46,
+          "growth": 0.376,
+          "empty": 0.041,
+          "sterility": 0.044
+        },
+        {
+          "row": 6,
+          "DMSO": 0.499,
+          "growth": 0.387,
+          "empty": 0.041,
+          "sterility": 0.043
+        },
+        {
+          "row": 7,
+          "DMSO": 0.54,
+          "growth": 0.45,
+          "empty": 0.04,
+          "sterility": 0.044
+        }
+      ]
+    },
+    {
+      "id": "2025-08-28-pBAD + 0.2% arabinose",
+      "date": "2025-08-28",
+      "compound": "Honokiol",
+      "strainLabel": "pBAD + 0.2% arabinose",
+      "concentrationUnit": "µg/mL",
+      "measurement": "OD600",
+      "processing": "Values copied from processed workbook; no subtraction, normalization, thresholding or averaging applied for website.",
+      "source": "2025-08-28_FIC_HonokiolColistin.xlsx",
+      "sheet": "Sheet1",
+      "range": "D42:K49",
+      "adjuvantConcentrations": [
+        64,
+        32,
+        16,
+        8,
+        4,
+        2,
+        1,
+        0
+      ],
+      "colistinConcentrations": [
+        0,
+        0.25,
+        0.5,
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "values": [
+        [
+          0.301,
+          0.046,
+          0.069,
+          0.045,
+          0.044,
+          0.044,
+          0.043,
+          0.043
+        ],
+        [
+          0.347,
+          0.047,
+          0.047,
+          0.047,
+          0.046,
+          0.05,
+          0.05,
+          0.052
+        ],
+        [
+          0.351,
+          0.05,
+          0.047,
+          0.048,
+          0.048,
+          0.052,
+          0.052,
+          0.058
+        ],
+        [
+          0.369,
+          0.294,
+          0.12,
+          0.049,
+          0.048,
+          0.052,
+          0.05,
+          0.057
+        ],
+        [
+          0.305,
+          0.292,
+          0.326,
+          0.046,
+          0.044,
+          0.049,
+          0.045,
+          0.051
+        ],
+        [
+          0.318,
+          0.326,
+          0.355,
+          0.349,
+          0.13,
+          0.05,
+          0.045,
+          0.045
+        ],
+        [
+          0.279,
+          0.318,
+          0.286,
+          0.357,
+          0.158,
+          0.208,
+          0.049,
+          0.052
+        ],
+        [
+          0.288,
+          0.329,
+          0.271,
+          0.369,
+          0.17,
+          0.174,
+          0.044,
+          0.05
+        ]
+      ],
+      "controls": [
+        {
+          "row": 0,
+          "DMSO": 0.239,
+          "growth": 0.349,
+          "empty": 0.042,
+          "sterility": 0.044
+        },
+        {
+          "row": 1,
+          "DMSO": 0.303,
+          "growth": 0.23,
+          "empty": 0.043,
+          "sterility": 0.045
+        },
+        {
+          "row": 2,
+          "DMSO": 0.222,
+          "growth": 0.376,
+          "empty": 0.042,
+          "sterility": 0.043
+        },
+        {
+          "row": 3,
+          "DMSO": 0.296,
+          "growth": 0.368,
+          "empty": 0.042,
+          "sterility": 0.04
+        },
+        {
+          "row": 4,
+          "DMSO": 0.298,
+          "growth": 0.375,
+          "empty": 0.041,
+          "sterility": 0.038
+        },
+        {
+          "row": 5,
+          "DMSO": 0.244,
+          "growth": 0.355,
+          "empty": 0.041,
+          "sterility": 0.042
+        },
+        {
+          "row": 6,
+          "DMSO": 0.326,
+          "growth": 0.549,
+          "empty": 0.041,
+          "sterility": 0.044
+        },
+        {
+          "row": 7,
+          "DMSO": 0.305,
+          "growth": 0.365,
+          "empty": 0.04,
+          "sterility": 0.04
+        }
+      ]
+    }
+  ]
+}

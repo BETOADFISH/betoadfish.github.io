@@ -1,0 +1,6 @@
+export const work = [
+  { slug: 'hubisco', path: '/projects/hubisco', category: 'Research', theme: 'hubisco', title: 'HuBisCO', field: 'Enzyme engineering', question: 'Testing an alternative substrate for carbon fixation.', detail: 'Structural hypotheses, recombinant proteins and the limits of a coupled assay.', year: '2026' },
+  { slug: 'pet-hydrolase', path: '/projects/pet-hydrolase', category: 'Research', theme: 'pet', title: 'PET hydrolases', field: 'Industrial biotechnology', question: 'Producing enzymes that can be assessed experimentally.', detail: 'Expression troubleshooting, purification and a closer look at the assay record.', year: '2025' },
+  { slug: 'mcr1-colistin', path: '/projects/mcr1-colistin', category: 'Research', theme: 'mcr', title: 'Colistin adjuvants', field: 'Antimicrobial research', question: 'Separating growth inhibition from evidence of mechanism.', detail: 'Combination assays and membrane-permeability experiments in an MCR-1 project.', year: '2025' },
+  { slug: '3d-cell-culture', path: '/intelligence/3d-cell-culture', category: 'Biotech intelligence', theme: 'culture', title: '3D cell culture', field: 'Technology due diligence', question: 'What would make a promising material a useful product?', detail: 'Culture platforms, biological validation and commercial constraints.', year: '2024' },
+] as const;

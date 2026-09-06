@@ -1,0 +1,3 @@
+export function SourceFigure({ src, title, caption, source, notes }: { src: string; title: string; caption: string; source: string; notes: string }) {
+ return <figure className="source-figure"><div className="figure-heading"><h3>{title}</h3><a href={src} target="_blank" rel="noreferrer">Open full image ↗</a></div><a className="figure-image" href={src} target="_blank" rel="noreferrer" aria-label={`Open full image: ${title}`}><img src={src} alt={caption} loading="lazy"/></a><figcaption>{caption}</figcaption><details><summary>Conditions and source</summary><p>{notes}</p><p className="small muted">{source}</p></details></figure>;
+}

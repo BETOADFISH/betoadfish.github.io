@@ -1,0 +1,897 @@
+﻿date,compound,strain,adjuvant_ug_per_ml,colistin_ug_per_ml,OD600,source,cell
+2025-08-21,Honokiol,BL21(DE3),64,0,0.343,2025-08-21_HonokiolColistin.xlsx,D6
+2025-08-21,Honokiol,BL21(DE3),64,1,0.052,2025-08-21_HonokiolColistin.xlsx,E6
+2025-08-21,Honokiol,BL21(DE3),64,2,0.049,2025-08-21_HonokiolColistin.xlsx,F6
+2025-08-21,Honokiol,BL21(DE3),64,4,0.058,2025-08-21_HonokiolColistin.xlsx,G6
+2025-08-21,Honokiol,BL21(DE3),64,8,0.052,2025-08-21_HonokiolColistin.xlsx,H6
+2025-08-21,Honokiol,BL21(DE3),64,16,0.056,2025-08-21_HonokiolColistin.xlsx,I6
+2025-08-21,Honokiol,BL21(DE3),64,32,0.045,2025-08-21_HonokiolColistin.xlsx,J6
+2025-08-21,Honokiol,BL21(DE3),64,64,0.044,2025-08-21_HonokiolColistin.xlsx,K6
+2025-08-21,Honokiol,BL21(DE3),32,0,0.507,2025-08-21_HonokiolColistin.xlsx,D7
+2025-08-21,Honokiol,BL21(DE3),32,1,0.051,2025-08-21_HonokiolColistin.xlsx,E7
+2025-08-21,Honokiol,BL21(DE3),32,2,0.055,2025-08-21_HonokiolColistin.xlsx,F7
+2025-08-21,Honokiol,BL21(DE3),32,4,0.059,2025-08-21_HonokiolColistin.xlsx,G7
+2025-08-21,Honokiol,BL21(DE3),32,8,0.048,2025-08-21_HonokiolColistin.xlsx,H7
+2025-08-21,Honokiol,BL21(DE3),32,16,0.056,2025-08-21_HonokiolColistin.xlsx,I7
+2025-08-21,Honokiol,BL21(DE3),32,32,0.047,2025-08-21_HonokiolColistin.xlsx,J7
+2025-08-21,Honokiol,BL21(DE3),32,64,0.054,2025-08-21_HonokiolColistin.xlsx,K7
+2025-08-21,Honokiol,BL21(DE3),16,0,0.7,2025-08-21_HonokiolColistin.xlsx,D8
+2025-08-21,Honokiol,BL21(DE3),16,1,0.048,2025-08-21_HonokiolColistin.xlsx,E8
+2025-08-21,Honokiol,BL21(DE3),16,2,0.06,2025-08-21_HonokiolColistin.xlsx,F8
+2025-08-21,Honokiol,BL21(DE3),16,4,0.057,2025-08-21_HonokiolColistin.xlsx,G8
+2025-08-21,Honokiol,BL21(DE3),16,8,0.055,2025-08-21_HonokiolColistin.xlsx,H8
+2025-08-21,Honokiol,BL21(DE3),16,16,0.052,2025-08-21_HonokiolColistin.xlsx,I8
+2025-08-21,Honokiol,BL21(DE3),16,32,0.049,2025-08-21_HonokiolColistin.xlsx,J8
+2025-08-21,Honokiol,BL21(DE3),16,64,0.043,2025-08-21_HonokiolColistin.xlsx,K8
+2025-08-21,Honokiol,BL21(DE3),8,0,0.828,2025-08-21_HonokiolColistin.xlsx,D9
+2025-08-21,Honokiol,BL21(DE3),8,1,0.047,2025-08-21_HonokiolColistin.xlsx,E9
+2025-08-21,Honokiol,BL21(DE3),8,2,0.229,2025-08-21_HonokiolColistin.xlsx,F9
+2025-08-21,Honokiol,BL21(DE3),8,4,0.039,2025-08-21_HonokiolColistin.xlsx,G9
+2025-08-21,Honokiol,BL21(DE3),8,8,0.052,2025-08-21_HonokiolColistin.xlsx,H9
+2025-08-21,Honokiol,BL21(DE3),8,16,0.041,2025-08-21_HonokiolColistin.xlsx,I9
+2025-08-21,Honokiol,BL21(DE3),8,32,0.043,2025-08-21_HonokiolColistin.xlsx,J9
+2025-08-21,Honokiol,BL21(DE3),8,64,0.043,2025-08-21_HonokiolColistin.xlsx,K9
+2025-08-21,Honokiol,BL21(DE3),4,0,0.839,2025-08-21_HonokiolColistin.xlsx,D10
+2025-08-21,Honokiol,BL21(DE3),4,1,0.892,2025-08-21_HonokiolColistin.xlsx,E10
+2025-08-21,Honokiol,BL21(DE3),4,2,0.994,2025-08-21_HonokiolColistin.xlsx,F10
+2025-08-21,Honokiol,BL21(DE3),4,4,0.606,2025-08-21_HonokiolColistin.xlsx,G10
+2025-08-21,Honokiol,BL21(DE3),4,8,0.057,2025-08-21_HonokiolColistin.xlsx,H10
+2025-08-21,Honokiol,BL21(DE3),4,16,0.039,2025-08-21_HonokiolColistin.xlsx,I10
+2025-08-21,Honokiol,BL21(DE3),4,32,0.037,2025-08-21_HonokiolColistin.xlsx,J10
+2025-08-21,Honokiol,BL21(DE3),4,64,0.041,2025-08-21_HonokiolColistin.xlsx,K10
+2025-08-21,Honokiol,BL21(DE3),2,0,0.854,2025-08-21_HonokiolColistin.xlsx,D11
+2025-08-21,Honokiol,BL21(DE3),2,1,0.961,2025-08-21_HonokiolColistin.xlsx,E11
+2025-08-21,Honokiol,BL21(DE3),2,2,0.782,2025-08-21_HonokiolColistin.xlsx,F11
+2025-08-21,Honokiol,BL21(DE3),2,4,0.637,2025-08-21_HonokiolColistin.xlsx,G11
+2025-08-21,Honokiol,BL21(DE3),2,8,0.414,2025-08-21_HonokiolColistin.xlsx,H11
+2025-08-21,Honokiol,BL21(DE3),2,16,0.034,2025-08-21_HonokiolColistin.xlsx,I11
+2025-08-21,Honokiol,BL21(DE3),2,32,0.032,2025-08-21_HonokiolColistin.xlsx,J11
+2025-08-21,Honokiol,BL21(DE3),2,64,0.044,2025-08-21_HonokiolColistin.xlsx,K11
+2025-08-21,Honokiol,BL21(DE3),1,0,0.874,2025-08-21_HonokiolColistin.xlsx,D12
+2025-08-21,Honokiol,BL21(DE3),1,1,0.864,2025-08-21_HonokiolColistin.xlsx,E12
+2025-08-21,Honokiol,BL21(DE3),1,2,0.864,2025-08-21_HonokiolColistin.xlsx,F12
+2025-08-21,Honokiol,BL21(DE3),1,4,0.69,2025-08-21_HonokiolColistin.xlsx,G12
+2025-08-21,Honokiol,BL21(DE3),1,8,0.573,2025-08-21_HonokiolColistin.xlsx,H12
+2025-08-21,Honokiol,BL21(DE3),1,16,0.045,2025-08-21_HonokiolColistin.xlsx,I12
+2025-08-21,Honokiol,BL21(DE3),1,32,0.038,2025-08-21_HonokiolColistin.xlsx,J12
+2025-08-21,Honokiol,BL21(DE3),1,64,0.035,2025-08-21_HonokiolColistin.xlsx,K12
+2025-08-21,Honokiol,BL21(DE3),0,0,0.944,2025-08-21_HonokiolColistin.xlsx,D13
+2025-08-21,Honokiol,BL21(DE3),0,1,0.835,2025-08-21_HonokiolColistin.xlsx,E13
+2025-08-21,Honokiol,BL21(DE3),0,2,0.726,2025-08-21_HonokiolColistin.xlsx,F13
+2025-08-21,Honokiol,BL21(DE3),0,4,0.624,2025-08-21_HonokiolColistin.xlsx,G13
+2025-08-21,Honokiol,BL21(DE3),0,8,0.578,2025-08-21_HonokiolColistin.xlsx,H13
+2025-08-21,Honokiol,BL21(DE3),0,16,0.036,2025-08-21_HonokiolColistin.xlsx,I13
+2025-08-21,Honokiol,BL21(DE3),0,32,0.035,2025-08-21_HonokiolColistin.xlsx,J13
+2025-08-21,Honokiol,BL21(DE3),0,64,0.035,2025-08-21_HonokiolColistin.xlsx,K13
+2025-08-21,Honokiol,DH5α,64,0,0.397,2025-08-21_HonokiolColistin.xlsx,D18
+2025-08-21,Honokiol,DH5α,64,1,0.044,2025-08-21_HonokiolColistin.xlsx,E18
+2025-08-21,Honokiol,DH5α,64,2,0.044,2025-08-21_HonokiolColistin.xlsx,F18
+2025-08-21,Honokiol,DH5α,64,4,0.043,2025-08-21_HonokiolColistin.xlsx,G18
+2025-08-21,Honokiol,DH5α,64,8,0.04,2025-08-21_HonokiolColistin.xlsx,H18
+2025-08-21,Honokiol,DH5α,64,16,0.043,2025-08-21_HonokiolColistin.xlsx,I18
+2025-08-21,Honokiol,DH5α,64,32,0.044,2025-08-21_HonokiolColistin.xlsx,J18
+2025-08-21,Honokiol,DH5α,64,64,0.043,2025-08-21_HonokiolColistin.xlsx,K18
+2025-08-21,Honokiol,DH5α,32,0,0.526,2025-08-21_HonokiolColistin.xlsx,D19
+2025-08-21,Honokiol,DH5α,32,1,0.041,2025-08-21_HonokiolColistin.xlsx,E19
+2025-08-21,Honokiol,DH5α,32,2,0.037,2025-08-21_HonokiolColistin.xlsx,F19
+2025-08-21,Honokiol,DH5α,32,4,0.039,2025-08-21_HonokiolColistin.xlsx,G19
+2025-08-21,Honokiol,DH5α,32,8,0.041,2025-08-21_HonokiolColistin.xlsx,H19
+2025-08-21,Honokiol,DH5α,32,16,0.041,2025-08-21_HonokiolColistin.xlsx,I19
+2025-08-21,Honokiol,DH5α,32,32,0.042,2025-08-21_HonokiolColistin.xlsx,J19
+2025-08-21,Honokiol,DH5α,32,64,0.046,2025-08-21_HonokiolColistin.xlsx,K19
+2025-08-21,Honokiol,DH5α,16,0,0.536,2025-08-21_HonokiolColistin.xlsx,D20
+2025-08-21,Honokiol,DH5α,16,1,0.042,2025-08-21_HonokiolColistin.xlsx,E20
+2025-08-21,Honokiol,DH5α,16,2,0.044,2025-08-21_HonokiolColistin.xlsx,F20
+2025-08-21,Honokiol,DH5α,16,4,0.041,2025-08-21_HonokiolColistin.xlsx,G20
+2025-08-21,Honokiol,DH5α,16,8,0.04,2025-08-21_HonokiolColistin.xlsx,H20
+2025-08-21,Honokiol,DH5α,16,16,0.043,2025-08-21_HonokiolColistin.xlsx,I20
+2025-08-21,Honokiol,DH5α,16,32,0.041,2025-08-21_HonokiolColistin.xlsx,J20
+2025-08-21,Honokiol,DH5α,16,64,0.046,2025-08-21_HonokiolColistin.xlsx,K20
+2025-08-21,Honokiol,DH5α,8,0,0.564,2025-08-21_HonokiolColistin.xlsx,D21
+2025-08-21,Honokiol,DH5α,8,1,0.036,2025-08-21_HonokiolColistin.xlsx,E21
+2025-08-21,Honokiol,DH5α,8,2,0.04,2025-08-21_HonokiolColistin.xlsx,F21
+2025-08-21,Honokiol,DH5α,8,4,0.036,2025-08-21_HonokiolColistin.xlsx,G21
+2025-08-21,Honokiol,DH5α,8,8,0.034,2025-08-21_HonokiolColistin.xlsx,H21
+2025-08-21,Honokiol,DH5α,8,16,0.035,2025-08-21_HonokiolColistin.xlsx,I21
+2025-08-21,Honokiol,DH5α,8,32,0.039,2025-08-21_HonokiolColistin.xlsx,J21
+2025-08-21,Honokiol,DH5α,8,64,0.036,2025-08-21_HonokiolColistin.xlsx,K21
+2025-08-21,Honokiol,DH5α,4,0,0.511,2025-08-21_HonokiolColistin.xlsx,D22
+2025-08-21,Honokiol,DH5α,4,1,0.036,2025-08-21_HonokiolColistin.xlsx,E22
+2025-08-21,Honokiol,DH5α,4,2,0.044,2025-08-21_HonokiolColistin.xlsx,F22
+2025-08-21,Honokiol,DH5α,4,4,0.038,2025-08-21_HonokiolColistin.xlsx,G22
+2025-08-21,Honokiol,DH5α,4,8,0.036,2025-08-21_HonokiolColistin.xlsx,H22
+2025-08-21,Honokiol,DH5α,4,16,0.036,2025-08-21_HonokiolColistin.xlsx,I22
+2025-08-21,Honokiol,DH5α,4,32,0.036,2025-08-21_HonokiolColistin.xlsx,J22
+2025-08-21,Honokiol,DH5α,4,64,0.034,2025-08-21_HonokiolColistin.xlsx,K22
+2025-08-21,Honokiol,DH5α,2,0,0.534,2025-08-21_HonokiolColistin.xlsx,D23
+2025-08-21,Honokiol,DH5α,2,1,0.036,2025-08-21_HonokiolColistin.xlsx,E23
+2025-08-21,Honokiol,DH5α,2,2,0.042,2025-08-21_HonokiolColistin.xlsx,F23
+2025-08-21,Honokiol,DH5α,2,4,0.039,2025-08-21_HonokiolColistin.xlsx,G23
+2025-08-21,Honokiol,DH5α,2,8,0.038,2025-08-21_HonokiolColistin.xlsx,H23
+2025-08-21,Honokiol,DH5α,2,16,0.038,2025-08-21_HonokiolColistin.xlsx,I23
+2025-08-21,Honokiol,DH5α,2,32,0.038,2025-08-21_HonokiolColistin.xlsx,J23
+2025-08-21,Honokiol,DH5α,2,64,0.045,2025-08-21_HonokiolColistin.xlsx,K23
+2025-08-21,Honokiol,DH5α,1,0,0.533,2025-08-21_HonokiolColistin.xlsx,D24
+2025-08-21,Honokiol,DH5α,1,1,0.036,2025-08-21_HonokiolColistin.xlsx,E24
+2025-08-21,Honokiol,DH5α,1,2,0.041,2025-08-21_HonokiolColistin.xlsx,F24
+2025-08-21,Honokiol,DH5α,1,4,0.041,2025-08-21_HonokiolColistin.xlsx,G24
+2025-08-21,Honokiol,DH5α,1,8,0.034,2025-08-21_HonokiolColistin.xlsx,H24
+2025-08-21,Honokiol,DH5α,1,16,0.039,2025-08-21_HonokiolColistin.xlsx,I24
+2025-08-21,Honokiol,DH5α,1,32,0.037,2025-08-21_HonokiolColistin.xlsx,J24
+2025-08-21,Honokiol,DH5α,1,64,0.043,2025-08-21_HonokiolColistin.xlsx,K24
+2025-08-21,Honokiol,DH5α,0,0,0.551,2025-08-21_HonokiolColistin.xlsx,D25
+2025-08-21,Honokiol,DH5α,0,1,0.035,2025-08-21_HonokiolColistin.xlsx,E25
+2025-08-21,Honokiol,DH5α,0,2,0.039,2025-08-21_HonokiolColistin.xlsx,F25
+2025-08-21,Honokiol,DH5α,0,4,0.037,2025-08-21_HonokiolColistin.xlsx,G25
+2025-08-21,Honokiol,DH5α,0,8,0.034,2025-08-21_HonokiolColistin.xlsx,H25
+2025-08-21,Honokiol,DH5α,0,16,0.035,2025-08-21_HonokiolColistin.xlsx,I25
+2025-08-21,Honokiol,DH5α,0,32,0.034,2025-08-21_HonokiolColistin.xlsx,J25
+2025-08-21,Honokiol,DH5α,0,64,0.033,2025-08-21_HonokiolColistin.xlsx,K25
+2025-08-22,Pterostilbene,BL21(DE3),64,0,0.481,2025-08-22_FIC_PterostilbeneColistin.xlsx,D6
+2025-08-22,Pterostilbene,BL21(DE3),64,1,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,E6
+2025-08-22,Pterostilbene,BL21(DE3),64,2,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,F6
+2025-08-22,Pterostilbene,BL21(DE3),64,4,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,G6
+2025-08-22,Pterostilbene,BL21(DE3),64,8,0.051,2025-08-22_FIC_PterostilbeneColistin.xlsx,H6
+2025-08-22,Pterostilbene,BL21(DE3),64,16,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,I6
+2025-08-22,Pterostilbene,BL21(DE3),64,32,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,J6
+2025-08-22,Pterostilbene,BL21(DE3),64,64,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,K6
+2025-08-22,Pterostilbene,BL21(DE3),32,0,0.733,2025-08-22_FIC_PterostilbeneColistin.xlsx,D7
+2025-08-22,Pterostilbene,BL21(DE3),32,1,0.049,2025-08-22_FIC_PterostilbeneColistin.xlsx,E7
+2025-08-22,Pterostilbene,BL21(DE3),32,2,0.049,2025-08-22_FIC_PterostilbeneColistin.xlsx,F7
+2025-08-22,Pterostilbene,BL21(DE3),32,4,0.054,2025-08-22_FIC_PterostilbeneColistin.xlsx,G7
+2025-08-22,Pterostilbene,BL21(DE3),32,8,0.051,2025-08-22_FIC_PterostilbeneColistin.xlsx,H7
+2025-08-22,Pterostilbene,BL21(DE3),32,16,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,I7
+2025-08-22,Pterostilbene,BL21(DE3),32,32,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,J7
+2025-08-22,Pterostilbene,BL21(DE3),32,64,0.049,2025-08-22_FIC_PterostilbeneColistin.xlsx,K7
+2025-08-22,Pterostilbene,BL21(DE3),16,0,0.854,2025-08-22_FIC_PterostilbeneColistin.xlsx,D8
+2025-08-22,Pterostilbene,BL21(DE3),16,1,0.792,2025-08-22_FIC_PterostilbeneColistin.xlsx,E8
+2025-08-22,Pterostilbene,BL21(DE3),16,2,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,F8
+2025-08-22,Pterostilbene,BL21(DE3),16,4,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,G8
+2025-08-22,Pterostilbene,BL21(DE3),16,8,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,H8
+2025-08-22,Pterostilbene,BL21(DE3),16,16,0.054,2025-08-22_FIC_PterostilbeneColistin.xlsx,I8
+2025-08-22,Pterostilbene,BL21(DE3),16,32,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,J8
+2025-08-22,Pterostilbene,BL21(DE3),16,64,0.066,2025-08-22_FIC_PterostilbeneColistin.xlsx,K8
+2025-08-22,Pterostilbene,BL21(DE3),8,0,0.868,2025-08-22_FIC_PterostilbeneColistin.xlsx,D9
+2025-08-22,Pterostilbene,BL21(DE3),8,1,0.775,2025-08-22_FIC_PterostilbeneColistin.xlsx,E9
+2025-08-22,Pterostilbene,BL21(DE3),8,2,0.367,2025-08-22_FIC_PterostilbeneColistin.xlsx,F9
+2025-08-22,Pterostilbene,BL21(DE3),8,4,0.058,2025-08-22_FIC_PterostilbeneColistin.xlsx,G9
+2025-08-22,Pterostilbene,BL21(DE3),8,8,0.055,2025-08-22_FIC_PterostilbeneColistin.xlsx,H9
+2025-08-22,Pterostilbene,BL21(DE3),8,16,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,I9
+2025-08-22,Pterostilbene,BL21(DE3),8,32,0.039,2025-08-22_FIC_PterostilbeneColistin.xlsx,J9
+2025-08-22,Pterostilbene,BL21(DE3),8,64,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,K9
+2025-08-22,Pterostilbene,BL21(DE3),4,0,0.909,2025-08-22_FIC_PterostilbeneColistin.xlsx,D10
+2025-08-22,Pterostilbene,BL21(DE3),4,1,0.837,2025-08-22_FIC_PterostilbeneColistin.xlsx,E10
+2025-08-22,Pterostilbene,BL21(DE3),4,2,0.732,2025-08-22_FIC_PterostilbeneColistin.xlsx,F10
+2025-08-22,Pterostilbene,BL21(DE3),4,4,0.043,2025-08-22_FIC_PterostilbeneColistin.xlsx,G10
+2025-08-22,Pterostilbene,BL21(DE3),4,8,0.041,2025-08-22_FIC_PterostilbeneColistin.xlsx,H10
+2025-08-22,Pterostilbene,BL21(DE3),4,16,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,I10
+2025-08-22,Pterostilbene,BL21(DE3),4,32,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,J10
+2025-08-22,Pterostilbene,BL21(DE3),4,64,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,K10
+2025-08-22,Pterostilbene,BL21(DE3),2,0,0.966,2025-08-22_FIC_PterostilbeneColistin.xlsx,D11
+2025-08-22,Pterostilbene,BL21(DE3),2,1,0.962,2025-08-22_FIC_PterostilbeneColistin.xlsx,E11
+2025-08-22,Pterostilbene,BL21(DE3),2,2,0.888,2025-08-22_FIC_PterostilbeneColistin.xlsx,F11
+2025-08-22,Pterostilbene,BL21(DE3),2,4,0.791,2025-08-22_FIC_PterostilbeneColistin.xlsx,G11
+2025-08-22,Pterostilbene,BL21(DE3),2,8,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,H11
+2025-08-22,Pterostilbene,BL21(DE3),2,16,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,I11
+2025-08-22,Pterostilbene,BL21(DE3),2,32,0.039,2025-08-22_FIC_PterostilbeneColistin.xlsx,J11
+2025-08-22,Pterostilbene,BL21(DE3),2,64,0.037,2025-08-22_FIC_PterostilbeneColistin.xlsx,K11
+2025-08-22,Pterostilbene,BL21(DE3),1,0,0.924,2025-08-22_FIC_PterostilbeneColistin.xlsx,D12
+2025-08-22,Pterostilbene,BL21(DE3),1,1,0.775,2025-08-22_FIC_PterostilbeneColistin.xlsx,E12
+2025-08-22,Pterostilbene,BL21(DE3),1,2,0.773,2025-08-22_FIC_PterostilbeneColistin.xlsx,F12
+2025-08-22,Pterostilbene,BL21(DE3),1,4,0.63,2025-08-22_FIC_PterostilbeneColistin.xlsx,G12
+2025-08-22,Pterostilbene,BL21(DE3),1,8,0.045,2025-08-22_FIC_PterostilbeneColistin.xlsx,H12
+2025-08-22,Pterostilbene,BL21(DE3),1,16,0.041,2025-08-22_FIC_PterostilbeneColistin.xlsx,I12
+2025-08-22,Pterostilbene,BL21(DE3),1,32,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,J12
+2025-08-22,Pterostilbene,BL21(DE3),1,64,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,K12
+2025-08-22,Pterostilbene,BL21(DE3),0,0,0.965,2025-08-22_FIC_PterostilbeneColistin.xlsx,D13
+2025-08-22,Pterostilbene,BL21(DE3),0,1,0.799,2025-08-22_FIC_PterostilbeneColistin.xlsx,E13
+2025-08-22,Pterostilbene,BL21(DE3),0,2,0.735,2025-08-22_FIC_PterostilbeneColistin.xlsx,F13
+2025-08-22,Pterostilbene,BL21(DE3),0,4,0.716,2025-08-22_FIC_PterostilbeneColistin.xlsx,G13
+2025-08-22,Pterostilbene,BL21(DE3),0,8,0.224,2025-08-22_FIC_PterostilbeneColistin.xlsx,H13
+2025-08-22,Pterostilbene,BL21(DE3),0,16,0.037,2025-08-22_FIC_PterostilbeneColistin.xlsx,I13
+2025-08-22,Pterostilbene,BL21(DE3),0,32,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,J13
+2025-08-22,Pterostilbene,BL21(DE3),0,64,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,K13
+2025-08-22,Pterostilbene,DH5α,64,0,0.531,2025-08-22_FIC_PterostilbeneColistin.xlsx,D18
+2025-08-22,Pterostilbene,DH5α,64,1,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,E18
+2025-08-22,Pterostilbene,DH5α,64,2,0.05,2025-08-22_FIC_PterostilbeneColistin.xlsx,F18
+2025-08-22,Pterostilbene,DH5α,64,4,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,G18
+2025-08-22,Pterostilbene,DH5α,64,8,0.049,2025-08-22_FIC_PterostilbeneColistin.xlsx,H18
+2025-08-22,Pterostilbene,DH5α,64,16,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,I18
+2025-08-22,Pterostilbene,DH5α,64,32,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,J18
+2025-08-22,Pterostilbene,DH5α,64,64,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,K18
+2025-08-22,Pterostilbene,DH5α,32,0,0.539,2025-08-22_FIC_PterostilbeneColistin.xlsx,D19
+2025-08-22,Pterostilbene,DH5α,32,1,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,E19
+2025-08-22,Pterostilbene,DH5α,32,2,0.045,2025-08-22_FIC_PterostilbeneColistin.xlsx,F19
+2025-08-22,Pterostilbene,DH5α,32,4,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,G19
+2025-08-22,Pterostilbene,DH5α,32,8,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,H19
+2025-08-22,Pterostilbene,DH5α,32,16,0.045,2025-08-22_FIC_PterostilbeneColistin.xlsx,I19
+2025-08-22,Pterostilbene,DH5α,32,32,0.044,2025-08-22_FIC_PterostilbeneColistin.xlsx,J19
+2025-08-22,Pterostilbene,DH5α,32,64,0.043,2025-08-22_FIC_PterostilbeneColistin.xlsx,K19
+2025-08-22,Pterostilbene,DH5α,16,0,0.453,2025-08-22_FIC_PterostilbeneColistin.xlsx,D20
+2025-08-22,Pterostilbene,DH5α,16,1,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,E20
+2025-08-22,Pterostilbene,DH5α,16,2,0.041,2025-08-22_FIC_PterostilbeneColistin.xlsx,F20
+2025-08-22,Pterostilbene,DH5α,16,4,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,G20
+2025-08-22,Pterostilbene,DH5α,16,8,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,H20
+2025-08-22,Pterostilbene,DH5α,16,16,0.043,2025-08-22_FIC_PterostilbeneColistin.xlsx,I20
+2025-08-22,Pterostilbene,DH5α,16,32,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,J20
+2025-08-22,Pterostilbene,DH5α,16,64,0.041,2025-08-22_FIC_PterostilbeneColistin.xlsx,K20
+2025-08-22,Pterostilbene,DH5α,8,0,0.478,2025-08-22_FIC_PterostilbeneColistin.xlsx,D21
+2025-08-22,Pterostilbene,DH5α,8,1,0.037,2025-08-22_FIC_PterostilbeneColistin.xlsx,E21
+2025-08-22,Pterostilbene,DH5α,8,2,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,F21
+2025-08-22,Pterostilbene,DH5α,8,4,0.037,2025-08-22_FIC_PterostilbeneColistin.xlsx,G21
+2025-08-22,Pterostilbene,DH5α,8,8,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,H21
+2025-08-22,Pterostilbene,DH5α,8,16,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,I21
+2025-08-22,Pterostilbene,DH5α,8,32,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,J21
+2025-08-22,Pterostilbene,DH5α,8,64,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,K21
+2025-08-22,Pterostilbene,DH5α,4,0,0.489,2025-08-22_FIC_PterostilbeneColistin.xlsx,D22
+2025-08-22,Pterostilbene,DH5α,4,1,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,E22
+2025-08-22,Pterostilbene,DH5α,4,2,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,F22
+2025-08-22,Pterostilbene,DH5α,4,4,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,G22
+2025-08-22,Pterostilbene,DH5α,4,8,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,H22
+2025-08-22,Pterostilbene,DH5α,4,16,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,I22
+2025-08-22,Pterostilbene,DH5α,4,32,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,J22
+2025-08-22,Pterostilbene,DH5α,4,64,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,K22
+2025-08-22,Pterostilbene,DH5α,2,0,0.52,2025-08-22_FIC_PterostilbeneColistin.xlsx,D23
+2025-08-22,Pterostilbene,DH5α,2,1,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,E23
+2025-08-22,Pterostilbene,DH5α,2,2,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,F23
+2025-08-22,Pterostilbene,DH5α,2,4,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,G23
+2025-08-22,Pterostilbene,DH5α,2,8,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,H23
+2025-08-22,Pterostilbene,DH5α,2,16,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,I23
+2025-08-22,Pterostilbene,DH5α,2,32,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,J23
+2025-08-22,Pterostilbene,DH5α,2,64,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,K23
+2025-08-22,Pterostilbene,DH5α,1,0,0.532,2025-08-22_FIC_PterostilbeneColistin.xlsx,D24
+2025-08-22,Pterostilbene,DH5α,1,1,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,E24
+2025-08-22,Pterostilbene,DH5α,1,2,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,F24
+2025-08-22,Pterostilbene,DH5α,1,4,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,G24
+2025-08-22,Pterostilbene,DH5α,1,8,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,H24
+2025-08-22,Pterostilbene,DH5α,1,16,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,I24
+2025-08-22,Pterostilbene,DH5α,1,32,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,J24
+2025-08-22,Pterostilbene,DH5α,1,64,0.032,2025-08-22_FIC_PterostilbeneColistin.xlsx,K24
+2025-08-22,Pterostilbene,DH5α,0,0,0.588,2025-08-22_FIC_PterostilbeneColistin.xlsx,D25
+2025-08-22,Pterostilbene,DH5α,0,1,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,E25
+2025-08-22,Pterostilbene,DH5α,0,2,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,F25
+2025-08-22,Pterostilbene,DH5α,0,4,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,G25
+2025-08-22,Pterostilbene,DH5α,0,8,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,H25
+2025-08-22,Pterostilbene,DH5α,0,16,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,I25
+2025-08-22,Pterostilbene,DH5α,0,32,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,J25
+2025-08-22,Pterostilbene,DH5α,0,64,0.032,2025-08-22_FIC_PterostilbeneColistin.xlsx,K25
+2025-08-22,Pterostilbene,pBAD,64,0,0.437,2025-08-22_FIC_PterostilbeneColistin.xlsx,D30
+2025-08-22,Pterostilbene,pBAD,64,1,0.049,2025-08-22_FIC_PterostilbeneColistin.xlsx,E30
+2025-08-22,Pterostilbene,pBAD,64,2,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,F30
+2025-08-22,Pterostilbene,pBAD,64,4,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,G30
+2025-08-22,Pterostilbene,pBAD,64,8,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,H30
+2025-08-22,Pterostilbene,pBAD,64,16,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,I30
+2025-08-22,Pterostilbene,pBAD,64,32,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,J30
+2025-08-22,Pterostilbene,pBAD,64,64,0.045,2025-08-22_FIC_PterostilbeneColistin.xlsx,K30
+2025-08-22,Pterostilbene,pBAD,32,0,0.433,2025-08-22_FIC_PterostilbeneColistin.xlsx,D31
+2025-08-22,Pterostilbene,pBAD,32,1,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,E31
+2025-08-22,Pterostilbene,pBAD,32,2,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,F31
+2025-08-22,Pterostilbene,pBAD,32,4,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,G31
+2025-08-22,Pterostilbene,pBAD,32,8,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,H31
+2025-08-22,Pterostilbene,pBAD,32,16,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,I31
+2025-08-22,Pterostilbene,pBAD,32,32,0.044,2025-08-22_FIC_PterostilbeneColistin.xlsx,J31
+2025-08-22,Pterostilbene,pBAD,32,64,0.048,2025-08-22_FIC_PterostilbeneColistin.xlsx,K31
+2025-08-22,Pterostilbene,pBAD,16,0,0.458,2025-08-22_FIC_PterostilbeneColistin.xlsx,D32
+2025-08-22,Pterostilbene,pBAD,16,1,0.045,2025-08-22_FIC_PterostilbeneColistin.xlsx,E32
+2025-08-22,Pterostilbene,pBAD,16,2,0.043,2025-08-22_FIC_PterostilbeneColistin.xlsx,F32
+2025-08-22,Pterostilbene,pBAD,16,4,0.044,2025-08-22_FIC_PterostilbeneColistin.xlsx,G32
+2025-08-22,Pterostilbene,pBAD,16,8,0.047,2025-08-22_FIC_PterostilbeneColistin.xlsx,H32
+2025-08-22,Pterostilbene,pBAD,16,16,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,I32
+2025-08-22,Pterostilbene,pBAD,16,32,0.043,2025-08-22_FIC_PterostilbeneColistin.xlsx,J32
+2025-08-22,Pterostilbene,pBAD,16,64,0.046,2025-08-22_FIC_PterostilbeneColistin.xlsx,K32
+2025-08-22,Pterostilbene,pBAD,8,0,0.431,2025-08-22_FIC_PterostilbeneColistin.xlsx,D33
+2025-08-22,Pterostilbene,pBAD,8,1,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,E33
+2025-08-22,Pterostilbene,pBAD,8,2,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,F33
+2025-08-22,Pterostilbene,pBAD,8,4,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,G33
+2025-08-22,Pterostilbene,pBAD,8,8,0.039,2025-08-22_FIC_PterostilbeneColistin.xlsx,H33
+2025-08-22,Pterostilbene,pBAD,8,16,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,I33
+2025-08-22,Pterostilbene,pBAD,8,32,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,J33
+2025-08-22,Pterostilbene,pBAD,8,64,0.039,2025-08-22_FIC_PterostilbeneColistin.xlsx,K33
+2025-08-22,Pterostilbene,pBAD,4,0,0.497,2025-08-22_FIC_PterostilbeneColistin.xlsx,D34
+2025-08-22,Pterostilbene,pBAD,4,1,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,E34
+2025-08-22,Pterostilbene,pBAD,4,2,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,F34
+2025-08-22,Pterostilbene,pBAD,4,4,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,G34
+2025-08-22,Pterostilbene,pBAD,4,8,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,H34
+2025-08-22,Pterostilbene,pBAD,4,16,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,I34
+2025-08-22,Pterostilbene,pBAD,4,32,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,J34
+2025-08-22,Pterostilbene,pBAD,4,64,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,K34
+2025-08-22,Pterostilbene,pBAD,2,0,0.496,2025-08-22_FIC_PterostilbeneColistin.xlsx,D35
+2025-08-22,Pterostilbene,pBAD,2,1,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,E35
+2025-08-22,Pterostilbene,pBAD,2,2,0.039,2025-08-22_FIC_PterostilbeneColistin.xlsx,F35
+2025-08-22,Pterostilbene,pBAD,2,4,0.043,2025-08-22_FIC_PterostilbeneColistin.xlsx,G35
+2025-08-22,Pterostilbene,pBAD,2,8,0.044,2025-08-22_FIC_PterostilbeneColistin.xlsx,H35
+2025-08-22,Pterostilbene,pBAD,2,16,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,I35
+2025-08-22,Pterostilbene,pBAD,2,32,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,J35
+2025-08-22,Pterostilbene,pBAD,2,64,0.043,2025-08-22_FIC_PterostilbeneColistin.xlsx,K35
+2025-08-22,Pterostilbene,pBAD,1,0,0.462,2025-08-22_FIC_PterostilbeneColistin.xlsx,D36
+2025-08-22,Pterostilbene,pBAD,1,1,0.037,2025-08-22_FIC_PterostilbeneColistin.xlsx,E36
+2025-08-22,Pterostilbene,pBAD,1,2,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,F36
+2025-08-22,Pterostilbene,pBAD,1,4,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,G36
+2025-08-22,Pterostilbene,pBAD,1,8,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,H36
+2025-08-22,Pterostilbene,pBAD,1,16,0.037,2025-08-22_FIC_PterostilbeneColistin.xlsx,I36
+2025-08-22,Pterostilbene,pBAD,1,32,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,J36
+2025-08-22,Pterostilbene,pBAD,1,64,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,K36
+2025-08-22,Pterostilbene,pBAD,0,0,0.446,2025-08-22_FIC_PterostilbeneColistin.xlsx,D37
+2025-08-22,Pterostilbene,pBAD,0,1,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,E37
+2025-08-22,Pterostilbene,pBAD,0,2,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,F37
+2025-08-22,Pterostilbene,pBAD,0,4,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,G37
+2025-08-22,Pterostilbene,pBAD,0,8,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,H37
+2025-08-22,Pterostilbene,pBAD,0,16,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,I37
+2025-08-22,Pterostilbene,pBAD,0,32,0.039,2025-08-22_FIC_PterostilbeneColistin.xlsx,J37
+2025-08-22,Pterostilbene,pBAD,0,64,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,K37
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,64,0,0.289,2025-08-22_FIC_PterostilbeneColistin.xlsx,D42
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,64,1,0.041,2025-08-22_FIC_PterostilbeneColistin.xlsx,E42
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,64,2,0.049,2025-08-22_FIC_PterostilbeneColistin.xlsx,F42
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,64,4,0.042,2025-08-22_FIC_PterostilbeneColistin.xlsx,G42
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,64,8,0.039,2025-08-22_FIC_PterostilbeneColistin.xlsx,H42
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,64,16,0.054,2025-08-22_FIC_PterostilbeneColistin.xlsx,I42
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,64,32,0.039,2025-08-22_FIC_PterostilbeneColistin.xlsx,J42
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,64,64,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,K42
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,32,0,0.212,2025-08-22_FIC_PterostilbeneColistin.xlsx,D43
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,32,1,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,E43
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,32,2,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,F43
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,32,4,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,G43
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,32,8,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,H43
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,32,16,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,I43
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,32,32,0.038,2025-08-22_FIC_PterostilbeneColistin.xlsx,J43
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,32,64,0.04,2025-08-22_FIC_PterostilbeneColistin.xlsx,K43
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,16,0,0.232,2025-08-22_FIC_PterostilbeneColistin.xlsx,D44
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,16,1,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,E44
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,16,2,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,F44
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,16,4,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,G44
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,16,8,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,H44
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,16,16,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,I44
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,16,32,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,J44
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,16,64,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,K44
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,8,0,0.189,2025-08-22_FIC_PterostilbeneColistin.xlsx,D45
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,8,1,0.084,2025-08-22_FIC_PterostilbeneColistin.xlsx,E45
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,8,2,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,F45
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,8,4,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,G45
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,8,8,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,H45
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,8,16,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,I45
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,8,32,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,J45
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,8,64,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,K45
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,4,0,0.228,2025-08-22_FIC_PterostilbeneColistin.xlsx,D46
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,4,1,0.192,2025-08-22_FIC_PterostilbeneColistin.xlsx,E46
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,4,2,0.184,2025-08-22_FIC_PterostilbeneColistin.xlsx,F46
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,4,4,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,G46
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,4,8,0.037,2025-08-22_FIC_PterostilbeneColistin.xlsx,H46
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,4,16,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,I46
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,4,32,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,J46
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,4,64,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,K46
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,2,0,0.193,2025-08-22_FIC_PterostilbeneColistin.xlsx,D47
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,2,1,0.207,2025-08-22_FIC_PterostilbeneColistin.xlsx,E47
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,2,2,0.108,2025-08-22_FIC_PterostilbeneColistin.xlsx,F47
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,2,4,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,G47
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,2,8,0.037,2025-08-22_FIC_PterostilbeneColistin.xlsx,H47
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,2,16,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,I47
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,2,32,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,J47
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,2,64,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,K47
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,1,0,0.19,2025-08-22_FIC_PterostilbeneColistin.xlsx,D48
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,1,1,0.243,2025-08-22_FIC_PterostilbeneColistin.xlsx,E48
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,1,2,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,F48
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,1,4,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,G48
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,1,8,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,H48
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,1,16,0.035,2025-08-22_FIC_PterostilbeneColistin.xlsx,I48
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,1,32,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,J48
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,1,64,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,K48
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,0,0,0.291,2025-08-22_FIC_PterostilbeneColistin.xlsx,D49
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,0,1,0.228,2025-08-22_FIC_PterostilbeneColistin.xlsx,E49
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,0,2,0.141,2025-08-22_FIC_PterostilbeneColistin.xlsx,F49
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,0,4,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,G49
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,0,8,0.034,2025-08-22_FIC_PterostilbeneColistin.xlsx,H49
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,0,16,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,I49
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,0,32,0.033,2025-08-22_FIC_PterostilbeneColistin.xlsx,J49
+2025-08-22,Pterostilbene,pBAD + 0.2% arabinose,0,64,0.036,2025-08-22_FIC_PterostilbeneColistin.xlsx,K49
+2025-08-27,Osthol,BL21(DE3),64,0,0.72,2025-08-27_FIC_OstholColistin.xlsx,D6
+2025-08-27,Osthol,BL21(DE3),64,0.25,0.717,2025-08-27_FIC_OstholColistin.xlsx,E6
+2025-08-27,Osthol,BL21(DE3),64,0.5,0.711,2025-08-27_FIC_OstholColistin.xlsx,F6
+2025-08-27,Osthol,BL21(DE3),64,1,0.949,2025-08-27_FIC_OstholColistin.xlsx,G6
+2025-08-27,Osthol,BL21(DE3),64,2,0.76,2025-08-27_FIC_OstholColistin.xlsx,H6
+2025-08-27,Osthol,BL21(DE3),64,4,0.394,2025-08-27_FIC_OstholColistin.xlsx,I6
+2025-08-27,Osthol,BL21(DE3),64,8,0.603,2025-08-27_FIC_OstholColistin.xlsx,J6
+2025-08-27,Osthol,BL21(DE3),64,16,0.522,2025-08-27_FIC_OstholColistin.xlsx,K6
+2025-08-27,Osthol,BL21(DE3),32,0,1.183,2025-08-27_FIC_OstholColistin.xlsx,D7
+2025-08-27,Osthol,BL21(DE3),32,0.25,0.92,2025-08-27_FIC_OstholColistin.xlsx,E7
+2025-08-27,Osthol,BL21(DE3),32,0.5,0.946,2025-08-27_FIC_OstholColistin.xlsx,F7
+2025-08-27,Osthol,BL21(DE3),32,1,0.897,2025-08-27_FIC_OstholColistin.xlsx,G7
+2025-08-27,Osthol,BL21(DE3),32,2,0.924,2025-08-27_FIC_OstholColistin.xlsx,H7
+2025-08-27,Osthol,BL21(DE3),32,4,0.164,2025-08-27_FIC_OstholColistin.xlsx,I7
+2025-08-27,Osthol,BL21(DE3),32,8,0.126,2025-08-27_FIC_OstholColistin.xlsx,J7
+2025-08-27,Osthol,BL21(DE3),32,16,0.284,2025-08-27_FIC_OstholColistin.xlsx,K7
+2025-08-27,Osthol,BL21(DE3),16,0,1.071,2025-08-27_FIC_OstholColistin.xlsx,D8
+2025-08-27,Osthol,BL21(DE3),16,0.25,0.891,2025-08-27_FIC_OstholColistin.xlsx,E8
+2025-08-27,Osthol,BL21(DE3),16,0.5,0.926,2025-08-27_FIC_OstholColistin.xlsx,F8
+2025-08-27,Osthol,BL21(DE3),16,1,0.931,2025-08-27_FIC_OstholColistin.xlsx,G8
+2025-08-27,Osthol,BL21(DE3),16,2,0.909,2025-08-27_FIC_OstholColistin.xlsx,H8
+2025-08-27,Osthol,BL21(DE3),16,4,0.76,2025-08-27_FIC_OstholColistin.xlsx,I8
+2025-08-27,Osthol,BL21(DE3),16,8,0.218,2025-08-27_FIC_OstholColistin.xlsx,J8
+2025-08-27,Osthol,BL21(DE3),16,16,0.125,2025-08-27_FIC_OstholColistin.xlsx,K8
+2025-08-27,Osthol,BL21(DE3),8,0,0.959,2025-08-27_FIC_OstholColistin.xlsx,D9
+2025-08-27,Osthol,BL21(DE3),8,0.25,0.79,2025-08-27_FIC_OstholColistin.xlsx,E9
+2025-08-27,Osthol,BL21(DE3),8,0.5,0.796,2025-08-27_FIC_OstholColistin.xlsx,F9
+2025-08-27,Osthol,BL21(DE3),8,1,0.811,2025-08-27_FIC_OstholColistin.xlsx,G9
+2025-08-27,Osthol,BL21(DE3),8,2,0.778,2025-08-27_FIC_OstholColistin.xlsx,H9
+2025-08-27,Osthol,BL21(DE3),8,4,0.745,2025-08-27_FIC_OstholColistin.xlsx,I9
+2025-08-27,Osthol,BL21(DE3),8,8,0.517,2025-08-27_FIC_OstholColistin.xlsx,J9
+2025-08-27,Osthol,BL21(DE3),8,16,0.112,2025-08-27_FIC_OstholColistin.xlsx,K9
+2025-08-27,Osthol,BL21(DE3),4,0,0.929,2025-08-27_FIC_OstholColistin.xlsx,D10
+2025-08-27,Osthol,BL21(DE3),4,0.25,0.777,2025-08-27_FIC_OstholColistin.xlsx,E10
+2025-08-27,Osthol,BL21(DE3),4,0.5,0.753,2025-08-27_FIC_OstholColistin.xlsx,F10
+2025-08-27,Osthol,BL21(DE3),4,1,0.776,2025-08-27_FIC_OstholColistin.xlsx,G10
+2025-08-27,Osthol,BL21(DE3),4,2,0.77,2025-08-27_FIC_OstholColistin.xlsx,H10
+2025-08-27,Osthol,BL21(DE3),4,4,0.747,2025-08-27_FIC_OstholColistin.xlsx,I10
+2025-08-27,Osthol,BL21(DE3),4,8,0.618,2025-08-27_FIC_OstholColistin.xlsx,J10
+2025-08-27,Osthol,BL21(DE3),4,16,0.089,2025-08-27_FIC_OstholColistin.xlsx,K10
+2025-08-27,Osthol,BL21(DE3),2,0,0.976,2025-08-27_FIC_OstholColistin.xlsx,D11
+2025-08-27,Osthol,BL21(DE3),2,0.25,0.764,2025-08-27_FIC_OstholColistin.xlsx,E11
+2025-08-27,Osthol,BL21(DE3),2,0.5,0.772,2025-08-27_FIC_OstholColistin.xlsx,F11
+2025-08-27,Osthol,BL21(DE3),2,1,0.794,2025-08-27_FIC_OstholColistin.xlsx,G11
+2025-08-27,Osthol,BL21(DE3),2,2,0.778,2025-08-27_FIC_OstholColistin.xlsx,H11
+2025-08-27,Osthol,BL21(DE3),2,4,0.706,2025-08-27_FIC_OstholColistin.xlsx,I11
+2025-08-27,Osthol,BL21(DE3),2,8,0.536,2025-08-27_FIC_OstholColistin.xlsx,J11
+2025-08-27,Osthol,BL21(DE3),2,16,0.066,2025-08-27_FIC_OstholColistin.xlsx,K11
+2025-08-27,Osthol,BL21(DE3),1,0,0.932,2025-08-27_FIC_OstholColistin.xlsx,D12
+2025-08-27,Osthol,BL21(DE3),1,0.25,0.785,2025-08-27_FIC_OstholColistin.xlsx,E12
+2025-08-27,Osthol,BL21(DE3),1,0.5,0.686,2025-08-27_FIC_OstholColistin.xlsx,F12
+2025-08-27,Osthol,BL21(DE3),1,1,0.594,2025-08-27_FIC_OstholColistin.xlsx,G12
+2025-08-27,Osthol,BL21(DE3),1,2,0.582,2025-08-27_FIC_OstholColistin.xlsx,H12
+2025-08-27,Osthol,BL21(DE3),1,4,0.694,2025-08-27_FIC_OstholColistin.xlsx,I12
+2025-08-27,Osthol,BL21(DE3),1,8,0.281,2025-08-27_FIC_OstholColistin.xlsx,J12
+2025-08-27,Osthol,BL21(DE3),1,16,0.217,2025-08-27_FIC_OstholColistin.xlsx,K12
+2025-08-27,Osthol,BL21(DE3),0,0,0.947,2025-08-27_FIC_OstholColistin.xlsx,D13
+2025-08-27,Osthol,BL21(DE3),0,0.25,0.613,2025-08-27_FIC_OstholColistin.xlsx,E13
+2025-08-27,Osthol,BL21(DE3),0,0.5,0.607,2025-08-27_FIC_OstholColistin.xlsx,F13
+2025-08-27,Osthol,BL21(DE3),0,1,0.567,2025-08-27_FIC_OstholColistin.xlsx,G13
+2025-08-27,Osthol,BL21(DE3),0,2,0.565,2025-08-27_FIC_OstholColistin.xlsx,H13
+2025-08-27,Osthol,BL21(DE3),0,4,0.485,2025-08-27_FIC_OstholColistin.xlsx,I13
+2025-08-27,Osthol,BL21(DE3),0,8,0.179,2025-08-27_FIC_OstholColistin.xlsx,J13
+2025-08-27,Osthol,BL21(DE3),0,16,0.061,2025-08-27_FIC_OstholColistin.xlsx,K13
+2025-08-27,Osthol,DH5α,64,0,0.414,2025-08-27_FIC_OstholColistin.xlsx,D18
+2025-08-27,Osthol,DH5α,64,0.25,0.053,2025-08-27_FIC_OstholColistin.xlsx,E18
+2025-08-27,Osthol,DH5α,64,0.5,0.208,2025-08-27_FIC_OstholColistin.xlsx,F18
+2025-08-27,Osthol,DH5α,64,1,0.086,2025-08-27_FIC_OstholColistin.xlsx,G18
+2025-08-27,Osthol,DH5α,64,2,0.06,2025-08-27_FIC_OstholColistin.xlsx,H18
+2025-08-27,Osthol,DH5α,64,4,0.064,2025-08-27_FIC_OstholColistin.xlsx,I18
+2025-08-27,Osthol,DH5α,64,8,0.073,2025-08-27_FIC_OstholColistin.xlsx,J18
+2025-08-27,Osthol,DH5α,64,16,0.055,2025-08-27_FIC_OstholColistin.xlsx,K18
+2025-08-27,Osthol,DH5α,32,0,0.541,2025-08-27_FIC_OstholColistin.xlsx,D19
+2025-08-27,Osthol,DH5α,32,0.25,0.197,2025-08-27_FIC_OstholColistin.xlsx,E19
+2025-08-27,Osthol,DH5α,32,0.5,0.044,2025-08-27_FIC_OstholColistin.xlsx,F19
+2025-08-27,Osthol,DH5α,32,1,0.045,2025-08-27_FIC_OstholColistin.xlsx,G19
+2025-08-27,Osthol,DH5α,32,2,0.045,2025-08-27_FIC_OstholColistin.xlsx,H19
+2025-08-27,Osthol,DH5α,32,4,0.046,2025-08-27_FIC_OstholColistin.xlsx,I19
+2025-08-27,Osthol,DH5α,32,8,0.05,2025-08-27_FIC_OstholColistin.xlsx,J19
+2025-08-27,Osthol,DH5α,32,16,0.054,2025-08-27_FIC_OstholColistin.xlsx,K19
+2025-08-27,Osthol,DH5α,16,0,0.565,2025-08-27_FIC_OstholColistin.xlsx,D20
+2025-08-27,Osthol,DH5α,16,0.25,0.152,2025-08-27_FIC_OstholColistin.xlsx,E20
+2025-08-27,Osthol,DH5α,16,0.5,0.046,2025-08-27_FIC_OstholColistin.xlsx,F20
+2025-08-27,Osthol,DH5α,16,1,0.177,2025-08-27_FIC_OstholColistin.xlsx,G20
+2025-08-27,Osthol,DH5α,16,2,0.045,2025-08-27_FIC_OstholColistin.xlsx,H20
+2025-08-27,Osthol,DH5α,16,4,0.049,2025-08-27_FIC_OstholColistin.xlsx,I20
+2025-08-27,Osthol,DH5α,16,8,0.05,2025-08-27_FIC_OstholColistin.xlsx,J20
+2025-08-27,Osthol,DH5α,16,16,0.058,2025-08-27_FIC_OstholColistin.xlsx,K20
+2025-08-27,Osthol,DH5α,8,0,0.544,2025-08-27_FIC_OstholColistin.xlsx,D21
+2025-08-27,Osthol,DH5α,8,0.25,0.236,2025-08-27_FIC_OstholColistin.xlsx,E21
+2025-08-27,Osthol,DH5α,8,0.5,0.154,2025-08-27_FIC_OstholColistin.xlsx,F21
+2025-08-27,Osthol,DH5α,8,1,0.044,2025-08-27_FIC_OstholColistin.xlsx,G21
+2025-08-27,Osthol,DH5α,8,2,0.043,2025-08-27_FIC_OstholColistin.xlsx,H21
+2025-08-27,Osthol,DH5α,8,4,0.044,2025-08-27_FIC_OstholColistin.xlsx,I21
+2025-08-27,Osthol,DH5α,8,8,0.049,2025-08-27_FIC_OstholColistin.xlsx,J21
+2025-08-27,Osthol,DH5α,8,16,0.051,2025-08-27_FIC_OstholColistin.xlsx,K21
+2025-08-27,Osthol,DH5α,4,0,0.539,2025-08-27_FIC_OstholColistin.xlsx,D22
+2025-08-27,Osthol,DH5α,4,0.25,0.233,2025-08-27_FIC_OstholColistin.xlsx,E22
+2025-08-27,Osthol,DH5α,4,0.5,0.197,2025-08-27_FIC_OstholColistin.xlsx,F22
+2025-08-27,Osthol,DH5α,4,1,0.198,2025-08-27_FIC_OstholColistin.xlsx,G22
+2025-08-27,Osthol,DH5α,4,2,0.044,2025-08-27_FIC_OstholColistin.xlsx,H22
+2025-08-27,Osthol,DH5α,4,4,0.195,2025-08-27_FIC_OstholColistin.xlsx,I22
+2025-08-27,Osthol,DH5α,4,8,0.046,2025-08-27_FIC_OstholColistin.xlsx,J22
+2025-08-27,Osthol,DH5α,4,16,0.06,2025-08-27_FIC_OstholColistin.xlsx,K22
+2025-08-27,Osthol,DH5α,2,0,0.558,2025-08-27_FIC_OstholColistin.xlsx,D23
+2025-08-27,Osthol,DH5α,2,0.25,0.048,2025-08-27_FIC_OstholColistin.xlsx,E23
+2025-08-27,Osthol,DH5α,2,0.5,0.206,2025-08-27_FIC_OstholColistin.xlsx,F23
+2025-08-27,Osthol,DH5α,2,1,0.232,2025-08-27_FIC_OstholColistin.xlsx,G23
+2025-08-27,Osthol,DH5α,2,2,0.23,2025-08-27_FIC_OstholColistin.xlsx,H23
+2025-08-27,Osthol,DH5α,2,4,0.227,2025-08-27_FIC_OstholColistin.xlsx,I23
+2025-08-27,Osthol,DH5α,2,8,0.05,2025-08-27_FIC_OstholColistin.xlsx,J23
+2025-08-27,Osthol,DH5α,2,16,0.063,2025-08-27_FIC_OstholColistin.xlsx,K23
+2025-08-27,Osthol,DH5α,1,0,0.555,2025-08-27_FIC_OstholColistin.xlsx,D24
+2025-08-27,Osthol,DH5α,1,0.25,0.233,2025-08-27_FIC_OstholColistin.xlsx,E24
+2025-08-27,Osthol,DH5α,1,0.5,0.232,2025-08-27_FIC_OstholColistin.xlsx,F24
+2025-08-27,Osthol,DH5α,1,1,0.578,2025-08-27_FIC_OstholColistin.xlsx,G24
+2025-08-27,Osthol,DH5α,1,2,0.233,2025-08-27_FIC_OstholColistin.xlsx,H24
+2025-08-27,Osthol,DH5α,1,4,0.129,2025-08-27_FIC_OstholColistin.xlsx,I24
+2025-08-27,Osthol,DH5α,1,8,0.045,2025-08-27_FIC_OstholColistin.xlsx,J24
+2025-08-27,Osthol,DH5α,1,16,0.055,2025-08-27_FIC_OstholColistin.xlsx,K24
+2025-08-27,Osthol,DH5α,0,0,0.584,2025-08-27_FIC_OstholColistin.xlsx,D25
+2025-08-27,Osthol,DH5α,0,0.25,0.235,2025-08-27_FIC_OstholColistin.xlsx,E25
+2025-08-27,Osthol,DH5α,0,0.5,0.246,2025-08-27_FIC_OstholColistin.xlsx,F25
+2025-08-27,Osthol,DH5α,0,1,0.246,2025-08-27_FIC_OstholColistin.xlsx,G25
+2025-08-27,Osthol,DH5α,0,2,0.256,2025-08-27_FIC_OstholColistin.xlsx,H25
+2025-08-27,Osthol,DH5α,0,4,0.243,2025-08-27_FIC_OstholColistin.xlsx,I25
+2025-08-27,Osthol,DH5α,0,8,0.045,2025-08-27_FIC_OstholColistin.xlsx,J25
+2025-08-27,Osthol,DH5α,0,16,0.05,2025-08-27_FIC_OstholColistin.xlsx,K25
+2025-08-27,Osthol,pBAD,64,0,0.464,2025-08-27_FIC_OstholColistin.xlsx,D30
+2025-08-27,Osthol,pBAD,64,0.25,0.059,2025-08-27_FIC_OstholColistin.xlsx,E30
+2025-08-27,Osthol,pBAD,64,0.5,0.057,2025-08-27_FIC_OstholColistin.xlsx,F30
+2025-08-27,Osthol,pBAD,64,1,0.053,2025-08-27_FIC_OstholColistin.xlsx,G30
+2025-08-27,Osthol,pBAD,64,2,0.058,2025-08-27_FIC_OstholColistin.xlsx,H30
+2025-08-27,Osthol,pBAD,64,4,0.069,2025-08-27_FIC_OstholColistin.xlsx,I30
+2025-08-27,Osthol,pBAD,64,8,0.066,2025-08-27_FIC_OstholColistin.xlsx,J30
+2025-08-27,Osthol,pBAD,64,16,0.071,2025-08-27_FIC_OstholColistin.xlsx,K30
+2025-08-27,Osthol,pBAD,32,0,0.544,2025-08-27_FIC_OstholColistin.xlsx,D31
+2025-08-27,Osthol,pBAD,32,0.25,0.049,2025-08-27_FIC_OstholColistin.xlsx,E31
+2025-08-27,Osthol,pBAD,32,0.5,0.05,2025-08-27_FIC_OstholColistin.xlsx,F31
+2025-08-27,Osthol,pBAD,32,1,0.047,2025-08-27_FIC_OstholColistin.xlsx,G31
+2025-08-27,Osthol,pBAD,32,2,0.049,2025-08-27_FIC_OstholColistin.xlsx,H31
+2025-08-27,Osthol,pBAD,32,4,0.05,2025-08-27_FIC_OstholColistin.xlsx,I31
+2025-08-27,Osthol,pBAD,32,8,0.054,2025-08-27_FIC_OstholColistin.xlsx,J31
+2025-08-27,Osthol,pBAD,32,16,0.061,2025-08-27_FIC_OstholColistin.xlsx,K31
+2025-08-27,Osthol,pBAD,16,0,0.518,2025-08-27_FIC_OstholColistin.xlsx,D32
+2025-08-27,Osthol,pBAD,16,0.25,0.096,2025-08-27_FIC_OstholColistin.xlsx,E32
+2025-08-27,Osthol,pBAD,16,0.5,0.045,2025-08-27_FIC_OstholColistin.xlsx,F32
+2025-08-27,Osthol,pBAD,16,1,0.048,2025-08-27_FIC_OstholColistin.xlsx,G32
+2025-08-27,Osthol,pBAD,16,2,0.049,2025-08-27_FIC_OstholColistin.xlsx,H32
+2025-08-27,Osthol,pBAD,16,4,0.049,2025-08-27_FIC_OstholColistin.xlsx,I32
+2025-08-27,Osthol,pBAD,16,8,0.052,2025-08-27_FIC_OstholColistin.xlsx,J32
+2025-08-27,Osthol,pBAD,16,16,0.065,2025-08-27_FIC_OstholColistin.xlsx,K32
+2025-08-27,Osthol,pBAD,8,0,0.533,2025-08-27_FIC_OstholColistin.xlsx,D33
+2025-08-27,Osthol,pBAD,8,0.25,0.047,2025-08-27_FIC_OstholColistin.xlsx,E33
+2025-08-27,Osthol,pBAD,8,0.5,0.046,2025-08-27_FIC_OstholColistin.xlsx,F33
+2025-08-27,Osthol,pBAD,8,1,0.049,2025-08-27_FIC_OstholColistin.xlsx,G33
+2025-08-27,Osthol,pBAD,8,2,0.053,2025-08-27_FIC_OstholColistin.xlsx,H33
+2025-08-27,Osthol,pBAD,8,4,0.05,2025-08-27_FIC_OstholColistin.xlsx,I33
+2025-08-27,Osthol,pBAD,8,8,0.047,2025-08-27_FIC_OstholColistin.xlsx,J33
+2025-08-27,Osthol,pBAD,8,16,0.051,2025-08-27_FIC_OstholColistin.xlsx,K33
+2025-08-27,Osthol,pBAD,4,0,0.563,2025-08-27_FIC_OstholColistin.xlsx,D34
+2025-08-27,Osthol,pBAD,4,0.25,0.048,2025-08-27_FIC_OstholColistin.xlsx,E34
+2025-08-27,Osthol,pBAD,4,0.5,0.047,2025-08-27_FIC_OstholColistin.xlsx,F34
+2025-08-27,Osthol,pBAD,4,1,0.046,2025-08-27_FIC_OstholColistin.xlsx,G34
+2025-08-27,Osthol,pBAD,4,2,0.045,2025-08-27_FIC_OstholColistin.xlsx,H34
+2025-08-27,Osthol,pBAD,4,4,0.047,2025-08-27_FIC_OstholColistin.xlsx,I34
+2025-08-27,Osthol,pBAD,4,8,0.045,2025-08-27_FIC_OstholColistin.xlsx,J34
+2025-08-27,Osthol,pBAD,4,16,0.05,2025-08-27_FIC_OstholColistin.xlsx,K34
+2025-08-27,Osthol,pBAD,2,0,0.546,2025-08-27_FIC_OstholColistin.xlsx,D35
+2025-08-27,Osthol,pBAD,2,0.25,0.144,2025-08-27_FIC_OstholColistin.xlsx,E35
+2025-08-27,Osthol,pBAD,2,0.5,0.047,2025-08-27_FIC_OstholColistin.xlsx,F35
+2025-08-27,Osthol,pBAD,2,1,0.046,2025-08-27_FIC_OstholColistin.xlsx,G35
+2025-08-27,Osthol,pBAD,2,2,0.046,2025-08-27_FIC_OstholColistin.xlsx,H35
+2025-08-27,Osthol,pBAD,2,4,0.044,2025-08-27_FIC_OstholColistin.xlsx,I35
+2025-08-27,Osthol,pBAD,2,8,0.046,2025-08-27_FIC_OstholColistin.xlsx,J35
+2025-08-27,Osthol,pBAD,2,16,0.052,2025-08-27_FIC_OstholColistin.xlsx,K35
+2025-08-27,Osthol,pBAD,1,0,0.562,2025-08-27_FIC_OstholColistin.xlsx,D36
+2025-08-27,Osthol,pBAD,1,0.25,0.046,2025-08-27_FIC_OstholColistin.xlsx,E36
+2025-08-27,Osthol,pBAD,1,0.5,0.051,2025-08-27_FIC_OstholColistin.xlsx,F36
+2025-08-27,Osthol,pBAD,1,1,0.045,2025-08-27_FIC_OstholColistin.xlsx,G36
+2025-08-27,Osthol,pBAD,1,2,0.048,2025-08-27_FIC_OstholColistin.xlsx,H36
+2025-08-27,Osthol,pBAD,1,4,0.043,2025-08-27_FIC_OstholColistin.xlsx,I36
+2025-08-27,Osthol,pBAD,1,8,0.045,2025-08-27_FIC_OstholColistin.xlsx,J36
+2025-08-27,Osthol,pBAD,1,16,0.053,2025-08-27_FIC_OstholColistin.xlsx,K36
+2025-08-27,Osthol,pBAD,0,0,0.544,2025-08-27_FIC_OstholColistin.xlsx,D37
+2025-08-27,Osthol,pBAD,0,0.25,0.04,2025-08-27_FIC_OstholColistin.xlsx,E37
+2025-08-27,Osthol,pBAD,0,0.5,0.042,2025-08-27_FIC_OstholColistin.xlsx,F37
+2025-08-27,Osthol,pBAD,0,1,0.042,2025-08-27_FIC_OstholColistin.xlsx,G37
+2025-08-27,Osthol,pBAD,0,2,0.044,2025-08-27_FIC_OstholColistin.xlsx,H37
+2025-08-27,Osthol,pBAD,0,4,0.043,2025-08-27_FIC_OstholColistin.xlsx,I37
+2025-08-27,Osthol,pBAD,0,8,0.042,2025-08-27_FIC_OstholColistin.xlsx,J37
+2025-08-27,Osthol,pBAD,0,16,0.047,2025-08-27_FIC_OstholColistin.xlsx,K37
+2025-08-27,Osthol,pBAD + 0.2% arabinose,64,0,0.21,2025-08-27_FIC_OstholColistin.xlsx,D42
+2025-08-27,Osthol,pBAD + 0.2% arabinose,64,0.25,0.162,2025-08-27_FIC_OstholColistin.xlsx,E42
+2025-08-27,Osthol,pBAD + 0.2% arabinose,64,0.5,0.168,2025-08-27_FIC_OstholColistin.xlsx,F42
+2025-08-27,Osthol,pBAD + 0.2% arabinose,64,1,0.046,2025-08-27_FIC_OstholColistin.xlsx,G42
+2025-08-27,Osthol,pBAD + 0.2% arabinose,64,2,0.061,2025-08-27_FIC_OstholColistin.xlsx,H42
+2025-08-27,Osthol,pBAD + 0.2% arabinose,64,4,0.061,2025-08-27_FIC_OstholColistin.xlsx,I42
+2025-08-27,Osthol,pBAD + 0.2% arabinose,64,8,0.062,2025-08-27_FIC_OstholColistin.xlsx,J42
+2025-08-27,Osthol,pBAD + 0.2% arabinose,64,16,0.068,2025-08-27_FIC_OstholColistin.xlsx,K42
+2025-08-27,Osthol,pBAD + 0.2% arabinose,32,0,0.307,2025-08-27_FIC_OstholColistin.xlsx,D43
+2025-08-27,Osthol,pBAD + 0.2% arabinose,32,0.25,0.215,2025-08-27_FIC_OstholColistin.xlsx,E43
+2025-08-27,Osthol,pBAD + 0.2% arabinose,32,0.5,0.184,2025-08-27_FIC_OstholColistin.xlsx,F43
+2025-08-27,Osthol,pBAD + 0.2% arabinose,32,1,0.047,2025-08-27_FIC_OstholColistin.xlsx,G43
+2025-08-27,Osthol,pBAD + 0.2% arabinose,32,2,0.048,2025-08-27_FIC_OstholColistin.xlsx,H43
+2025-08-27,Osthol,pBAD + 0.2% arabinose,32,4,0.054,2025-08-27_FIC_OstholColistin.xlsx,I43
+2025-08-27,Osthol,pBAD + 0.2% arabinose,32,8,0.056,2025-08-27_FIC_OstholColistin.xlsx,J43
+2025-08-27,Osthol,pBAD + 0.2% arabinose,32,16,0.073,2025-08-27_FIC_OstholColistin.xlsx,K43
+2025-08-27,Osthol,pBAD + 0.2% arabinose,16,0,0.482,2025-08-27_FIC_OstholColistin.xlsx,D44
+2025-08-27,Osthol,pBAD + 0.2% arabinose,16,0.25,0.167,2025-08-27_FIC_OstholColistin.xlsx,E44
+2025-08-27,Osthol,pBAD + 0.2% arabinose,16,0.5,0.202,2025-08-27_FIC_OstholColistin.xlsx,F44
+2025-08-27,Osthol,pBAD + 0.2% arabinose,16,1,0.18,2025-08-27_FIC_OstholColistin.xlsx,G44
+2025-08-27,Osthol,pBAD + 0.2% arabinose,16,2,0.053,2025-08-27_FIC_OstholColistin.xlsx,H44
+2025-08-27,Osthol,pBAD + 0.2% arabinose,16,4,0.053,2025-08-27_FIC_OstholColistin.xlsx,I44
+2025-08-27,Osthol,pBAD + 0.2% arabinose,16,8,0.058,2025-08-27_FIC_OstholColistin.xlsx,J44
+2025-08-27,Osthol,pBAD + 0.2% arabinose,16,16,0.076,2025-08-27_FIC_OstholColistin.xlsx,K44
+2025-08-27,Osthol,pBAD + 0.2% arabinose,8,0,0.362,2025-08-27_FIC_OstholColistin.xlsx,D45
+2025-08-27,Osthol,pBAD + 0.2% arabinose,8,0.25,0.22,2025-08-27_FIC_OstholColistin.xlsx,E45
+2025-08-27,Osthol,pBAD + 0.2% arabinose,8,0.5,0.247,2025-08-27_FIC_OstholColistin.xlsx,F45
+2025-08-27,Osthol,pBAD + 0.2% arabinose,8,1,0.222,2025-08-27_FIC_OstholColistin.xlsx,G45
+2025-08-27,Osthol,pBAD + 0.2% arabinose,8,2,0.084,2025-08-27_FIC_OstholColistin.xlsx,H45
+2025-08-27,Osthol,pBAD + 0.2% arabinose,8,4,0.075,2025-08-27_FIC_OstholColistin.xlsx,I45
+2025-08-27,Osthol,pBAD + 0.2% arabinose,8,8,0.062,2025-08-27_FIC_OstholColistin.xlsx,J45
+2025-08-27,Osthol,pBAD + 0.2% arabinose,8,16,0.071,2025-08-27_FIC_OstholColistin.xlsx,K45
+2025-08-27,Osthol,pBAD + 0.2% arabinose,4,0,0.455,2025-08-27_FIC_OstholColistin.xlsx,D46
+2025-08-27,Osthol,pBAD + 0.2% arabinose,4,0.25,0.223,2025-08-27_FIC_OstholColistin.xlsx,E46
+2025-08-27,Osthol,pBAD + 0.2% arabinose,4,0.5,0.22,2025-08-27_FIC_OstholColistin.xlsx,F46
+2025-08-27,Osthol,pBAD + 0.2% arabinose,4,1,0.235,2025-08-27_FIC_OstholColistin.xlsx,G46
+2025-08-27,Osthol,pBAD + 0.2% arabinose,4,2,0.049,2025-08-27_FIC_OstholColistin.xlsx,H46
+2025-08-27,Osthol,pBAD + 0.2% arabinose,4,4,0.048,2025-08-27_FIC_OstholColistin.xlsx,I46
+2025-08-27,Osthol,pBAD + 0.2% arabinose,4,8,0.057,2025-08-27_FIC_OstholColistin.xlsx,J46
+2025-08-27,Osthol,pBAD + 0.2% arabinose,4,16,0.103,2025-08-27_FIC_OstholColistin.xlsx,K46
+2025-08-27,Osthol,pBAD + 0.2% arabinose,2,0,0.476,2025-08-27_FIC_OstholColistin.xlsx,D47
+2025-08-27,Osthol,pBAD + 0.2% arabinose,2,0.25,0.216,2025-08-27_FIC_OstholColistin.xlsx,E47
+2025-08-27,Osthol,pBAD + 0.2% arabinose,2,0.5,0.248,2025-08-27_FIC_OstholColistin.xlsx,F47
+2025-08-27,Osthol,pBAD + 0.2% arabinose,2,1,0.198,2025-08-27_FIC_OstholColistin.xlsx,G47
+2025-08-27,Osthol,pBAD + 0.2% arabinose,2,2,0.091,2025-08-27_FIC_OstholColistin.xlsx,H47
+2025-08-27,Osthol,pBAD + 0.2% arabinose,2,4,0.054,2025-08-27_FIC_OstholColistin.xlsx,I47
+2025-08-27,Osthol,pBAD + 0.2% arabinose,2,8,0.057,2025-08-27_FIC_OstholColistin.xlsx,J47
+2025-08-27,Osthol,pBAD + 0.2% arabinose,2,16,0.066,2025-08-27_FIC_OstholColistin.xlsx,K47
+2025-08-27,Osthol,pBAD + 0.2% arabinose,1,0,0.43,2025-08-27_FIC_OstholColistin.xlsx,D48
+2025-08-27,Osthol,pBAD + 0.2% arabinose,1,0.25,0.176,2025-08-27_FIC_OstholColistin.xlsx,E48
+2025-08-27,Osthol,pBAD + 0.2% arabinose,1,0.5,0.198,2025-08-27_FIC_OstholColistin.xlsx,F48
+2025-08-27,Osthol,pBAD + 0.2% arabinose,1,1,0.242,2025-08-27_FIC_OstholColistin.xlsx,G48
+2025-08-27,Osthol,pBAD + 0.2% arabinose,1,2,0.21,2025-08-27_FIC_OstholColistin.xlsx,H48
+2025-08-27,Osthol,pBAD + 0.2% arabinose,1,4,0.048,2025-08-27_FIC_OstholColistin.xlsx,I48
+2025-08-27,Osthol,pBAD + 0.2% arabinose,1,8,0.054,2025-08-27_FIC_OstholColistin.xlsx,J48
+2025-08-27,Osthol,pBAD + 0.2% arabinose,1,16,0.064,2025-08-27_FIC_OstholColistin.xlsx,K48
+2025-08-27,Osthol,pBAD + 0.2% arabinose,0,0,0.228,2025-08-27_FIC_OstholColistin.xlsx,D49
+2025-08-27,Osthol,pBAD + 0.2% arabinose,0,0.25,0.218,2025-08-27_FIC_OstholColistin.xlsx,E49
+2025-08-27,Osthol,pBAD + 0.2% arabinose,0,0.5,0.238,2025-08-27_FIC_OstholColistin.xlsx,F49
+2025-08-27,Osthol,pBAD + 0.2% arabinose,0,1,0.196,2025-08-27_FIC_OstholColistin.xlsx,G49
+2025-08-27,Osthol,pBAD + 0.2% arabinose,0,2,0.053,2025-08-27_FIC_OstholColistin.xlsx,H49
+2025-08-27,Osthol,pBAD + 0.2% arabinose,0,4,0.046,2025-08-27_FIC_OstholColistin.xlsx,I49
+2025-08-27,Osthol,pBAD + 0.2% arabinose,0,8,0.048,2025-08-27_FIC_OstholColistin.xlsx,J49
+2025-08-27,Osthol,pBAD + 0.2% arabinose,0,16,0.06,2025-08-27_FIC_OstholColistin.xlsx,K49
+2025-08-28,Honokiol,BL21(DE3),64,0,0.438,2025-08-28_FIC_HonokiolColistin.xlsx,D6
+2025-08-28,Honokiol,BL21(DE3),64,0.25,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,E6
+2025-08-28,Honokiol,BL21(DE3),64,0.5,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,F6
+2025-08-28,Honokiol,BL21(DE3),64,1,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,G6
+2025-08-28,Honokiol,BL21(DE3),64,2,0.043,2025-08-28_FIC_HonokiolColistin.xlsx,H6
+2025-08-28,Honokiol,BL21(DE3),64,4,0.056,2025-08-28_FIC_HonokiolColistin.xlsx,I6
+2025-08-28,Honokiol,BL21(DE3),64,8,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,J6
+2025-08-28,Honokiol,BL21(DE3),64,16,0.042,2025-08-28_FIC_HonokiolColistin.xlsx,K6
+2025-08-28,Honokiol,BL21(DE3),32,0,0.609,2025-08-28_FIC_HonokiolColistin.xlsx,D7
+2025-08-28,Honokiol,BL21(DE3),32,0.25,0.051,2025-08-28_FIC_HonokiolColistin.xlsx,E7
+2025-08-28,Honokiol,BL21(DE3),32,0.5,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,F7
+2025-08-28,Honokiol,BL21(DE3),32,1,0.061,2025-08-28_FIC_HonokiolColistin.xlsx,G7
+2025-08-28,Honokiol,BL21(DE3),32,2,0.055,2025-08-28_FIC_HonokiolColistin.xlsx,H7
+2025-08-28,Honokiol,BL21(DE3),32,4,0.06,2025-08-28_FIC_HonokiolColistin.xlsx,I7
+2025-08-28,Honokiol,BL21(DE3),32,8,0.048,2025-08-28_FIC_HonokiolColistin.xlsx,J7
+2025-08-28,Honokiol,BL21(DE3),32,16,0.064,2025-08-28_FIC_HonokiolColistin.xlsx,K7
+2025-08-28,Honokiol,BL21(DE3),16,0,0.828,2025-08-28_FIC_HonokiolColistin.xlsx,D8
+2025-08-28,Honokiol,BL21(DE3),16,0.25,0.762,2025-08-28_FIC_HonokiolColistin.xlsx,E8
+2025-08-28,Honokiol,BL21(DE3),16,0.5,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,F8
+2025-08-28,Honokiol,BL21(DE3),16,1,0.059,2025-08-28_FIC_HonokiolColistin.xlsx,G8
+2025-08-28,Honokiol,BL21(DE3),16,2,0.103,2025-08-28_FIC_HonokiolColistin.xlsx,H8
+2025-08-28,Honokiol,BL21(DE3),16,4,0.065,2025-08-28_FIC_HonokiolColistin.xlsx,I8
+2025-08-28,Honokiol,BL21(DE3),16,8,0.067,2025-08-28_FIC_HonokiolColistin.xlsx,J8
+2025-08-28,Honokiol,BL21(DE3),16,16,0.103,2025-08-28_FIC_HonokiolColistin.xlsx,K8
+2025-08-28,Honokiol,BL21(DE3),8,0,0.816,2025-08-28_FIC_HonokiolColistin.xlsx,D9
+2025-08-28,Honokiol,BL21(DE3),8,0.25,0.905,2025-08-28_FIC_HonokiolColistin.xlsx,E9
+2025-08-28,Honokiol,BL21(DE3),8,0.5,0.761,2025-08-28_FIC_HonokiolColistin.xlsx,F9
+2025-08-28,Honokiol,BL21(DE3),8,1,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,G9
+2025-08-28,Honokiol,BL21(DE3),8,2,0.056,2025-08-28_FIC_HonokiolColistin.xlsx,H9
+2025-08-28,Honokiol,BL21(DE3),8,4,0.074,2025-08-28_FIC_HonokiolColistin.xlsx,I9
+2025-08-28,Honokiol,BL21(DE3),8,8,0.069,2025-08-28_FIC_HonokiolColistin.xlsx,J9
+2025-08-28,Honokiol,BL21(DE3),8,16,0.125,2025-08-28_FIC_HonokiolColistin.xlsx,K9
+2025-08-28,Honokiol,BL21(DE3),4,0,0.882,2025-08-28_FIC_HonokiolColistin.xlsx,D10
+2025-08-28,Honokiol,BL21(DE3),4,0.25,0.898,2025-08-28_FIC_HonokiolColistin.xlsx,E10
+2025-08-28,Honokiol,BL21(DE3),4,0.5,0.858,2025-08-28_FIC_HonokiolColistin.xlsx,F10
+2025-08-28,Honokiol,BL21(DE3),4,1,0.728,2025-08-28_FIC_HonokiolColistin.xlsx,G10
+2025-08-28,Honokiol,BL21(DE3),4,2,0.649,2025-08-28_FIC_HonokiolColistin.xlsx,H10
+2025-08-28,Honokiol,BL21(DE3),4,4,0.091,2025-08-28_FIC_HonokiolColistin.xlsx,I10
+2025-08-28,Honokiol,BL21(DE3),4,8,0.096,2025-08-28_FIC_HonokiolColistin.xlsx,J10
+2025-08-28,Honokiol,BL21(DE3),4,16,0.071,2025-08-28_FIC_HonokiolColistin.xlsx,K10
+2025-08-28,Honokiol,BL21(DE3),2,0,1.017,2025-08-28_FIC_HonokiolColistin.xlsx,D11
+2025-08-28,Honokiol,BL21(DE3),2,0.25,0.843,2025-08-28_FIC_HonokiolColistin.xlsx,E11
+2025-08-28,Honokiol,BL21(DE3),2,0.5,0.866,2025-08-28_FIC_HonokiolColistin.xlsx,F11
+2025-08-28,Honokiol,BL21(DE3),2,1,0.765,2025-08-28_FIC_HonokiolColistin.xlsx,G11
+2025-08-28,Honokiol,BL21(DE3),2,2,0.67,2025-08-28_FIC_HonokiolColistin.xlsx,H11
+2025-08-28,Honokiol,BL21(DE3),2,4,0.49,2025-08-28_FIC_HonokiolColistin.xlsx,I11
+2025-08-28,Honokiol,BL21(DE3),2,8,0.085,2025-08-28_FIC_HonokiolColistin.xlsx,J11
+2025-08-28,Honokiol,BL21(DE3),2,16,0.055,2025-08-28_FIC_HonokiolColistin.xlsx,K11
+2025-08-28,Honokiol,BL21(DE3),1,0,0.943,2025-08-28_FIC_HonokiolColistin.xlsx,D12
+2025-08-28,Honokiol,BL21(DE3),1,0.25,0.828,2025-08-28_FIC_HonokiolColistin.xlsx,E12
+2025-08-28,Honokiol,BL21(DE3),1,0.5,1.097,2025-08-28_FIC_HonokiolColistin.xlsx,F12
+2025-08-28,Honokiol,BL21(DE3),1,1,0.732,2025-08-28_FIC_HonokiolColistin.xlsx,G12
+2025-08-28,Honokiol,BL21(DE3),1,2,0.528,2025-08-28_FIC_HonokiolColistin.xlsx,H12
+2025-08-28,Honokiol,BL21(DE3),1,4,0.457,2025-08-28_FIC_HonokiolColistin.xlsx,I12
+2025-08-28,Honokiol,BL21(DE3),1,8,0.28,2025-08-28_FIC_HonokiolColistin.xlsx,J12
+2025-08-28,Honokiol,BL21(DE3),1,16,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,K12
+2025-08-28,Honokiol,BL21(DE3),0,0,0.868,2025-08-28_FIC_HonokiolColistin.xlsx,D13
+2025-08-28,Honokiol,BL21(DE3),0,0.25,0.718,2025-08-28_FIC_HonokiolColistin.xlsx,E13
+2025-08-28,Honokiol,BL21(DE3),0,0.5,1.044,2025-08-28_FIC_HonokiolColistin.xlsx,F13
+2025-08-28,Honokiol,BL21(DE3),0,1,0.645,2025-08-28_FIC_HonokiolColistin.xlsx,G13
+2025-08-28,Honokiol,BL21(DE3),0,2,0.481,2025-08-28_FIC_HonokiolColistin.xlsx,H13
+2025-08-28,Honokiol,BL21(DE3),0,4,0.397,2025-08-28_FIC_HonokiolColistin.xlsx,I13
+2025-08-28,Honokiol,BL21(DE3),0,8,0.066,2025-08-28_FIC_HonokiolColistin.xlsx,J13
+2025-08-28,Honokiol,BL21(DE3),0,16,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,K13
+2025-08-28,Honokiol,DH5α,64,0,0.506,2025-08-28_FIC_HonokiolColistin.xlsx,D18
+2025-08-28,Honokiol,DH5α,64,0.25,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,E18
+2025-08-28,Honokiol,DH5α,64,0.5,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,F18
+2025-08-28,Honokiol,DH5α,64,1,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,G18
+2025-08-28,Honokiol,DH5α,64,2,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,H18
+2025-08-28,Honokiol,DH5α,64,4,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,I18
+2025-08-28,Honokiol,DH5α,64,8,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,J18
+2025-08-28,Honokiol,DH5α,64,16,0.042,2025-08-28_FIC_HonokiolColistin.xlsx,K18
+2025-08-28,Honokiol,DH5α,32,0,0.53,2025-08-28_FIC_HonokiolColistin.xlsx,D19
+2025-08-28,Honokiol,DH5α,32,0.25,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,E19
+2025-08-28,Honokiol,DH5α,32,0.5,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,F19
+2025-08-28,Honokiol,DH5α,32,1,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,G19
+2025-08-28,Honokiol,DH5α,32,2,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,H19
+2025-08-28,Honokiol,DH5α,32,4,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,I19
+2025-08-28,Honokiol,DH5α,32,8,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,J19
+2025-08-28,Honokiol,DH5α,32,16,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,K19
+2025-08-28,Honokiol,DH5α,16,0,0.517,2025-08-28_FIC_HonokiolColistin.xlsx,D20
+2025-08-28,Honokiol,DH5α,16,0.25,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,E20
+2025-08-28,Honokiol,DH5α,16,0.5,0.043,2025-08-28_FIC_HonokiolColistin.xlsx,F20
+2025-08-28,Honokiol,DH5α,16,1,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,G20
+2025-08-28,Honokiol,DH5α,16,2,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,H20
+2025-08-28,Honokiol,DH5α,16,4,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,I20
+2025-08-28,Honokiol,DH5α,16,8,0.048,2025-08-28_FIC_HonokiolColistin.xlsx,J20
+2025-08-28,Honokiol,DH5α,16,16,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,K20
+2025-08-28,Honokiol,DH5α,8,0,0.522,2025-08-28_FIC_HonokiolColistin.xlsx,D21
+2025-08-28,Honokiol,DH5α,8,0.25,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,E21
+2025-08-28,Honokiol,DH5α,8,0.5,0.042,2025-08-28_FIC_HonokiolColistin.xlsx,F21
+2025-08-28,Honokiol,DH5α,8,1,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,G21
+2025-08-28,Honokiol,DH5α,8,2,0.043,2025-08-28_FIC_HonokiolColistin.xlsx,H21
+2025-08-28,Honokiol,DH5α,8,4,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,I21
+2025-08-28,Honokiol,DH5α,8,8,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,J21
+2025-08-28,Honokiol,DH5α,8,16,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,K21
+2025-08-28,Honokiol,DH5α,4,0,0.532,2025-08-28_FIC_HonokiolColistin.xlsx,D22
+2025-08-28,Honokiol,DH5α,4,0.25,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,E22
+2025-08-28,Honokiol,DH5α,4,0.5,0.042,2025-08-28_FIC_HonokiolColistin.xlsx,F22
+2025-08-28,Honokiol,DH5α,4,1,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,G22
+2025-08-28,Honokiol,DH5α,4,2,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,H22
+2025-08-28,Honokiol,DH5α,4,4,0.058,2025-08-28_FIC_HonokiolColistin.xlsx,I22
+2025-08-28,Honokiol,DH5α,4,8,0.041,2025-08-28_FIC_HonokiolColistin.xlsx,J22
+2025-08-28,Honokiol,DH5α,4,16,0.043,2025-08-28_FIC_HonokiolColistin.xlsx,K22
+2025-08-28,Honokiol,DH5α,2,0,0.546,2025-08-28_FIC_HonokiolColistin.xlsx,D23
+2025-08-28,Honokiol,DH5α,2,0.25,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,E23
+2025-08-28,Honokiol,DH5α,2,0.5,0.042,2025-08-28_FIC_HonokiolColistin.xlsx,F23
+2025-08-28,Honokiol,DH5α,2,1,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,G23
+2025-08-28,Honokiol,DH5α,2,2,0.04,2025-08-28_FIC_HonokiolColistin.xlsx,H23
+2025-08-28,Honokiol,DH5α,2,4,0.048,2025-08-28_FIC_HonokiolColistin.xlsx,I23
+2025-08-28,Honokiol,DH5α,2,8,0.041,2025-08-28_FIC_HonokiolColistin.xlsx,J23
+2025-08-28,Honokiol,DH5α,2,16,0.042,2025-08-28_FIC_HonokiolColistin.xlsx,K23
+2025-08-28,Honokiol,DH5α,1,0,0.515,2025-08-28_FIC_HonokiolColistin.xlsx,D24
+2025-08-28,Honokiol,DH5α,1,0.25,0.041,2025-08-28_FIC_HonokiolColistin.xlsx,E24
+2025-08-28,Honokiol,DH5α,1,0.5,0.04,2025-08-28_FIC_HonokiolColistin.xlsx,F24
+2025-08-28,Honokiol,DH5α,1,1,0.039,2025-08-28_FIC_HonokiolColistin.xlsx,G24
+2025-08-28,Honokiol,DH5α,1,2,0.038,2025-08-28_FIC_HonokiolColistin.xlsx,H24
+2025-08-28,Honokiol,DH5α,1,4,0.041,2025-08-28_FIC_HonokiolColistin.xlsx,I24
+2025-08-28,Honokiol,DH5α,1,8,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,J24
+2025-08-28,Honokiol,DH5α,1,16,0.041,2025-08-28_FIC_HonokiolColistin.xlsx,K24
+2025-08-28,Honokiol,DH5α,0,0,0.534,2025-08-28_FIC_HonokiolColistin.xlsx,D25
+2025-08-28,Honokiol,DH5α,0,0.25,0.199,2025-08-28_FIC_HonokiolColistin.xlsx,E25
+2025-08-28,Honokiol,DH5α,0,0.5,0.038,2025-08-28_FIC_HonokiolColistin.xlsx,F25
+2025-08-28,Honokiol,DH5α,0,1,0.038,2025-08-28_FIC_HonokiolColistin.xlsx,G25
+2025-08-28,Honokiol,DH5α,0,2,0.041,2025-08-28_FIC_HonokiolColistin.xlsx,H25
+2025-08-28,Honokiol,DH5α,0,4,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,I25
+2025-08-28,Honokiol,DH5α,0,8,0.042,2025-08-28_FIC_HonokiolColistin.xlsx,J25
+2025-08-28,Honokiol,DH5α,0,16,0.043,2025-08-28_FIC_HonokiolColistin.xlsx,K25
+2025-08-28,Honokiol,pBAD,64,0,0.406,2025-08-28_FIC_HonokiolColistin.xlsx,D30
+2025-08-28,Honokiol,pBAD,64,0.25,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,E30
+2025-08-28,Honokiol,pBAD,64,0.5,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,F30
+2025-08-28,Honokiol,pBAD,64,1,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,G30
+2025-08-28,Honokiol,pBAD,64,2,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,H30
+2025-08-28,Honokiol,pBAD,64,4,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,I30
+2025-08-28,Honokiol,pBAD,64,8,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,J30
+2025-08-28,Honokiol,pBAD,64,16,0.043,2025-08-28_FIC_HonokiolColistin.xlsx,K30
+2025-08-28,Honokiol,pBAD,32,0,0.251,2025-08-28_FIC_HonokiolColistin.xlsx,D31
+2025-08-28,Honokiol,pBAD,32,0.25,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,E31
+2025-08-28,Honokiol,pBAD,32,0.5,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,F31
+2025-08-28,Honokiol,pBAD,32,1,0.048,2025-08-28_FIC_HonokiolColistin.xlsx,G31
+2025-08-28,Honokiol,pBAD,32,2,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,H31
+2025-08-28,Honokiol,pBAD,32,4,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,I31
+2025-08-28,Honokiol,pBAD,32,8,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,J31
+2025-08-28,Honokiol,pBAD,32,16,0.051,2025-08-28_FIC_HonokiolColistin.xlsx,K31
+2025-08-28,Honokiol,pBAD,16,0,0.318,2025-08-28_FIC_HonokiolColistin.xlsx,D32
+2025-08-28,Honokiol,pBAD,16,0.25,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,E32
+2025-08-28,Honokiol,pBAD,16,0.5,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,F32
+2025-08-28,Honokiol,pBAD,16,1,0.053,2025-08-28_FIC_HonokiolColistin.xlsx,G32
+2025-08-28,Honokiol,pBAD,16,2,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,H32
+2025-08-28,Honokiol,pBAD,16,4,0.056,2025-08-28_FIC_HonokiolColistin.xlsx,I32
+2025-08-28,Honokiol,pBAD,16,8,0.058,2025-08-28_FIC_HonokiolColistin.xlsx,J32
+2025-08-28,Honokiol,pBAD,16,16,0.059,2025-08-28_FIC_HonokiolColistin.xlsx,K32
+2025-08-28,Honokiol,pBAD,8,0,0.409,2025-08-28_FIC_HonokiolColistin.xlsx,D33
+2025-08-28,Honokiol,pBAD,8,0.25,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,E33
+2025-08-28,Honokiol,pBAD,8,0.5,0.054,2025-08-28_FIC_HonokiolColistin.xlsx,F33
+2025-08-28,Honokiol,pBAD,8,1,0.053,2025-08-28_FIC_HonokiolColistin.xlsx,G33
+2025-08-28,Honokiol,pBAD,8,2,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,H33
+2025-08-28,Honokiol,pBAD,8,4,0.054,2025-08-28_FIC_HonokiolColistin.xlsx,I33
+2025-08-28,Honokiol,pBAD,8,8,0.056,2025-08-28_FIC_HonokiolColistin.xlsx,J33
+2025-08-28,Honokiol,pBAD,8,16,0.07,2025-08-28_FIC_HonokiolColistin.xlsx,K33
+2025-08-28,Honokiol,pBAD,4,0,0.423,2025-08-28_FIC_HonokiolColistin.xlsx,D34
+2025-08-28,Honokiol,pBAD,4,0.25,0.054,2025-08-28_FIC_HonokiolColistin.xlsx,E34
+2025-08-28,Honokiol,pBAD,4,0.5,0.058,2025-08-28_FIC_HonokiolColistin.xlsx,F34
+2025-08-28,Honokiol,pBAD,4,1,0.055,2025-08-28_FIC_HonokiolColistin.xlsx,G34
+2025-08-28,Honokiol,pBAD,4,2,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,H34
+2025-08-28,Honokiol,pBAD,4,4,0.054,2025-08-28_FIC_HonokiolColistin.xlsx,I34
+2025-08-28,Honokiol,pBAD,4,8,0.06,2025-08-28_FIC_HonokiolColistin.xlsx,J34
+2025-08-28,Honokiol,pBAD,4,16,0.059,2025-08-28_FIC_HonokiolColistin.xlsx,K34
+2025-08-28,Honokiol,pBAD,2,0,0.504,2025-08-28_FIC_HonokiolColistin.xlsx,D35
+2025-08-28,Honokiol,pBAD,2,0.25,0.051,2025-08-28_FIC_HonokiolColistin.xlsx,E35
+2025-08-28,Honokiol,pBAD,2,0.5,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,F35
+2025-08-28,Honokiol,pBAD,2,1,0.263,2025-08-28_FIC_HonokiolColistin.xlsx,G35
+2025-08-28,Honokiol,pBAD,2,2,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,H35
+2025-08-28,Honokiol,pBAD,2,4,0.105,2025-08-28_FIC_HonokiolColistin.xlsx,I35
+2025-08-28,Honokiol,pBAD,2,8,0.055,2025-08-28_FIC_HonokiolColistin.xlsx,J35
+2025-08-28,Honokiol,pBAD,2,16,0.059,2025-08-28_FIC_HonokiolColistin.xlsx,K35
+2025-08-28,Honokiol,pBAD,1,0,0.467,2025-08-28_FIC_HonokiolColistin.xlsx,D36
+2025-08-28,Honokiol,pBAD,1,0.25,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,E36
+2025-08-28,Honokiol,pBAD,1,0.5,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,F36
+2025-08-28,Honokiol,pBAD,1,1,0.053,2025-08-28_FIC_HonokiolColistin.xlsx,G36
+2025-08-28,Honokiol,pBAD,1,2,0.053,2025-08-28_FIC_HonokiolColistin.xlsx,H36
+2025-08-28,Honokiol,pBAD,1,4,0.063,2025-08-28_FIC_HonokiolColistin.xlsx,I36
+2025-08-28,Honokiol,pBAD,1,8,0.055,2025-08-28_FIC_HonokiolColistin.xlsx,J36
+2025-08-28,Honokiol,pBAD,1,16,0.06,2025-08-28_FIC_HonokiolColistin.xlsx,K36
+2025-08-28,Honokiol,pBAD,0,0,0.502,2025-08-28_FIC_HonokiolColistin.xlsx,D37
+2025-08-28,Honokiol,pBAD,0,0.25,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,E37
+2025-08-28,Honokiol,pBAD,0,0.5,0.266,2025-08-28_FIC_HonokiolColistin.xlsx,F37
+2025-08-28,Honokiol,pBAD,0,1,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,G37
+2025-08-28,Honokiol,pBAD,0,2,0.048,2025-08-28_FIC_HonokiolColistin.xlsx,H37
+2025-08-28,Honokiol,pBAD,0,4,0.067,2025-08-28_FIC_HonokiolColistin.xlsx,I37
+2025-08-28,Honokiol,pBAD,0,8,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,J37
+2025-08-28,Honokiol,pBAD,0,16,0.064,2025-08-28_FIC_HonokiolColistin.xlsx,K37
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,64,0,0.301,2025-08-28_FIC_HonokiolColistin.xlsx,D42
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,64,0.25,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,E42
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,64,0.5,0.069,2025-08-28_FIC_HonokiolColistin.xlsx,F42
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,64,1,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,G42
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,64,2,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,H42
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,64,4,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,I42
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,64,8,0.043,2025-08-28_FIC_HonokiolColistin.xlsx,J42
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,64,16,0.043,2025-08-28_FIC_HonokiolColistin.xlsx,K42
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,32,0,0.347,2025-08-28_FIC_HonokiolColistin.xlsx,D43
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,32,0.25,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,E43
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,32,0.5,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,F43
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,32,1,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,G43
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,32,2,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,H43
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,32,4,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,I43
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,32,8,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,J43
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,32,16,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,K43
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,16,0,0.351,2025-08-28_FIC_HonokiolColistin.xlsx,D44
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,16,0.25,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,E44
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,16,0.5,0.047,2025-08-28_FIC_HonokiolColistin.xlsx,F44
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,16,1,0.048,2025-08-28_FIC_HonokiolColistin.xlsx,G44
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,16,2,0.048,2025-08-28_FIC_HonokiolColistin.xlsx,H44
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,16,4,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,I44
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,16,8,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,J44
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,16,16,0.058,2025-08-28_FIC_HonokiolColistin.xlsx,K44
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,8,0,0.369,2025-08-28_FIC_HonokiolColistin.xlsx,D45
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,8,0.25,0.294,2025-08-28_FIC_HonokiolColistin.xlsx,E45
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,8,0.5,0.12,2025-08-28_FIC_HonokiolColistin.xlsx,F45
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,8,1,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,G45
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,8,2,0.048,2025-08-28_FIC_HonokiolColistin.xlsx,H45
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,8,4,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,I45
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,8,8,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,J45
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,8,16,0.057,2025-08-28_FIC_HonokiolColistin.xlsx,K45
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,4,0,0.305,2025-08-28_FIC_HonokiolColistin.xlsx,D46
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,4,0.25,0.292,2025-08-28_FIC_HonokiolColistin.xlsx,E46
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,4,0.5,0.326,2025-08-28_FIC_HonokiolColistin.xlsx,F46
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,4,1,0.046,2025-08-28_FIC_HonokiolColistin.xlsx,G46
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,4,2,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,H46
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,4,4,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,I46
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,4,8,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,J46
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,4,16,0.051,2025-08-28_FIC_HonokiolColistin.xlsx,K46
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,2,0,0.318,2025-08-28_FIC_HonokiolColistin.xlsx,D47
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,2,0.25,0.326,2025-08-28_FIC_HonokiolColistin.xlsx,E47
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,2,0.5,0.355,2025-08-28_FIC_HonokiolColistin.xlsx,F47
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,2,1,0.349,2025-08-28_FIC_HonokiolColistin.xlsx,G47
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,2,2,0.13,2025-08-28_FIC_HonokiolColistin.xlsx,H47
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,2,4,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,I47
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,2,8,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,J47
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,2,16,0.045,2025-08-28_FIC_HonokiolColistin.xlsx,K47
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,1,0,0.279,2025-08-28_FIC_HonokiolColistin.xlsx,D48
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,1,0.25,0.318,2025-08-28_FIC_HonokiolColistin.xlsx,E48
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,1,0.5,0.286,2025-08-28_FIC_HonokiolColistin.xlsx,F48
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,1,1,0.357,2025-08-28_FIC_HonokiolColistin.xlsx,G48
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,1,2,0.158,2025-08-28_FIC_HonokiolColistin.xlsx,H48
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,1,4,0.208,2025-08-28_FIC_HonokiolColistin.xlsx,I48
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,1,8,0.049,2025-08-28_FIC_HonokiolColistin.xlsx,J48
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,1,16,0.052,2025-08-28_FIC_HonokiolColistin.xlsx,K48
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,0,0,0.288,2025-08-28_FIC_HonokiolColistin.xlsx,D49
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,0,0.25,0.329,2025-08-28_FIC_HonokiolColistin.xlsx,E49
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,0,0.5,0.271,2025-08-28_FIC_HonokiolColistin.xlsx,F49
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,0,1,0.369,2025-08-28_FIC_HonokiolColistin.xlsx,G49
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,0,2,0.17,2025-08-28_FIC_HonokiolColistin.xlsx,H49
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,0,4,0.174,2025-08-28_FIC_HonokiolColistin.xlsx,I49
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,0,8,0.044,2025-08-28_FIC_HonokiolColistin.xlsx,J49
+2025-08-28,Honokiol,pBAD + 0.2% arabinose,0,16,0.05,2025-08-28_FIC_HonokiolColistin.xlsx,K49

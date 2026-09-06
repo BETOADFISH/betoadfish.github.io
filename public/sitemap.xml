@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://betoadfish.github.io/</loc></url><url><loc>https://betoadfish.github.io/projects/hubisco</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://betoadfish.github.io/</loc></url>
+  <url><loc>https://betoadfish.github.io/projects</loc></url>
+  <url><loc>https://betoadfish.github.io/projects/hubisco</loc></url>
+  <url><loc>https://betoadfish.github.io/projects/pet-hydrolase</loc></url>
+  <url><loc>https://betoadfish.github.io/projects/mcr1-colistin</loc></url>
+  <url><loc>https://betoadfish.github.io/intelligence</loc></url>
+  <url><loc>https://betoadfish.github.io/intelligence/3d-cell-culture</loc></url>
+</urlset>
 
 

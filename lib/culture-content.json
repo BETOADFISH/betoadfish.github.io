@@ -1,0 +1,123 @@
+{
+  "slug": "3d-cell-culture",
+  "title": "3D cell culture",
+  "subtitle": "Technical due diligence on research platforms",
+  "date": "March 2024",
+  "role": "Investment analyst intern",
+  "category": "Biotech analysis",
+  "suggestedAccent": "#F6D7A7",
+  "summary": "I compared seven culture platforms and examined the evidence needed to turn adjustable scaffold chemistry into a useful research product.",
+  "sections": [
+    {
+      "heading": "The investment question",
+      "body": "During a private equity internship, I assessed a scaffold-based 3D cell culture business. The question was whether its technology could meet the practical requirements of researchers using cell models. Material chemistry mattered, but so did the work required to prepare cultures, reproduce experiments and recover cells for analysis. I organised the review around these requirements so that a technical feature could be assessed alongside its consequences for the laboratory workflow."
+    },
+    {
+      "heading": "My contribution",
+      "body": "I built a comparison of seven existing platforms using scientific literature, product information and market material. The review covered animal-derived matrices, plant-derived cellulose, synthetic hydrogels and other scaffold systems. I brought the findings into a structured comparison of material properties, biological support, preparation, downstream analysis and cost. Two written outputs documented the work: an overview of 3D culture methods and their practical constraints, and a product comparison with supporting references."
+    },
+    {
+      "heading": "The decision that shaped the review",
+      "body": "I treated adjustable material properties and demonstrated biological performance as separate questions. A scaffold may offer control over its mechanics while still needing evidence that cells survive, retain the relevant functions and behave consistently across experiments. For the business under review, I identified gaps in biological validation across cell types and more complex models. Those gaps limited what the technical claims could support. My contribution was to make the uncertainty explicit in the assessment; investment authority remained with the team."
+    },
+    {
+      "heading": "What the comparison showed",
+      "body": "The review brought preparation time, reproducibility and throughput into the same discussion as material design. It also made cell recovery and compatibility with downstream measurements visible in the comparison. These factors affect the cost and usefulness of an experiment, even when they are absent from a product's headline specifications. The original reports included indicative prices, but this portfolio does not reuse them as current or directly comparable quotations."
+    },
+    {
+      "heading": "Reading the evidence",
+      "body": "The interactive framework reconstructs the questions used in the review. It groups platforms by material family and shows which evidence would help assess their suitability for a particular workflow. It does not assign a universal winner. Published examples and supplier information informed the assessment, but I did not conduct a laboratory benchmark of the products. The case demonstrates how I translated a technical comparison into specific questions for due diligence."
+    }
+  ],
+  "explorer": {
+    "title": "Which evidence would change the assessment?",
+    "caption": "An original reconstruction of the review framework. These are qualitative diligence questions, not product scores or results from a comparative experiment.",
+    "dimensions": [
+      "Biological function",
+      "Reproducibility",
+      "Preparation",
+      "Cell recovery",
+      "Downstream analysis",
+      "Cost and throughput"
+    ],
+    "platforms": [
+      {
+        "id": "basement-membrane",
+        "label": "Basement membrane extract",
+        "family": "Biological matrix",
+        "examine": "Composition and lot variation in the intended cell model.",
+        "request": "Results across material lots, with the same cell source, culture conditions and functional readout.",
+        "focus": [
+          "Biological function",
+          "Reproducibility"
+        ]
+      },
+      {
+        "id": "cellulose",
+        "label": "Nanofibrillar cellulose",
+        "family": "Plant-derived scaffold",
+        "examine": "How matrix concentration and the recovery procedure affect the workflow.",
+        "request": "Cell viability and recovery data together with imaging or molecular-analysis controls.",
+        "focus": [
+          "Cell recovery",
+          "Downstream analysis"
+        ]
+      },
+      {
+        "id": "synthetic-network",
+        "label": "Synthetic polymer network",
+        "family": "Chemically assembled hydrogel",
+        "examine": "Whether the chosen crosslinking conditions support the required cell behaviour.",
+        "request": "Matched mechanical and biological measurements for each formulation used.",
+        "focus": [
+          "Biological function",
+          "Preparation"
+        ]
+      },
+      {
+        "id": "hyaluronic-acid",
+        "label": "Hyaluronic-acid-based hydrogel",
+        "family": "Modified biological polymer",
+        "examine": "The formulation, preparation steps and functional evidence in the intended model.",
+        "request": "A reproducible preparation protocol, cell-function readouts and a documented cost basis.",
+        "focus": [
+          "Preparation",
+          "Cost and throughput"
+        ]
+      },
+      {
+        "id": "porous-polymer",
+        "label": "Porous polymer scaffold",
+        "family": "Solid scaffold",
+        "examine": "Cell distribution through the scaffold and access for measurement.",
+        "request": "Evidence of cell seeding consistency, imaging access and recovery for the intended assay.",
+        "focus": [
+          "Reproducibility",
+          "Downstream analysis"
+        ]
+      },
+      {
+        "id": "photocrosslinked-gelatin",
+        "label": "Photocrosslinked gelatin",
+        "family": "Light-cured hydrogel",
+        "examine": "How curing conditions affect both material properties and cell performance.",
+        "request": "Light exposure and formulation details, with viability and functional controls.",
+        "focus": [
+          "Preparation",
+          "Biological function"
+        ]
+      },
+      {
+        "id": "peptide",
+        "label": "Self-assembling peptide",
+        "family": "Peptide hydrogel",
+        "examine": "Assembly conditions and cell seeding requirements.",
+        "request": "A repeatable seeding protocol and evidence that the resulting model supports the intended readout.",
+        "focus": [
+          "Preparation",
+          "Reproducibility"
+        ]
+      }
+    ]
+  }
+}
