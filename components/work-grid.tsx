@@ -1,7 +1,13 @@
-import { ArrowUpRight, Atom, FlaskConical, Microscope, Network } from 'lucide-react';
+'use client';
+import { Copy, SiteLink, useSite } from '@/components/site-context';
+import { ArrowUpRight } from 'lucide-react';
+import { InstitutionMark } from './institution-mark';
 import { work } from '@/lib/work';
-const icons = { hubisco: Atom, pet: FlaskConical, mcr: Microscope, culture: Network };
-export function WorkGrid({ category }: { category?: string }) {
- return <div className="work-grid">{work.filter(w => !category || w.category === category).map((w, i) => { const Icon = icons[w.theme];
- return <a className={`work-card theme-${w.theme}`} href={w.path} key={w.slug}><div className="work-art" aria-hidden="true"><span className="work-number">0{i + 1}</span><Icon size={94} strokeWidth={0.8}/><span>{w.field}</span></div><div className="work-copy"><div className="work-meta"><span>{w.category} / {w.year}</span><ArrowUpRight size={19}/></div><h3>{w.title}</h3><p className="work-question">{w.question}</p><p className="small muted">{w.detail}</p></div></a>; })}</div>;
+export function WorkGrid({ category }: {
+    category?: string;
+}) {
+    const { tr } = useSite();
+    return <div className="work-grid">{work.filter(w => !category || w.category === category).map((w, i) => {
+            return <SiteLink className={`work-card theme-${w.theme}`} href={w.path} key={w.slug}><div className="work-art"><span className="work-number" aria-hidden="true">0<Copy>{i + 1}</Copy></span><InstitutionMark theme={w.theme}/><span><Copy>{w.field}</Copy></span></div><div className="work-copy"><div className="work-meta"><span><Copy>{w.category}</Copy> / <Copy>{w.year}</Copy></span><ArrowUpRight size={19}/></div><h3><Copy>{w.title}</Copy></h3><p className="work-question"><Copy>{w.question}</Copy></p><p className="small muted"><Copy>{w.detail}</Copy></p></div></SiteLink>;
+        })}</div>;
 }

@@ -1,3 +1,4 @@
+import { Copy, SiteLink } from '@/components/site-context';
 import { WorkGrid } from '@/components/work-grid';
-export const metadata = { title: 'Research | Bill Huang', description: 'Projects in enzyme engineering, protein production and antimicrobial research.' };
-export default function Directory() { return <main className="wrap directory-page"><p className="eyebrow">Research</p><h1>Experiments and the decisions behind them.</h1><p className="directory-intro">Projects in enzyme engineering, protein production and antimicrobial research.</p><WorkGrid category="Research"/></main>; }
+export const metadata = { title: 'Research | Bill Huang', description: 'Projects in enzyme engineering, protein production and antimicrobial research.', alternates: { canonical: 'https://betoadfish.github.io/projects', languages: { en: 'https://betoadfish.github.io/projects', 'zh-CN': 'https://betoadfish.github.io/zh/projects' } } };
+export default function Directory() { return <main className="wrap directory-page"><p className="eyebrow"><Copy>{"Research"}</Copy></p><h1><Copy>{"Experiments and the decisions behind them."}</Copy></h1><p className="directory-intro"><Copy>{"Projects in enzyme engineering, protein production and antimicrobial research."}</Copy></p><WorkGrid category="Research"/></main>; }

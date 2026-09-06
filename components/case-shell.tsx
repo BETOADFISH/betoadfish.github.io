@@ -1,4 +1,18 @@
+'use client';
+import { Copy, SiteLink, useSite } from '@/components/site-context';
+import { InstitutionMark } from './institution-mark';
 import type { ReactNode } from 'react';
-export function CaseShell({ theme, title, subtitle, role, date, institution, summary, children, category = 'Research' }: { theme: string; title: string; subtitle: string; role: string; date: string; institution: string; summary: string; children: ReactNode; category?: string }) {
- return <main className={`project-page theme-${theme}`}><header className="case-masthead"><div className="wrap"><a className="back-link" href={category==='Research'?'/projects':'/intelligence'}>← {category}</a><p className="eyebrow">{category} / {date}</p><h1>{title}<span>.</span></h1><h2>{subtitle}</h2><p className="case-deck">{summary}</p><div className="case-facts"><div><span>Role</span><b>{role}</b></div><div><span>Setting</span><b>{institution}</b></div><div><span>Period</span><b>{date}</b></div></div></div></header><div className="wrap case-content">{children}<div className="case-end"><a href={category==='Research'?'/projects':'/intelligence'}>← Browse {category.toLowerCase()}</a><a href="mailto:zh392@cam.ac.uk">Discuss this work ↗</a></div></div></main>;
+export function CaseShell({ theme, title, subtitle, role, date, institution, summary, children, category = 'Research' }: {
+    theme: string;
+    title: string;
+    subtitle: string;
+    role: string;
+    date: string;
+    institution: string;
+    summary: string;
+    children: ReactNode;
+    category?: string;
+}) {
+    const { tr } = useSite();
+    return <main className={`project-page theme-${theme}`}><header className="case-masthead"><div className="wrap"><div className="case-brand-row"><SiteLink className="back-link" href={category === 'Research' ? '/projects' : '/intelligence'}>← <Copy>{category}</Copy></SiteLink><div className="case-institution"><InstitutionMark theme={theme}/></div></div><p className="eyebrow"><Copy>{category}</Copy> / <Copy>{date}</Copy></p><h1><Copy>{title}</Copy><span>.</span></h1><h2><Copy>{subtitle}</Copy></h2><p className="case-deck"><Copy>{summary}</Copy></p><div className="case-facts"><div><span><Copy>{"Role"}</Copy></span><b><Copy>{role}</Copy></b></div><div><span><Copy>{"Setting"}</Copy></span><b><Copy>{institution}</Copy></b></div><div><span><Copy>{"Period"}</Copy></span><b><Copy>{date}</Copy></b></div></div></div></header><div className="wrap case-content"><Copy>{children}</Copy><div className="case-end"><SiteLink href={category === 'Research' ? '/projects' : '/intelligence'}><Copy>{"\u2190 Browse"}</Copy>{' '}<Copy>{category.toLowerCase()}</Copy></SiteLink><SiteLink href="mailto:zh392@cam.ac.uk"><Copy>{"Discuss this work \u2197"}</Copy></SiteLink></div></div></main>;
 }
