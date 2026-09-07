@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Corning Matrigel",
+    "spec": {
+      "en": "356234 · 5 mL · LDEV-free basement membrane matrix",
+      "zh": "356234 · 5 mL · LDEV-free 基底膜基质"
+    },
+    "material": {
+      "en": "Animal-derived basement membrane extract",
+      "zh": "动物来源基底膜提取物"
+    },
+    "price": {
+      "en": "USD 195.06 / bottle · US catalogue",
+      "zh": "195.06 美元 / 瓶 · 美国目录"
+    },
+    "implication": {
+      "en": "An established workflow reference. Diligence should test whether a new material earns the cost of protocol revalidation, including lot consistency and model function.",
+      "zh": "作为既有工作流的参照，新材料需要证明其改善足以抵偿重新验证流程的成本，尤其要看批次一致性和模型功能。"
+    },
+    "url": "https://ecatalog.corning.com/life-sciences/b2c/US/en/Surfaces/Extracellular-Matrices-ECMs/Corning%C2%AE-Matrigel%C2%AE-Matrix/p/356234"
+  },
+  {
+    "name": "Cellendes 3-D Life ToGro",
+    "spec": {
+      "en": "G94-1 · 2.4 mL final gel · 400 Pa shear modulus · 0.4 mM RGD",
+      "zh": "G94-1 · 可配制 2.4 mL 凝胶 · 剪切模量 400 Pa · RGD 0.4 mM"
+    },
+    "material": {
+      "en": "RGD-modified dextran / MMP-cleavable crosslinker",
+      "zh": "RGD 修饰葡聚糖 / MMP 可切割交联剂"
+    },
+    "price": {
+      "en": "EUR 293 / kit · manufacturer catalogue",
+      "zh": "293 欧元 / 套 · 厂商目录"
+    },
+    "implication": {
+      "en": "Defined mechanics and adhesion chemistry need matched biological validation. Price the finished working gel and recovery reagents, rather than the dry polymer alone.",
+      "zh": "明确的力学和黏附参数仍需配套生物学验证；成本应按最终工作凝胶及回收试剂核算，不能只比干聚合物价格。"
+    },
+    "url": "https://www.cellendes.com/products/kits/product/kg94-1"
+  },
+  {
+    "name": "HyStem",
+    "spec": {
+      "en": "HYS010 · 2.5 mL trial kit",
+      "zh": "HYS010 · 2.5 mL 试用套装"
+    },
+    "material": {
+      "en": "Modified hyaluronic-acid hydrogel",
+      "zh": "修饰透明质酸水凝胶"
+    },
+    "price": {
+      "en": "Regional quotation; no verified current price shown",
+      "zh": "按地区询价；未列入未核实的现价"
+    },
+    "implication": {
+      "en": "Assess the complete formulation needed by the target cell type. Additional adhesion components can change both the protocol and the cost per experiment.",
+      "zh": "应比较目标细胞真正需要的完整配方；额外黏附组分会同时改变实验流程和单次实验成本。"
+    },
+    "url": "https://www.sigmaaldrich.com/GB/en/technical-documents/technical-article/cell-culture-and-cell-culture-analysis/3d-cell-culture/hystem-3d-hydrogels"
+  },
+  {
+    "name": "REPROCELL Alvetex",
+    "spec": {
+      "en": "AVP005-96 · 96 × 12-well inserts",
+      "zh": "AVP005-96 · 96 个 12 孔板规格 insert"
+    },
+    "material": {
+      "en": "Porous polystyrene scaffold",
+      "zh": "多孔聚苯乙烯支架"
+    },
+    "price": {
+      "en": "JPY 76,400 / pack · Japan · excluding tax",
+      "zh": "76,400 日元 / 包 · 日本目录 · 未税"
+    },
+    "implication": {
+      "en": "A solid insert has no meaningful price per mL. Compare seeded area, usable wells, imaging access and cell recovery within the intended assay.",
+      "zh": "固体 insert 不适合换算为每毫升价格；应按接种面积、有效孔数、成像条件和细胞回收流程比较。"
+    },
+    "url": "https://reprocell.co.jp/reagent_list/"
+  },
+  {
+    "name": "Rousselot X-Pure GelMA",
+    "spec": {
+      "en": "Gelatin methacryloyl · formulation and grade dependent",
+      "zh": "甲基丙烯酰化明胶 · 需明确配方及等级"
+    },
+    "material": {
+      "en": "Photocrosslinkable gelatin",
+      "zh": "可光交联明胶"
+    },
+    "price": {
+      "en": "Grade-specific quotation",
+      "zh": "按等级和规格询价"
+    },
+    "implication": {
+      "en": "Curing equipment, light exposure, initiator and formulation all enter the adoption cost. Research and manufacturing grades address different buying decisions.",
+      "zh": "固化设备、光照、引发剂和配方都应计入采用成本；研究级与生产相关等级对应不同采购需求。"
+    },
+    "url": "https://www.darlingii.com/rousselot/brands/xpure-gelma"
+  },
+  {
+    "name": "Corning PuraMatrix",
+    "spec": {
+      "en": "354250 · 5 mL",
+      "zh": "354250 · 5 mL"
+    },
+    "material": {
+      "en": "Self-assembling peptide hydrogel",
+      "zh": "自组装多肽水凝胶"
+    },
+    "price": {
+      "en": "Regional quotation; no verified current price shown",
+      "zh": "按地区询价；未列入未核实的现价"
+    },
+    "implication": {
+      "en": "Assembly, seeding consistency and compatibility with the final readout belong in the comparison alongside the appeal of a peptide-defined matrix.",
+      "zh": "除多肽组成这一特点外，还需比较成胶操作、接种一致性，以及与最终检测方法的兼容性。"
+    },
+    "url": "https://www.corning.com/catalog/cls/documents/brochures/CLS-DL-CC-040_REV1_DL.pdf"
+  },
+  {
+    "name": "GrowDex / UPM Biomedicals",
+    "spec": {
+      "en": "Historical competitor in the 2024 review",
+      "zh": "2024 年报告中的历史竞品"
+    },
+    "material": {
+      "en": "Wood-derived nanofibrillar cellulose",
+      "zh": "木材来源纳米纤维素"
+    },
+    "price": {
+      "en": "No current continuity assumed: business closed in September 2025",
+      "zh": "不假设持续供货：该业务已于 2025 年 9 月关闭"
+    },
+    "implication": {
+      "en": "A 2026 update to the case: supplier continuity and requalification risk matter even when a material has attractive technical properties. This was not a finding available in March 2024.",
+      "zh": "2026 年补充观察：即使材料性能有吸引力，也要考虑持续供货与重新验证供应商的风险。这并非 2024 年 3 月就能得出的判断。"
+    },
+    "url": "https://www.upm.com/siteassets/investors/reports-and-presentations/2025/upm-annual-report-2025.pdf"
+  }
+]

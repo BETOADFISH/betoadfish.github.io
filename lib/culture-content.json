@@ -65,8 +65,8 @@
       },
       {
         "id": "synthetic-network",
-        "label": "Synthetic polymer network",
-        "family": "Chemically assembled hydrogel",
+        "label": "Dextran-based hydrogel",
+        "family": "Chemically crosslinked polysaccharide",
         "examine": "Whether the chosen crosslinking conditions support the required cell behaviour.",
         "request": "Matched mechanical and biological measurements for each formulation used.",
         "focus": [

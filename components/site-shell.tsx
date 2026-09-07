@@ -36,7 +36,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
   return <SiteContext.Provider value={{ locale, dark }}>
     <a className="skip-link" href="#main-content">{tr('Skip to content')}</a>
     <header className="site-header"><div className="wrap header-inner">
-      <a className="brand" href={href('/')}>Bill<span className="brand-dot">.</span><span className="brand-caption">{tr('Molecular Science')}</span></a>
+      <a className="brand" href={href('/')}>Bill<span className="brand-dot">.</span><span className="brand-caption">{tr('Profile')}</span></a>
       <nav aria-label={tr('Main navigation')}>
         <a href={href('/projects')}>{tr('Research')}</a><a href={href('/intelligence')}>{tr('Biotech intelligence')}</a><a href={href('/#about')}>{tr('About')}</a><a href="#contact">{tr('Contact')}</a>
       </nav>

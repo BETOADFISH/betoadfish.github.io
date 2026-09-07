@@ -14,6 +14,7 @@ class Document(HTMLParser):
         if a.get('id'): self.ids.add(a['id'])
         if tag=='a' and a.get('href'): self.links.append(a['href'])
         if tag in ('img','script') and a.get('src'): self.assets.append(a['src'])
+        if tag=='image' and a.get('href'): self.assets.append(a['href'])
         if tag=='link' and a.get('rel') in ('stylesheet','icon','modulepreload'): self.assets.append(a.get('href',''))
         if tag=='h1': self.headings+=1
         if tag=='title': self.in_title=True
@@ -30,13 +31,16 @@ def route_file(path):
     return None
 
 errors=[]; checked=0
-routes={'/':OUT/'index.html','/projects/hubisco':route_file('/projects/hubisco')}
+paths=['/','/projects','/intelligence','/projects/hubisco','/projects/pet-hydrolase','/projects/mcr1-colistin','/intelligence/3d-cell-culture']
+paths += ['/zh'+(path if path!='/' else '') for path in paths[:]]
+routes={path:route_file(path) for path in paths}
 docs={}
 for route,p in routes.items():
     if not p or not p.is_file(): errors.append(f'Missing route {route}'); continue
     doc=Document(p.read_text(encoding='utf-8')); docs[route]=doc
     if doc.headings!=1: errors.append(f'{route}: expected one h1, found {doc.headings}')
     if not doc.title or 'Untitled' in doc.title: errors.append(f'{route}: missing site-specific title')
+    if route.count('/')>=2 and route.rstrip('/').split('/')[-1] in ['hubisco','pet-hydrolase','mcr1-colistin','3d-cell-culture'] and 'intro' not in doc.ids: errors.append(f'{route}: missing project introduction')
 for route,doc in docs.items():
     for url in doc.links+doc.assets:
         u=urlsplit(url)
@@ -61,8 +65,13 @@ assert [(float(r['time_h']),float(r['Hu6P_to_F6P_ratio'])) for r in rows]==[(24,
 concs=list(csv.DictReader((OUT/'data/protein-concentrations.csv').open(encoding='utf-8-sig')))
 assert [float(r['concentration_mg_per_mL']) for r in concs]==[6.46,3.66,1.451]
 assert concs[2]['reported_mass_mg']==''
+approved_pdfs={'downloads/Bill-Huang-CV.pdf','downloads/HuBisCO-project-brief.pdf'}
 for p in OUT.rglob('*'):
-    if p.suffix.lower() in ('.docx','.xlsx','.pdf','.env'): errors.append(f'Unexpected private or unsupplied document: {p}')
+    if p.suffix.lower() in ('.docx','.xlsx','.env') or (p.suffix.lower()=='.pdf' and p.relative_to(OUT).as_posix() not in approved_pdfs): errors.append(f'Unexpected private or unsupplied document: {p}')
+scores=json.loads((ROOT/'lib/docking-scores.json').read_text())
+exported=list(csv.DictReader((OUT/'data/hubisco-docking.csv').open(encoding='utf-8')))
+assert len(scores)==len(exported)==20
+assert {(x['protein'],x['ligand'],x['score']) for x in scores}=={(x['protein'],x['ligand'],float(x['score'])) for x in exported}
 manifest=json.loads((ROOT/'dist/server/vinext-prerender.json').read_text())
 for r in manifest['routes']:
     if r['status'] not in ('rendered',): errors.append(f'Prerender not complete: {r}')

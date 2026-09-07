@@ -7,21 +7,13 @@ import { RotateCcw, Play, Pause, ZoomIn, ZoomOut, Maximize2, } from 'lucide-reac
 import { project } from '@/lib/projectData';
 type NglModule = typeof import('ngl');
 type Stage = InstanceType<NglModule['Stage']>;
-type MolecularComponent = {
-    addRepresentation: (type: string, params: Record<string, unknown>) => {
-        dispose: () => void;
-    };
-    autoView: (selection?: string, duration?: number) => void;
-};
+type MolecularComponent = InstanceType<NglModule['StructureComponent']>;
+type MolecularRepresentation = InstanceType<NglModule['RepresentationElement']>;
 export function StructureViewer({ compact = false }: {
     compact?: boolean;
 }) {
     const { tr, dark } = useSite();
-    const host = useRef<HTMLDivElement>(null), stageRef = useRef<Stage | null>(null), compRef = useRef<MolecularComponent | null>(null), highlightRef = useRef<{
-        dispose: () => void;
-    } | null>(null), labelRef = useRef<{
-        dispose: () => void;
-    } | null>(null);
+    const host = useRef<HTMLDivElement>(null), stageRef = useRef<Stage | null>(null), compRef = useRef<MolecularComponent | null>(null), highlightRef = useRef<MolecularRepresentation | null>(null), labelRef = useRef<MolecularRepresentation | null>(null);
     const [structure, setStructure] = useState('9RUB'), [selected, setSelected] = useState('Overview'), [state, setState] = useState<'loading' | 'ready' | 'error'>('loading'), [spinning, setSpinning] = useState(false), [retry, setRetry] = useState(0), [activated, setActivated] = useState(compact);
     const residue = project.residues.find((r) => r.id === selected) ?? {
         kind: 'Experimental reference',
@@ -140,35 +132,48 @@ export function StructureViewer({ compact = false }: {
     useEffect(() => {
         stageRef.current?.setParameters({ backgroundColor: dark ? '#17221b' : (compact ? '#f8fbf7' : '#fafcf9') });
     }, [dark, compact]);
+    function clearFocus() {
+        const comp = compRef.current;
+        const highlight = highlightRef.current;
+        const label = labelRef.current;
+        // Clear ownership before removal: the loops view does not create a label.
+        highlightRef.current = null;
+        labelRef.current = null;
+        if (highlight) comp?.removeRepresentation(highlight);
+        if (label) comp?.removeRepresentation(label);
+        stageRef.current?.setSpin(false);
+        stageRef.current?.animationControls.clear();
+        setSpinning(false);
+    }
     function focus(id: string) {
         setSelected(id);
         const r = project.residues.find((x) => x.id === id)!;
         const comp = compRef.current;
         if (!comp)
             return;
-        highlightRef.current?.dispose();
-        labelRef.current?.dispose();
+        clearFocus();
+        if (structure === '5RUB' && id === 'Mg²⁺') {
+            comp.autoView('protein', 0);
+            return;
+        }
         const selection = structure === '5RUB' && id === 'K191' ? '191:A' : r.selection;
         highlightRef.current = comp.addRepresentation(id === 'Loops' ? 'cartoon' : 'ball+stick', { sele: selection, color: '#c08038', scale: 1.5 });
         if (id !== 'Loops')
             labelRef.current = comp.addRepresentation('label', {
                 sele: selection,
                 labelType: 'res',
-                color: '#23482d',
+                color: dark ? '#e1f3de' : '#23482d',
                 zOffset: 2,
                 labelGrouping: 'residue',
                 showBorder: true,
-                borderColor: '#ffffff',
+                borderColor: dark ? '#17221b' : '#ffffff',
                 scale: 1.8,
             });
-        comp.autoView(`(${selection}) or ([RUB] and :A)`, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 650);
+        comp.autoView(`(${selection}) or ([RUB] and :A)`, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 350);
     }
     function reset() {
         setSelected('Overview');
-        highlightRef.current?.dispose();
-        labelRef.current?.dispose();
-        highlightRef.current = null;
-        labelRef.current = null;
+        clearFocus();
         compRef.current?.autoView('protein', 0);
         setSpinning(false);
         stageRef.current?.setSpin(false);
@@ -190,7 +195,7 @@ export function StructureViewer({ compact = false }: {
         <div className="viewer-scene">
           <div className="ngl-host" ref={host} role="img" aria-label={tr(`${structure} experimental RuBisCO dimer. Drag to rotate; use the labeled buttons to zoom or focus residues.`)}/>
           {state !== 'ready' && (<div className="viewer-fallback">
-              <img src={compact ? '/Cover.webp' : '/I164-S368-interaction.webp'} alt={tr("Project-supplied static RuBisCO rendering; interactive structure has not loaded")}/>
+              <img className="scientific-image" src={compact ? '/Cover.webp' : '/I164-S368-interaction.webp'} alt={tr("Project-supplied static RuBisCO rendering; interactive structure has not loaded")}/>
               <p role="status">
                 <Copy>{state === 'error'
                 ? '3D unavailable on this device. Static reference shown.'

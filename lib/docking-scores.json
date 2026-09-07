@@ -1,0 +1,102 @@
+[
+  {
+    "protein": "WT",
+    "ligand": "HuBP",
+    "score": -5.416
+  },
+  {
+    "protein": "WT",
+    "ligand": "RuBP",
+    "score": -4.99
+  },
+  {
+    "protein": "WT",
+    "ligand": "Ru5P",
+    "score": -4.547
+  },
+  {
+    "protein": "WT",
+    "ligand": "F6P",
+    "score": -4.502
+  },
+  {
+    "protein": "WT",
+    "ligand": "Hu6P",
+    "score": -4.481
+  },
+  {
+    "protein": "I164T",
+    "ligand": "HuBP",
+    "score": -5.54
+  },
+  {
+    "protein": "I164T",
+    "ligand": "RuBP",
+    "score": -5.099
+  },
+  {
+    "protein": "I164T",
+    "ligand": "Ru5P",
+    "score": -4.865
+  },
+  {
+    "protein": "I164T",
+    "ligand": "F6P",
+    "score": -4.737
+  },
+  {
+    "protein": "I164T",
+    "ligand": "Hu6P",
+    "score": -4.46
+  },
+  {
+    "protein": "S368C",
+    "ligand": "HuBP",
+    "score": -5.227
+  },
+  {
+    "protein": "S368C",
+    "ligand": "F6P",
+    "score": -4.923
+  },
+  {
+    "protein": "S368C",
+    "ligand": "RuBP",
+    "score": -4.851
+  },
+  {
+    "protein": "S368C",
+    "ligand": "Ru5P",
+    "score": -4.703
+  },
+  {
+    "protein": "S368C",
+    "ligand": "Hu6P",
+    "score": -4.431
+  },
+  {
+    "protein": "S368A",
+    "ligand": "HuBP",
+    "score": -5.09
+  },
+  {
+    "protein": "S368A",
+    "ligand": "RuBP",
+    "score": -4.857
+  },
+  {
+    "protein": "S368A",
+    "ligand": "F6P",
+    "score": -4.56
+  },
+  {
+    "protein": "S368A",
+    "ligand": "Ru5P",
+    "score": -4.231
+  },
+  {
+    "protein": "S368A",
+    "ligand": "Hu6P",
+    "score": -4.119
+  }
+]

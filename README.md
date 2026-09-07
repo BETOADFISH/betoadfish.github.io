@@ -1,4 +1,4 @@
-# Bill Huang | Molecular Science & Biotech Intelligence
+# Bill Huang | Profile
 
 Portfolio: https://betoadfish.github.io/
 
@@ -14,8 +14,8 @@ The `Publish portfolio` GitHub Actions workflow builds and publishes every push 
 | Chinese copy and language routing | `lib/zh.json`, `lib/locale.ts`, `app/zh` |
 | Institution artwork | `public/brands`, `components/institution-mark.tsx` |
 | Project cards and categories | `lib/work.ts` |
-| Project narratives | `app/projects/<project>/page.tsx` |
-| Biotechnology case | `app/intelligence/3d-cell-culture/page.tsx` and `lib/culture-content.json` |
+| Project narratives | `app/projects/<project>/page.tsx`, `lib/*-story.json`, `lib/bilingual.ts` |
+| Biotechnology case | `app/intelligence/3d-cell-culture/page.tsx`, `lib/culture-competitors.json`, `lib/culture-content.json` |
 | Colours and responsive layout | `app/globals.css` |
 | PET traces / checkerboards | `lib/pet-traces.json` / `lib/mcr-plates.json` |
 | Downloadable data | `public/data` |
@@ -61,7 +61,7 @@ Sources: [9RUB](https://www.rcsb.org/structure/9RUB), [5RUB](https://www.rcsb.or
 
 Each of the seven content routes has a Chinese version under `/zh` (14 routes in total). The top-right language control opens the same page in the other language and preserves its query and section anchor. Language and light/dark choices are saved locally; appearance follows the system setting until explicitly selected. Shared chrome, narratives, figure descriptions and interactive controls are translated through `lib/zh.json`. Original source figures, scientific identifiers and downloadable files retain their original content. When editing English copy, update its corresponding dictionary entry and verify both languages after the build.
 
-All four projects use the same gradient-panel treatment around authentic institution artwork. The marks identify the project setting and do not imply institutional endorsement. Official artwork sources, retrieved 6 September 2026:
+All four projects use custom, text-free line illustrations based on institution artwork, displayed on gradient panels. The new 1254 × 1254 assets were AI-assisted redraws requested by the owner, not official replacement logos. An SVG luminance filter removes the white background at display time. The marks identify the project setting and do not imply institutional endorsement. Reference artwork sources, retrieved 6 September 2026:
 
 - Cambridge: https://www.cam.ac.uk/sites/default/files/university-cambridge-full-colour-preferred-logo-transparency-2362x491.png
 - Portsmouth: https://www.port.ac.uk/themes/custom/portsmouth/images/logo-mobile.png
@@ -69,3 +69,15 @@ All four projects use the same gradient-panel treatment around authentic institu
 - Shanghai Dynamax Group: https://www.dynamaxgroup.com/uploadfiles/2011611335539.jpg (original header image displayed through a logo-sized viewport)
 
 The former private-equity employer is named consistently with the public CV. Assessed-business details and current consulting-company/drug identities remain excluded.
+
+## September 2026 narrative revision
+
+Each case begins with a full introduction after its masthead. HuBisCO follows substrate access, mutation rationale, coupled assay development, PHI/NMR, native mutant activity, and docking. Original source figures accompany each step, with viewport crops that preserve labels. Dark-mode inversion is a reversible display treatment; the source link opens the unmodified image in its original colours. Gel inversion does not apply the colour-chart contrast adjustment.
+
+The three RuBisCO variants had measurable native RuBP activity. PHI NMR supports precursor conversion; clear alternative-substrate activity was not established. Twenty exported Vina scores and original pose figures document computational hypotheses. They are not measurements of binding affinity or catalysis.
+
+New long-form copy uses explicit English/Chinese pairs, with Chinese composed from meaning using humanizer-zh guidance. Shared controls continue to use the dictionary. The seven-competitor table is a dated 6 September 2026 update, separate from the March 2024 internship account. Prices retain regional currencies and package bases; unavailable prices are not estimated. Business metrics are diligence questions, not audited company findings.
+
+## Future GitHub account rename
+
+The owner chose to retain free GitHub Pages and rename the account later. The current URL therefore remains `https://betoadfish.github.io/`. `billhuang-profile` is a possible future account name, subject to availability. After an owner-initiated rename, rename the user-site repository to `<new-login>.github.io`, update the origin references in page metadata, `public/sitemap.xml`, `public/robots.txt` and this README, check the Pages workflow, and verify both languages and downloads at the new address. No account rename has been performed by this revision.

@@ -6,7 +6,7 @@ import '@fontsource/inter/latin-600.css';
 import '@fontsource/inter/latin-700.css';
 import './globals.css';
 export const metadata: Metadata = {
-  title: 'Bill Huang | Molecular Science & Biotech Intelligence',
+  title: 'Bill Huang | Profile',
   description:
     'Bill Huang’s work in enzyme engineering, antimicrobial research and biotechnology assessment, with experimental data and interactive molecular structures.',
   icons: { icon: '/favicon.svg' },

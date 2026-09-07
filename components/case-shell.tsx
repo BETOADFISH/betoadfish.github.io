@@ -2,14 +2,15 @@
 import { Copy, SiteLink, useSite } from '@/components/site-context';
 import { InstitutionMark } from './institution-mark';
 import type { ReactNode } from 'react';
+import type { CopyText } from '@/lib/bilingual';
 export function CaseShell({ theme, title, subtitle, role, date, institution, summary, children, category = 'Research' }: {
     theme: string;
-    title: string;
-    subtitle: string;
-    role: string;
-    date: string;
-    institution: string;
-    summary: string;
+    title: CopyText;
+    subtitle: CopyText;
+    role: CopyText;
+    date: CopyText;
+    institution: CopyText;
+    summary: CopyText;
     children: ReactNode;
     category?: string;
 }) {

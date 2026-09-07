@@ -100,7 +100,7 @@ export function NmrChart() {
     const { ref, visible, animate } = useChartEntry();
     return (<article className="evidence-card reveal" ref={ref}>
       <div className="evidence-title">
-        <span className="figure-number">03</span>
+        <span className="figure-number">04</span>
         <div>
           <p className="eyebrow"><Copy>{"Supporting-enzyme chemistry"}</Copy></p>
           <h3><Copy>{"\u00B3\u00B9P NMR: precursor conversion"}</Copy></h3>

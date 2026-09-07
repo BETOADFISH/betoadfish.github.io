@@ -1,0 +1,143 @@
+{
+  "component": "PetExplorer",
+  "componentPath": "pet-explorer",
+  "function": "PET",
+  "theme": "pet",
+  "title": {
+    "en": "PET hydrolases",
+    "zh": "PET 水解酶"
+  },
+  "subtitle": {
+    "en": "From soluble protein to a meaningful activity measurement.",
+    "zh": "从可溶蛋白制备，到可解释的活性测量。"
+  },
+  "role": {
+    "en": "Research intern",
+    "zh": "科研实习生"
+  },
+  "date": {
+    "en": "June–July 2025 · Four weeks",
+    "zh": "2025 年 6–7 月 · 四周"
+  },
+  "institution": "Centre for Enzyme Innovation, University of Portsmouth",
+  "summary": {
+    "en": "I worked on CCH11 and TurboPETase expression and characterisation, following protein recovery from small-scale trials through purification and activity measurements. The project helped me connect an assay result to the quality and history of the protein preparation.",
+    "zh": "我参与了 CCH11 和 TurboPETase 的表达与表征，从小规模表达试验一路跟踪到纯化和活性测量。这项工作让我把检测结果与蛋白制备质量、表达条件及处理过程联系起来。"
+  },
+  "introTitle": {
+    "en": "Enzymatic recycling starts with a protein that can be made and tested.",
+    "zh": "研究酶法回收，先要获得可制备、可检测的蛋白。"
+  },
+  "introLead": {
+    "en": "PET is a polyester used in packaging and textiles. PET hydrolases cleave ester bonds, creating a possible route to recover smaller molecules from the polymer. My placement focused on the experimental foundation of that idea: producing enzyme preparations suitable for characterisation.",
+    "zh": "PET 是包装和纺织品中常用的聚酯。PET 水解酶可切断酯键，为从聚合物中回收小分子提供一种途径。我的实习聚焦于这条路线的实验基础：获得适合开展表征的酶制备物。"
+  },
+  "introItems": [
+    {
+      "title": {
+        "en": "Why use enzymes?",
+        "zh": "为什么考虑酶？"
+      },
+      "body": {
+        "en": "An enzyme offers molecular selectivity in a recycling process. Its usefulness depends on catalytic performance, stability and whether enough functional protein can be produced.",
+        "zh": "酶能为回收过程提供分子层面的选择性。但实际用途同时取决于催化表现、稳定性，以及能否制备足量的功能蛋白。"
+      }
+    },
+    {
+      "title": {
+        "en": "Which proteins?",
+        "zh": "研究哪些蛋白？"
+      },
+      "body": {
+        "en": "The project included CCH11 and TurboPETase. Their expression and recovery posed different practical problems, making protein production part of the scientific question.",
+        "zh": "项目涉及 CCH11 和 TurboPETase。两者在表达和回收中遇到的问题不同，因此蛋白生产本身也是需要逐步解决的研究问题。"
+      }
+    },
+    {
+      "title": {
+        "en": "What must come before an assay?",
+        "zh": "测活性之前需要做好什么？"
+      },
+      "body": {
+        "en": "Expression, solubility and purification each affect the preparation that reaches the assay. A weak signal can reflect losses at any of these stages.",
+        "zh": "表达量、可溶性和纯化损失，都会影响最后进入检测的样品。活性信号弱，可能源于其中任何一个环节。"
+      }
+    },
+    {
+      "title": {
+        "en": "What does a substrate assay tell us?",
+        "zh": "底物实验能说明什么？"
+      },
+      "body": {
+        "en": "The retained work includes BHET, a soluble PET-related substrate, and plate-reader controls. Such measurements support biochemical characterisation; polymer recycling performance needs separate experiments.",
+        "zh": "保留记录包括可溶性的 PET 相关底物 BHET 及酶标仪对照实验。这类测量可用于生化表征；真实聚合物的回收表现还需要另行测试。"
+      }
+    }
+  ],
+  "steps": [
+    [
+      {
+        "en": "01 / Expression",
+        "zh": "01 / 表达"
+      },
+      {
+        "en": "Find conditions that recover usable protein.",
+        "zh": "先找到能获得可用蛋白的条件。"
+      },
+      {
+        "en": "I compared constructs, bacterial strains and IPTG induction conditions at small scale, using SDS-PAGE to inspect the resulting material. This separated low expression from possible solubility problems before committing to larger cultures.",
+        "zh": "我在小规模培养中比较构建体、细菌菌株和 IPTG 诱导条件，并用 SDS-PAGE 检查样品，先区分表达不足和可能的可溶性问题，再选择扩大培养的条件。"
+      }
+    ],
+    [
+      {
+        "en": "02 / Purification",
+        "zh": "02 / 纯化"
+      },
+      {
+        "en": "Follow recovery through each separation.",
+        "zh": "跟踪每一步分离后的蛋白回收。"
+      },
+      {
+        "en": "Selected cultures progressed to His-tag affinity purification and size-exclusion chromatography. My summer report records improved CCH11 recovery, while TurboPETase remained difficult to recover and solubility was a suspected cause.",
+        "zh": "选定条件后，我进行 His 标签亲和纯化和体积排阻色谱。暑期报告记录了 CCH11 回收的改善；TurboPETase 仍较难获得，可溶性是当时重点考虑的原因之一。"
+      }
+    ],
+    [
+      {
+        "en": "03 / Expression system",
+        "zh": "03 / 表达体系"
+      },
+      {
+        "en": "Reconsider the host and tag.",
+        "zh": "重新考虑宿主与标签。"
+      },
+      {
+        "en": "My project account describes tag changes and a move from bacterial to yeast expression, followed by calorimetry. These changes altered several properties together. Folding and post-translational modification were possible explanations to investigate, rather than causes isolated by the experiment.",
+        "zh": "项目记录还包括标签调整、从细菌转向酵母表达，以及后续量热分析。这些改变会同时影响多个因素，折叠和翻译后修饰因此是值得进一步考察的解释，尚不能认定为已被单独验证的原因。"
+      }
+    ],
+    [
+      {
+        "en": "04 / Characterisation",
+        "zh": "04 / 表征"
+      },
+      {
+        "en": "Read the activity alongside the preparation history.",
+        "zh": "结合蛋白制备过程解释活性。"
+      },
+      {
+        "en": "I worked with plate-reader and HPLC-based characterisation. The retained CCH11 traces below show how test wells differed from controls. Comparing enzyme performance quantitatively would also require matched protein inputs and calibrated product measurements.",
+        "zh": "我参与了酶标仪和 HPLC 表征。下方保留的 CCH11 曲线展示实验孔与对照孔的差异。若要定量比较酶性能，还需要匹配蛋白用量，并用校准后的产物测量连接信号与实际转化。"
+      }
+    ]
+  ],
+  "contribution": {
+    "en": "My work covered expression trials, protein preparation and analysis of laboratory readouts. The main lesson was practical: before interpreting a catalytic difference, account for how much functional protein was actually made and recovered.",
+    "zh": "我的工作覆盖表达条件试验、蛋白制备和实验读数分析。这段经历给我的核心认识很具体：解释催化差异之前，先弄清究竟制备并回收了多少功能蛋白。"
+  },
+  "source": {
+    "en": "Summer Bursaries Report, section A; personal project account; retained instrument workbook dated 26 June 2025, CCH11 and Sheet3. The chart preserves the recorded values and does not convert them into a polymer degradation rate.",
+    "zh": "来源：Summer Bursaries Report 的 A 部分、个人项目记录，以及 2025 年 6 月 26 日仪器工作簿中的 CCH11 和 Sheet3。曲线保留原始记录值，未将其换算为聚合物降解速率。"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "component": "McrExplorer",
+  "componentPath": "mcr-explorer",
+  "function": "MCR",
+  "theme": "mcr",
+  "title": {
+    "en": "Colistin adjuvants",
+    "zh": "黏菌素增效剂"
+  },
+  "subtitle": {
+    "en": "Following a combination effect from growth to membrane readouts.",
+    "zh": "从联合抑菌效应，追问细胞膜上的变化。"
+  },
+  "role": {
+    "en": "Research intern",
+    "zh": "科研实习生"
+  },
+  "date": {
+    "en": "July–September 2025",
+    "zh": "2025 年 7–9 月"
+  },
+  "institution": "Bio21 Institute, University of Melbourne",
+  "summary": {
+    "en": "I screened natural compounds alongside colistin in an MCR-1 research project, then developed membrane-permeability assays to investigate the observed combination effects. The work connected a growth phenotype to the experiments needed to explain it.",
+    "zh": "我在 MCR-1 耐药研究中筛选与黏菌素联用的天然化合物，再开发膜通透性实验，追问联合用药现象背后的原因。工作从抑菌筛选展开，逐步走向对作用机制的检验。"
+  },
+  "introTitle": {
+    "en": "Can a second compound help an antibiotic work again?",
+    "zh": "另一种化合物，能否帮助抗生素重新发挥作用？"
+  },
+  "introLead": {
+    "en": "Colistin acts on Gram-negative bacterial membranes. MCR-1 changes the antibiotic’s lipid A target and can reduce susceptibility. An adjuvant strategy asks whether a companion compound can improve the antibiotic response, and through which mechanism.",
+    "zh": "黏菌素作用于革兰阴性细菌的细胞膜。MCR-1 改变其靶点脂质 A，可降低细菌对黏菌素的敏感性。增效剂策略则考察：加入另一种化合物，能否改善抗生素效果，又是通过什么方式实现？"
+  },
+  "introItems": [
+    {
+      "title": {
+        "en": "The antibiotic",
+        "zh": "抗生素如何作用"
+      },
+      "body": {
+        "en": "Colistin interacts with lipid A in lipopolysaccharide. Its interaction with the bacterial envelope is central to its antimicrobial action.",
+        "zh": "黏菌素与脂多糖中的脂质 A 相互作用；它对细菌包膜的作用是抗菌机制的重要部分。"
+      }
+    },
+    {
+      "title": {
+        "en": "The resistance mechanism",
+        "zh": "MCR-1 如何产生耐药"
+      },
+      "body": {
+        "en": "MCR-1 transfers phosphoethanolamine onto lipid A. This modification changes its charge and can weaken colistin binding.",
+        "zh": "MCR-1 将磷酸乙醇胺转移到脂质 A 上，改变其电荷性质，从而削弱黏菌素结合。"
+      }
+    },
+    {
+      "title": {
+        "en": "The candidate adjuvants",
+        "zh": "筛选哪些增效候选物"
+      },
+      "body": {
+        "en": "I examined honokiol, pterostilbene and osthol with colistin. The first task was to observe growth across concentration combinations and select conditions for further study.",
+        "zh": "我考察了和厚朴酚、紫檀芪、蛇床子素与黏菌素的联用。第一步是在不同浓度组合下观察生长，找出值得继续研究的条件。"
+      }
+    },
+    {
+      "title": {
+        "en": "The mechanistic question",
+        "zh": "如何进一步追问机制"
+      },
+      "body": {
+        "en": "A combination effect on growth does not reveal the molecular target. PI and NPN assays offered a way to examine membrane-related changes while testing alternative explanations for the signal.",
+        "zh": "联合用药影响生长，并不能直接说明分子靶点。PI 和 NPN 实验用于观察与细胞膜相关的变化，同时排查信号是否存在其他来源。"
+      }
+    }
+  ],
+  "steps": [
+    [
+      {
+        "en": "01 / Screening",
+        "zh": "01 / 筛选"
+      },
+      {
+        "en": "Map growth across concentration combinations.",
+        "zh": "在浓度矩阵中观察生长变化。"
+      },
+      {
+        "en": "MIC and checkerboard experiments provided the initial screening workflow. I analysed the plate readouts to identify combinations worth following up. The interactive record below preserves individual wells and a shared colour scale so differences can be inspected directly.",
+        "zh": "MIC 和棋盘法实验构成初步筛选流程。我分析板读数，寻找值得跟进的组合。下方交互记录保留逐孔结果，并使用统一色标，方便直接比较不同条件。"
+      }
+    ],
+    [
+      {
+        "en": "02 / Membrane assays",
+        "zh": "02 / 膜相关实验"
+      },
+      {
+        "en": "Build a readout that can test a biological explanation.",
+        "zh": "让检测方法能够检验生物学解释。"
+      },
+      {
+        "en": "I refined PI and NPN measurements by examining reagent freshness, working concentration, spectral overlap, growth phase and OD normalisation. These factors affect whether a fluorescence change can be attributed to the membrane rather than to the measurement conditions.",
+        "zh": "我围绕试剂新鲜度、工作浓度、光谱重叠、生长阶段和 OD 归一化调整 PI、NPN 测量。这些因素决定了荧光变化能否归因于细胞膜，而不是检测条件本身。"
+      }
+    ],
+    [
+      {
+        "en": "03 / Interpretation",
+        "zh": "03 / 结果解释"
+      },
+      {
+        "en": "Use the screen to choose the next experiment.",
+        "zh": "用筛选结果决定下一步实验。"
+      },
+      {
+        "en": "The project established a screening and assay-development workflow. Formal synergy estimates require reconciled plate layouts, endpoint rules and repeats; a claim of direct MCR-1 inhibition would additionally need target-specific evidence. The next step is to test the membrane explanation with those controls in place.",
+        "zh": "项目建立了筛选和检测优化流程。正式判断协同效应，仍需核对板布局、终点判定和重复结构；若要进一步声称直接抑制 MCR-1，还需靶点层面的证据。下一步是在这些对照齐备后检验膜相关解释。"
+      }
+    ]
+  ],
+  "contribution": {
+    "en": "I conducted MIC and checkerboard work, analysed the growth readouts and refined the membrane assay workflow. The project strengthened how I connect an initial phenotype to a mechanistic experiment, while checking the measurement before assigning a cause.",
+    "zh": "我开展了 MIC 和棋盘法实验、分析生长读数，并优化膜相关检测流程。这项工作训练了我如何从初始表型走向机制实验，也让我更重视在解释原因前先检查测量本身。"
+  },
+  "source": {
+    "en": "End Project Summary; processed checkerboard workbooks from August 2025; personal research account and CV. Records reviewed extend into September. Concentrations retain the source units of µg/mL; strain labels are reproduced without inferring expression status.",
+    "zh": "来源：End Project Summary、2025 年 8 月处理后的棋盘法工作簿、个人研究记录及简历。已核对记录延续至 9 月；浓度保留原资料中的 µg/mL 单位，菌株标签按原记录呈现，不据此推断表达状态。"
+  }
+}
