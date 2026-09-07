@@ -69,8 +69,8 @@
         "zh": "底物实验能说明什么？"
       },
       "body": {
-        "en": "The retained work includes BHET, a soluble PET-related substrate, and plate-reader controls. Such measurements support biochemical characterisation; polymer recycling performance needs separate experiments.",
-        "zh": "保留记录包括可溶性的 PET 相关底物 BHET 及酶标仪对照实验。这类测量可用于生化表征；真实聚合物的回收表现还需要另行测试。"
+        "en": "I used BHET, a soluble PET-related substrate, alongside plate-reader controls to characterise enzyme preparations. Polymer recycling performance requires separate experiments.",
+        "zh": "我使用可溶性的 PET 相关底物 BHET，结合酶标仪对照实验表征酶制备物。真实聚合物的回收表现还需要另行测试。"
       }
     }
   ],
@@ -99,8 +99,8 @@
         "zh": "跟踪每一步分离后的蛋白回收。"
       },
       {
-        "en": "Selected cultures progressed to His-tag affinity purification and size-exclusion chromatography. My summer report records improved CCH11 recovery, while TurboPETase remained difficult to recover and solubility was a suspected cause.",
-        "zh": "选定条件后，我进行 His 标签亲和纯化和体积排阻色谱。暑期报告记录了 CCH11 回收的改善；TurboPETase 仍较难获得，可溶性是当时重点考虑的原因之一。"
+        "en": "Selected cultures progressed to His-tag affinity purification and size-exclusion chromatography. CCH11 recovery improved, while TurboPETase remained difficult to recover and solubility was a suspected cause.",
+        "zh": "选定条件后，我进行 His 标签亲和纯化和体积排阻色谱。CCH11 的回收得到改善；TurboPETase 仍较难获得，可溶性是当时重点考虑的原因之一。"
       }
     ],
     [
@@ -113,8 +113,8 @@
         "zh": "重新考虑宿主与标签。"
       },
       {
-        "en": "My project account describes tag changes and a move from bacterial to yeast expression, followed by calorimetry. These changes altered several properties together. Folding and post-translational modification were possible explanations to investigate, rather than causes isolated by the experiment.",
-        "zh": "项目记录还包括标签调整、从细菌转向酵母表达，以及后续量热分析。这些改变会同时影响多个因素，折叠和翻译后修饰因此是值得进一步考察的解释，尚不能认定为已被单独验证的原因。"
+        "en": "I explored changes to the tag and a move from bacterial to yeast expression, followed by calorimetry. Changing host and tag can affect several properties together, so folding and post-translational modification became questions for further experiments.",
+        "zh": "我尝试调整标签、从细菌转向酵母表达，并进行后续量热分析。宿主和标签的改变会同时影响多个因素，因此折叠和翻译后修饰成为值得进一步实验检验的问题。"
       }
     ],
     [
@@ -127,17 +127,13 @@
         "zh": "结合蛋白制备过程解释活性。"
       },
       {
-        "en": "I worked with plate-reader and HPLC-based characterisation. The retained CCH11 traces below show how test wells differed from controls. Comparing enzyme performance quantitatively would also require matched protein inputs and calibrated product measurements.",
-        "zh": "我参与了酶标仪和 HPLC 表征。下方保留的 CCH11 曲线展示实验孔与对照孔的差异。若要定量比较酶性能，还需要匹配蛋白用量，并用校准后的产物测量连接信号与实际转化。"
+        "en": "I worked with plate-reader and HPLC-based characterisation. CCH11 test wells showed a different response from controls. Quantitative enzyme comparisons would also require matched protein inputs and calibrated product measurements.",
+        "zh": "我参与了酶标仪和 HPLC 表征，观察到 CCH11 实验孔与对照孔的响应差异。若要定量比较酶性能，还需要匹配蛋白用量，并通过产物校准连接信号与实际转化。"
       }
     ]
   ],
   "contribution": {
     "en": "My work covered expression trials, protein preparation and analysis of laboratory readouts. The main lesson was practical: before interpreting a catalytic difference, account for how much functional protein was actually made and recovered.",
     "zh": "我的工作覆盖表达条件试验、蛋白制备和实验读数分析。这段经历给我的核心认识很具体：解释催化差异之前，先弄清究竟制备并回收了多少功能蛋白。"
-  },
-  "source": {
-    "en": "Summer Bursaries Report, section A; personal project account; retained instrument workbook dated 26 June 2025, CCH11 and Sheet3. The chart preserves the recorded values and does not convert them into a polymer degradation rate.",
-    "zh": "来源：Summer Bursaries Report 的 A 部分、个人项目记录，以及 2025 年 6 月 26 日仪器工作簿中的 CCH11 和 Sheet3。曲线保留原始记录值，未将其换算为聚合物降解速率。"
   }
 }

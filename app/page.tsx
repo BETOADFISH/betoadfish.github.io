@@ -1,6 +1,6 @@
 import { Copy, SiteLink } from '@/components/site-context';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
-import { StructureViewer } from '@/components/structure-viewer';
+import { ResearchAtlas } from '@/components/research-atlas';
 import { WorkGrid } from '@/components/work-grid';
 export default function Home() {
     return (<main>
@@ -20,19 +20,7 @@ export default function Home() {
           <p className="hero-index"><Copy>{"01 / RESEARCH PORTFOLIO"}</Copy><span><Copy>{"Structure \u2192 Evidence \u2192 Decision"}</Copy></span>
           </p>
         </div>
-        <div className="hero-art">
-          <div className="art-heading">
-            <span className="eyebrow"><Copy>{"A closer look at the active site"}</Copy></span>
-            <ArrowUpRight size={20}/>
-          </div>
-          <StructureViewer compact/>
-          <div className="art-caption">
-            <span>
-              <b><Copy>{"HuBisCO"}</Copy></b>
-              <br /><Copy>{"A question of molecular compatibility."}</Copy></span>
-            <span className="tiny"><Copy>{"STRUCTURE-GUIDED"}</Copy><br /><Copy>{"ENZYME ENGINEERING"}</Copy></span>
-          </div>
-        </div>
+        <ResearchAtlas/>
       </section>
       <div className="discipline-strip">
         <div className="wrap">

@@ -1,5 +1,5 @@
 'use client';
-import { Copy, SiteLink, useSite } from '@/components/site-context';
+import { Copy, useSite } from '@/components/site-context';
 import { useEffect, useRef, useState } from 'react';
 import { BarChart, Bar, CartesianGrid, XAxis, YAxis, LabelList, Tooltip, ScatterChart, Scatter, ZAxis, } from 'recharts';
 import { ChartContainer } from '@/components/ui/chart';
@@ -90,7 +90,6 @@ export function ConcentrationChart() {
         </TableBody>
       </Table>
       <p className="source-note"><Copy>{"Source: owner-supplied portfolio brief. Masses are reported, not recalculated; rounding may differ."}</Copy>{' '}<Copy>{' '}</Copy>
-        <SiteLink href="/data/protein-concentrations.csv" download><Copy>{"Download values \u2193"}</Copy></SiteLink>
       </p>
       <EvidenceNotes observation="All three variants yielded recoverable purified protein, at different concentrations and pooled volumes." interpretation="The preparations provided material for downstream biochemical testing." limitation="Concentration alone cannot establish folding quality, catalytic competence or the active enzyme fraction." decision="Normalize assay inputs and include matched activity controls."/>
     </article>);
@@ -151,7 +150,6 @@ export function NmrChart() {
         </div>
       </div>
       <p className="source-note"><Copy>{"(0.196 \u2212 0.035) \u00F7 (144 \u2212 24). This two-point slope is not a mechanistic rate constant. Source: dissertation PHI NMR results; 10 mM refers to the substrate solution before PHI-stock addition."}</Copy>{' '}<Copy>{' '}</Copy>
-        <SiteLink href="/data/phi-nmr.csv" download><Copy>{"Download values \u2193"}</Copy></SiteLink>
       </p>
       <EvidenceNotes observation="The Hu6P:F6P ratio increased from 0.035 at 24 h to 0.196 at 144 h." interpretation="The change is consistent with slow PHI-mediated formation or accumulation of Hu6P." limitation="This measures supporting-enzyme precursor chemistry, not RuBisCO turnover. The Hu6P assignment also requires orthogonal confirmation; two points cannot define a robust kinetic mechanism." decision="Collect a denser time course and confirm products with an independent method."/>
     </article>);

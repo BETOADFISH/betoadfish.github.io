@@ -85,8 +85,8 @@
         "zh": "在浓度矩阵中观察生长变化。"
       },
       {
-        "en": "MIC and checkerboard experiments provided the initial screening workflow. I analysed the plate readouts to identify combinations worth following up. The interactive record below preserves individual wells and a shared colour scale so differences can be inspected directly.",
-        "zh": "MIC 和棋盘法实验构成初步筛选流程。我分析板读数，寻找值得跟进的组合。下方交互记录保留逐孔结果，并使用统一色标，方便直接比较不同条件。"
+        "en": "I carried out MIC and checkerboard experiments, then analysed growth across concentration combinations to choose conditions for mechanistic follow-up.",
+        "zh": "我开展 MIC 和棋盘法实验，分析不同浓度组合下的生长变化，筛选值得进一步追问机制的条件。"
       }
     ],
     [
@@ -113,17 +113,13 @@
         "zh": "用筛选结果决定下一步实验。"
       },
       {
-        "en": "The project established a screening and assay-development workflow. Formal synergy estimates require reconciled plate layouts, endpoint rules and repeats; a claim of direct MCR-1 inhibition would additionally need target-specific evidence. The next step is to test the membrane explanation with those controls in place.",
-        "zh": "项目建立了筛选和检测优化流程。正式判断协同效应，仍需核对板布局、终点判定和重复结构；若要进一步声称直接抑制 MCR-1，还需靶点层面的证据。下一步是在这些对照齐备后检验膜相关解释。"
+        "en": "The growth screen guided my membrane-assay development. The next experiments need to separate membrane permeability from other sources of fluorescence, then test whether a reproducible combination effect depends on MCR-1.",
+        "zh": "生长筛选为膜实验的开发指明了方向。下一步需要区分膜通透性变化与其他荧光来源，再检验可重复的联合用药效应是否依赖 MCR-1。"
       }
     ]
   ],
   "contribution": {
     "en": "I conducted MIC and checkerboard work, analysed the growth readouts and refined the membrane assay workflow. The project strengthened how I connect an initial phenotype to a mechanistic experiment, while checking the measurement before assigning a cause.",
     "zh": "我开展了 MIC 和棋盘法实验、分析生长读数，并优化膜相关检测流程。这项工作训练了我如何从初始表型走向机制实验，也让我更重视在解释原因前先检查测量本身。"
-  },
-  "source": {
-    "en": "End Project Summary; processed checkerboard workbooks from August 2025; personal research account and CV. Records reviewed extend into September. Concentrations retain the source units of µg/mL; strain labels are reproduced without inferring expression status.",
-    "zh": "来源：End Project Summary、2025 年 8 月处理后的棋盘法工作簿、个人研究记录及简历。已核对记录延续至 9 月；浓度保留原资料中的 µg/mL 单位，菌株标签按原记录呈现，不据此推断表达状态。"
   }
 }

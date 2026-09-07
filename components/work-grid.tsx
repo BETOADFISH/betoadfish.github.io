@@ -8,6 +8,6 @@ export function WorkGrid({ category }: {
 }) {
     const { tr } = useSite();
     return <div className="work-grid">{work.filter(w => !category || w.category === category).map((w, i) => {
-            return <SiteLink className={`work-card theme-${w.theme}`} href={w.path} key={w.slug}><div className="work-art"><span className="work-number" aria-hidden="true">0<Copy>{i + 1}</Copy></span><InstitutionMark theme={w.theme}/><span><Copy>{w.field}</Copy></span></div><div className="work-copy"><div className="work-meta"><span><Copy>{w.category}</Copy> / <Copy>{w.year}</Copy></span><ArrowUpRight size={19}/></div><h3><Copy>{w.title}</Copy></h3><p className="work-question"><Copy>{w.question}</Copy></p><p className="small muted"><Copy>{w.detail}</Copy></p></div></SiteLink>;
+            return <SiteLink className={`work-card theme-${w.theme}`} href={w.path} key={w.slug}><div className="work-art"><span className="work-number" aria-hidden="true">0<Copy>{i + 1}</Copy></span><InstitutionMark theme={w.theme}/></div><div className="work-copy"><div className="work-meta"><span><Copy>{w.category}</Copy> / <Copy>{w.year}</Copy></span><ArrowUpRight size={19}/></div><h3><Copy>{w.title}</Copy></h3><p className="work-question"><Copy>{w.question}</Copy></p><p className="small muted"><Copy>{w.detail}</Copy></p></div></SiteLink>;
         })}</div>;
 }
