@@ -1,6 +1,6 @@
 'use client';
 import { useId, useState } from 'react';
-import { ArrowUpRight, FlaskConical, Layers3, Microscope, ChartNoAxesCombined, Pause, Play } from 'lucide-react';
+import { ArrowUpRight, FlaskConical, Layers3, Microscope, ChartNoAxesCombined } from 'lucide-react';
 import { Copy, SiteLink, useSite } from './site-context';
 import { t } from '@/lib/bilingual';
 
@@ -14,15 +14,16 @@ const paths=['M145 100 C190 100 200 170 280 195','M415 100 C370 100 360 170 280 
 export function ResearchAtlas(){
   const [index,setIndex]=useState(0);
   const uid=useId().replace(/:/g,'');
-  const {locale,motionPaused:paused,setMotionPaused:setPaused}=useSite();
+  const {locale,motionPaused:paused}=useSite();
   const current=fields[index];
   return <div className={`research-atlas theme-${current.theme}`} data-paused={paused}>
-    <div className="atlas-top"><p className="eyebrow"><Copy>{t('Across my work','我的研究与实践')}</Copy></p><button className="atlas-pause" onClick={()=>setPaused(!paused)} aria-label={locale==='zh'?(paused?'播放动画':'暂停动画'):(paused?'Play motion':'Pause motion')}>{paused?<Play size={16}/>:<Pause size={16}/>}</button></div>
+    <div className="atlas-top"><p className="eyebrow"><Copy>{t('Across my work','我的研究与实践')}</Copy></p></div>
     <div className="atlas-map">
       <svg viewBox="0 0 560 390" aria-hidden="true"><defs><radialGradient id={`atlas-${uid}`}><stop stopColor="var(--project-color)" stopOpacity=".5"/><stop offset="1" stopColor="var(--project-color)" stopOpacity="0"/></radialGradient></defs><circle cx="280" cy="195" r="140" fill={`url(#atlas-${uid})`}/><circle className="atlas-orbit" cx="280" cy="195" r="86"/><circle className="atlas-orbit inner" cx="280" cy="195" r="69"/>{paths.map((d,i)=><g key={d}><path className="atlas-track" d={d}/><path className={`atlas-signal ${index===i?'active':''}`} d={d}/></g>)}</svg>
       <div className="atlas-core"><span><Copy>{t('Question','问题')}</Copy></span><i>↓</i><strong><Copy>{t('Evidence','证据')}</Copy></strong><i>↓</i><span><Copy>{t('Next step','下一步')}</Copy></span></div>
       {fields.map((field,i)=>{const Icon=field.icon;return <button key={field.theme} className={`atlas-node atlas-node-${i} theme-${field.theme}`} aria-pressed={index===i} onClick={()=>setIndex(i)}><Icon size={25} strokeWidth={1.35}/><span><Copy>{field.label}</Copy></span></button>;})}
     </div>
     <div className="atlas-story" key={index}><div><h3><Copy>{current.name}</Copy></h3><p><Copy>{current.note}</Copy></p></div><SiteLink href={current.path} aria-label={locale==='zh'?'查看项目':'View project'}><ArrowUpRight size={23}/></SiteLink></div>
+    {index===3&&<SiteLink className="atlas-related" href="/intelligence/yidu"><Copy>{t('Also: Yidu healthcare research','另一个案例：医渡科技的医药研究')}</Copy><ArrowUpRight size={16}/></SiteLink>}
   </div>;
 }

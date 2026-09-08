@@ -12,5 +12,6 @@ export function InstitutionMark({ theme }: { theme: string }) {
   const { tr } = useSite();
   const uid = useId().replace(/:/g, '');
   const mark = marks[theme];
+  if(theme==='yidu') return <div className="institution-mark yidu-wordmark" aria-label={tr('Yidu')}><span>YIDU</span><small>医渡科技</small></div>;
   return mark ? <div className={`institution-mark line-mark line-mark-${theme}`}><svg viewBox="0 0 1254 1254" role="img" aria-label={tr(mark.name)}><defs><mask id={`ink-${uid}`} maskUnits="userSpaceOnUse" x="0" y="0" width="1254" height="1254" style={{maskType:'luminance'}}><image href={mark.src} width="1254" height="1254" style={{filter:'invert(1)'}}/></mask></defs><rect x="0" y="0" width="1254" height="1254" fill="currentColor" mask={`url(#ink-${uid})`}/></svg></div> : <div className="institution-mark anonymous-mark"><Network strokeWidth={1.1}/></div>;
 }

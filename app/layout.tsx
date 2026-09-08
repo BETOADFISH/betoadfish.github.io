@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon.svg' },
   alternates: { canonical: 'https://betoadfish.github.io/', languages: { en: 'https://betoadfish.github.io/', 'zh-CN': 'https://betoadfish.github.io/zh' } },
 };
-const appearanceScript = `(function(){try{var t=localStorage.getItem('bill-theme');document.documentElement.dataset.theme=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';var m=localStorage.getItem('bill-motion');document.documentElement.dataset.motion=m==='paused'||(m!=='playing'&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'paused':'playing';document.documentElement.lang=location.pathname.split('/')[1]==='zh'?'zh-CN':'en';if(location.pathname==='/'&&localStorage.getItem('bill-language')==='zh'){location.replace('/zh'+location.search+location.hash)}}catch(e){}})()`;
+const appearanceScript = `(function(){try{var t=localStorage.getItem('bill-theme');document.documentElement.dataset.theme=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.dataset.motion=matchMedia('(prefers-reduced-motion: reduce)').matches?'paused':'playing';document.documentElement.lang=location.pathname.split('/')[1]==='zh'?'zh-CN':'en';if(location.pathname==='/'&&localStorage.getItem('bill-language')==='zh'){location.replace('/zh'+location.search+location.hash)}}catch(e){}})()`;
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   return <html lang="en" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html:appearanceScript}}/></head><body><SiteShell>{children}</SiteShell></body></html>;
 }

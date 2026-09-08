@@ -2,7 +2,7 @@
 import { createContext, useContext, type ReactNode, type ComponentProps } from 'react';
 import { translate, localizedPath, type Locale } from '@/lib/locale';
 import type { Bilingual } from '@/lib/bilingual';
-export const SiteContext = createContext({ locale: 'en' as Locale, dark: false, motionPaused:false, setMotionPaused:(_paused:boolean)=>{} });
+export const SiteContext = createContext({ locale: 'en' as Locale, dark: false, motionPaused:false });
 export function useSite() {
   const settings = useContext(SiteContext);
   return { ...settings, tr: (text: string) => translate(text, settings.locale), href: (path: string) => localizedPath(path, settings.locale) };

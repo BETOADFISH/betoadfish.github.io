@@ -31,7 +31,7 @@ def route_file(path):
     return None
 
 errors=[]; checked=0
-paths=['/','/projects','/intelligence','/projects/hubisco','/projects/pet-hydrolase','/projects/mcr1-colistin','/intelligence/3d-cell-culture']
+paths=['/','/projects','/intelligence','/projects/hubisco','/projects/pet-hydrolase','/projects/mcr1-colistin','/intelligence/3d-cell-culture','/intelligence/yidu']
 paths += ['/zh'+(path if path!='/' else '') for path in paths[:]]
 routes={path:route_file(path) for path in paths}
 docs={}
@@ -40,7 +40,7 @@ for route,p in routes.items():
     doc=Document(p.read_text(encoding='utf-8')); docs[route]=doc
     if doc.headings!=1: errors.append(f'{route}: expected one h1, found {doc.headings}')
     if not doc.title or 'Untitled' in doc.title: errors.append(f'{route}: missing site-specific title')
-    if route.count('/')>=2 and route.rstrip('/').split('/')[-1] in ['hubisco','pet-hydrolase','mcr1-colistin','3d-cell-culture'] and 'intro' not in doc.ids: errors.append(f'{route}: missing project introduction')
+    if route.count('/')>=2 and route.rstrip('/').split('/')[-1] in ['hubisco','pet-hydrolase','mcr1-colistin','3d-cell-culture','yidu'] and 'intro' not in doc.ids: errors.append(f'{route}: missing project introduction')
 for route,doc in docs.items():
     for url in doc.links+doc.assets:
         u=urlsplit(url)

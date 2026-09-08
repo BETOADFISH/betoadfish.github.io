@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState, type ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
-import { Moon, Sun, Languages, Pause, Play } from 'lucide-react';
+import { Moon, Sun, Languages } from 'lucide-react';
 import { SiteContext } from './site-context';
 import { localizedPath, translate, type Locale } from '@/lib/locale';
 
@@ -35,12 +35,11 @@ export function SiteShell({ children }: { children: ReactNode }) {
   }
   useEffect(()=>{
     const preference=window.matchMedia('(prefers-reduced-motion: reduce)');
-    const apply=()=>{let saved:string|null=null;try{saved=localStorage.getItem('bill-motion');}catch{}const paused=saved==='paused'||(saved!=='playing'&&preference.matches);setMotionState(paused);document.documentElement.dataset.motion=paused?'paused':'playing';};
+    const apply=()=>{setMotionState(preference.matches);document.documentElement.dataset.motion=preference.matches?'paused':'playing';};
     apply();preference.addEventListener('change',apply);return()=>preference.removeEventListener('change',apply);
   },[]);
-  function setMotionPaused(paused:boolean){setMotionState(paused);document.documentElement.dataset.motion=paused?'paused':'playing';try{localStorage.setItem('bill-motion',paused?'paused':'playing');}catch{}}
   const otherLocale = locale === 'en' ? 'zh' : 'en';
-  return <SiteContext.Provider value={{ locale, dark, motionPaused, setMotionPaused }}>
+  return <SiteContext.Provider value={{ locale, dark, motionPaused }}>
     <a className="skip-link" href="#main-content">{tr('Skip to content')}</a>
     <header className="site-header"><div className="wrap header-inner">
       <a className="brand" href={href('/')}>Bill<span className="brand-dot">.</span><span className="brand-caption">{tr('Profile')}</span></a>
@@ -48,7 +47,6 @@ export function SiteShell({ children }: { children: ReactNode }) {
         <a href={href('/projects')} aria-current={pathname.includes('/projects')?'page':undefined}>{tr('Research')}</a><a href={href('/intelligence')} aria-current={pathname.includes('/intelligence')?'page':undefined}>{tr('Biotech intelligence')}</a><a href={href('/#about')}>{tr('About')}</a><a href="#contact">{tr('Contact')}</a>
       </nav>
       <div className="site-preferences" aria-label={tr('Reading preferences')}>
-        <button className="preference-control motion-switch" onClick={()=>setMotionPaused(!motionPaused)} aria-pressed={motionPaused} aria-label={locale==='zh'?(motionPaused?'播放页面动效':'暂停页面动效'):(motionPaused?'Play page motion':'Pause page motion')} title={locale==='zh'?(motionPaused?'播放页面动效':'暂停页面动效'):(motionPaused?'Play page motion':'Pause page motion')}>{motionPaused?<Play size={16}/>:<Pause size={16}/>}</button>
         <button className="preference-control theme-switch" onClick={toggleTheme} aria-label={tr(dark ? 'Switch to light mode' : 'Switch to dark mode')} aria-pressed={dark} title={tr(dark ? 'Switch to light mode' : 'Switch to dark mode')}><Sun className="sun-icon" size={18}/><Moon className="moon-icon" size={18}/></button>
         <a className="preference-control language-switch" href={localizedPath(pathname, otherLocale)} lang={otherLocale === 'zh' ? 'zh-CN' : 'en'} hrefLang={otherLocale === 'zh' ? 'zh-CN' : 'en'} aria-label={locale === 'en' ? '切换到中文' : 'Switch to English'} onClick={e => { try { localStorage.setItem('bill-language', otherLocale); } catch {} e.currentTarget.href = localizedPath(window.location.pathname, otherLocale) + window.location.search + window.location.hash; }}><Languages size={17}/><span>{locale === 'en' ? '中文' : 'EN'}</span></a>
       </div>

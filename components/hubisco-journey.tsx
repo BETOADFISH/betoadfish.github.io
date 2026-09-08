@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, ChevronDown, Check, FlaskConical, ScanLine, Compass } from 'lucide-react';
+import { VinaTerminal } from './vina-terminal';
 import { ProjectJourney } from './project-journey';
 import { Copy, useSite } from './site-context';
 import { SourceFigure } from './source-figure';
@@ -19,7 +20,7 @@ function JourneyVisual({index}:{index:number}){
   if(index===2)return <div className="journey-visual assay-visual"><span className="visual-kicker"><Copy>{t('From product to readout','从产物到读数')}</Copy></span><Flow nodes={[[t('3-PG','3-PG'),t('Reaction product','反应产物')],['PGK / GAPDH',t('Coupled enzymes','偶联酶')],['NADH ↓',t('Absorbance at 340 nm','340 nm 吸光度')]]}/><div className="control-pair"><span><Check size={17}/><Copy>{t('RuBP positive control','RuBP 阳性对照')}</Copy></span><span><ScanLine size={17}/><Copy>{t('Supporting-enzyme controls','辅助酶对照')}</Copy></span></div></div>;
   if(index===3)return <figure className="journey-visual nmr-summary"><span className="visual-kicker"><Copy>{t('Hu6P : F6P peak-area ratio','Hu6P : F6P 峰面积比')}</Copy></span><div className="nmr-bars">{[[24,.035],[144,.196]].map(([time,value])=><div className="nmr-bar-column" key={time}><strong>{value.toFixed(3)}</strong><div className="nmr-bar-track"><i style={{height:`${value/.2*100}%`}}/></div><span>{time} h</span></div>)}</div><figcaption><Copy>{t('Two measured time points. The ratio tracks precursor conversion, not RuBisCO turnover.','两个测量时间点。比值反映前体转化，不代表 RuBisCO 催化周转。')}</Copy></figcaption></figure>;
   if(index===4)return <div className="journey-visual activity-visual"><span className="visual-kicker"><Copy>{t('Native-substrate activity','天然底物活性')}</Copy></span><div className="active-proteins">{['I164T','S368C','S368A'].map(name=><div key={name}><FlaskConical size={27} strokeWidth={1.2}/><strong>{name}</strong><span><Check size={15}/><Copy>{t('RuBP activity','RuBP 活性')}</Copy></span></div>)}</div><div className="activity-question"><span>Hu6P / Ru5P</span><strong><Copy>{t('Signal unresolved','信号尚未明确')}</Copy></strong></div></div>;
-  return <div className="journey-visual design-visual"><Compass size={38} strokeWidth={1.15}/><Flow nodes={[[t('Full HuBP','完整 HuBP'),t('Restore both phosphates','恢复双磷酸')],[t('Anchoring','保留锚定'),t('Preserve orientation','保持方向')],[t('New contacts','新的接触'),t('Test the next design','检验下一轮设计')]]}/><p className="visual-note"><Copy>{t('Docking defines a testable direction for the next experiment.','由对接结果提出可实验检验的设计方向。')}</Copy></p></div>;
+  return <VinaTerminal/>;
 }
 
 function ProteinEvidence(){
