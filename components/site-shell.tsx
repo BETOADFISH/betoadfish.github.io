@@ -1,4 +1,5 @@
 'use client';
+import { CVDownloads } from './cv-downloads';
 import { useEffect, useState, type ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 import { Moon, Sun, Languages } from 'lucide-react';
@@ -52,6 +53,6 @@ export function SiteShell({ children }: { children: ReactNode }) {
       </div>
     </div></header>
     <div id="main-content">{children}</div>
-    <footer id="contact"><div className="wrap"><div className="contact-row"><div><p className="eyebrow">{tr('Let’s connect')}</p><h2>{tr('Research opportunities')}<br/>{tr('and biotechnology discussions.')}</h2></div><div><p>{tr('Research · Biotech R&D · Strategy')}</p><p className="small">{tr('For research opportunities and biotechnology conversations.')}</p><div className="contact-links"><a href="mailto:zh392@cam.ac.uk">zh392@cam.ac.uk ↗</a><a href="https://www.linkedin.com/in/bill-huang-bb0160302/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="/downloads/Bill-Huang-CV.pdf" download>{tr('Download CV ↓')}</a></div></div></div><div className="footer-bottom"><span><b>Bill.</b> {tr('Molecular Science & Biotech Intelligence')}</span><span>{tr('© 2026 Bill Huang · Independent portfolio')}</span></div></div></footer>
+    <footer id="contact"><div className="wrap"><div className="contact-row"><div><p className="eyebrow">{tr('Let’s connect')}</p><h2>{tr('Research opportunities')}<br/>{tr('and biotechnology discussions.')}</h2></div><div><p>{tr('Research · Biotech R&D · Strategy')}</p><p className="small">{tr('For research opportunities and biotechnology conversations.')}</p><div className="contact-links"><a href="mailto:zh392@cam.ac.uk">zh392@cam.ac.uk ↗</a><a href="https://www.linkedin.com/in/bill-huang-bb0160302/" target="_blank" rel="noreferrer">LinkedIn ↗</a><CVDownloads compact/></div></div></div><div className="footer-bottom"><span><b>Bill.</b> {tr('Molecular Science & Biotech Intelligence')}</span><span>{tr('© 2026 Bill Huang · Independent portfolio')}</span></div></div></footer>
   </SiteContext.Provider>;
 }

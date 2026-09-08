@@ -1,4 +1,5 @@
 'use client';
+import { YiduAnalysisVisual } from './yidu-analysis-visuals';
 import { ProjectJourney, JourneyFlow, type JourneyStep } from './project-journey';
 import { t } from '@/lib/bilingual';
 const steps:JourneyStep[] = [
@@ -17,4 +18,4 @@ const visuals=[
 <JourneyFlow key="4" kicker={t('Analysis structure','分析结构')} nodes={[[t("Clinician question","医生问题"),t("Make the concern explicit","说清具体顾虑")],[t("Evidence check","核对依据"),t("What can be answered","哪些已有答案")],[t("Focused FAQ","问题与回答"),t("State what remains open","标明待补证据")]]} />,
 <JourneyFlow key="5" kicker={t('Analysis structure','分析结构')} nodes={[[t("Plan & remind","计划与提醒"),t("Assign the next contact","安排下次联系")],[t("Collect & review","归集与核查"),t("Make records accessible","让记录可调取")],[t("Escalate & resolve","转交与处理"),t("A clinician handles concerns","由医生处理问题")]]} />
 ];
-export function YiduJourney(){return <ProjectJourney steps={steps} visuals={visuals} eyebrow={t('My analysis process','我的分析过程')} title={t('From interviews to a clearer pathway.','从访谈到决策与随访。')}/>;}
+export function YiduJourney(){return <ProjectJourney steps={steps} visuals={visuals.map((visual,i)=>i===0?visual:<YiduAnalysisVisual key={i} step={i}/>)} eyebrow={t('My analysis process','我的分析过程')} title={t('From interviews to a clearer pathway.','从访谈到决策与随访。')}/>;}

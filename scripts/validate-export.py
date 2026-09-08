@@ -65,7 +65,7 @@ assert [(float(r['time_h']),float(r['Hu6P_to_F6P_ratio'])) for r in rows]==[(24,
 concs=list(csv.DictReader((OUT/'data/protein-concentrations.csv').open(encoding='utf-8-sig')))
 assert [float(r['concentration_mg_per_mL']) for r in concs]==[6.46,3.66,1.451]
 assert concs[2]['reported_mass_mg']==''
-approved_pdfs={'downloads/Bill-Huang-CV.pdf','downloads/HuBisCO-project-brief.pdf'}
+approved_pdfs={*[f'downloads/Bill-Huang-{lang}-{kind}.pdf' for lang in ['en','zh'] for kind in ['research','commercial']],'downloads/Bill-Huang-CV.pdf','downloads/HuBisCO-project-brief.pdf'}
 for p in OUT.rglob('*'):
     if p.suffix.lower() in ('.docx','.xlsx','.env') or (p.suffix.lower()=='.pdf' and p.relative_to(OUT).as_posix() not in approved_pdfs): errors.append(f'Unexpected private or unsupplied document: {p}')
 scores=json.loads((ROOT/'lib/docking-scores.json').read_text())

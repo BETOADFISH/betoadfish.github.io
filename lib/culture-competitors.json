@@ -10,8 +10,8 @@
       "zh": "动物来源基底膜提取物"
     },
     "price": {
-      "en": "USD 195.06 / bottle · US catalogue",
-      "zh": "195.06 美元 / 瓶 · 美国目录"
+      "en": "USD 185.7 · 2024 review reference / 5 mL",
+      "zh": "185.7 美元 · 2024 年报告参考价 / 5 mL"
     },
     "implication": {
       "en": "An established workflow reference. Diligence should test whether a new material earns the cost of protocol revalidation, including lot consistency and model function.",
@@ -30,8 +30,8 @@
       "zh": "RGD 修饰葡聚糖 / MMP 可切割交联剂"
     },
     "price": {
-      "en": "EUR 293 / kit · manufacturer catalogue",
-      "zh": "293 欧元 / 套 · 厂商目录"
+      "en": "USD 630.35 · 2024 review reference / 5 mL",
+      "zh": "630.35 美元 · 2024 年报告参考价 / 5 mL"
     },
     "implication": {
       "en": "Defined mechanics and adhesion chemistry need matched biological validation. Price the finished working gel and recovery reagents, rather than the dry polymer alone.",
@@ -50,8 +50,8 @@
       "zh": "修饰透明质酸水凝胶"
     },
     "price": {
-      "en": "Regional quotation; no verified current price shown",
-      "zh": "按地区询价；未列入未核实的现价"
+      "en": "USD 250 · 2024 review reference / 5 mL",
+      "zh": "250 美元 · 2024 年报告参考价 / 5 mL"
     },
     "implication": {
       "en": "Assess the complete formulation needed by the target cell type. Additional adhesion components can change both the protocol and the cost per experiment.",
@@ -70,8 +70,8 @@
       "zh": "多孔聚苯乙烯支架"
     },
     "price": {
-      "en": "JPY 76,400 / pack · Japan · excluding tax",
-      "zh": "76,400 日元 / 包 · 日本目录 · 未税"
+      "en": "USD 150 · 2024 review reference · scaffold entry; original pack size unspecified",
+      "zh": "150 美元 · 2024 年报告参考价 · 固体支架条目；原表未单列包装数量"
     },
     "implication": {
       "en": "A solid insert has no meaningful price per mL. Compare seeded area, usable wells, imaging access and cell recovery within the intended assay.",
@@ -90,8 +90,8 @@
       "zh": "可光交联明胶"
     },
     "price": {
-      "en": "Grade-specific quotation",
-      "zh": "按等级和规格询价"
+      "en": "USD 200 · 2024 review reference / 5 mL",
+      "zh": "200 美元 · 2024 年报告参考价 / 5 mL"
     },
     "implication": {
       "en": "Curing equipment, light exposure, initiator and formulation all enter the adoption cost. Research and manufacturing grades address different buying decisions.",
@@ -110,8 +110,8 @@
       "zh": "自组装多肽水凝胶"
     },
     "price": {
-      "en": "Regional quotation; no verified current price shown",
-      "zh": "按地区询价；未列入未核实的现价"
+      "en": "USD 300 · 2024 review reference / 5 mL",
+      "zh": "300 美元 · 2024 年报告参考价 / 5 mL"
     },
     "implication": {
       "en": "Assembly, seeding consistency and compatibility with the final readout belong in the comparison alongside the appeal of a peptide-defined matrix.",
@@ -130,13 +130,13 @@
       "zh": "木材来源纳米纤维素"
     },
     "price": {
-      "en": "No current continuity assumed: business closed in September 2025",
-      "zh": "不假设持续供货：该业务已于 2025 年 9 月关闭"
+      "en": "USD 130.21 · 2024 review reference / 5 mL",
+      "zh": "130.21 美元 · 2024 年报告参考价 / 5 mL"
     },
     "implication": {
-      "en": "A 2026 update to the case: supplier continuity and requalification risk matter even when a material has attractive technical properties. This was not a finding available in March 2024.",
-      "zh": "2026 年补充观察：即使材料性能有吸引力，也要考虑持续供货与重新验证供应商的风险。这并非 2024 年 3 月就能得出的判断。"
+      "en": "An animal-free material still needs application-specific validation: reproducible cell function, recovery and compatibility with the planned readout.",
+      "zh": "无动物源材料仍需按应用验证：细胞功能能否重复、能否有效回收，以及是否兼容计划采用的检测方法。"
     },
-    "url": "https://www.upm.com/siteassets/investors/reports-and-presentations/2025/upm-annual-report-2025.pdf"
+    "url": "https://www.upmbiomedicals.com/products/life-science/growdex-hydrogels/"
   }
 ]

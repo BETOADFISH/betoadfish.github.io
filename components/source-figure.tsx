@@ -18,6 +18,7 @@ export function SourceFigure({ src, title, caption, crop, legend }: {
     '/evidence/hubisco/reaction-scheme.svg': [1306,836],
     '/evidence/hubisco/coupled-assay.svg': [1065,629],
     '/evidence/hubisco/nmr.webp': [1600,1116],
+    '/evidence/mcr-lipid-a.png': [1039,619],
   };
   const size = sizes[src];
   const ratio = crop ? crop.box[2] / crop.box[3] : size ? size[0]/size[1] : undefined;

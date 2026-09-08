@@ -1,6 +1,8 @@
 import { Copy, SiteLink } from '@/components/site-context';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import { ResearchAtlas } from '@/components/research-atlas';
+import { CVDownloads } from '@/components/cv-downloads';
+import { t } from '@/lib/bilingual';
 import { WorkGrid } from '@/components/work-grid';
 export default function Home() {
     return (<main>
@@ -33,7 +35,7 @@ export default function Home() {
     ].map((x) => (<span key={x}><Copy>{x}</Copy></span>))}</Copy>
         </div>
       </div>
-      <section className="section wrap" id="projects"><div className="section-heading"><div><p className="eyebrow"><Copy>{"Selected work"}</Copy></p><h2><Copy>{"Questions I have worked on."}</Copy></h2></div><p><Copy>{"Each case follows a different part of my work, with the relevant experimental or analytical evidence."}</Copy></p></div><WorkGrid /></section>
+      <section className="section wrap" id="projects"><div className="section-heading"><div><p className="eyebrow"><Copy>{"Selected work"}</Copy></p><h2><Copy>{"Questions I have worked on."}</Copy></h2></div><p><Copy>{"Each case follows a different part of my work, with the relevant experimental or analytical evidence."}</Copy></p></div><div className="work-group"><h3 className="work-group-title"><span>01</span><Copy>{t("Research","科研项目")}</Copy></h3><WorkGrid category="Research"/></div><div className="work-group"><h3 className="work-group-title"><span>02</span><Copy>{t("Analysis","分析项目")}</Copy></h3><WorkGrid category="Biotech intelligence"/></div></section>
       <section className="section approach-section" id="approach">
         <div className="wrap">
           <p className="eyebrow"><Copy>{"02 / How I work"}</Copy></p>
@@ -76,8 +78,7 @@ export default function Home() {
             <strong><Copy>{"University of Cambridge"}</Copy><br /><Copy>{"Department of Biochemistry \u00B7 Prywes Lab"}</Copy></strong>
           </div>
           <p className="small muted"><Copy>{"BA Natural Sciences, Cambridge \u00B7 2023\u20132026. Planned MSci Biochemistry, Cambridge \u00B7 October 2026\u2013July 2027."}</Copy></p>
-          <SiteLink className="button primary" href="/downloads/Bill-Huang-CV.pdf" download><Copy>{"Download CV"}</Copy><ArrowUpRight size={18}/>
-          </SiteLink>
+          <CVDownloads/>
         </div>
       </section>
     </main>);

@@ -138,9 +138,9 @@ export function StructureViewer({ compact = false }: { compact?: boolean }) {
       comp.addRepresentation('ball+stick',{sele:selection,color:'#d39b4a',scale:1.5}),
       comp.addRepresentation('label',{sele:selection,labelType:'res',labelGrouping:'residue',color:dark?'#eef9eb':'#23482d',zOffset:2,scale:1.5}),
     ];
-    comp.autoView(`(${selection})${structure==='9RUB'?' or ([RUB] and :A)':''}`,0);
+    comp.autoView(`(${selection})${structure==='9RUB'?' or ([RUB] and :A)':''}`,motionPaused?0:1000);
   }
-  function reset(){clearFocus();setSelected('Overview');compRef.current?.autoView('protein',0);}
+  function reset(){clearFocus();setSelected('Overview');compRef.current?.autoView('protein',motionPaused?0:1000);}
 
   return <div className="molecule">
     <div className="viewer-top"><div><span className="eyebrow"><Copy>{t('Molecular context','结构中的设计依据')}</Copy></span><h3><Copy>{t('Where the substrate is held.','底物如何在活性位点定位。')}</Copy></h3></div>

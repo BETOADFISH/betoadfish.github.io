@@ -12,10 +12,10 @@ export function JourneyFlow({nodes,kicker,note}:{nodes:[CopyText,CopyText][];kic
 }
 
 export function ProjectJourney({steps,visuals,evidence=[],evidenceLabels=[],title,eyebrow}:{steps:JourneyStep[];visuals:ReactNode[];evidence?:ReactNode[];evidenceLabels?:(CopyText|null)[];title?:CopyText;eyebrow?:CopyText}){
- const [active,setActive]=useState(0),[expanded,setExpanded]=useState(false),[ready,setReady]=useState(false);const {locale}=useSite();const rail=useRef<HTMLDivElement>(null);
- useEffect(()=>{setReady(true);const restore=()=>{const i=steps.findIndex(s=>'#'+s.id===location.hash);if(i>=0){setActive(i);setExpanded(false);}};restore();window.addEventListener('hashchange',restore);return()=>window.removeEventListener('hashchange',restore);},[steps]);
+ const [active,setActive]=useState(0),[expanded,setExpanded]=useState(true),[ready,setReady]=useState(false);const {locale}=useSite();const rail=useRef<HTMLDivElement>(null);
+ useEffect(()=>{setReady(true);const restore=()=>{const i=steps.findIndex(s=>'#'+s.id===location.hash);if(i>=0){setActive(i);setExpanded(true);}};restore();window.addEventListener('hashchange',restore);return()=>window.removeEventListener('hashchange',restore);},[steps]);
  function change(index:number){
-  setActive(index);setExpanded(false);history.replaceState(history.state,'',location.pathname+location.search+'#'+steps[index].id);
+  setActive(index);setExpanded(true);history.replaceState(history.state,'',location.pathname+location.search+'#'+steps[index].id);
   requestAnimationFrame(()=>{const el=rail.current;if(!el)return;const header=document.querySelector('.site-header')?.getBoundingClientRect().bottom??100;if(el.getBoundingClientRect().top<header+12)el.scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
  }
  return <section className="journey-section" id="journey" data-count={steps.length} aria-busy={!ready}><div className="section-heading"><div><p className="eyebrow"><Copy>{eyebrow??t('My experimental route','我的实验路线')}</Copy></p><h2><Copy>{title??t('Each result shapes the next step.','每一步结果，都决定下一步。')}</Copy></h2></div></div>
