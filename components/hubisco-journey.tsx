@@ -1,8 +1,7 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { ArrowLeft, ArrowRight, ChevronDown, Check, FlaskConical, ScanLine, Compass } from 'lucide-react';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Button } from '@/components/ui/button';
+import { ProjectJourney } from './project-journey';
 import { Copy, useSite } from './site-context';
 import { SourceFigure } from './source-figure';
 import { StructureViewer } from './structure-viewer';
@@ -55,19 +54,5 @@ function Evidence({index}:{index:number}){
 }
 
 export function HubiscoJourney(){
-  const [active,setActive]=useState(0),[expanded,setExpanded]=useState(false);
-  const {locale}=useSite();
-  useEffect(()=>{
-    const restore=()=>{const index=journey.findIndex(step=>`#${step.id}`===location.hash);if(index>=0){setActive(index);setExpanded(true);}};
-    restore();window.addEventListener('hashchange',restore);return()=>window.removeEventListener('hashchange',restore);
-  },[]);
-  function change(index:number){setActive(index);setExpanded(false);}
-  return <section className="journey-section" id="journey"><div className="section-heading"><div><p className="eyebrow"><Copy>{t('My experimental route','我的实验路线')}</Copy></p><h2><Copy>{t('Six steps, each shaping the next.','每一步结果，都决定下一步。')}</Copy></h2></div></div>
-    <Tabs value={String(active)} onValueChange={v=>change(Number(v))} className="journey-tabs"><TabsList className="journey-rail" aria-label={locale==='zh'?'HuBisCO 实验流程':'HuBisCO experimental journey'}>{journey.map((step,i)=><TabsTrigger key={step.id} value={String(i)}><span className="journey-number">0{i+1}</span><Copy>{step.label}</Copy></TabsTrigger>)}</TabsList>
-      {journey.map((step,i)=><TabsContent key={step.id} value={String(i)} className="journey-panel" id={step.id}><div className="journey-main"><div className="journey-copy"><span className="journey-counter">0{i+1} / 06</span><h3><Copy>{step.title}</Copy></h3><p><Copy>{step.method}</Copy></p><div className="journey-result"><span><Copy>{t('What I learned','得到什么')}</Copy></span><strong><Copy>{step.result}</Copy></strong></div></div><JourneyVisual index={i}/></div>
-        <p className="journey-next"><ArrowRight size={18}/><Copy>{step.next}</Copy></p><div className="journey-actions"><button className="evidence-toggle" aria-expanded={expanded} aria-controls={`journey-evidence-${i}`} onClick={()=>setExpanded(!expanded)}><Copy>{i===1?t('Explore the structure','查看结构'):t('Figures and legends','实验图与图注')}</Copy><ChevronDown size={17}/></button><div><Button variant="outline" aria-label={locale==='zh'?'上一步':'Previous step'} disabled={i===0} onClick={()=>change(i-1)}><ArrowLeft size={17}/></Button><Button variant="outline" disabled={i===5} onClick={()=>change(i+1)}><Copy>{t('Next step','下一步')}</Copy><ArrowRight size={17}/></Button></div></div>
-        <div id={`journey-evidence-${i}`} className="journey-evidence" hidden={!expanded}>{expanded&&<Evidence index={i}/>}</div>
-      </TabsContent>)}
-    </Tabs>
-  </section>;
+ return <ProjectJourney steps={journey} visuals={journey.map((_,i)=><JourneyVisual index={i} key={i}/>)} evidence={journey.map((_,i)=><Evidence index={i} key={i}/>)} evidenceLabels={journey.map((_,i)=>i===1?t('Explore the structure','查看结构'):t('Figures and legends','实验图与图注'))}/>;
 }

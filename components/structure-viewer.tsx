@@ -13,7 +13,7 @@ type MolecularComponent = InstanceType<NglModule['StructureComponent']>;
 type MolecularRepresentation = InstanceType<NglModule['RepresentationElement']>;
 
 export function StructureViewer({ compact = false }: { compact?: boolean }) {
-  const { tr, dark } = useSite();
+  const { tr, dark, motionPaused } = useSite();
   const host = useRef<HTMLDivElement>(null);
   const stageRef = useRef<Stage|null>(null);
   const compRef = useRef<MolecularComponent|null>(null);
@@ -119,6 +119,8 @@ export function StructureViewer({ compact = false }: { compact?: boolean }) {
     document.addEventListener('visibilitychange',hide);
     return ()=>document.removeEventListener('visibilitychange',hide);
   },[]);
+
+  useEffect(()=>{if(motionPaused){stageRef.current?.setSpin(false);setSpinning(false);}},[motionPaused]);
 
   function clearFocus(){
     const comp=compRef.current;

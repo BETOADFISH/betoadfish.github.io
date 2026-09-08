@@ -8,13 +8,13 @@ const fields = [
   { theme:'hubisco', icon:FlaskConical, label:t('Enzyme design','酶设计'), name:'HuBisCO', path:'/projects/hubisco', note:t('Changing substrate chemistry to explore a different route for carbon fixation.','从底物化学出发，探索不同的固碳路线。') },
   { theme:'pet', icon:Layers3, label:t('Biocatalysis','生物催化'), name:t('PET hydrolases','PET 水解酶'), path:'/projects/pet-hydrolase', note:t('Connecting recombinant protein production with catalytic characterisation.','把重组蛋白制备与催化功能表征连接起来。') },
   { theme:'mcr', icon:Microscope, label:t('Antimicrobials','抗菌研究'), name:t('Colistin adjuvants','多黏菌素 E 增效剂'), path:'/projects/mcr1-colistin', note:t('Following a combination effect from growth assays to membrane-level questions.','从组合用药的生长响应，追问细胞膜层面的作用。') },
-  { theme:'culture', icon:ChartNoAxesCombined, label:t('Biotech strategy','生技战略'), name:t('3D cell culture','3D 细胞培养'), path:'/intelligence/3d-cell-culture', note:t('Translating material properties into adoption, workflow and investment questions.','把材料性能转化为客户采用、实验流程与投资判断。') },
+  { theme:'culture', icon:ChartNoAxesCombined, label:t('Biotech strategy','生技分析'), name:t('3D cell culture','3D 细胞培养'), path:'/intelligence/3d-cell-culture', note:t('Translating material properties into adoption, workflow and investment questions.','把材料性能转化为客户采用、实验流程与投资判断。') },
 ];
 const paths=['M145 100 C190 100 200 170 280 195','M415 100 C370 100 360 170 280 195','M145 290 C190 290 200 220 280 195','M415 290 C370 290 360 220 280 195'];
 export function ResearchAtlas(){
-  const [index,setIndex]=useState(0),[paused,setPaused]=useState(false);
+  const [index,setIndex]=useState(0);
   const uid=useId().replace(/:/g,'');
-  const {locale}=useSite();
+  const {locale,motionPaused:paused,setMotionPaused:setPaused}=useSite();
   const current=fields[index];
   return <div className={`research-atlas theme-${current.theme}`} data-paused={paused}>
     <div className="atlas-top"><p className="eyebrow"><Copy>{t('Across my work','我的研究与实践')}</Copy></p><button className="atlas-pause" onClick={()=>setPaused(!paused)} aria-label={locale==='zh'?(paused?'播放动画':'暂停动画'):(paused?'Play motion':'Pause motion')}>{paused?<Play size={16}/>:<Pause size={16}/>}</button></div>

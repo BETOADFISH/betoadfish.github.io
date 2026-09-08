@@ -1,7 +1,7 @@
 import { Copy, SiteLink } from '@/components/site-context';
 import { CaseShell } from '@/components/case-shell';
 import { ProjectIntro } from '@/components/project-intro';
-import { CultureComparison, CultureDecision } from '@/components/culture-comparison';
+import { CultureJourney } from '@/components/case-journeys';
 import { t } from '@/lib/bilingual';
 export const metadata = { title: '3D cell culture | Bill Huang', description: 'Technical and commercial due diligence: seven 3D culture competitors, product specifications, catalogue prices and adoption economics.', alternates: { canonical: 'https://betoadfish.github.io/intelligence/3d-cell-culture', languages: { en: 'https://betoadfish.github.io/intelligence/3d-cell-culture', 'zh-CN': 'https://betoadfish.github.io/zh/intelligence/3d-cell-culture' } } };
 export default function Culture() {
@@ -12,9 +12,7 @@ export default function Culture() {
  {title:t('The adoption problem','采用新产品的阻力'),body:t('A new material competes with an established protocol as well as with another supplier. Revalidation, staff time and compatibility with historical data can outweigh a lower catalogue price.','新材料既与其他供应商竞争，也与客户已经建立的实验流程竞争。重新验证、人员时间和历史数据可比性的成本，可能超过目录价上的节省。')},
  {title:t('My diligence question','我如何提出尽调问题'),body:t('Could controllable material chemistry deliver reproducible biological results, within a workflow customers would adopt and repeat? I used that question to connect the technical comparison to the investment assessment.','可控的材料化学，能否在客户愿意采用并持续使用的流程中，产生可重复的生物学结果？我以此将技术比较与投资评估联系起来。')}
  ]}/>
- <section className="editorial-section editorial-grid"><div><p className="eyebrow"><Copy>{t('01 / Investment thesis','01 / 投资逻辑')}</Copy></p><h2><Copy>{t('Start with a beachhead application.','先找到可以切入的具体应用。')}</Copy></h2></div><div><p><Copy>{t('A claim of broad 3D-culture applicability is difficult to underwrite without evidence from a defined cell model. My review separated adjustable material properties from demonstrated cell survival, function and reproducibility. The assessed business still needed stronger validation across cell types and more complex models.','如果没有明确细胞模型中的证据，“广泛适用于 3D 培养”很难成为扎实的投资依据。我将材料参数可调与细胞存活、功能和重复性是否得到验证分开检查。被评估企业仍需补强不同细胞类型及复杂模型中的生物学验证。')}</Copy></p><p><Copy>{t('The commercial implication is to define an initial customer profile and a narrow use case, then ask which result would justify switching. The next evidence to request is pilot validation, repeat orders and the cost of supporting each workflow.','商业上的落点是先明确初始客户画像（ICP）和具体应用，再判断什么结果足以促使客户切换。据此，下一步应重点核查试用验证、复购，以及支持每套流程所需的投入。')}</Copy></p></div></section>
- <CultureComparison/>
- <CultureDecision/>
+ <CultureJourney/>
  <section className="editorial-section editorial-grid"><div><p className="eyebrow"><Copy>{t('My contribution and finding','我的工作与主要判断')}</Copy></p><h2><Copy>{t('Make the validation gap actionable.','把验证缺口转化为下一步尽调要求。')}</Copy></h2></div><div><p><Copy>{t('I produced an overview of 3D-culture methods and a seven-platform comparison using scientific literature, product documentation and market material. The review put biological function, reproducibility, preparation, cell recovery and cost into one assessment.','我依据科学文献、产品资料和市场材料，完成了 3D 培养方法综述及七种平台的竞品比较，将生物学功能、重复性、制备、细胞回收和成本纳入同一份评估。')}</Copy></p><p><Copy>{t('The central finding was that tunable material chemistry needed stronger model-specific biological evidence before it could support broad product claims. I translated this into focused evidence requests for the investment team.','主要判断是：材料化学可调，还不足以支持广泛的产品应用主张，需要更充分的特定模型生物学证据。我据此为投资团队提出有针对性的补充资料要求。')}</Copy></p></div></section>
 
  </CaseShell>;
