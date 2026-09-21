@@ -29,6 +29,7 @@ jobs:
       - run: node node_modules/typescript/bin/tsc --noEmit
       - run: node scripts/test-question-bank.mjs
       - run: node scripts/test-admin.mjs
+      - run: node scripts/test-github-auth.mjs
       - run: pnpm build
       - run: touch dist/client/.nojekyll
       - uses: actions/configure-pages@v5
