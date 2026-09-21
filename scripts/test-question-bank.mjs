@@ -1,7 +1,7 @@
 import {build} from 'esbuild';import fs from 'node:fs';import assert from 'node:assert/strict';import {generateKeyPair,SignJWT,createLocalJWKSet,exportJWK} from 'jose';import {PDFDocument} from 'pdf-lib';
 fs.mkdirSync('qa',{recursive:true});
 for(const [name,entry] of [['bank','lib/question-bank.ts'],['pdf','lib/question-pdf.ts'],['auth','backend/auth.ts'],['validation','backend/validation.ts']])await build({entryPoints:[entry],bundle:true,platform:'node',format:'esm',packages:'external',outfile:`qa/${name}.mjs`});
-const {resolveSelection,removeSelection,selectedMarks}=await import('../qa/bank.mjs');const {createQuestionPdf}=await import('../qa/pdf.mjs');const {verifyOwner}=await import('../qa/auth.mjs');const {validatePatch}=await import('../qa/validation.mjs');
+const {resolveSelection,removeSelection,selectedMarks,loadCatalog}=await import('../qa/bank.mjs');const {createQuestionPdf}=await import('../qa/pdf.mjs');const {verifyOwner}=await import('../qa/auth.mjs');const {validatePatch}=await import('../qa/validation.mjs');
 const catalogs=Object.fromEntries(['edexcel','aqa','esat'].map(b=>[b,JSON.parse(fs.readFileSync(`public/question-bank/${b}.json`,'utf8'))]));
 for(const [bank,cat] of Object.entries(catalogs)){
  const map=new Map(cat.questions.map(q=>[q.id,q]));assert.equal(map.size,cat.questions.length);
@@ -14,6 +14,9 @@ const {privateKey,publicKey}=await generateKeyPair('RS256');const jwk=await expo
 const token=async(email,aud='audience',expiry='5m')=>new SignJWT({email}).setProtectedHeader({alg:'RS256',kid:'test'}).setIssuer('https://test.cloudflareaccess.com').setAudience(aud).setSubject('owner').setIssuedAt().setExpirationTime(expiry).sign(privateKey);
 assert.equal(await verifyOwner(await token('owner@example.test'),env,keys),'owner');for(const bad of [await token('visitor@example.test'),await token('owner@example.test','wrong'),await token('owner@example.test','audience','-1m'),'forged'])await assert.rejects(()=>verifyOwner(bad,env,keys));await assert.rejects(()=>verifyOwner('',env,keys));
 const base=catalogs.esat.questions[0];assert.throws(()=>validatePatch({marks:2},base));assert.throws(()=>validatePatch({note:'private'},base));assert.throws(()=>validatePatch({qp:[{page:999,box:[0,0,1,1]}]},base));assert.throws(()=>validatePatch({ms:[{page:1,box:[0,1,1,0]}]},base));assert.deepEqual(validatePatch({summary:'Enzyme activity'},base),{summary:'Enzyme activity'});
+const withdrawalCatalog={bank:'edexcel',papers:[],questions:[{...a,parent_id:'p'},{...b,parent_id:'p'},{...a,id:'p',is_leaf:false,leaves:['a','b']},c]};
+globalThis.fetch=async url=>new Response(JSON.stringify(String(url).endsWith('config.json')?{api:'/api'}:String(url).startsWith('/api')?[{id:'p',published:null,revision:2}]:withdrawalCatalog));
+assert.deepEqual((await loadCatalog('edexcel')).questions,[]);
 globalThis.fetch=async url=>{assert(String(url).startsWith('/question-bank/sources/'));return new Response(fs.readFileSync('public'+url));};
 for(const [bank,cat] of Object.entries(catalogs)){const selected=[cat.questions.find(q=>q.is_leaf),cat.questions.find(q=>q.kind==='major'&&q.leaves.length>1)||cat.questions[10],...cat.questions.filter(q=>q.dependencies.some(d=>d.kind==='requires_answer')).slice(0,1)].map(q=>q.id);for(const role of ['qp','ms']){const bytes=await createQuestionPdf(cat,selected,role);fs.writeFileSync(`qa/${bank}-${role}.pdf`,bytes);const pdf=await PDFDocument.load(bytes);assert(pdf.getPageCount()>1);assert(pdf.getPages().every(p=>p.getWidth()>=595&&p.getHeight()>=841));console.log(`${bank} ${role}: ${pdf.getPageCount()} pages`);}}
 console.log('Selection, source privacy, auth rejection, edit validation and real PDF exports passed.');

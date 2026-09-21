@@ -7,6 +7,8 @@ const types = {
   '.html': 'text/html; charset=utf-8',
   '.rsc': 'text/x-component',
   '.js': 'text/javascript',
+  '.mjs': 'text/javascript',
+  '.wasm': 'application/wasm',
   '.css': 'text/css',
   '.svg': 'image/svg+xml',
   '.webp': 'image/webp',

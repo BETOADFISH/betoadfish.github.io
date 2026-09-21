@@ -29,7 +29,8 @@ export async function loadCatalog(bank:Bank):Promise<Catalog>{
  const r=await fetch(`/question-bank/${bank}.json`);if(!r.ok)throw Error('题库暂时没加载出来，请稍后再试。');const base:Catalog=await r.json();
  const cfg=await fetch('/question-bank/config.json',{cache:'no-store'});if(!cfg.ok)throw Error('题库连接失败，请刷新页面。');const {api}=await cfg.json() as {api:string};
  if(api){const patch=await fetch(`${api}/public/${bank}`,{cache:'no-store',signal:AbortSignal.timeout(15000)});if(!patch.ok)throw Error('题库暂时无法连接，请稍后再试。');const updates=await patch.json() as {id:string;published:Partial<Question>|null;revision:number}[];const map=new Map<string,{id:string;published:Partial<Question>|null;revision:number}>(updates.map((p:{id:string;published:Partial<Question>|null;revision:number})=>[p.id,p]));
- base.questions=base.questions.flatMap(q=>{const u=map.get(q.id);return u?(u.published?[{...q,...u.published,id:q.id,bank,revision:u.revision}]:[]):[q];});
+ const withdrawn=new Set(base.questions.filter(q=>map.get(q.id)?.published===null).flatMap(q=>[q.id,...q.leaves]));
+ base.questions=base.questions.flatMap(q=>{if(withdrawn.has(q.id))return[];const u=map.get(q.id);return u?(u.published?[{...q,...u.published,id:q.id,bank,revision:u.revision}]:[]):[q];});
  // Do not expose a parent or dependent question when any required child is unpublished.
  let changed=true;while(changed){const available=new Set(base.questions.map(q=>q.id));const next=base.questions.filter(q=>q.leaves.every(id=>available.has(id))&&(q.dependencies||[]).every(d=>d.kind!=='requires_answer'||available.has(d.question_id||'')));changed=next.length!==base.questions.length;base.questions=next;}}
  const byId=new Map(base.questions.map(q=>[q.id,q]));for(const q of base.questions)if(!q.is_leaf)q.marks=q.leaves.reduce((sum,id)=>sum+(byId.get(id)?.marks||0),0);
