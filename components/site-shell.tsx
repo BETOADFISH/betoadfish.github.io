@@ -45,7 +45,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
     <header className="site-header"><div className="wrap header-inner">
       <a className="brand" href={href('/')}>Bill<span className="brand-dot">.</span><span className="brand-caption">{tr('Profile')}</span></a>
       <nav aria-label={tr('Main navigation')}>
-        <a href={href('/projects')} aria-current={pathname.includes('/projects')?'page':undefined}>{tr('Research')}</a><a href={href('/intelligence')} aria-current={pathname.includes('/intelligence')?'page':undefined}>{tr('Biotech intelligence')}</a><a href={href('/#about')}>{tr('About')}</a><a href="#contact">{tr('Contact')}</a>
+        <a href={href('/projects')} aria-current={pathname.includes('/projects')?'page':undefined}>{tr('Research')}</a><a href={href('/intelligence')} aria-current={pathname.includes('/intelligence')?'page':undefined}>{tr('Biotech intelligence')}</a><a href={href('/tools')} aria-current={pathname.includes('/tools')?'page':undefined}>{locale === 'zh' ? '工具' : 'Tools'}</a><a href={href('/#about')}>{tr('About')}</a><a href="#contact">{tr('Contact')}</a>
       </nav>
       <div className="site-preferences" aria-label={tr('Reading preferences')}>
         <button className="preference-control theme-switch" onClick={toggleTheme} aria-label={tr(dark ? 'Switch to light mode' : 'Switch to dark mode')} aria-pressed={dark} title={tr(dark ? 'Switch to light mode' : 'Switch to dark mode')}><Sun className="sun-icon" size={18}/><Moon className="moon-icon" size={18}/></button>

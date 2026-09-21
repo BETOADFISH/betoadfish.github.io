@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS questions (
+ bank TEXT NOT NULL, id TEXT NOT NULL, base TEXT NOT NULL,
+ draft TEXT, published TEXT, changed INTEGER NOT NULL DEFAULT 0,
+ revision INTEGER NOT NULL DEFAULT 1, updated_at TEXT,
+ PRIMARY KEY(bank,id)
+);
+CREATE INDEX IF NOT EXISTS public_changes ON questions(bank,changed);
+CREATE TABLE IF NOT EXISTS audit (
+ id INTEGER PRIMARY KEY AUTOINCREMENT, bank TEXT NOT NULL, question_id TEXT NOT NULL,
+ action TEXT NOT NULL, revision INTEGER NOT NULL, created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

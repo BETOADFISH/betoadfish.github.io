@@ -4,7 +4,7 @@ Portfolio: https://betoadfish.github.io/
 
 ## Publishing and maintenance
 
-The `Publish portfolio` GitHub Actions workflow builds and publishes every push to `main`. GitHub Pages uses the GitHub Actions source. Revert a commit to restore an earlier version. No server, database, tracker, API key or paid hosting service is required.
+The `Publish portfolio` GitHub Actions workflow builds and publishes every push to `main`. GitHub Pages uses the GitHub Actions source. Revert a commit to restore an earlier version. The question-bank editor uses a Cloudflare Worker and D1 database; public PDF exports run in the browser. Hosting uses free plans within their quotas.
 
 | Edit | Location |
 | --- | --- |
@@ -59,7 +59,7 @@ Sources: [9RUB](https://www.rcsb.org/structure/9RUB), [5RUB](https://www.rcsb.or
 
 ## Languages and appearance
 
-Each of the seven content routes has a Chinese version under `/zh` (14 routes in total). The top-right language control opens the same page in the other language and preserves its query and section anchor. Language and light/dark choices are saved locally; appearance follows the system setting until explicitly selected. Shared chrome, narratives, figure descriptions and interactive controls are translated through `lib/zh.json`. Original source figures, scientific identifiers and downloadable files retain their original content. When editing English copy, update its corresponding dictionary entry and verify both languages after the build.
+Each content route has a Chinese version under `/zh`. The top-right language control opens the same page in the other language and preserves its query and section anchor. Language and light/dark choices are saved locally; appearance follows the system setting until explicitly selected. Shared chrome, narratives, figure descriptions and interactive controls are translated through `lib/zh.json`. Original source figures, scientific identifiers and downloadable files retain their original content. When editing English copy, update its corresponding dictionary entry and verify both languages after the build.
 
 All four projects use custom, text-free line illustrations based on institution artwork, displayed on gradient panels. The new 1254 × 1254 assets were AI-assisted redraws requested by the owner, not official replacement logos. An SVG luminance filter removes the white background at display time. The marks identify the project setting and do not imply institutional endorsement. Reference artwork sources, retrieved 6 September 2026:
 
@@ -81,3 +81,9 @@ New long-form copy uses explicit English/Chinese pairs, with Chinese composed fr
 ## Future GitHub account rename
 
 The owner chose to retain free GitHub Pages and rename the account later. The current URL therefore remains `https://betoadfish.github.io/`. `billhuang-profile` is a possible future account name, subject to availability. After an owner-initiated rename, rename the user-site repository to `<new-login>.github.io`, update the origin references in page metadata, `public/sitemap.xml`, `public/robots.txt` and this README, check the Pages workflow, and verify both languages and downloads at the new address. No account rename has been performed by this revision.
+
+## Biology question bank
+
+The tool at `/tools/biology` combines Edexcel, AQA AS and historical NSAA Biology practice for ESAT preparation. Source attribution is retained. The public catalog excludes teacher notes, usage history and questions with missing source content. Question and answer PDFs preserve original source scale.
+
+The owner editor supports draft edits, publishing, withdrawal and JSON backups. Cloudflare Access and server-side JWT verification restrict all editor routes to the configured owner. Only published changes appear in the public API. Runtime credentials belong in Cloudflare settings, never in this repository. The public API address is configured in `public/question-bank/config.json`.

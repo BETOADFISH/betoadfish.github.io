@@ -22,6 +22,14 @@ const types = {
 const server = createServer(async (req, res) => {
   try {
     const url = new URL(req.url, 'http://localhost');
+    // Opt-in local bridge for testing the public API with its production CORS policy.
+    if(process.env.QUESTION_BANK_PREVIEW==='1'&&url.pathname==='/question-bank/config.json'){
+      res.setHeader('Content-Type','application/json');res.end(JSON.stringify({api:'/preview-api'}));return;
+    }
+    if(process.env.QUESTION_BANK_PREVIEW==='1'&&/^\/preview-api\/public\/(edexcel|aqa|esat)$/.test(url.pathname)){
+      const upstream=await fetch('https://bill-biology-admin.betoadfish.workers.dev'+url.pathname.replace('/preview-api',''));
+      res.writeHead(upstream.status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(await upstream.text());return;
+    }
     const candidate = path.resolve(
       root,
       '.' + decodeURIComponent(url.pathname),
