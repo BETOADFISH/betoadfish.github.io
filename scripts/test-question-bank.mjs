@@ -15,8 +15,18 @@ const token=async(email,aud='audience',expiry='5m')=>new SignJWT({email}).setPro
 assert.equal(await verifyOwner(await token('owner@example.test'),env,keys),'owner');for(const bad of [await token('visitor@example.test'),await token('owner@example.test','wrong'),await token('owner@example.test','audience','-1m'),'forged'])await assert.rejects(()=>verifyOwner(bad,env,keys));await assert.rejects(()=>verifyOwner('',env,keys));
 const base=catalogs.esat.questions[0];assert.throws(()=>validatePatch({marks:2},base));assert.throws(()=>validatePatch({note:'private'},base));assert.throws(()=>validatePatch({qp:[{page:999,box:[0,0,1,1]}]},base));assert.throws(()=>validatePatch({ms:[{page:1,box:[0,1,1,0]}]},base));assert.deepEqual(validatePatch({summary:'Enzyme activity'},base),{summary:'Enzyme activity'});
 const withdrawalCatalog={bank:'edexcel',papers:[],questions:[{...a,parent_id:'p'},{...b,parent_id:'p'},{...a,id:'p',is_leaf:false,leaves:['a','b']},c]};
-globalThis.fetch=async url=>new Response(JSON.stringify(String(url).endsWith('config.json')?{api:'/api'}:String(url).startsWith('/api')?[{id:'p',published:null,revision:2}]:withdrawalCatalog));
+const snapshotPath='/question-bank/updates/'+'a'.repeat(64);
+const requested=[];
+globalThis.fetch=async url=>{requested.push(String(url));assert(String(url).startsWith('/question-bank/'));return new Response(JSON.stringify(String(url).endsWith('config.json')?{updates:snapshotPath}:String(url).startsWith(snapshotPath)?[{id:'p',published:null,revision:2}]:withdrawalCatalog));};
 assert.deepEqual((await loadCatalog('edexcel')).questions,[]);
+assert(requested.includes(snapshotPath+'/edexcel.json'));
+globalThis.fetch=async url=>new Response(JSON.stringify(String(url).endsWith('config.json')?{updates:snapshotPath}:String(url).startsWith(snapshotPath)?[{id:'a',published:{summary:'Published edit',marks:3},revision:7}]:withdrawalCatalog));
+const patched=await loadCatalog('edexcel');assert.equal(patched.questions.find(q=>q.id==='a').summary,'Published edit');assert.equal(patched.questions.find(q=>q.id==='p').marks,4);
+globalThis.fetch=async url=>String(url).startsWith(snapshotPath)?new Response('unavailable',{status:503}):new Response(JSON.stringify(String(url).endsWith('config.json')?{updates:snapshotPath}:withdrawalCatalog));
+await assert.rejects(()=>loadCatalog('edexcel')); // Never resurrect withdrawals from the original catalog.
+globalThis.fetch=async url=>new Response(JSON.stringify(String(url).endsWith('config.json')?{updates:'https://untrusted.test'}:withdrawalCatalog));
+await assert.rejects(()=>loadCatalog('edexcel'));
+
 globalThis.fetch=async url=>{assert(String(url).startsWith('/question-bank/sources/'));return new Response(fs.readFileSync('public'+url));};
 for(const [bank,cat] of Object.entries(catalogs)){const selected=[cat.questions.find(q=>q.is_leaf),cat.questions.find(q=>q.kind==='major'&&q.leaves.length>1)||cat.questions[10],...cat.questions.filter(q=>q.dependencies.some(d=>d.kind==='requires_answer')).slice(0,1)].map(q=>q.id);for(const role of ['qp','ms']){const bytes=await createQuestionPdf(cat,selected,role);fs.writeFileSync(`qa/${bank}-${role}.pdf`,bytes);const pdf=await PDFDocument.load(bytes);assert(pdf.getPageCount()>1);assert(pdf.getPages().every(p=>p.getWidth()>=595&&p.getHeight()>=841));console.log(`${bank} ${role}: ${pdf.getPageCount()} pages`);}}
 console.log('Selection, source privacy, auth rejection, edit validation and real PDF exports passed.');
