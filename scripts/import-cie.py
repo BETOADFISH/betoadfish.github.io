@@ -1,6 +1,7 @@
 from pathlib import Path
 import json,re,collections
 ROOT=Path(__file__).resolve().parents[1];CACHE=ROOT/'work/cie-layout'
+if (ROOT/'public/question-bank/cie.json').exists() and json.loads((ROOT/'public/question-bank/cie.json').read_text('utf8')).get('version',1)>=3:raise SystemExit('Use private base catalogs and prepare-practice-assets.py for question-only releases.')
 SESSION={'m':'February/March','s':'May/June','w':'October/November'}
 TOPICS={
 'Cell structure':r'microscop|micrograph|organelle|prokaryot|eukaryot|ribosome|lysosome|cell structure|magnification',

@@ -1,13 +1,15 @@
 export type Bank = 'edexcel' | 'aqa' | 'esat' | 'cie';
 export type Region = { page: number; box?: number[] };
 export type Dependency = { id?: string; kind?: string; question_id?: string; qp?: Region[] };
-export type Question = { id:string; bank:Bank; paper_id:string; label:string; parent_id?:string|null; major_id:string; kind:string; marks:number; summary:string; text:string; topics:string[]; chapters:string[]; skills:string[]; practical_skills?:string[]; year:number; session:string; unit:number; code:string; paper_title:string; is_leaf:boolean; leaves:string[]; qp:Region[]; ms:Region[]; dependencies:Dependency[]; historical_extension?:boolean; revision:number };
-export type Paper = {id:string;title:string;code:string;qp:string;ms:string;general_ms?:Region[]};
-export type Catalog = {bank:Bank;version:number;questions:Question[];papers:Paper[]};
+export type Asset = {url:string;pages:Record<string,number>};
+export type TopicNode = {id:string;label:string;children?:TopicNode[]};
+export type Question = {expected_seconds:number;topic_ids?:string[];assets?:{qp:Asset;ms:Asset}; id:string; bank:Bank; paper_id:string; label:string; parent_id?:string|null; major_id:string; kind:string; marks:number; summary:string; text:string; topics:string[]; chapters:string[]; skills:string[]; practical_skills?:string[]; year:number; session:string; unit:number; code:string; paper_title:string; is_leaf:boolean; leaves:string[]; qp:Region[]; ms:Region[]; dependencies:Dependency[]; historical_extension?:boolean; revision:number };
+export type Paper = {id:string;title:string;code:string;qp:string;ms:string;general_ms?:Region[];guidance_asset?:Asset};
+export type Catalog = {bank:Bank;version:number;taxonomy?:TopicNode[];questions:Question[];papers:Paper[]};
 export const banks = {
- edexcel:{name:'Edexcel',detail:'IAS / IAL Biology',color:'#23645D',caption:'Unit 1 · Unit 2 · Unit 3'},
- aqa:{name:'AQA AS',detail:'Biology · 7401',color:'#625387',caption:'Paper 1 · Paper 2'},
- cie:{name:'CIE',detail:'Cambridge Biology · 9700',color:'#356F9B',caption:'AS & A Level · Paper 1–5'},
+ edexcel:{name:'Edexcel',detail:'IAS / IAL Biology',color:'#23645D',caption:'AS & AL · Unit 1–6'},
+ aqa:{name:'AQA',detail:'Biology · 7401 / 7402',color:'#625387',caption:'AS & A Level · Paper 1–3'},
+ cie:{name:'CIE',detail:'Cambridge Biology · 9700',color:'#356F9B',caption:'AS & A Level · Paper 1, 2, 4, 5'},
  esat:{name:'ESAT Biology',detail:'NSAA practice',color:'#9A6330',caption:'NSAA 2016–2023'},
 };
 export function resolveSelection(ids:string[],questions:Question[]):Question[]{
@@ -26,6 +28,8 @@ export function removeSelection(ids:string[],id:string,questions:Question[]):str
  return selected.map(q=>q.id);
 }
 export function selectedMarks(questions:Question[],catalog:Question[]){const leaves=new Set(questions.flatMap(q=>q.leaves));return catalog.filter(q=>q.is_leaf&&leaves.has(q.id)).reduce((n,q)=>n+q.marks,0);}
+export function expectedMinutes(questions:Question[],catalog:Question[]){const leaves=new Set(questions.flatMap(q=>q.leaves));return Math.round(catalog.filter(q=>q.is_leaf&&leaves.has(q.id)).reduce((n,q)=>n+q.expected_seconds,0)/60*100)/100;}
+export function qualification(q:Question){return q.bank==='esat'?'ESAT':q.bank==='aqa'?(q.code.startsWith('7402')?'AL':'AS'):q.bank==='edexcel'?(q.unit>=4?'AL':'AS'):(q.unit>=4?'AL':'AS');}
 export async function loadCatalog(bank:Bank):Promise<Catalog>{
  const r=await fetch(`/question-bank/${bank}.json`);if(!r.ok)throw Error('题库暂时没加载出来，请稍后再试。');const base:Catalog=await r.json();
  const cfg=await fetch('/question-bank/config.json',{cache:'no-store'});if(!cfg.ok)throw Error('题库连接失败，请刷新页面。');const {api,updates:publishedPath}=await cfg.json() as {api?:string;updates?:string};
@@ -37,6 +41,6 @@ export async function loadCatalog(bank:Bank):Promise<Catalog>{
  base.questions=base.questions.flatMap(q=>{if(withdrawn.has(q.id))return[];const u=map.get(q.id);return u?(u.published?[{...q,...u.published,id:q.id,bank,revision:u.revision}]:[]):[q];});
  // Do not expose a parent or dependent question when any required child is unpublished.
  let changed=true;while(changed){const available=new Set(base.questions.map(q=>q.id));const next=base.questions.filter(q=>q.leaves.every(id=>available.has(id))&&(q.dependencies||[]).every(d=>d.kind!=='requires_answer'||available.has(d.question_id||'')));changed=next.length!==base.questions.length;base.questions=next;}}
- const byId=new Map(base.questions.map(q=>[q.id,q]));for(const q of base.questions)if(!q.is_leaf)q.marks=q.leaves.reduce((sum,id)=>sum+(byId.get(id)?.marks||0),0);
+ const byId=new Map(base.questions.map(q=>[q.id,q]));for(const q of base.questions)if(!q.is_leaf){q.marks=q.leaves.reduce((sum,id)=>sum+(byId.get(id)?.marks||0),0);q.expected_seconds=q.leaves.reduce((sum,id)=>sum+(byId.get(id)?.expected_seconds||0),0);}
  return base;
 }

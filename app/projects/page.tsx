@@ -1,4 +1,5 @@
+import { t } from '@/lib/bilingual';
 import { Copy, SiteLink } from '@/components/site-context';
 import { WorkGrid } from '@/components/work-grid';
 export const metadata = { title: 'Research | Bill Huang', description: 'Projects in enzyme engineering, protein production and antimicrobial research.', alternates: { canonical: 'https://betoadfish.github.io/projects', languages: { en: 'https://betoadfish.github.io/projects', 'zh-CN': 'https://betoadfish.github.io/zh/projects' } } };
-export default function Directory() { return <main className="wrap directory-page"><p className="eyebrow"><Copy>{"Research"}</Copy></p><h1><Copy>{"Experiments and the decisions behind them."}</Copy></h1><p className="directory-intro"><Copy>{"Projects in enzyme engineering, protein production and antimicrobial research."}</Copy></p><WorkGrid category="Research"/></main>; }
+export default function Directory() { return <main className="wrap directory-page"><p className="eyebrow"><Copy>{"Research"}</Copy></p><h1><Copy>{t('Enzymes, proteins and antimicrobials','酶工程、蛋白质与抗菌研究')}</Copy></h1><p className="directory-intro"><Copy>{"Projects in enzyme engineering, protein production and antimicrobial research."}</Copy></p><WorkGrid category="Research"/></main>; }

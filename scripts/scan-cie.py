@@ -6,7 +6,7 @@ sys.path.insert(0,str(ROOT/'work/pytools'))
 import pymupdf as fitz
 SOURCE=ROOT.parent/'BIO AL/CIE/Materials/Past Papers'
 CACHE=ROOT/'work/cie-layout';CACHE.mkdir(parents=True,exist_ok=True)
-OUT=ROOT/'public/question-bank/sources';OUT.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'work/private-sources';OUT.mkdir(parents=True,exist_ok=True)
 def key(p):
  m=re.fullmatch(r'9700_([msw])(\d\d)_(qp|ms)_(\d\d)\.pdf',p.name)
  if m:return int('20'+m[2]),m[1],m[4],m[3]

@@ -6,6 +6,8 @@ import pypdfium2 as pdfium
 ROOT=Path(__file__).resolve().parents[1];BASE=ROOT.parent
 BANKS={'edexcel':'Biology Question Desk','aqa':'AQA AS Biology Question Desk','esat':'ESAT Biology Question Desk'}
 OUT=ROOT/'public/question-bank';OUT.mkdir(exist_ok=True)
+if (OUT/'edexcel.json').exists() and json.loads((OUT/'edexcel.json').read_text('utf8')).get('version',1)>=3:
+ raise SystemExit('Legacy importer disabled for question-only releases. Use the private base catalogs and scripts/prepare-practice-assets.py.')
 reports={};retained=set()
 cie_archive=OUT/'cie-papers.json'
 if cie_archive.exists():

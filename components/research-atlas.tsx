@@ -5,11 +5,11 @@ import { Copy, SiteLink, useSite } from './site-context';
 import { t } from '@/lib/bilingual';
 
 const fields = [
-  { theme:'hubisco', icon:FlaskConical, label:t('Enzyme design','酶设计'), name:'HuBisCO', path:'/projects/hubisco', note:t('Changing substrate chemistry to explore a different route for carbon fixation.','从底物化学出发，探索不同的固碳路线。') },
-  { theme:'pet', icon:Layers3, label:t('Biocatalysis','生物催化'), name:t('PET hydrolases','PET 水解酶'), path:'/projects/pet-hydrolase', note:t('Connecting recombinant protein production with catalytic characterisation.','把重组蛋白制备与催化功能表征连接起来。') },
-  { theme:'mcr', icon:Microscope, label:t('Antimicrobials','抗菌研究'), name:t('Colistin adjuvants','多黏菌素 E 增效剂'), path:'/projects/mcr1-colistin', note:t('Following a combination effect from growth assays to membrane-level questions.','从组合用药的生长响应，追问细胞膜层面的作用。') },
-  { theme:'culture', icon:ChartNoAxesCombined, label:t('Biotech strategy','生技分析'), name:t('3D cell culture','3D 细胞培养'), path:'/intelligence/3d-cell-culture', note:t('Translating material properties into adoption, workflow and investment questions.','把材料性能转化为客户采用、实验流程与投资判断。') },
-  { theme:'yidu', icon:FileHeart, label:t('Yidu / Healthcare','医渡 / 医药研究'), name:t('Yidu healthcare research','医渡科技 · 医药研究'), path:'/intelligence/yidu', note:t('Connecting clinical interviews, evidence questions and patient pathways.','把临床访谈、证据问题与患者路径联系起来。') },
+  { theme:'hubisco', icon:FlaskConical, label:t('Enzyme design','酶设计'), name:t('Cambridge · HuBisCO','剑桥大学 · HuBisCO'), path:'/projects/hubisco', note:t('Changing substrate chemistry to explore a different route for carbon fixation.','从底物化学出发，探索不同的固碳路线。') },
+  { theme:'pet', icon:Layers3, label:t('Biocatalysis','生物催化'), name:t('Portsmouth · PET hydrolases','朴茨茅斯大学 · PET 水解酶'), path:'/projects/pet-hydrolase', note:t('Expressing and purifying PET hydrolases, then testing their activity.','表达、纯化 PET 水解酶，并测试催化活性。') },
+  { theme:'mcr', icon:Microscope, label:t('Antimicrobials','抗菌研究'), name:t('Melbourne · Colistin adjuvants','墨尔本大学 · 多黏菌素 E 增效剂'), path:'/projects/mcr1-colistin', note:t('Testing colistin combinations and their effects on bacterial membranes.','测试多黏菌素 E 的联合效果，以及对细菌细胞膜的影响。') },
+  { theme:'culture', icon:ChartNoAxesCombined, label:t('Biotech strategy','生技分析'), name:t('Shanghai Dynamax · 3D cell culture','上海冠亚投资 · 3D 细胞培养'), path:'/intelligence/3d-cell-culture', note:t('Comparing 3D culture materials, validation evidence and laboratory costs.','比较 3D 培养材料、验证证据和实验成本。') },
+  { theme:'yidu', icon:FileHeart, label:t('Healthcare research','医药研究'), name:t('Yidu · Healthcare research','医渡科技 · 医药研究'), path:'/intelligence/yidu', note:t('Reviewing clinician interviews and factor XI research questions in stroke prevention.','整理卒中预防相关的医生访谈与凝血因子 XI 研究问题。') },
 ];
 const paths=['M135 90 C205 90 210 195 280 195','M135 300 C205 300 210 195 280 195','M135 195 L280 195','M425 265 C355 265 350 195 280 195','M425 125 C355 125 350 195 280 195'];
 export function ResearchAtlas(){

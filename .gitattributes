@@ -1,1 +1,2 @@
-public/question-bank/sources/*.pdf binary
+*.pdf binary
+*.png binary
