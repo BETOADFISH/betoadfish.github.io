@@ -1,4 +1,4 @@
-export type Bank = 'edexcel' | 'aqa' | 'esat';
+export type Bank = 'edexcel' | 'aqa' | 'esat' | 'cie';
 export type Region = { page: number; box?: number[] };
 export type Dependency = { id?: string; kind?: string; question_id?: string; qp?: Region[] };
 export type Question = { id:string; bank:Bank; paper_id:string; label:string; parent_id?:string|null; major_id:string; kind:string; marks:number; summary:string; text:string; topics:string[]; chapters:string[]; skills:string[]; practical_skills?:string[]; year:number; session:string; unit:number; code:string; paper_title:string; is_leaf:boolean; leaves:string[]; qp:Region[]; ms:Region[]; dependencies:Dependency[]; historical_extension?:boolean; revision:number };
@@ -7,6 +7,7 @@ export type Catalog = {bank:Bank;version:number;questions:Question[];papers:Pape
 export const banks = {
  edexcel:{name:'Edexcel',detail:'IAS / IAL Biology',color:'#23645D',caption:'Unit 1 · Unit 2 · Unit 3'},
  aqa:{name:'AQA AS',detail:'Biology · 7401',color:'#625387',caption:'Paper 1 · Paper 2'},
+ cie:{name:'CIE',detail:'Cambridge Biology · 9700',color:'#356F9B',caption:'AS & A Level · Paper 1–5'},
  esat:{name:'ESAT Biology',detail:'NSAA practice',color:'#9A6330',caption:'NSAA 2016–2023'},
 };
 export function resolveSelection(ids:string[],questions:Question[]):Question[]{

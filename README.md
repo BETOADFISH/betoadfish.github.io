@@ -84,7 +84,11 @@ The owner chose to retain free GitHub Pages and rename the account later. The cu
 
 ## Biology question bank
 
-The tool at `/tools/biology` combines Edexcel, AQA AS and historical NSAA Biology practice for ESAT preparation. Source attribution is retained. The public catalog excludes teacher notes, usage history and questions with missing source content. Question and answer PDFs preserve original source scale.
+The tool at `/tools/biology` combines Edexcel, AQA AS, Cambridge 9700 and historical NSAA Biology practice for ESAT preparation. Source attribution is retained. The public catalog excludes teacher notes, usage history and questions with missing source content. Question and answer PDFs preserve original source scale.
+
+CIE includes all 773 locally available QP/MS files from 2016–2026, grouped into 406 archive entries. There are 367 paired papers and 4,079 selectable questions; structured questions remain whole. Officially discounted multiple-choice questions and questions with omitted source figures are excluded from selection. Unpaired PDFs remain available in the archive. Paper 3 requires laboratory materials. Original local PDFs are untouched; public copies retain page dimensions and text, with selected large images recompressed at their original pixel dimensions. `scripts/scan-cie.py` produces the ignored extraction cache and `scripts/import-cie.py` creates the public catalogs. CIE uses accent `#356F9B`.
+
+Every bank supports random practice by marks or estimated minutes, with selectable topics and current year/paper restrictions. Multiple checked topics are alternatives. The generator keeps answer dependencies together, selects up to 100 question units without duplicates and stays within the target. It reports when available questions cannot fill the target. Minutes are an adjustable estimate, initially 1.5 minutes per mark. Validate with `node scripts/test-random-paper.mjs` and `node scripts/test-question-bank.mjs`.
 
 The owner editor supports draft edits, publishing, withdrawal and JSON backups. GitHub OAuth restricts the editor to the configured immutable owner ID. Login uses PKCE, a short-lived encrypted state cookie and an eight-hour opaque session; only session hashes are stored. No repository permissions are requested. Cloudflare Access remains an optional alternative when GitHub login is not configured. Only published changes appear in the public API. Runtime credentials belong in Cloudflare settings, never in this repository. The public API address is configured in `public/question-bank/config.json`.
 

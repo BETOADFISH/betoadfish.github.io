@@ -2,7 +2,7 @@ import {build} from 'esbuild';import fs from 'node:fs';import assert from 'node:
 fs.mkdirSync('qa',{recursive:true});
 for(const [name,entry] of [['bank','lib/question-bank.ts'],['pdf','lib/question-pdf.ts'],['auth','backend/auth.ts'],['validation','backend/validation.ts']])await build({entryPoints:[entry],bundle:true,platform:'node',format:'esm',packages:'external',outfile:`qa/${name}.mjs`});
 const {resolveSelection,removeSelection,selectedMarks,loadCatalog}=await import('../qa/bank.mjs');const {createQuestionPdf}=await import('../qa/pdf.mjs');const {verifyOwner}=await import('../qa/auth.mjs');const {validatePatch}=await import('../qa/validation.mjs');
-const catalogs=Object.fromEntries(['edexcel','aqa','esat'].map(b=>[b,JSON.parse(fs.readFileSync(`public/question-bank/${b}.json`,'utf8'))]));
+const catalogs=Object.fromEntries(['edexcel','aqa','esat','cie'].map(b=>[b,JSON.parse(fs.readFileSync(`public/question-bank/${b}.json`,'utf8'))]));
 for(const [bank,cat] of Object.entries(catalogs)){
  const map=new Map(cat.questions.map(q=>[q.id,q]));assert.equal(map.size,cat.questions.length);
  for(const q of cat.questions){assert(q.qp.length&&q.ms.length);for(const id of q.leaves)assert(map.has(id));assert(!('note' in q));assert(!('review_note' in q));assert(!('lesson_refs' in q));assert(!('usage' in q));assert(!('favorite' in q));const selected=resolveSelection([q.id,q.id],cat.questions);assert(selected.length);assert.equal(selectedMarks(selected,cat.questions),new Set(selected.flatMap(s=>s.leaves)).size?cat.questions.filter(x=>x.is_leaf&&new Set(selected.flatMap(s=>s.leaves)).has(x.id)).reduce((n,x)=>n+x.marks,0):0);}

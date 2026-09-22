@@ -35,6 +35,8 @@ jobs:
         if: steps.snapshot.outputs.changed == 'true'
       - run: node scripts/test-question-bank.mjs
         if: steps.snapshot.outputs.changed == 'true'
+      - run: node scripts/test-random-paper.mjs
+        if: steps.snapshot.outputs.changed == 'true'
       - run: node scripts/test-admin.mjs
         if: steps.snapshot.outputs.changed == 'true'
       - run: node scripts/test-github-auth.mjs

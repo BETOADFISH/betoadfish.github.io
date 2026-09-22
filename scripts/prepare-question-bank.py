@@ -7,6 +7,11 @@ ROOT=Path(__file__).resolve().parents[1];BASE=ROOT.parent
 BANKS={'edexcel':'Biology Question Desk','aqa':'AQA AS Biology Question Desk','esat':'ESAT Biology Question Desk'}
 OUT=ROOT/'public/question-bank';OUT.mkdir(exist_ok=True)
 reports={};retained=set()
+cie_archive=OUT/'cie-papers.json'
+if cie_archive.exists():
+ for paper in json.loads(cie_archive.read_text(encoding='utf-8'))['papers']:
+  for role in ['qp','ms']:
+   if paper.get(role):retained.add(Path(paper[role]).name)
 for bank,folder in BANKS.items():
  root=BASE/folder
  sys.path.insert(0,str(root/'app'))

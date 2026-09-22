@@ -7,7 +7,7 @@ import {build} from 'esbuild';
 await fs.mkdir('qa',{recursive:true});
 await build({entryPoints:['backend/validation.ts'],outfile:'qa/snapshot-validation.mjs',bundle:true,platform:'node',format:'esm'});
 const {validatePatch}=await import('../qa/snapshot-validation.mjs');
-const banks=['edexcel','aqa','esat'];
+const banks=['edexcel','aqa','esat','cie'];
 const snapshots={};
 for(const bank of banks){
  const base=JSON.parse(await fs.readFile(`public/question-bank/${bank}.json`,'utf8'));
