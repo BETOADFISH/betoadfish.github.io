@@ -1,85 +1,19 @@
 import { Copy, SiteLink } from '@/components/site-context';
-import { ArrowUpRight, ArrowRight } from 'lucide-react';
-import { ResearchAtlas } from '@/components/research-atlas';
+import { ArrowUpRight } from 'lucide-react';
 import { CVDownloads } from '@/components/cv-downloads';
 import { t } from '@/lib/bilingual';
 import { WorkGrid } from '@/components/work-grid';
-export default function Home() {
-    return (<main>
-
-      <section className="hero wrap home-hero">
-        <div>
-          <p className="eyebrow">
-            <span className="status-dot"/><Copy>{"Bill Huang / Cambridge"}</Copy></p>
-          <h1><Copy>{"Biochemistry"}</Copy><br /><Copy>{"and "}</Copy><span className="highlight"><Copy>{"biotechnology."}</Copy></span></h1>
-          <p className="hero-description"><Copy>{"I study enzymes and antimicrobial systems, and assess the evidence behind emerging biotechnology. This portfolio documents my experiments, the decisions I made and the questions that remain."}</Copy></p>
-          <div className="actions">
-            <SiteLink className="button primary" href="/projects"><Copy>{"Explore my research"}</Copy><ArrowUpRight size={19}/>
-            </SiteLink>
-            <SiteLink className="text-link" href="#approach"><Copy>{"My scientific approach"}</Copy><ArrowRight size={18}/>
-            </SiteLink>
-          </div>
-          <p className="hero-index"><Copy>{"01 / RESEARCH PORTFOLIO"}</Copy><span><Copy>{"Structure \u2192 Evidence \u2192 Decision"}</Copy></span>
-          </p>
-        </div>
-        <ResearchAtlas/>
-      </section>
-      <div className="discipline-strip">
-        <div className="wrap">
-          <Copy>{[
-        'Biochemistry',
-        'Enzymology',
-        'Protein engineering',
-        'Structural biology',
-        'Data analysis',
-    ].map((x) => (<span key={x}><Copy>{x}</Copy></span>))}</Copy>
-        </div>
-      </div>
-      <section className="section wrap" id="projects"><div className="section-heading"><div><p className="eyebrow"><Copy>{"Selected work"}</Copy></p><h2><Copy>{"Questions I have worked on."}</Copy></h2></div><p><Copy>{"Each case follows a different part of my work, with the relevant experimental or analytical evidence."}</Copy></p></div><div className="work-group"><h3 className="work-group-title"><span>01</span><Copy>{t("Research","科研项目")}</Copy></h3><WorkGrid category="Research"/></div><div className="work-group"><h3 className="work-group-title"><span>02</span><Copy>{t("Analysis","分析项目")}</Copy></h3><WorkGrid category="Biotech intelligence"/></div><div className="work-group"><h3 className="work-group-title"><span>03</span><Copy>{t("Tools","工具")}</Copy></h3><WorkGrid category="Tools"/></div></section>
-      <section className="section approach-section" id="approach">
-        <div className="wrap">
-          <p className="eyebrow"><Copy>{"02 / How I work"}</Copy></p>
-          <div className="section-heading">
-            <h2><Copy>{"How I approach"}</Copy><br /><Copy>{"an uncertain result."}</Copy></h2>
-            <p><Copy>{"I revisit the controls, the measurement and the assumptions."}</Copy><br /><Copy>{"Then I decide what the result can support."}</Copy></p>
-          </div>
-          <div className="approach-steps">
-            <Copy>{[
-        ['Question', 'Define the biochemical problem.'],
-        ['Hypothesis', 'Connect molecular geometry to a testable idea.'],
-        [
-            'Experiment',
-            'Choose controls that separate possible explanations.',
-        ],
-        ['Evidence', 'Make the measured result inspectable.'],
-        ['Interpretation', 'Separate observation from inference.'],
-        [
-            'Next decision',
-            'Identify the experiment that reduces uncertainty.',
-        ],
-    ].map(([t, b], i) => (<div key={t}>
-                <span className="step-number">0<Copy>{i + 1}</Copy></span>
-                <h3><Copy>{t}</Copy></h3>
-                <p><Copy>{b}</Copy></p>
-              </div>))}</Copy>
-          </div>
-        </div>
-      </section>
-      <section className="section wrap about-grid" id="about">
-        <div>
-          <p className="eyebrow"><Copy>{"03 / About"}</Copy></p>
-          <h2><Copy>{"A background in"}</Copy><br /><Copy>{"experimental science."}</Copy></h2>
-        </div>
-        <div>
-          <p><Copy>{"I\u2019m Bill Huang, a Cambridge Natural Sciences graduate with a background in biochemistry. My experience spans enzyme engineering, antimicrobial research, molecular recognition and biotechnology due diligence. I connect experimental work with structural reasoning to evaluate evidence and guide the next scientific decision."}</Copy></p>
-          <p><Copy>{"My featured project in the Prywes Lab explores alternative sugar-phosphate chemistry in a RuBisCO-based experimental system. Previous research placements took me to Melbourne, Portsmouth and Xiamen. I also developed a biotechnology evaluation framework during a private-equity internship."}</Copy></p>
-          <div className="bio-meta">
-            <span><Copy>{"Research context"}</Copy></span>
-            <strong><Copy>{"University of Cambridge"}</Copy><br /><Copy>{"Department of Biochemistry \u00B7 Prywes Lab"}</Copy></strong>
-          </div>
-          <p className="small muted"><Copy>{"BA Natural Sciences, Cambridge \u00B7 2023\u20132026. Planned MSci Biochemistry, Cambridge \u00B7 October 2026\u2013July 2027."}</Copy></p>
-          <CVDownloads/>
-        </div>
-      </section>
-    </main>);
-}
+export default function Home(){return <main className="portfolio-home">
+ <section className="wrap personal-opening">
+  <div className="personal-intro"><p className="personal-location"><Copy>{t('Biochemistry, Cambridge','生物化学 · 剑桥')}</Copy></p><h1>Bill Huang</h1>
+   <p className="personal-lead"><Copy>{t('I work on enzymes and antimicrobial research. I also study how biotechnology is used in laboratories and healthcare.','我做酶工程和抗菌研究，也关注生物技术在实验室与医疗中的应用。')}</Copy></p>
+   <p><Copy>{t('Here are my research projects, consulting work and a biology question tool I built for teaching.','这里收录了我的科研项目、咨询工作，以及为教学制作的生物题库。')}</Copy></p>
+   <div className="personal-links"><SiteLink href="#projects"><Copy>{t('Browse projects','浏览项目')}</Copy><ArrowUpRight size={18}/></SiteLink><SiteLink href="/tools/biology"><Copy>{t('Open the question bank','打开生物题库')}</Copy></SiteLink></div>
+  </div>
+  <figure className="opening-figure theme-hubisco"><SiteLink href="/projects/hubisco" aria-label="HuBisCO"><img src="/I164-S368-interaction.webp" width="1600" height="1000" alt="RuBisCO active-site molecular illustration" fetchPriority="high"/></SiteLink><figcaption><div><span><Copy>{t('Cambridge · HuBisCO','剑桥大学 · HuBisCO')}</Copy></span><p><Copy>{t('Exploring a six-carbon substrate for RuBisCO.','探索 RuBisCO 对六碳底物的容纳。')}</Copy></p><small><Copy>{t('Active-site illustration used in the project.','项目中的活性位点示意图。')}</Copy></small></div><SiteLink href="/projects/hubisco" aria-label="HuBisCO"><ArrowUpRight size={22}/></SiteLink></figcaption></figure>
+ </section>
+ <section className="wrap portfolio-collection" id="projects"><div className="collection-heading"><h2><Copy>{t('Research','科研项目')}</Copy></h2><p><Copy>{t('Protein production, enzyme design and bacterial membranes.','蛋白制备、酶设计与细菌细胞膜。')}</Copy></p></div><WorkGrid category="Research"/></section>
+ <section className="wrap portfolio-collection"><div className="collection-heading"><h2><Copy>{t('Consulting and analysis','咨询与分析')}</Copy></h2><p><Copy>{t('Technology due diligence and clinician interview research.','技术尽调与医生访谈研究。')}</Copy></p></div><WorkGrid category="Biotech intelligence"/></section>
+ <section className="wrap portfolio-collection"><div className="collection-heading"><h2><Copy>{t('Tools','工具')}</Copy></h2></div><WorkGrid category="Tools"/></section>
+ <section className="wrap personal-background" id="about"><div><h2><Copy>{t('About me','关于我')}</Copy></h2></div><div><p><Copy>{t('I studied Natural Sciences at Cambridge, specialising in biochemistry. In the Prywes Lab, I worked on alternative sugar-phosphate substrates for RuBisCO. My earlier research placements took me to Melbourne, Portsmouth and Xiamen.','我在剑桥大学学习自然科学，主修生物化学。在 Prywes 实验室，我研究了 RuBisCO 的替代糖磷酸底物；此前也在墨尔本、朴茨茅斯和厦门参与过科研项目。')}</Copy></p><p><Copy>{t('Alongside laboratory work, I have worked on biotechnology due diligence and healthcare consulting. I build biology teaching materials and tools from the questions I encounter in lessons.','实验室工作之外，我做过生物技术尽调和医药咨询，也会根据教学中遇到的问题整理生物资料、制作工具。')}</Copy></p><p className="small muted"><Copy>{t('BA Natural Sciences, Cambridge, 2023–2026. Planned MSci Biochemistry, October 2026–July 2027.','剑桥大学自然科学学士，2023–2026。计划于 2026 年 10 月至 2027 年 7 月攻读生物化学 MSci。')}</Copy></p><CVDownloads/></div></section>
+</main>;}

@@ -8,8 +8,8 @@
     "zh": "PET 水解酶"
   },
   "subtitle": {
-    "en": "From soluble protein to a meaningful activity measurement.",
-    "zh": "从可溶蛋白制备，到可解释的活性测量。"
+    "en": "Expression, purification and activity testing.",
+    "zh": "表达、纯化与活性检测。"
   },
   "role": {
     "en": "Research intern",
@@ -21,12 +21,12 @@
   },
   "institution": "Centre for Enzyme Innovation, University of Portsmouth",
   "summary": {
-    "en": "I worked on CCH11 and TurboPETase expression and characterisation, following protein recovery from small-scale trials through purification and activity measurements. The project helped me connect an assay result to the quality and history of the protein preparation.",
-    "zh": "我参与了 CCH11 和 TurboPETase 的表达与表征，从小规模表达试验一路跟踪到纯化和活性测量。这项工作让我把检测结果与蛋白制备质量、表达条件及处理过程联系起来。"
+    "en": "I worked on CCH11 and TurboPETase, from small-scale expression trials to purification and activity assays. I compared preparation conditions to understand how protein recovery affected the measurements.",
+    "zh": "我参与 CCH11 和 TurboPETase 的研究，完成小规模表达试验、纯化与活性检测，并比较蛋白制备条件对回收和测量结果的影响。"
   },
   "introTitle": {
-    "en": "Enzymatic recycling starts with a protein that can be made and tested.",
-    "zh": "研究酶法回收，先要获得可制备、可检测的蛋白。"
+    "en": "Producing enzymes for PET hydrolysis",
+    "zh": "制备用于 PET 水解研究的酶"
   },
   "introLead": {
     "en": "PET is a polyester used in packaging and textiles. PET hydrolases cleave ester bonds, creating a possible route to recover smaller molecules from the polymer. My placement focused on the experimental foundation of that idea: producing enzyme preparations suitable for characterisation.",
@@ -133,7 +133,7 @@
     ]
   ],
   "contribution": {
-    "en": "My work covered expression trials, protein preparation and analysis of laboratory readouts. The main lesson was practical: before interpreting a catalytic difference, account for how much functional protein was actually made and recovered.",
-    "zh": "我的工作覆盖表达条件试验、蛋白制备和实验读数分析。这段经历给我的核心认识很具体：解释催化差异之前，先弄清究竟制备并回收了多少功能蛋白。"
+    "en": "I carried out expression trials, prepared protein samples and analysed laboratory readouts. Interpreting activity differences required checking how much functional protein had been recovered.",
+    "zh": "我开展表达条件试验、制备蛋白样品并分析实验读数。比较活性差异时，需要先核查样品中功能蛋白的实际回收量。"
   }
 }

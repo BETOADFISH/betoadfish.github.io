@@ -8,8 +8,8 @@
     "zh": "黏菌素增效剂"
   },
   "subtitle": {
-    "en": "Following a combination effect from growth to membrane readouts.",
-    "zh": "从联合抑菌效应，追问细胞膜上的变化。"
+    "en": "Natural-compound screening and membrane-permeability assays.",
+    "zh": "天然化合物筛选与膜通透性检测。"
   },
   "role": {
     "en": "Research intern",
@@ -21,12 +21,12 @@
   },
   "institution": "Bio21 Institute, University of Melbourne",
   "summary": {
-    "en": "I screened natural compounds alongside colistin in an MCR-1 research project, then developed membrane-permeability assays to investigate the observed combination effects. The work connected a growth phenotype to the experiments needed to explain it.",
-    "zh": "我在 MCR-1 耐药研究中筛选与黏菌素联用的天然化合物，再开发膜通透性实验，追问联合用药现象背后的原因。工作从抑菌筛选展开，逐步走向对作用机制的检验。"
+    "en": "I screened natural compounds in combination with colistin in an MCR-1 project, then developed membrane-permeability assays to investigate the growth responses.",
+    "zh": "在 MCR-1 耐药研究中，我筛选与黏菌素联用的天然化合物，再通过膜通透性实验研究观察到的生长变化。"
   },
   "introTitle": {
-    "en": "Can a second compound help an antibiotic work again?",
-    "zh": "另一种化合物，能否帮助抗生素重新发挥作用？"
+    "en": "Testing compounds alongside colistin",
+    "zh": "筛选与黏菌素联用的化合物"
   },
   "introLead": {
     "en": "Colistin acts on Gram-negative bacterial membranes. MCR-1 changes the antibiotic’s lipid A target and can reduce susceptibility. An adjuvant strategy asks whether a companion compound can improve the antibiotic response, and through which mechanism.",
@@ -119,7 +119,7 @@
     ]
   ],
   "contribution": {
-    "en": "I conducted MIC and checkerboard work, analysed the growth readouts and refined the membrane assay workflow. The project strengthened how I connect an initial phenotype to a mechanistic experiment, while checking the measurement before assigning a cause.",
-    "zh": "我开展了 MIC 和棋盘法实验、分析生长读数，并优化膜相关检测流程。这项工作训练了我如何从初始表型走向机制实验，也让我更重视在解释原因前先检查测量本身。"
+    "en": "I conducted MIC and checkerboard experiments, analysed growth responses and refined PI and NPN assay conditions. I checked interference and measurement reliability before interpreting a membrane effect.",
+    "zh": "我开展 MIC 和棋盘法实验，分析生长变化，并调整 PI、NPN 检测条件。在解释膜效应前，先排查干扰，检查测量是否可靠。"
   }
 }

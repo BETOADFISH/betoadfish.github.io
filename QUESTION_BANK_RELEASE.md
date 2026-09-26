@@ -24,6 +24,12 @@ Apply `backend/migrations/0002-download-events.sql` before deploying the Worker.
 
 The Yidu logo now uses original vector paths from the cover of its 2025 annual report: https://www.yidutech.com/uploads/20250725/821156eabd9ecb6aeeb6bdb42c4c8b4b.pdf . It is displayed in the project's single-colour treatment, with visible bounds preserved. The former low-resolution website PNG is unused.
 
+## Portfolio design revision (2026-09-27)
+
+The previous published version is preserved by Git tag `backup/pre-design-2026-09-27` at `a7a9585120c03336dbb57b94b70d5f90f5e48218`. The local `Website Backups/2026-09-27-pre-design` folder contains the source archive, the actual GitHub Pages artifact and a checked manifest. Both ZIP archives passed integrity checks; the original six download files were unchanged. The published artifact's old homepage, mobile navigation and approved question snapshot were verified before deployment.
+
+The revision follows the installed Anthropic frontend-design skill, with humanizer and humanizer-zh for copy. It replaces the abstract homepage diagram with the existing molecular illustration, removes decorative numbering and simplifies shared project layouts. Scientific qualifiers, project colours, question-bank behaviour and private administration are preserved. `scripts/check-portfolio-release.mjs` checks 20 built routes for public copy, scientific qualifications and local asset links. No connected browser was available for rendered or touch-interaction validation.
+
 ## Mobile layout and PDF preview (2026-09-26)
 
 The header uses a disclosure menu below 720 px. The question selection panel uses a native modal below 851 px, with a close button, background scroll lock and bottom safe-area spacing. Mobile inputs use 16 px text and controls have larger touch targets. Small research diagrams use a grid; touch devices open 3D structures on demand.

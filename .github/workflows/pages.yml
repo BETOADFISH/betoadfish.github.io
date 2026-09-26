@@ -45,6 +45,8 @@ jobs:
         if: steps.snapshot.outputs.changed == 'true'
       - run: pnpm build
         if: steps.snapshot.outputs.changed == 'true'
+      - run: node scripts/check-portfolio-release.mjs
+        if: steps.snapshot.outputs.changed == 'true'
       - run: touch dist/client/.nojekyll
         if: steps.snapshot.outputs.changed == 'true'
       - uses: actions/configure-pages@v5
