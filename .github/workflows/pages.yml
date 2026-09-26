@@ -41,6 +41,8 @@ jobs:
         if: steps.snapshot.outputs.changed == 'true'
       - run: node scripts/test-github-auth.mjs
         if: steps.snapshot.outputs.changed == 'true'
+      - run: node scripts/test-mobile.mjs
+        if: steps.snapshot.outputs.changed == 'true'
       - run: pnpm build
         if: steps.snapshot.outputs.changed == 'true'
       - run: touch dist/client/.nojekyll

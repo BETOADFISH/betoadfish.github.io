@@ -1,3 +1,4 @@
+import {fetchWithTimeout} from './request-timeout';
 export type Bank = 'edexcel' | 'aqa' | 'esat' | 'cie';
 export type Region = { page: number; box?: number[] };
 export type Dependency = { id?: string; kind?: string; question_id?: string; qp?: Region[] };
@@ -36,7 +37,7 @@ export async function loadCatalog(bank:Bank):Promise<Catalog>{
  if(publishedPath&&!/^\/question-bank\/updates\/[a-f0-9]{64}$/.test(publishedPath))throw Error('题库版本无效，请刷新页面。');
  const updatesUrl=publishedPath?`${publishedPath}/${bank}.json`:api?`${api}/public/${bank}`:null;
  if(!updatesUrl)throw Error('题库发布配置不完整，请稍后再试。');
- {const patch=await fetch(updatesUrl,{cache:'no-store',signal:AbortSignal.timeout(15000)});if(!patch.ok)throw Error('题库暂时无法连接，请稍后再试。');const updates=await patch.json() as {id:string;published:Partial<Question>|null;revision:number}[];const map=new Map<string,{id:string;published:Partial<Question>|null;revision:number}>(updates.map((p:{id:string;published:Partial<Question>|null;revision:number})=>[p.id,p]));
+ {const patch=await fetchWithTimeout(updatesUrl,{cache:'no-store'},15000);if(!patch.ok)throw Error('题库暂时无法连接，请稍后再试。');const updates=await patch.json() as {id:string;published:Partial<Question>|null;revision:number}[];const map=new Map<string,{id:string;published:Partial<Question>|null;revision:number}>(updates.map((p:{id:string;published:Partial<Question>|null;revision:number})=>[p.id,p]));
  const withdrawn=new Set(base.questions.filter(q=>map.get(q.id)?.published===null).flatMap(q=>[q.id,...q.leaves]));
  base.questions=base.questions.flatMap(q=>{if(withdrawn.has(q.id))return[];const u=map.get(q.id);return u?(u.published?[{...q,...u.published,id:q.id,bank,revision:u.revision}]:[]):[q];});
  // Do not expose a parent or dependent question when any required child is unpublished.

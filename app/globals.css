@@ -2471,3 +2471,43 @@ html[data-theme=dark] .scientific-image[src="/evidence/mcr-lipid-a.png"]{filter:
 .case-institution .yidu-official-mark{opacity:.24}
 .case-reading-progress{position:fixed;inset:auto 0 0;height:3px;background:var(--project-ink);transform-origin:left;z-index:90;pointer-events:none}
 @media(max-width:720px){.institution-mark.line-mark-yidu{max-width:125px}.case-institution .institution-mark.line-mark-yidu{max-width:none}}
+
+/* Mobile navigation and intrinsic-size fixes. */
+.mobile-menu-toggle{display:none}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:100px}
+.wrap,.work-copy,.hero-copy,.case-content,.journey-main>*{min-width:0}
+.work-copy,.case-deck,.reference-strip a,.contact-links a{overflow-wrap:anywhere}
+@media(max-width:720px){
+ .site-header{height:auto;min-height:68px;padding-top:env(safe-area-inset-top,0px)}
+ .site-header .header-inner{height:auto;min-height:68px;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;padding-block:8px}
+ .site-header .brand{grid-column:1;grid-row:1}.site-preferences{grid-column:2;grid-row:1}
+ .mobile-menu-toggle{display:inline-flex;grid-column:3;grid-row:1}
+ .preference-control{min-width:44px;height:44px;padding:8px}
+ .site-header nav{display:none;grid-column:1/-1;grid-row:2;margin:0;padding:8px 0 4px;gap:6px;min-width:0}
+ .site-header nav.is-open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .site-header nav a{display:flex;align-items:center;min-height:44px;padding:8px 10px;white-space:normal;font-size:14px;border-radius:7px}
+ .site-header nav a[aria-current=page]{background:var(--surface-soft)}
+ .wrap{width:calc(100% - 32px);margin-inline:auto}
+ .site-header .wrap{width:calc(100% - 24px)}
+ .section-heading{flex-wrap:wrap;gap:16px}.section-heading>*{min-width:0;max-width:100%}
+ .case-masthead{overflow:hidden}.case-facts{grid-template-columns:1fr;gap:12px}
+ .case-reading-links,.contact-links,.cv-downloads{flex-wrap:wrap;gap:12px}
+ .case-reading-links a,.contact-links a,.cv-downloads a{min-height:44px;display:inline-flex;align-items:center}
+ .journey-rail-anchor,.journey-panel{scroll-margin-top:90px}
+ .journey-actions{flex-wrap:wrap}.journey-actions button,.viewer-controls button,.figure-inspection-bar button{min-height:44px;min-width:44px}
+ .comparison-table{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+ .case-reading-progress{bottom:env(safe-area-inset-bottom,0px)}
+ footer{padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:480px){
+ .atlas-map{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;aspect-ratio:auto;min-height:0;padding:10px 16px 20px}
+ .atlas-map>svg,.atlas-lane{display:none}
+ .atlas-core{position:static;transform:none;grid-column:1/-1;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:12px;width:auto;min-height:55px}
+ .atlas-core i{transform:rotate(-90deg)}
+ .atlas-map .atlas-node{position:static;transform:none;width:100%;min-width:0;min-height:76px;padding:10px;font-size:12px}
+ .atlas-map .atlas-node:last-child{grid-column:1/-1}
+ .atlas-story{gap:12px}.atlas-story>div{min-width:0}.atlas-story h3{font-size:18px;overflow-wrap:anywhere}
+ .work-copy{padding:20px 14px}.work-copy h3{font-size:23px}
+ .profile-branches{grid-template-columns:1fr}.profile-branches>div:before{display:none}
+}
+@media(hover:none){.work-card:hover,.qb-banks>button:hover{transform:none}}

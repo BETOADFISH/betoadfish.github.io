@@ -21,7 +21,7 @@ export function StructureViewer({ compact = false }: { compact?: boolean }) {
   const [structure,setStructure] = useState('9RUB');
   const [selected,setSelected] = useState('Overview');
   const [state,setState] = useState<'loading'|'ready'|'error'>('loading');
-  const [activated,setActivated] = useState(compact);
+  const [activated,setActivated] = useState(false);
   const [spinning,setSpinning] = useState(false);
   const [retry,setRetry] = useState(0);
   const [stageVersion,setStageVersion] = useState(0);
@@ -29,7 +29,7 @@ export function StructureViewer({ compact = false }: { compact?: boolean }) {
   const residue = residues.find(r=>r.id===selected);
 
   useEffect(()=>{
-    if(activated || !host.current) return;
+    if(activated || !host.current || window.matchMedia('(pointer: coarse)').matches) return;
     const observer=new IntersectionObserver(entries=>{
       if(entries.some(entry=>entry.isIntersecting)) { setActivated(true); observer.disconnect(); }
     },{rootMargin:'250px'});
@@ -148,7 +148,7 @@ export function StructureViewer({ compact = false }: { compact?: boolean }) {
     </div>
     <div className="viewer-layout"><div className="viewer-scene">
       <div className="ngl-host" ref={host} role="img" aria-label={tr(`${structure} experimental RuBisCO dimer. Drag to rotate; use the labeled buttons to zoom or focus residues.`)}/>
-      {state!=='ready'&&<div className="viewer-fallback"><img className="scientific-image" src="/I164-S368-interaction.webp" alt={tr('Project-supplied static RuBisCO rendering; interactive structure has not loaded')} draggable={false} onContextMenu={e=>e.preventDefault()}/><p role="status"><Copy>{state==='error'?'3D unavailable on this device. Static reference shown.':activated?'Loading the experimental structure…':'Static reference · 3D loads when in view'}</Copy></p>{state==='error'&&<Button variant="outline" onClick={()=>setRetry(x=>x+1)}><Copy>Retry 3D</Copy></Button>}</div>}
+      {state!=='ready'&&<div className="viewer-fallback"><img className="scientific-image" src="/I164-S368-interaction.webp" alt={tr('Project-supplied static RuBisCO rendering; interactive structure has not loaded')} draggable={false} onContextMenu={e=>e.preventDefault()}/><p role="status"><Copy>{state==='error'?'3D unavailable on this device. Static reference shown.':activated?'Loading the experimental structure…':t('Static reference · open 3D to explore','静态参考图 · 可打开 3D 查看')}</Copy></p>{!activated&&<Button variant="outline" onClick={()=>setActivated(true)}><Copy>{t('Open 3D','打开 3D')}</Copy></Button>}{state==='error'&&<Button variant="outline" onClick={()=>setRetry(x=>x+1)}><Copy>Retry 3D</Copy></Button>}</div>}
       <span className="structure-id">PDB {structure}</span>
       <div className="viewer-controls"><Button variant="outline" aria-label={tr('Reset structure view')} disabled={state!=='ready'} onClick={reset}><RotateCcw size={17}/></Button><Button variant="outline" aria-label={tr('Zoom in')} disabled={state!=='ready'} onClick={()=>stageRef.current?.viewerControls.zoom(.18)}><ZoomIn size={17}/></Button><Button variant="outline" aria-label={tr('Zoom out')} disabled={state!=='ready'} onClick={()=>stageRef.current?.viewerControls.zoom(-.22)}><ZoomOut size={17}/></Button><Button variant="outline" aria-label={tr(spinning?'Pause rotation':'Start slow rotation')} aria-pressed={spinning} disabled={state!=='ready'} onClick={()=>{stageRef.current?.setSpin(!spinning);setSpinning(!spinning);}}>{spinning?<Pause size={17}/>:<Play size={17}/>}</Button></div>
       <span className="drag-hint"><Copy>Drag to rotate · Buttons to zoom</Copy></span>

@@ -1,8 +1,8 @@
 'use client';
 import { CVDownloads } from './cv-downloads';
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
-import { Moon, Sun, Languages } from 'lucide-react';
+import { Moon, Sun, Languages, Menu, X } from 'lucide-react';
 import { SiteContext } from './site-context';
 import { localizedPath, translate, type Locale } from '@/lib/locale';
 
@@ -10,6 +10,8 @@ export function SiteShell({ children }: { children: ReactNode }) {
   const currentPath = usePathname() || '/';
   const pathname = currentPath.includes('__vinext_nonexistent_for_404__') ? '/' : currentPath;
   const locale: Locale = /^\/zh(?:\/|$)/.test(pathname) ? 'zh' : 'en';
+  const [menuOpen,setMenuOpen]=useState(false);const menuButton=useRef<HTMLButtonElement>(null);
+  useEffect(()=>setMenuOpen(false),[pathname]);
   const [dark, setDark] = useState(false);
   const [motionPaused,setMotionState]=useState(false);
   const tr = (text: string) => translate(text, locale);
@@ -44,13 +46,14 @@ export function SiteShell({ children }: { children: ReactNode }) {
     <a className="skip-link" href="#main-content">{tr('Skip to content')}</a>
     <header className="site-header"><div className="wrap header-inner">
       <a className="brand" href={href('/')}>Bill<span className="brand-dot">.</span><span className="brand-caption">{tr('Profile')}</span></a>
-      <nav aria-label={tr('Main navigation')}>
+      <nav id="site-navigation" className={menuOpen?'is-open':''} aria-label={tr('Main navigation')} onClick={()=>setMenuOpen(false)} onKeyDown={e=>{if(e.key==='Escape'){setMenuOpen(false);menuButton.current?.focus();}}}>
         <a href={href('/projects')} aria-current={pathname.includes('/projects')?'page':undefined}>{tr('Research')}</a><a href={href('/intelligence')} aria-current={pathname.includes('/intelligence')?'page':undefined}>{tr('Biotech intelligence')}</a><a href={href('/tools')} aria-current={pathname.includes('/tools')?'page':undefined}>{locale === 'zh' ? '工具' : 'Tools'}</a><a href={href('/#about')}>{tr('About')}</a><a href="#contact">{tr('Contact')}</a>
       </nav>
       <div className="site-preferences" aria-label={tr('Reading preferences')}>
         <button className="preference-control theme-switch" onClick={toggleTheme} aria-label={tr(dark ? 'Switch to light mode' : 'Switch to dark mode')} aria-pressed={dark} title={tr(dark ? 'Switch to light mode' : 'Switch to dark mode')}><Sun className="sun-icon" size={18}/><Moon className="moon-icon" size={18}/></button>
         <a className="preference-control language-switch" href={localizedPath(pathname, otherLocale)} lang={otherLocale === 'zh' ? 'zh-CN' : 'en'} hrefLang={otherLocale === 'zh' ? 'zh-CN' : 'en'} aria-label={locale === 'en' ? '切换到中文' : 'Switch to English'} onClick={e => { try { localStorage.setItem('bill-language', otherLocale); } catch {} e.currentTarget.href = localizedPath(window.location.pathname, otherLocale) + window.location.search + window.location.hash; }}><Languages size={17}/><span>{locale === 'en' ? '中文' : 'EN'}</span></a>
       </div>
+      <button ref={menuButton} className="preference-control mobile-menu-toggle" aria-expanded={menuOpen} aria-controls="site-navigation" aria-label={locale==='zh'?(menuOpen?'关闭菜单':'打开菜单'):(menuOpen?'Close menu':'Open menu')} onClick={()=>setMenuOpen(v=>!v)}>{menuOpen?<X size={21}/>:<Menu size={21}/>}</button>
     </div></header>
     <div id="main-content">{children}</div>
     <footer id="contact"><div className="wrap"><div className="contact-row"><div><p className="eyebrow">{tr('Let’s connect')}</p><h2>{tr('Research opportunities')}<br/>{tr('and biotechnology discussions.')}</h2></div><div><p>{tr('Research · Biotech R&D · Strategy')}</p><p className="small">{tr('For research opportunities and biotechnology conversations.')}</p><div className="contact-links"><a href="mailto:zh392@cam.ac.uk">zh392@cam.ac.uk ↗</a><a href="https://www.linkedin.com/in/bill-huang-bb0160302/" target="_blank" rel="noreferrer">LinkedIn ↗</a><CVDownloads compact/></div></div></div><div className="footer-bottom"><span><b>Bill.</b> {tr('Molecular Science & Biotech Intelligence')}</span><span>{tr('© 2026 Bill Huang · Independent portfolio')}</span></div></div></footer>

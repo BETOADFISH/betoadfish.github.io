@@ -34,3 +34,33 @@
 @keyframes qb-progress{to{background-position:-250% 0}}
 @media(prefers-reduced-motion:reduce){.qb *{animation:none!important;transition:none!important}.qb-banks>button:hover,.qb-add:active{transform:none}}
 [data-motion=paused] .qb *{animation:none!important;transition:none!important}
+
+.qb-cart-dialog{color:var(--qb-ink)}.qb-cart-dialog:not([open]){display:none}.qb-cart-dialog::backdrop{background:#101a16a8}
+.qb-ready-actions{display:flex;flex-wrap:wrap;gap:10px}.qb-ready-actions a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid var(--qb-border);border-radius:7px;color:var(--qb-accent)}.qb-ready-actions small{flex-basis:100%;font-size:12px;color:var(--qb-muted);line-height:1.6}
+.qb-pdf-pages{display:flex;flex-direction:column;overflow:hidden;padding:8px;min-height:0;height:62vh;height:62dvh;background:var(--qb-card)}.qb-pdf-pages>p{color:var(--qb-muted)}
+.qb-pdf-pager{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-shrink:0;padding-bottom:8px;color:var(--qb-ink)}
+.qb-pdf-pager button{min-height:44px;border:1px solid var(--qb-border);border-radius:6px;padding:8px 14px;background:var(--qb-card);color:var(--qb-ink)}
+.qb-pdf-sheet{overflow:auto;min-height:0;flex:1;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:8px}
+.qb-pdf-sheet canvas{display:block;width:100%;height:auto;margin:0 auto}.qb-pdf-sheet canvas[hidden]{display:none}
+.qb-preview{max-height:94vh;max-height:94dvh;overflow:auto}.qb-preview-head strong{min-width:0;overflow-wrap:anywhere}.qb-preview-head button{flex-shrink:0;min-width:44px;min-height:44px}
+@media(max-width:850px){
+ .qb{padding:20px 14px calc(100px + env(safe-area-inset-bottom,0px));min-height:75dvh}
+ .qb-top{gap:12px;font-size:12px;flex-wrap:wrap}.qb-bankbar{gap:14px}
+ .qb-switch{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:8px}
+ .qb-switch button{min-height:44px}
+ .qb-search input,.qb-filter-row select,.qb-random input,.qb-random select{font-size:16px;min-width:0;min-height:44px}
+ .qb-filters{padding:12px}.qb-filter-row>*{min-width:0;max-width:100%}.qb-filter-row select{flex:1 1 120px}
+ .qb-subtle,.qb-topic-actions button{min-height:44px}.qb-topic-actions{flex-wrap:wrap;gap:8px}
+ .qb-topic-picker{padding:12px}.qb-topic-tree{max-height:none;overflow:visible}
+ .qb-topic-group summary{min-height:44px;gap:8px;font-size:14px}.qb-topic-group summary span{min-width:0;overflow-wrap:anywhere}.qb-topic-group summary small{white-space:nowrap}
+ .qb-topic-group>div{padding-left:10px}.qb-topic-leaf{min-height:44px;align-items:center;font-size:14px;line-height:1.5}.qb-topic-picker input[type=checkbox]{width:22px;height:22px}
+ .qb-random-controls{display:grid;grid-template-columns:minmax(0,1fr) 88px;gap:10px}.qb-random-controls label,.qb-random input,.qb-random select{width:100%;min-width:0}
+ .qb-random>.qb-primary{width:100%;min-height:46px}
+ .qb-results article{gap:10px;padding:12px}.qb-add{width:44px;height:44px}.qb-question-meta{font-size:12px;line-height:1.5}.qb-tags span{overflow-wrap:anywhere}
+ .qb-cart-desktop{display:none}.qb-cart-dialog[open]{display:block;position:fixed;inset:auto 0 0;margin:0 auto;width:100%;max-width:600px;max-height:88vh;max-height:88dvh;border-radius:18px 18px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));overflow:auto;overscroll-behavior:contain;box-shadow:none}
+ .qb-cart-dialog .qb-cart-heading{position:sticky;top:-18px;background:var(--qb-card);padding:8px 0;z-index:1}.qb-cart-dialog .qb-selected{max-height:none;overflow:visible}.qb-selected button{min-width:44px;min-height:44px}.qb-mobile-close{min-width:44px;min-height:44px}
+ .qb-mobile-cart{bottom:calc(12px + env(safe-area-inset-bottom,0px));left:12px;right:12px;min-height:52px}
+ .qb-preview{width:calc(100% - 12px);max-width:none;padding:10px;max-height:calc(100dvh - 16px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
+ .qb-preview-head{font-size:13px}.qb-preview-tabs{flex-wrap:wrap;gap:6px}.qb-preview-tabs button{min-height:44px;padding:8px 10px;font-size:14px}
+ .qb-preview .qb-pdf-pages{height:60vh;height:60dvh}.qb-pdf-pager{font-size:13px}.qb-pdf-sheet{padding:4px}
+}

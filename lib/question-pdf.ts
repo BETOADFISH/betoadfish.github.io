@@ -1,3 +1,4 @@
+import {fetchWithTimeout} from './request-timeout';
 import {PDFDocument,StandardFonts,rgb} from 'pdf-lib';
 import {type Catalog,type Question,type Region,type Asset,expectedMinutes,selectedMarks,resolveSelection,banks} from './question-bank';
 export type Role='qp'|'ms';
@@ -5,7 +6,7 @@ const byteCache=new Map<string,Uint8Array>();let cachedBytes=0;
 async function fetchAsset(url:string){
  if(!/^\/question-bank\/items\/[a-f0-9]{64}\.pdf$/.test(url))throw Error('题目文件地址无效。');
  const hit=byteCache.get(url);if(hit){byteCache.delete(url);byteCache.set(url,hit);return hit;}
- const response=await fetch(url,{signal:AbortSignal.timeout(60000)});if(!response.ok)throw Error('题目文件暂时无法下载，请稍后重试。');
+ const response=await fetchWithTimeout(url,{},60000);if(!response.ok)throw Error('题目文件暂时无法下载，请稍后重试。');
  const bytes=new Uint8Array(await response.arrayBuffer());
  while(cachedBytes+bytes.length>64*1024*1024&&byteCache.size){const key=byteCache.keys().next().value!;cachedBytes-=byteCache.get(key)!.length;byteCache.delete(key);}
  if(bytes.length<=64*1024*1024){byteCache.set(url,bytes);cachedBytes+=bytes.length;}return bytes;
