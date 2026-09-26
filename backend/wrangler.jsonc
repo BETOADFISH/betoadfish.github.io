@@ -4,6 +4,7 @@
   "compatibility_date": "2026-09-01",
   "workers_dev": true,
   "preview_urls": false,
+  "triggers": {"crons":["17 3 * * *"]},
   "vars": {"PUBLIC_ORIGIN":"https://betoadfish.github.io"},
   "rules": [{"type":"Text","globs":["**/*.html"],"fallthrough":true}],
   "d1_databases": [{"binding":"DB","database_name":"bill-biology","database_id":"c0f1db64-7c3c-4f80-90b5-5bc16f075951"}]

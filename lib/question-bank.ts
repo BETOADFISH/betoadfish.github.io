@@ -7,10 +7,10 @@ export type Question = {expected_seconds:number;topic_ids?:string[];assets?:{qp:
 export type Paper = {id:string;title:string;code:string;qp:string;ms:string;general_ms?:Region[];guidance_asset?:Asset};
 export type Catalog = {bank:Bank;version:number;taxonomy?:TopicNode[];questions:Question[];papers:Paper[]};
 export const banks = {
- edexcel:{name:'Edexcel',detail:'IAS / IAL Biology',color:'#23645D',caption:'AS & AL · Unit 1–6'},
- aqa:{name:'AQA',detail:'Biology · 7401 / 7402',color:'#625387',caption:'AS & A Level · Paper 1–3'},
- cie:{name:'CIE',detail:'Cambridge Biology · 9700',color:'#356F9B',caption:'AS & A Level · Paper 1, 2, 4, 5'},
- esat:{name:'ESAT Biology',detail:'NSAA practice',color:'#9A6330',caption:'NSAA 2016–2023'},
+ edexcel:{name:'Edexcel',detail:'IAS / IAL Biology',color:'#23645D',bright:'#87c6b8',caption:'AS & AL · Unit 1–6'},
+ aqa:{name:'AQA',detail:'Biology · 7401 / 7402',color:'#625387',bright:'#c3acec',caption:'AS & A Level · Paper 1–3'},
+ cie:{name:'CIE',detail:'Cambridge Biology · 9700',color:'#356F9B',bright:'#94cbee',caption:'AS & A Level · Paper 1, 2, 4, 5'},
+ esat:{name:'ESAT Biology',detail:'NSAA practice',color:'#9A6330',bright:'#e5b47e',caption:'NSAA 2016–2023'},
 };
 export function resolveSelection(ids:string[],questions:Question[]):Question[]{
  const map=new Map(questions.map(q=>[q.id,q]));const chosen:Question[]=[];const visiting=new Set<string>();const done=new Set<string>();

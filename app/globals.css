@@ -2462,7 +2462,12 @@ html[data-theme=dark] .source-figure .scientific-image.photographic-record{filte
 html[data-theme=dark] .scientific-image[src="/evidence/mcr-lipid-a.png"]{filter:none;background:#fff}
 .theme-tools{--project-color:#23645d}.theme-tools .work-art{background:#e0ece6;color:#23645d}.theme-tools .work-art>svg{align-self:center}
 
-.yidu-official-mark{display:block;width:165px;max-width:100%;aspect-ratio:165/50;background:currentColor;mask:url(/brands/yidu-official.png) center/contain no-repeat;-webkit-mask:url(/brands/yidu-official.png) center/contain no-repeat}.line-mark-yidu{width:165px}
 
-.line-mark-yidu{max-width:100%;min-width:0}.yidu-official-mark{width:100%;min-width:0}
-.line-mark-yidu{width:115px;max-width:100%}.yidu-official-mark{aspect-ratio:97/50;mask-position:left center;-webkit-mask-position:left center;mask-size:auto 100%;-webkit-mask-size:auto 100%}
+
+/* Original vector wordmark, sized by its visible bounds. */
+.institution-mark.line-mark-yidu{width:100%;max-width:160px;min-width:0}
+.yidu-official-mark{display:block;width:100%;max-width:100%;aspect-ratio:98.4/51.4;mask:url(/brands/yidu-vector.svg) center/contain no-repeat;-webkit-mask:url(/brands/yidu-vector.svg) center/contain no-repeat;background:currentColor}
+.case-institution .institution-mark.line-mark-yidu{width:100%;max-width:560px}
+.case-institution .yidu-official-mark{opacity:.24}
+.case-reading-progress{position:fixed;inset:auto 0 0;height:3px;background:var(--project-ink);transform-origin:left;z-index:90;pointer-events:none}
+@media(max-width:720px){.institution-mark.line-mark-yidu{max-width:125px}.case-institution .institution-mark.line-mark-yidu{max-width:none}}

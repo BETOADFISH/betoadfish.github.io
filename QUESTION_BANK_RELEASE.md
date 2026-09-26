@@ -16,3 +16,10 @@ The public site loads same-origin catalogs and PDF fragments, so visitors do not
 The Yidu mark uses the public logo from https://www.yidutech.com/static/cn/pc/images/logo.png (retrieved 2026-09-22), retaining its original contours instead of a low-resolution polygon trace.
 
 The local 2020 Unit 5 question paper lacked its scientific article. Its private normalized copy includes pages 2–8 from the Pearson article P64728A (WBI15, 11 June 2020), retrieved from https://cdn.savemyexams.com/uploads/2022/11/wbi15-01-scientific-article.pdf. The teaching original is unchanged; only the relevant reading material accompanies the final question in public practice exports.
+
+
+## Anonymous download counters (2026-09-26)
+
+Apply `backend/migrations/0002-download-events.sql` before deploying the Worker. The owner-only dashboard at `/admin` shows 7/30/90-day totals and daily rows by bank and QP/MS. The frontend sends one random event ID per export attempt after success or error; repeats of the same event ID are ignored. Local previews and re-saving an already-generated PDF are not counted. No visitor identifier, cookies, IP, search text or question IDs are stored by this feature. Old events expire after 90 days. These are best-effort browser reports: network restrictions, blockers or closed pages may omit events. Generated PDF bytes are not hosting bandwidth and a triggered download does not prove the file was saved. Statistics begin at deployment, with no invented historical data.
+
+The Yidu logo now uses original vector paths from the cover of its 2025 annual report: https://www.yidutech.com/uploads/20250725/821156eabd9ecb6aeeb6bdb42c4c8b4b.pdf . It is displayed in the project's single-colour treatment, with visible bounds preserved. The former low-resolution website PNG is unused.

@@ -27,4 +27,27 @@ assert.equal((await call(path,{action:'save',revision:4,patch:{note:'private'}})
 assert.equal(sqlite.prepare('SELECT COUNT(*) AS n FROM audit').get().n,3);
 assert.equal((await call('/admin/api/backup',null,false)).status,401);
 assert.equal((await(await call('/admin/api/backup')).json()).questions.length,1);
-sqlite.close();console.log('Admin SQL: drafts stay private, publish/withdraw work, stale edits and unauthenticated writes rejected.');
+console.log('Admin SQL: drafts stay private, publish/withdraw work, stale edits and unauthenticated writes rejected.');
+
+// Anonymous counters remain separate from owner-only question management.
+const event={event_id:'11111111-1111-4111-8111-111111111111',bank:'cie',kind:'qp',status:'success',bytes:2048,duration_ms:1500,questions:3};
+const collect=(body,requestOrigin=env.PUBLIC_ORIGIN)=>call('/events/download',body,false,requestOrigin);
+assert.equal((await call('/admin/api/stats',null,false)).status,401);
+assert.equal((await collect(event,'https://other.test')).status,403);
+assert.equal((await collect({...event,visitor_ip:'127.0.0.1'})).status,400);
+assert.equal((await collect({...event,bytes:-1})).status,400);
+assert.equal((await collect({...event,questions:101})).status,400);
+assert.equal((await collect(event)).status,204);
+assert.equal((await collect(event)).status,204);
+assert.equal(sqlite.prepare('SELECT count(*) AS n FROM download_events').get().n,1);
+assert.equal((await collect({...event,event_id:'22222222-2222-4222-8222-222222222222',status:'error',bytes:0})).status,204);
+let stats=await(await call('/admin/api/stats?days=30')).json();assert.equal(stats.rows[0].successes,1);assert.equal(stats.rows[0].failures,1);assert.equal(stats.rows[0].bytes,2048);assert.equal(stats.rows[0].duration_ms,1500);
+assert.equal((await call('/admin/api/stats?days=999')).status,400);
+assert.equal((await collect({...event,padding:'x'.repeat(2000)})).status,413);
+sqlite.exec("UPDATE download_events SET created_at=datetime('now','-91 days')");
+await collect({...event,event_id:'33333333-3333-4333-8333-333333333333'});
+assert.equal(sqlite.prepare('SELECT count(*) AS n FROM download_events').get().n,1);
+const preflight=await worker.fetch(new Request(origin+'/events/download',{method:'OPTIONS',headers:{Origin:env.PUBLIC_ORIGIN}}),env);assert.equal(preflight.status,204);assert.equal(preflight.headers.get('Access-Control-Allow-Origin'),env.PUBLIC_ORIGIN);
+console.log('Anonymous analytics: validation, duplicate rejection, retention, CORS and private dashboard passed.');
+
+sqlite.close();
