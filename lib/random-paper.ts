@@ -1,4 +1,5 @@
 import {type Question,resolveSelection,selectedMarks,expectedMinutes,qualification} from './question-bank';
+import {matchesTopicScope} from './topic-classification';
 
 export type RandomOptions={target:number;mode:'marks'|'minutes';topics:string[];year?:string;unit?:string;qualification?:string};
 export function randomPaper(questions:Question[],options:RandomOptions,random:()=>number=Math.random){
@@ -18,7 +19,7 @@ export function randomPaper(questions:Question[],options:RandomOptions,random:()
  }
  const groups=new Map<string,Question[]>();
  for(const q of leaves){const r=root(q.id);groups.set(r,[...(groups.get(r)||[]),q]);}
- const matches=(q:Question)=>(!options.qualification||qualification(q)===options.qualification)&&(!options.year||String(q.year)===options.year)&&(!options.unit||String(q.unit)===options.unit)&&(!options.topics.length||options.topics.some(t=>(q.topic_ids||q.topics).includes(t)));
+ const matches=(q:Question)=>(!options.qualification||qualification(q)===options.qualification)&&(!options.year||String(q.year)===options.year)&&(!options.unit||String(q.unit)===options.unit)&&matchesTopicScope(q,options.topics);
  const bundles=[...groups.values()].filter(group=>group.every(matches)).map(group=>({ids:group.map(q=>q.id),marks:group.reduce((n,q)=>n+q.marks,0),cost:group.reduce((n,q)=>n+(mode==='minutes'?q.expected_seconds/15:q.marks),0)}));
  for(let i=bundles.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[bundles[i],bundles[j]]=[bundles[j],bundles[i]];}
  type State={ids:string[]};const dp:(State|undefined)[]=Array(limit+1);dp[0]={ids:[]};

@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-28",
+  "method": "Rule-assisted audit of all records; targeted source and mark-scheme review. Not a manual verification of every answer.",
+  "banks": {
+    "edexcel": {
+      "papers": 97,
+      "records": 2683,
+      "leaves": 1904,
+      "changed_topic_sets": 2415,
+      "methods": {
+        "source-tags-and-mark-scheme": 1276,
+        "question-text-fallback": 361,
+        "mark-scheme": 265,
+        "reviewed-override": 2
+      },
+      "chapter_level_fallbacks": 195,
+      "mark_schemes_without_extractable_text": 0,
+      "sha256": "458d74a0f84fca7418409dba74ff908be11575f95f2d364b11e77e69999fa776"
+    },
+    "aqa": {
+      "papers": 52,
+      "records": 1204,
+      "leaves": 1003,
+      "changed_topic_sets": 991,
+      "methods": {
+        "question-text-fallback": 206,
+        "source-tags-and-mark-scheme": 556,
+        "reviewed-override": 8,
+        "mark-scheme": 233
+      },
+      "chapter_level_fallbacks": 153,
+      "mark_schemes_without_extractable_text": 0,
+      "sha256": "df410320daac37a1c5da27f603e9318695656f47e703cb7515d6973a12f868a0"
+    },
+    "cie": {
+      "papers": 260,
+      "records": 3877,
+      "leaves": 3877,
+      "changed_topic_sets": 2737,
+      "methods": {
+        "mark-scheme": 1094,
+        "question-text-fallback": 2747,
+        "reviewed-override": 36
+      },
+      "chapter_level_fallbacks": 0,
+      "mark_schemes_without_extractable_text": 0,
+      "sha256": "9163c6fea9b3595eeeeea1cfc41d06fa0624e43fbc70f29b25e31673cfd55037"
+    },
+    "esat": {
+      "papers": 8,
+      "records": 152,
+      "leaves": 152,
+      "changed_topic_sets": 106,
+      "methods": {
+        "source-tags-and-mark-scheme": 121,
+        "question-text-fallback": 31
+      },
+      "chapter_level_fallbacks": 40,
+      "mark_schemes_without_extractable_text": 20,
+      "sha256": "b87314df1ca3b5eec39fd8669f63414f8c740b3385dc65e626f53cdebace2c24"
+    }
+  },
+  "migration_rows": 6772
+}

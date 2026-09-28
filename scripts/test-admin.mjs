@@ -50,4 +50,15 @@ assert.equal(sqlite.prepare('SELECT count(*) AS n FROM download_events').get().n
 const preflight=await worker.fetch(new Request(origin+'/events/download',{method:'OPTIONS',headers:{Origin:env.PUBLIC_ORIGIN}}),env);assert.equal(preflight.status,204);assert.equal(preflight.headers.get('Access-Control-Allow-Origin'),env.PUBLIC_ORIGIN);
 console.log('Anonymous analytics: validation, duplicate rejection, retention, CORS and private dashboard passed.');
 
+assert.equal((await call('/admin/api/taxonomy',null,false)).status,401);
+const taxonomy=await(await call('/admin/api/taxonomy')).json();
+assert(taxonomy.esat.some(ch=>ch.id==='esat-topic-2'));
+assert.equal((await call(path,{action:'save',revision:4,patch:{topic_ids:['aqa-point-14']}})).status,400);
+assert.equal((await call(path,{action:'save',revision:4,patch:{topic_ids:['esat-point-9']}})).status,200);
+assert.equal((await call(path,{action:'publish',revision:5})).status,200);
+const topicUpdate=(await(await call('/public/esat',null,false)).json())[0].published;
+assert.deepEqual(topicUpdate.topic_ids,['esat-point-9']);
+assert(topicUpdate.chapters[0].startsWith('B2.'));
+assert(topicUpdate.topics[0].includes('osmosis'));
+console.log('Owner topic editing: canonical tree, cross-bank rejection, draft and public labels passed.');
 sqlite.close();

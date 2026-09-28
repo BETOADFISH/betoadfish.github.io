@@ -1,0 +1,291 @@
+{
+  "aqa-as-p2-specimen-Q07.1": {
+    "topic_ids": [
+      "aqa-point-64",
+      "aqa-point-55"
+    ],
+    "reason": "Graph reports species counts, not species identities. Species and evidence evaluation, not natural selection or antibiotics. Specimen P2 MS 07.1."
+  },
+  "aqa-as-p2-specimen-Q07.2": {
+    "topic_ids": [
+      "aqa-point-43",
+      "aqa-point-64"
+    ],
+    "reason": "Random mutation and inability to transfer alleles between different species through interbreeding. Specimen P2 MS 07.2."
+  },
+  "aqa-as-p2-specimen-Q07.3": {
+    "topic_ids": [
+      "aqa-point-44"
+    ],
+    "reason": "Time for a favourable allele to spread over generations. AQA 3.4.4; specimen P2 MS 07.3."
+  },
+  "aqa-as-p2-june-2016-Q07.2": {
+    "topic_ids": [
+      "aqa-point-23",
+      "aqa-point-25"
+    ],
+    "reason": "CCR5 complementarity, HIV entry and T-cell destruction. No antibiotic or neural receptor assessment. MS 07.2."
+  },
+  "aqa-as-p1-june-2017-Q10.1": {
+    "topic_ids": [
+      "aqa-point-23",
+      "aqa-point-25"
+    ],
+    "reason": "AZT effects on HIV and T-cell survival; mitochondria and resistance occur in shared passage for other parts. MS 10.1."
+  },
+  "aqa-as-p1-june-2017-Q10.2": {
+    "topic_ids": [
+      "aqa-point-23",
+      "aqa-point-14"
+    ],
+    "reason": "HAART prevents HIV replication; inhibition of viral protein synthesis is explicitly credited. Antiviral resistance is not antibiotic resistance. MS 10.2."
+  },
+  "aqa-as-p1-specimen-Q09.4": {
+    "topic_ids": [
+      "aqa-point-14"
+    ],
+    "reason": "All four marks concern complementary binding to mRNA and prevention of translation; HSV persistence is the context. Specimen P1 MS 09.4."
+  },
+  "aqa-as-p1-june-2020-Q09.2": {
+    "topic_ids": [
+      "aqa-point-8",
+      "aqa-point-14"
+    ],
+    "reason": "Real cross-topic question: increased transcription produces more aquaporin/channel protein and increases water permeability. MS 09.2."
+  },
+  "cie-2026-s-12-q9": {
+    "topic_ids": [
+      "cie-point-70"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2025-w-14-q7": {
+    "topic_ids": [
+      "cie-point-0",
+      "cie-point-2"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2025-s-14-q2": {
+    "topic_ids": [
+      "cie-point-5"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2019-w-13-q2": {
+    "topic_ids": [
+      "cie-point-5"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2025-s-14-q9": {
+    "topic_ids": [
+      "cie-point-0"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2024-s-13-q7": {
+    "topic_ids": [
+      "cie-point-0"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2022-w-13-q7": {
+    "topic_ids": [
+      "cie-point-0"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2022-w-12-q7": {
+    "topic_ids": [
+      "cie-point-0"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2022-w-11-q7": {
+    "topic_ids": [
+      "cie-point-0"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2021-m-12-q8": {
+    "topic_ids": [
+      "cie-point-0"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2025-s-14-q11": {
+    "topic_ids": [
+      "cie-point-2"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2025-s-11-q11": {
+    "topic_ids": [
+      "cie-point-2"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2024-w-12-q6": {
+    "topic_ids": [
+      "cie-point-2"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2021-m-12-q12": {
+    "topic_ids": [
+      "cie-point-2"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2020-s-11-q11": {
+    "topic_ids": [
+      "cie-point-2"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2025-s-12-q30": {
+    "topic_ids": [
+      "cie-point-17",
+      "cie-point-10"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2024-w-13-q9": {
+    "topic_ids": [
+      "cie-point-3"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2023-w-13-q17": {
+    "topic_ids": [
+      "cie-point-8"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2021-w-11-q14": {
+    "topic_ids": [
+      "cie-point-8"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2023-w-11-q10": {
+    "topic_ids": [
+      "cie-point-1"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2023-w-11-q36": {
+    "topic_ids": [
+      "cie-point-23"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2023-m-12-q24": {
+    "topic_ids": [
+      "cie-point-13"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2018-w-12-q24": {
+    "topic_ids": [
+      "cie-point-13"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2022-w-13-q16": {
+    "topic_ids": [
+      "cie-point-9"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2022-s-12-q14": {
+    "topic_ids": [
+      "cie-point-9"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2022-m-12-q19": {
+    "topic_ids": [
+      "cie-point-9"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2022-w-11-q5": {
+    "topic_ids": [
+      "cie-point-6"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2022-s-12-q25": {
+    "topic_ids": [
+      "cie-point-15"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2020-s-13-q24": {
+    "topic_ids": [
+      "cie-point-15"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2022-s-11-q17": {
+    "topic_ids": [
+      "cie-point-9",
+      "cie-point-67"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2021-s-13-q16": {
+    "topic_ids": [
+      "cie-point-9",
+      "cie-point-67"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2018-w-11-q17": {
+    "topic_ids": [
+      "cie-point-9",
+      "cie-point-67"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2021-w-13-q38": {
+    "topic_ids": [
+      "cie-point-25"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2021-s-13-q25": {
+    "topic_ids": [
+      "cie-point-16"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2020-s-13-q26": {
+    "topic_ids": [
+      "cie-point-16"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "cie-2020-w-11-q28": {
+    "topic_ids": [
+      "cie-point-18"
+    ],
+    "reason": "Reviewed question stem and keyed answer; specific concept absent from keyword evidence. See local classification evidence cache. Diagram checked for 2025-s-14-q9 and 2022-w-12-q7."
+  },
+  "edexcel-al-5-2025-january-q2": {
+    "topic_ids": [
+      "edexcel-point-38"
+    ],
+    "reason": "Label and give functions of pituitary gland, cerebellum and hypothalamus; neural coordination, not generic cell receptors."
+  },
+  "edexcel-al-4-2021-june-q3": {
+    "topic_ids": [
+      "edexcel-point-48",
+      "edexcel-point-49",
+      "edexcel-point-50"
+    ],
+    "reason": "MS 3(a) defines habitat, population, community and niche; 3(b) calculates trophic energy efficiency. Mineral ions are an incidental example."
+  }
+}

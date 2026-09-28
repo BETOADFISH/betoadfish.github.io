@@ -73,45 +73,16 @@ RULES=[
 RULES.append(('Mixed-topic practice · 综合练习',r'(?!)',10,10,21))
 
 def enrich(cat):
- bank=cat['bank'];nodes={};mapping={}
+ bank=cat['bank']
  original=json.loads((ROOT/'work/base-catalogs'/(bank+'.json')).read_text('utf8'))['questions']
  if bank in ['edexcel','aqa']:original+=json.loads((ROOT/'work/al-catalogs'/(bank+'.json')).read_text('utf8'))['questions']
  original={q['id']:q for q in original}
- titles=ED if bank=='edexcel' else AQ if bank=='aqa' else CI
- for i,row in enumerate(RULES):
-  label,pattern,ed,aq,ci=row;n=ed if bank=='edexcel' else aq if bank=='aqa' else ci
-  key=f'{bank}-topic-{n}';leaf=f'{bank}-point-{i}'
-  if key not in nodes:nodes[key]={'id':key,'label':f'{n}. '+(titles[n-1] if n<=len(titles) else 'Practical skills and data analysis' if n in [9,20] else 'Mixed-topic practice'),'children':[]}
-  nodes[key]['children'].append({'id':leaf,'label':label});mapping[i]=(key,leaf)
+ import importlib.util
+ spec=importlib.util.spec_from_file_location('topic_classifier',ROOT/'scripts/topic-classification.py')
+ classifier=importlib.util.module_from_spec(spec);spec.loader.exec_module(classifier)
+ evidence={r['id']:r for r in json.loads((ROOT/f'work/classification/{bank}-evidence.json').read_text('utf8'))}
+ cat=classifier.apply(cat,original,evidence,RULES,{'edexcel':ED,'aqa':AQ,'cie':CI},ROOT)
  for q in cat['questions']:
-  source=original[q['id']];q['topics']=source['topics'][:];q['chapters']=source['chapters'][:]
-  text=' '.join([q['text'],*q.get('topics',[])])
-  matched=[i for i,r in enumerate(RULES) if re.search(r[1],text,re.I)]
-  review=[]
-  if not matched:
-   for chapter in source['chapters']:
-    n=None
-    if bank=='edexcel':
-     m=re.match(r'([1-8])[A-C]\b',chapter);n=int(m[1]) if m else None
-    elif bank=='aqa':
-     m=re.match(r'3\.([1-8])\b',chapter);n=int(m[1]) if m else None
-    elif bank=='cie':
-     normal=lambda s:re.sub(r'[^a-z]','',s.lower().replace('The ','').replace('the ',''))
-     n=next((i+1 for i,title in enumerate(CI) if normal(title)==normal(chapter)),None)
-     if chapter=='Coordination':n=15
-     if chapter=='Planning analysis and evaluation':n=20
-    if n:
-     key=f'{bank}-topic-{n}';leaf=f'{bank}-review-{n}'
-     if not any(c['id']==leaf for c in nodes[key]['children']):nodes[key]['children'].append({'id':leaf,'label':'Chapter review · 章节综合'})
-     review.append(leaf)
-  if not matched:matched=[len(RULES)-1]
-  q['topic_ids']=list(dict.fromkeys(review)) or [mapping[i][1] for i in matched]
-  if not q['chapters'] or bank=='cie':q['chapters']=list(dict.fromkeys(nodes[mapping[i][0]]['label'] for i in matched))
-  if review:q['chapters']=source['chapters'][:]
-  if '-al-' in q['id'] or bank=='cie':
-   q['topics']=[RULES[i][0] for i in matched]
-   q['summary']=' · '.join(RULES[i][0].split(' · ')[0] for i in matched[:3])
-   if 'Essay' in q['skills']:q['summary']='Essay — choose one title'
   if bank=='edexcel':minutes,total=({1:(90,80),2:(90,80),3:(80,50),4:(105,90),5:(105,90),6:(80,50)})[q['unit']]
   elif bank=='aqa':
    if q['code'].startswith('7402'):
@@ -123,13 +94,13 @@ def enrich(cat):
  byid={q['id']:q for q in cat['questions']}
  for q in cat['questions']:
   if not q['is_leaf']:q['expected_seconds']=sum(byid[k]['expected_seconds'] for k in set(q['leaves']))
- used={t for q in cat['questions'] for t in q['topic_ids']}
- cat['taxonomy']=[{**n,'children':[c for c in n['children'] if c['id'] in used]} for n in sorted(nodes.values(),key=lambda n:int(n['id'].split('-')[-1])) if any(c['id'] in used for c in n['children'])]
- cat['version']=3
  return cat
 
 if __name__=='__main__':
+ taxonomy={}
  for bank in ['edexcel','aqa','cie','esat']:
   p=ROOT/'public/question-bank'/(bank+'.json');cat=enrich(json.loads(p.read_text('utf8')))
   p.write_text(json.dumps(cat,ensure_ascii=False,separators=(',',':')),encoding='utf8')
   print(bank,len(cat['questions']),len(cat['papers']))
+  taxonomy[bank]=cat['taxonomy']
+ (ROOT/'lib/question-taxonomy.json').write_text(json.dumps(taxonomy,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf8')
