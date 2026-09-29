@@ -16,7 +16,14 @@ export function ProjectJourney({steps,visuals,evidence=[],evidenceLabels=[],titl
  useEffect(()=>{setReady(true);const restore=()=>{const i=steps.findIndex(s=>'#'+s.id===location.hash);if(i>=0){setActive(i);setExpanded(true);}};restore();window.addEventListener('hashchange',restore);return()=>window.removeEventListener('hashchange',restore);},[steps]);
  function change(index:number){
   setActive(index);setExpanded(true);history.replaceState(history.state,'',location.pathname+location.search+'#'+steps[index].id);
-  requestAnimationFrame(()=>{const el=rail.current;if(!el)return;const header=document.querySelector('.site-header')?.getBoundingClientRect().bottom??100;if(el.getBoundingClientRect().top<header+12)el.scrollIntoView({block:'start',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
+  requestAnimationFrame(()=>{
+   const el=rail.current;if(!el)return;
+   const behavior=window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth';
+   const list=el.querySelector<HTMLElement>('.journey-rail'),tab=document.getElementById(`journey-tab-${steps[index].id}`);
+   if(list&&tab){const bounds=list.getBoundingClientRect(),selected=tab.getBoundingClientRect();const left=selected.left<bounds.left?selected.left-bounds.left:selected.right>bounds.right?selected.right-bounds.right:0;if(left)list.scrollBy({left,behavior});}
+   const header=document.querySelector('.site-header')?.getBoundingClientRect().bottom??100;
+   if(el.getBoundingClientRect().top<header+12)el.scrollIntoView({block:'start',behavior});
+  });
  }
  return <section className="journey-section" id="journey" data-count={steps.length} aria-busy={!ready}><div className="section-heading"><div><p className="eyebrow"><Copy>{eyebrow??t('Methods and results','方法与结果')}</Copy></p><h2><Copy>{title??t('Project experiments','项目实验')}</Copy></h2></div></div>
   <Tabs value={String(active)} onValueChange={v=>change(Number(v))} className="journey-tabs"><div className="journey-rail-anchor" ref={rail}><TabsList className="journey-rail" aria-label={locale==='zh'?'项目流程':'Project journey'} style={{gridTemplateColumns:`repeat(${steps.length},minmax(0,1fr))`}}>{steps.map((step,i)=><TabsTrigger id={`journey-tab-${step.id}`} key={step.id} value={String(i)} disabled={!ready}><span className="journey-number">{String(i+1).padStart(2,'0')}</span><Copy>{step.label}</Copy></TabsTrigger>)}</TabsList></div>

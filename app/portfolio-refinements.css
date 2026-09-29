@@ -1,0 +1,87 @@
+/* Round 1: retain the pre-redesign palette, cards and research atlas.
+   Refine spacing, reading hierarchy and small-screen constraints. */
+.home-hero { align-items: center; gap: clamp(32px, 5vw, 72px); }
+.home-hero .hero-copy { max-width: 620px; }
+.home-hero h1 { text-wrap: balance; }
+.home-hero .hero-description { max-width: 38em; margin-bottom: 14px; }
+.home-hero .hero-description + .hero-description { margin-top: 0; }
+.home-hero .actions { flex-wrap: wrap; gap: 12px 20px; }
+.work-group { scroll-margin-top: 104px; }
+.work-group + .work-group { margin-top: clamp(38px, 5vw, 64px); }
+.work-group-heading { margin-bottom: 24px; }
+.work-group-heading .work-group-title { margin-bottom: 8px; }
+.work-group-heading p { margin: 0; }
+.work-date { display: block; margin-top: auto; padding-top: 16px; font-size: 12px; line-height: 1.6; color: var(--muted); }
+.work-copy { display: flex; flex-direction: column; align-items: flex-start; }
+.work-copy h3 { text-wrap: balance; }
+.work-copy p { max-width: 65ch; }
+.work-card .work-meta { width: 100%; flex-wrap: wrap; gap: 6px 12px; line-height: 1.6; }
+.work-card .work-art { overflow: hidden; }
+.work-card.theme-tools .work-art > svg { width: 100%; max-width: 82px; height: auto; aspect-ratio: 1; }
+.work-card:focus-visible { outline-offset: 5px; }
+.work-card-wide .work-copy { justify-content: center; }
+.research-atlas .atlas-pause,
+.research-atlas .atlas-story a { min-width: 44px; min-height: 44px; }
+.research-atlas[data-paused=true] .atlas-story { animation: none; }
+[data-theme=dark] .theme-yidu .work-art { color: var(--project-ink); }
+[data-theme=dark] :focus-visible { outline-color: #b9e5b0; }
+.case-masthead .case-brand-row { position: static; }
+.case-masthead .case-institution { pointer-events: none; }
+.case-masthead .case-deck { max-width: 760px; }
+.case-masthead h1 { overflow-wrap: anywhere; }
+.case-facts { display: flex; flex-wrap: wrap; }
+.case-facts > div { min-width: 160px; max-width: 100%; }
+.case-reading-links { flex-wrap: wrap; }
+.project-page .intro-grid article { min-width: 0; }
+.project-page .intro-grid h3 { margin-top: 0; }
+.project-page .editorial-section p { max-width: 78ch; }
+.reference-strip a { overflow-wrap: anywhere; }
+.contact-links > a { text-underline-offset: 5px; }
+.contact-links > a:hover { text-decoration: underline; }
+.case-end { flex-wrap: wrap; gap: 18px; }
+.case-end a { min-height: 44px; display: inline-flex; align-items: center; }
+@media (min-width: 721px) and (max-width: 1100px) {
+  .home-hero { gap: 28px; }
+  .home-hero h1 { font-size: clamp(36px, 4.8vw, 54px); }
+  .work-grid { gap: 20px; }
+  .work-card { grid-template-columns: 110px minmax(0, 1fr); }
+  .work-card .work-art { padding-inline: 10px; }
+  .work-card .institution-mark.line-mark > svg { width: 88px; height: 100px; }
+  .work-card .work-copy { padding: 25px 20px; }
+  .work-grid > .work-card-wide { grid-template-columns: 155px minmax(0, 1fr); }
+}
+@media (min-width: 1001px) and (max-width: 1100px) {
+  .home-hero { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 720px) {
+  .home-hero { gap: 24px; }
+  .home-hero .research-atlas { margin-top: 0; }
+  .work-group + .work-group { margin-top: 38px; }
+  .work-card { grid-template-columns: 88px minmax(0, 1fr); }
+  .work-card .work-art { min-height: 210px; padding-inline: 8px; }
+  .work-card .institution-mark.line-mark > svg { width: 70px; height: 92px; }
+  .work-card .institution-mark.line-mark-yidu { max-width: 72px; }
+  .work-card .work-copy { padding: 24px 18px; }
+  .work-card .work-meta { font-size: 12px; }
+  .work-card-wide .work-art { min-height: 230px; }
+  .case-masthead .case-brand-row { margin-bottom: 26px; }
+  .case-masthead .case-institution { opacity: .72; }
+  .case-masthead h1 { font-size: clamp(34px, 8.8vw, 52px); }
+  .case-facts { gap: 18px 28px; }
+  .case-facts > div { flex: 1 1 140px; }
+  .reference-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .journey-rail[data-slot=tabs-list] { display: flex; overflow-x: auto; overscroll-behavior-inline: contain; scroll-padding-inline: 8px; scrollbar-width: thin; }
+  .journey-rail [data-slot=tabs-trigger] { flex: 0 0 auto; min-height: 44px; padding-inline: 14px; }
+  .journey-number { flex-shrink: 0; }
+  .project-page .case-end { margin-top: 36px; padding-bottom: 20px; }
+}
+@media (max-width: 380px) {
+  .work-card { grid-template-columns: 74px minmax(0, 1fr); }
+  .work-card .work-copy { padding: 20px 14px; }
+  .work-card .institution-mark.line-mark > svg { width: 58px; }
+  .work-card .institution-mark.line-mark-yidu { max-width: 58px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .work-card, .atlas-story { transition: none; animation: none; }
+}

@@ -9,7 +9,14 @@ for(const prefix of ['','zh/'])for(const route of routes){
  assert(!/Bursary|bursary report|总结记录|简历记录|CV record/.test(text),key+' exposes internal copy');
  assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1,key+' has one page title');
  assert(html.includes('viewport-fit=cover'));assert(html.includes('mobile-menu-toggle'));
- if(!route){assert(html.includes('personal-opening'));assert(!html.includes('research-atlas'));assert(html.includes('I164-S368-interaction.webp'));}
+ if(!route){
+  assert(html.includes('research-atlas'),key+' keeps the interactive research map');
+  assert(!html.includes('personal-opening'),key+' restores the previous opening');
+  for(const destination of ['projects/hubisco','projects/pet-hydrolase','projects/mcr1-colistin','intelligence/yidu','intelligence/3d-cell-culture','tools/biology']){
+   assert(html.includes(`href="/${prefix}${destination}"`),key+' links to '+destination);
+  }
+  assert(html.includes('id="about"'),key+' retains the current biography');
+ }
  if(route==='projects/pet-hydrolase'){assert(html.includes('3.9'));assert(prefix?text.includes('定性观察'):text.includes('qualitative'));}
  if(route==='projects/hubisco'){assert(prefix?text.includes('理论'):text.includes('Theoretical'));assert(prefix?text.includes('尚未确立替代底物催化'):text.includes('alternative-substrate turnover was not established'));}
  if(route==='intelligence/yidu'){assert(prefix?text.includes('咨询实习生'):text.includes('Consulting Intern'));assert(text.includes('FXI/FXIa'));}

@@ -1,26 +1,49 @@
-# Portfolio design, September 2026
+# Portfolio restoration and two review passes — 29 September 2026
 
-Audience: research supervisors, collaborators and recruiters reviewing Bill Huang's work; students use the separate Biology tool. The site must show work that can be discussed publicly, without internal editing notes or client and drug-product names from Yidu.
+The user prefers the style immediately before the 27 September redesign. The
+reference is a7a9585; current content and functionality are anchored to a3bf48b.
+This is a restoration with two focused refinements.
 
-Direction: lead with an actual molecular illustration and the person's name. Let project content carry the identity. Remove the abstract evidence-orbit hero, repeated category numbering, promotional headings and decorative skill lists. Keep the existing project colours, institution marks, wide HuBisCO entry, bilingual routes, theme switch and mobile navigation.
+## Design plan and review against the request
 
-Palette: paper #ffffff; text #26342f; secondary text #5f6c66; research green #285c48; clinical blue #12364a; enzyme purple #6c4668. Existing project and exam-board colours retain their meanings. Dark surfaces continue to use the existing accessible colour tokens.
+Palette: white #ffffff, ink #17251c, mint #cbf6c1, dark forest #101a15,
+muted green #5d6961, border #dce5dd. Existing institution and exam-board colours
+keep their meanings. No new accent colour system.
 
-Typography: Trebuchet MS for Latin display headings, Segoe UI for interface and body text, PingFang SC or Microsoft YaHei for Chinese. Use system fallbacks without a new font CDN. Display size varies with the viewport; Chinese uses normal character spacing. Text columns stay below 72 characters.
+Type: restore locally bundled Inter for Latin headings and body. Chinese continues
+to use system fallbacks. Keep the old hierarchy with fluid heading sizes and
+comfortable body line lengths.
 
-Layout alternatives reviewed:
+Layout, left aligned:
 
-```
-Rejected: slogan | abstract network; repeated equal cards; numbered skills
-Chosen:   name + short introduction | molecular figure with project link
-          wide HuBisCO project
-          remaining research / consulting work
-          compact Biology tool entry
-          background and original CV downloads
-```
+    name + current introduction | interactive research map
+    current project categories
+      wide HuBisCO card
+      original colour-coded project cards
+    current biography and CV downloads
 
-The first draft resembled a generic editorial grid. The chosen direction gives the molecular figure the only large decorative role, keeps logos secondary, and uses a different compact treatment for the practical tool. Project pages use a restrained masthead with a normal-size institution mark rather than an oversized watermark. Existing scientific figures and interactions remain available.
+The memorable element is the research map, supported by institution marks and
+coloured project panels. Remove the rejected photo hero and flattened editorial
+rows. Preserve new copy, evidence limits, Yidu role, logos and question-bank data.
 
-Copy: use humanizer-zh and humanizer. State experimental observations directly, retain their limits, and move record provenance to relevant figure notes. Do not upgrade a qualitative result to a quantitative claim, change measured versus modelled status, or imply sole data acquisition. Source PDFs and CV downloads remain byte-identical.
+## Round 1: restore the visual identity and resolve layout friction
 
-Verification: bounded review of shared layouts, bilingual output, links, scientific qualifications, mobile breakpoints and functional regression tests. The current session has no connected browser, so source/build checks do not count as rendered or real-device validation.
+Restore the map, original cards, Inter, palette, mastheads and background marks.
+Keep HuBisCO wide. Adjust tablet card columns, reading widths, mobile references,
+touch targets and crowded project facts without changing project content.
+
+## Round 2: examine actual use, then repair interaction defects
+
+Review keyboard navigation, mobile menu dismissal, project-step visibility and
+question-paper export state. Prevent stale PDF links after changing selection,
+show export failures inside the mobile selection panel and provide a direct
+reset when filters return no results. Keep current classification and random
+selection rules and reduced-motion support.
+
+## Release evidence
+
+Content preservation, bilingual static-route checks, classification and
+question-bank regression tests, PDF export tests and production build must pass.
+Verify deployed catalogs against the content baseline and the published frontend
+against the final commit. Record browser availability honestly; static checks
+alone are not rendered visual validation.

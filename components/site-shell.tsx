@@ -10,8 +10,17 @@ export function SiteShell({ children }: { children: ReactNode }) {
   const currentPath = usePathname() || '/';
   const pathname = currentPath.includes('__vinext_nonexistent_for_404__') ? '/' : currentPath;
   const locale: Locale = /^\/zh(?:\/|$)/.test(pathname) ? 'zh' : 'en';
-  const [menuOpen,setMenuOpen]=useState(false);const menuButton=useRef<HTMLButtonElement>(null);
+  const [menuOpen,setMenuOpen]=useState(false);const menuButton=useRef<HTMLButtonElement>(null);const header=useRef<HTMLElement>(null);
   useEffect(()=>setMenuOpen(false),[pathname]);
+  useEffect(()=>{
+    if(!menuOpen)return;
+    const outside=(event:PointerEvent)=>{if(event.target instanceof Node&&!header.current?.contains(event.target))setMenuOpen(false);};
+    const escape=(event:KeyboardEvent)=>{if(event.key==='Escape'){setMenuOpen(false);menuButton.current?.focus();}};
+    const desktop=window.matchMedia('(min-width: 721px)');
+    const resize=()=>{if(desktop.matches)setMenuOpen(false);};
+    document.addEventListener('pointerdown',outside);document.addEventListener('keydown',escape);desktop.addEventListener('change',resize);
+    return()=>{document.removeEventListener('pointerdown',outside);document.removeEventListener('keydown',escape);desktop.removeEventListener('change',resize);};
+  },[menuOpen]);
   const [dark, setDark] = useState(false);
   const [motionPaused,setMotionState]=useState(false);
   const tr = (text: string) => translate(text, locale);
@@ -44,9 +53,9 @@ export function SiteShell({ children }: { children: ReactNode }) {
   const otherLocale = locale === 'en' ? 'zh' : 'en';
   return <SiteContext.Provider value={{ locale, dark, motionPaused }}>
     <a className="skip-link" href="#main-content">{tr('Skip to content')}</a>
-    <header className="site-header"><div className="wrap header-inner">
+    <header className="site-header" ref={header}><div className="wrap header-inner">
       <a className="brand" href={href('/')}>Bill<span className="brand-dot">.</span><span className="brand-caption">{tr('Profile')}</span></a>
-      <nav id="site-navigation" className={menuOpen?'is-open':''} aria-label={tr('Main navigation')} onClick={()=>setMenuOpen(false)} onKeyDown={e=>{if(e.key==='Escape'){setMenuOpen(false);menuButton.current?.focus();}}}>
+      <nav id="site-navigation" className={menuOpen?'is-open':''} aria-label={tr('Main navigation')} onClick={()=>setMenuOpen(false)}>
         <a href={href('/projects')} aria-current={pathname.includes('/projects')?'page':undefined}>{tr('Research')}</a><a href={href('/intelligence')} aria-current={pathname.includes('/intelligence')?'page':undefined}>{tr('Biotech intelligence')}</a><a href={href('/tools')} aria-current={pathname.includes('/tools')?'page':undefined}>{locale === 'zh' ? '工具' : 'Tools'}</a><a href={href('/#about')}>{tr('About')}</a><a href="#contact">{tr('Contact')}</a>
       </nav>
       <div className="site-preferences" aria-label={tr('Reading preferences')}>
