@@ -35,6 +35,8 @@ jobs:
         if: steps.snapshot.outputs.changed == 'true'
       - run: node scripts/test-question-bank.mjs
         if: steps.snapshot.outputs.changed == 'true'
+      - run: node scripts/test-catalog-delivery.mjs
+        if: steps.snapshot.outputs.changed == 'true'
       - run: node scripts/test-question-export-session.mjs
         if: steps.snapshot.outputs.changed == 'true'
       - run: node scripts/test-random-paper.mjs
@@ -44,6 +46,8 @@ jobs:
       - run: node scripts/test-admin.mjs
         if: steps.snapshot.outputs.changed == 'true'
       - run: node scripts/test-github-auth.mjs
+        if: steps.snapshot.outputs.changed == 'true'
+      - run: node scripts/test-usage-analytics.mjs
         if: steps.snapshot.outputs.changed == 'true'
       - run: node scripts/test-mobile.mjs
         if: steps.snapshot.outputs.changed == 'true'

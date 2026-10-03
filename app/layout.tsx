@@ -1,3 +1,4 @@
+import { SiteAnalytics } from '@/components/site-analytics';
 import { SiteShell } from '@/components/site-shell';
 import type { Metadata, Viewport } from 'next';
 import '@fontsource/inter/latin-400.css';
@@ -16,5 +17,5 @@ export const metadata: Metadata = {
 };
 const appearanceScript = `(function(){try{var t=localStorage.getItem('bill-theme');document.documentElement.dataset.theme=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.dataset.motion=matchMedia('(prefers-reduced-motion: reduce)').matches?'paused':'playing';document.documentElement.lang=location.pathname.split('/')[1]==='zh'?'zh-CN':'en';if(location.pathname==='/'&&localStorage.getItem('bill-language')==='zh'){location.replace('/zh'+location.search+location.hash)}}catch(e){}})()`;
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
-  return <html lang="en" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html:appearanceScript}}/></head><body><SiteShell>{children}</SiteShell></body></html>;
+  return <html lang="en" suppressHydrationWarning><head><script dangerouslySetInnerHTML={{__html:appearanceScript}}/></head><body><SiteShell><SiteAnalytics/>{children}</SiteShell></body></html>;
 }

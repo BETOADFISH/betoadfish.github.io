@@ -1,5 +1,4 @@
-import {fetchWithTimeout} from './request-timeout';
-import {topicLabels} from './topic-classification';
+import {fetchPublishedCatalog,type CatalogStage} from './catalog-delivery';
 export type Bank = 'edexcel' | 'aqa' | 'esat' | 'cie';
 export type Region = { page: number; box?: number[] };
 export type Dependency = { id?: string; kind?: string; question_id?: string; qp?: Region[] };
@@ -32,18 +31,6 @@ export function removeSelection(ids:string[],id:string,questions:Question[]):str
 export function selectedMarks(questions:Question[],catalog:Question[]){const leaves=new Set(questions.flatMap(q=>q.leaves));return catalog.filter(q=>q.is_leaf&&leaves.has(q.id)).reduce((n,q)=>n+q.marks,0);}
 export function expectedMinutes(questions:Question[],catalog:Question[]){const leaves=new Set(questions.flatMap(q=>q.leaves));return Math.round(catalog.filter(q=>q.is_leaf&&leaves.has(q.id)).reduce((n,q)=>n+q.expected_seconds,0)/60*100)/100;}
 export function qualification(q:Question){return q.bank==='esat'?'ESAT':q.bank==='aqa'?(q.code.startsWith('7402')?'AL':'AS'):q.bank==='edexcel'?(q.unit>=4?'AL':'AS'):(q.unit>=4?'AL':'AS');}
-export async function loadCatalog(bank:Bank):Promise<Catalog>{
- const r=await fetch(`/question-bank/${bank}.json?v=4-20260928`,{cache:'no-cache'});if(!r.ok)throw Error('题库暂时没加载出来，请稍后再试。');const base:Catalog=await r.json();
- const cfg=await fetch('/question-bank/config.json',{cache:'no-store'});if(!cfg.ok)throw Error('题库连接失败，请刷新页面。');const {api,updates:publishedPath}=await cfg.json() as {api?:string;updates?:string};
- if(publishedPath&&!/^\/question-bank\/updates\/[a-f0-9]{64}$/.test(publishedPath))throw Error('题库版本无效，请刷新页面。');
- const updatesUrl=publishedPath?`${publishedPath}/${bank}.json`:api?`${api}/public/${bank}`:null;
- if(!updatesUrl)throw Error('题库发布配置不完整，请稍后再试。');
- {const patch=await fetchWithTimeout(updatesUrl,{cache:'no-store'},15000);if(!patch.ok)throw Error('题库暂时无法连接，请稍后再试。');const updates=await patch.json() as {id:string;published:Partial<Question>|null;revision:number}[];const map=new Map<string,{id:string;published:Partial<Question>|null;revision:number}>(updates.map((p:{id:string;published:Partial<Question>|null;revision:number})=>[p.id,p]));
- const withdrawn=new Set(base.questions.filter(q=>map.get(q.id)?.published===null).flatMap(q=>[q.id,...q.leaves]));
- base.questions=base.questions.flatMap(q=>{if(withdrawn.has(q.id))return[];const u=map.get(q.id);return u?(u.published?[{...q,...u.published,id:q.id,bank,revision:u.revision}]:[]):[q];});
- // Do not expose a parent or dependent question when any required child is unpublished.
- let changed=true;while(changed){const available=new Set(base.questions.map(q=>q.id));const next=base.questions.filter(q=>q.leaves.every(id=>available.has(id))&&(q.dependencies||[]).every(d=>d.kind!=='requires_answer'||available.has(d.question_id||'')));changed=next.length!==base.questions.length;base.questions=next;}}
- const byId=new Map(base.questions.map(q=>[q.id,q]));for(const q of base.questions)if(!q.is_leaf){q.marks=q.leaves.reduce((sum,id)=>sum+(byId.get(id)?.marks||0),0);q.expected_seconds=q.leaves.reduce((sum,id)=>sum+(byId.get(id)?.expected_seconds||0),0);q.topic_ids=[...new Set(q.leaves.flatMap(id=>byId.get(id)?.topic_ids||[]))];}
- for(const q of base.questions)if(q.topic_ids?.length)Object.assign(q,topicLabels(bank,q.topic_ids));
- return base;
+export async function loadCatalog(bank:Bank,onStage?:(stage:CatalogStage)=>void):Promise<Catalog>{
+ return fetchPublishedCatalog(bank,onStage);
 }

@@ -4,6 +4,7 @@ import { lazy, Suspense } from 'react';
 const PetExplorer=lazy(()=>import('./pet-explorer').then(m=>({default:m.PetExplorer})));
 const McrExplorer=lazy(()=>import('./mcr-explorer').then(m=>({default:m.McrExplorer})));
 import { CultureComparison } from './culture-comparison';
+import { CultureModel } from './culture-model';
 import { MembraneProtocol } from './project-highlights';
 import { SourceFigure } from './source-figure';
 import { Copy } from './site-context';
@@ -20,7 +21,7 @@ export function PetJourney(){return <ProjectJourney steps={petSteps} title={t('E
  <JourneyFlow key="purification" kicker={t('Protein recovery','蛋白回收')} nodes={[[t('His tag','His 标签'),t('Affinity purification','亲和纯化')],['SEC',t('Separate by size','按大小分离')],[t('Sample','样品'),t('≈3.9 mg CCH11','≈3.9 mg CCH11')]]} note={t('CCH11 recovery improved; TurboPETase prompted further optimisation.','CCH11 回收改善，TurboPETase 则推动了进一步优化。')}/>,
  <JourneyFlow key="host" kicker={t('A change in production conditions','改变制备条件')} nodes={[[t('Tag','标签'),t('Change the construct','调整构建体')],[t('Yeast','酵母'),t('Explore another host','尝试另一宿主')],[t('Calorimetry','量热'),t('Characterise the sample','表征样品')]]}/>,
  <JourneyFlow key="activity" kicker={t('A meaningful comparison','可解释的比较')} nodes={[[t('Test','实验孔'),t('Enzyme and substrate','酶与底物')],[t('Control','对照孔'),t('Resolve background','识别背景')],[t('Difference','响应差异'),t('Check input and calibration','检查用量与校准')]]}/>,
- ]} evidence={[null,null,null,<Suspense key="traces" fallback={<p role="status"><Copy>{t('Loading assay curves…','正在加载实验曲线…')}</Copy></p>}><PetExplorer/></Suspense>]} evidenceLabels={[null,null,null,t('Explore assay curves','查看实验曲线')]}/>;}
+ ]} evidence={[null,null,null,<Suspense key="traces" fallback={<output><Copy>{t('Loading assay curves…','正在加载实验曲线…')}</Copy></output>}><PetExplorer/></Suspense>]} evidenceLabels={[null,null,null,t('Explore assay curves','查看实验曲线')]}/>;}
 
 const mcrSteps:JourneyStep[]=[
  {id:'screening',label:t('Combination screen','联用筛选'),title:t('Screening concentration combinations','筛选联用浓度组合'),method:t('I ran MIC and checkerboard experiments with honokiol, pterostilbene and osthol alongside colistin, using the concentration matrix to select conditions for mechanistic work.','我开展和厚朴酚、紫檀芪、蛇床子素与黏菌素的 MIC、棋盘法实验，通过浓度矩阵筛选值得进一步研究的条件。'),result:t('The growth response guided the membrane experiments. A lower MIC alone could not establish a membrane mechanism or direct inhibition of MCR-1.','生长响应为膜实验提供方向；MIC 降低本身不能证明膜作用机制或对 MCR-1 的直接抑制。'),next:t('Check the resistance model independently through lipid A.','先用脂质 A 的独立读数核查耐药模型。')},
@@ -40,7 +41,7 @@ const cultureSteps:JourneyStep[]=[
  {id:'investment',label:t('Diligence priorities','尽调重点'),title:t('Which missing evidence would change the investment judgement?','补齐哪项证据，才会改变投资判断？'),method:t('I drew together scientific literature, product documentation and market material for the investment team.','我综合科学文献、产品资料与市场材料，为投资团队形成技术与竞品评估。'),result:t('The priority was model-specific validation, a clear first application and evidence that customers would adopt and repeat the workflow.','优先补足特定模型的验证，明确首个应用，并检查客户采用和持续使用的证据。'),next:t('Request pilot validation, repeat-order evidence and the cost of supporting each workflow.','继续核查试用验证、复购，以及支持每套流程所需的投入。')},
 ];
 export function CultureJourney(){return <ProjectJourney steps={cultureSteps} eyebrow={t('My diligence route','我的尽调路线')} title={t('Technology and commercial assessment','技术与商业化评估')} visuals={[
- <JourneyFlow key="model" kicker={t('The biological test','生物学检验')} nodes={[[t('Material','材料'),t('Adjustable properties','参数可调')],[t('Cell model','细胞模型'),t('Survival and function','存活与功能')],[t('Validation','验证'),t('Reproducible results','结果可重复')]]}/>,
+ <CultureModel key="model"/>,
  <JourneyFlow key="products" kicker={t('What is being compared?','究竟在比较什么？')} nodes={[[t('Formulation','配方'),t('Biological environment','生物学环境')],[t('Workflow','流程'),t('Preparation and recovery','制备与回收')],[t('Value','价值'),t('Usable experimental result','有效实验结果')]]}/>,
  <div className="journey-visual cost-visual" key="cost"><span className="visual-kicker"><Copy>{t('Cost per valid well','每个有效孔的成本')}</Copy></span><div className="cost-fraction"><strong><Copy>{t('Materials + time + repeats','材料 + 时间 + 重做')}</Copy></strong><span/><strong><Copy>{t('Wells that meet the assay criteria','达到实验标准的孔数')}</Copy></strong></div><p className="visual-note"><Copy>{t('A framework to test in customer workflows, not a measured price advantage.','用客户工作流验证这一口径，才能判断是否节省成本。')}</Copy></p></div>,
  <JourneyFlow key="decision" kicker={t('Evidence to request','需要补充的证据')} nodes={[[t('Pilot','试用'),t('A validated application','应用验证')],[t('Reorder','复购'),t('Repeated use','持续使用')],[t('Support','支持投入'),t('Cost to serve','服务成本')]]}/>,
