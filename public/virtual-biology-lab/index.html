@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Biology Lab — five virtual investigations</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="models.js" defer></script>
+  <script src="model-zh.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to experiment</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html" aria-label="Biology Lab home">
+        <svg width="36" height="42" viewBox="0 0 36 42" aria-hidden="true"><path d="M18 3v11L5 34q-2 5 4 5h18q6 0 4-5L18 14M12 3h12M10 28h17" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="18" cy="32" r="2" fill="currentColor"/></svg>
+        <span>Biology<br><strong>Lab</strong></span>
+      </a>
+      <p class="side-intro">Five investigations.<br>One curious question at a time.</p>
+      <nav id="experiments" aria-label="Experiments"></nav>
+      <div class="side-footer"><span class="local-dot"></span> Runs on your device<p>No account. No network required.</p><a href="guide.html">Guide &amp; model notes</a></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <span class="simulation-label">Teaching simulation</span>
+        <div class="top-actions">
+          <span id="save-status" class="save-status" role="status">Ready</span>
+          <a id="lab-language" class="text-button" href="?lang=zh" lang="zh-CN">中文</a>
+          <button id="projection" type="button" class="text-button" aria-pressed="false">Projection view</button>
+          <button id="save-json" type="button" class="text-button">Save notebook</button>
+          <button id="open-json" type="button" class="text-button">Open notebook</button>
+          <input id="import-file" type="file" accept=".json,application/json" hidden>
+        </div>
+      </header>
+      <div id="global-message" class="global-message" role="status" aria-live="polite"></div>
+      <div id="confirmation"></div>
+      <main id="workspace" tabindex="-1"></main>
+      <footer class="page-footer">Simulated data, not real measurements. Models are simplified and have not been calibrated against experimental data.<br>Designed for investigation and discussion; this demo does not certify completion of any examination-board practical.</footer>
+    </div>
+  </div>
+  <noscript><p class="noscript">Enable JavaScript in your browser to run the five experiments. All required files are included locally.</p></noscript>
+</body>
+</html>
