@@ -18,17 +18,17 @@
   function freshState(){return {version:C.VERSION,selected:'osmosis',projection:false,modules:Object.fromEntries(ids.map(id=>[id,freshModule(id)]))};}
   let state=freshState(), pending=null, timer=null, initialNotice='', lastRendered=null;
   function validateNotebook(data){
-    if(!data||data.version!==C.VERSION||!ids.includes(data.selected)||!data.modules)throw Error('This notebook version is not supported. Keep the original file.');
+    if(!data||data.version!==C.VERSION||!ids.includes(data.selected)||!data.modules)throw Error('This data file version is not supported. Keep the original file.');
     const result=freshState();result.selected=data.selected;result.projection=Boolean(data.projection);let total=0;
     for(const id of ids){
-      const m=data.modules[id];if(!m||!Array.isArray(m.series)||m.series.length>40)throw Error('The notebook has an invalid experiment record.');
+      const m=data.modules[id];if(!m||!Array.isArray(m.series)||m.series.length>40)throw Error('The data file has an invalid experiment record.');
       const dest=result.modules[id];dest.config=C.validate(id,m.config);
-      for(const key of ['prediction','conclusion']){if(typeof m[key]!=='string'||m[key].length>4000)throw Error('Notebook text must be under 4,000 characters per field.');dest[key]=m[key];}
+      for(const key of ['prediction','conclusion']){if(m[key]!==undefined&&(typeof m[key]!=='string'||m[key].length>4000))throw Error('Saved legacy text is invalid.');dest[key]=m[key]??state?.modules?.[id]?.[key]??'';}
       dest.showSD=m.showSD!==false;dest.showTruth=Boolean(m.showTruth);dest.observedId=typeof m.observedId==='string'?m.observedId:null;
       const seen=new Set();
       for(const s of m.series){
         const config=C.validate(id,s.config),key=C.protocolKey(id,config);
-        if(seen.has(key)||!Array.isArray(s.rows)||s.rows.length>300)throw Error('The notebook has duplicated or oversized series.');seen.add(key);
+        if(seen.has(key)||!Array.isArray(s.rows)||s.rows.length>300)throw Error('The data file has duplicated or oversized series.');seen.add(key);
         const rows=[];const counts=new Map();
         for(const r of s.rows){
           let expected;
@@ -37,19 +37,19 @@
           if(JSON.stringify(expected)!==JSON.stringify(r))throw Error('Stored readings do not match this model version and seed. The file has not been altered.');
           rows.push(r);
         }
-        total+=rows.length;if(total>2000)throw Error('This notebook exceeds the 2,000-observation limit.');
+        total+=rows.length;if(total>2000)throw Error('This data file exceeds the 2,000-observation limit.');
         dest.series.push({key,config,rows});
       }
     }
     return result;
   }
-  try{const raw=localStorage.getItem(KEY);if(raw){state=validateNotebook(JSON.parse(raw));initialNotice='Previous notebook restored on this device.';}}catch(e){initialNotice='Local storage is unavailable or the saved notebook could not be restored. Save a notebook file to keep your work.';}
+  try{const raw=localStorage.getItem(KEY);if(raw){state=validateNotebook(JSON.parse(raw));initialNotice='Previous experiment data restored on this device.';}}catch(e){initialNotice='Local storage is unavailable or saved data could not be restored. Save an experiment data file to keep your work.';}
   function moduleState(){return state.modules[state.selected];}
   function activeSeries(){const m=moduleState();return m.series.find(s=>s.key===C.protocolKey(state.selected,m.config));}
   function save(){
     clearTimeout(timer);
     try{localStorage.setItem(KEY,JSON.stringify(state));$('save-status').textContent='Saved on this device';$('save-status').classList.remove('failed');}
-    catch(e){$('save-status').textContent='Not saved — save a notebook file';$('save-status').classList.add('failed');}
+    catch(e){$('save-status').textContent='Not saved — save an experiment data file';$('save-status').classList.add('failed');}
   }
   function announce(text,error=false){const el=$('global-message');el.textContent=text;el.className='global-message visible'+(error?' error':'');}
   function cfgFields(id){const d=C.defs[id];return [...(d.primary?[d.primary]:[]),...d.controls];}
@@ -166,14 +166,14 @@
       <div class="workbench${id==='ecology'?' ecology-bench':''}">${controls(id,m)}<section class="bench-area"><div class="bench-title"><h2>${esc(d.specimen)}</h2><span>${row?'Recorded observation':'Setup preview'}</span></div><p class="fixed-conditions">${esc(d.fixed)}</p>${id==='ecology'?fieldView(c,rows,m):apparatus(id,c,row)}${readout(id,c,row,rows)}<p class="bench-source">${esc(d.source)} ${id!=='ecology'?'Waiting time is accelerated.':''}</p></section></div>
       <div class="series-bar"><div class="series-select"><label for="series-select">Data series</label><select id="series-select" aria-label="View a recorded series"><option value="draft"${s?'':' selected'}>${s?'Current settings':'New series — current settings'}</option>${m.series.map((a,i)=>`<option value="${i}"${s===a?' selected':''}>Series ${i+1}: ${esc(C.protocolLabel(id,a.config))} (${a.rows.length} observations)</option>`).join('')}</select></div><span class="series-state">Controls and seeds stay separate.<br>Changing them keeps earlier series.</span></div>
       <section class="chart-section"><div class="section-toolbar"><h2>Your evidence</h2><div class="chart-tools">${id!=='ecology'?`<label><input id="show-sd" type="checkbox"${m.showSD?' checked':''}> Show ±1 SD</label>`:''}<button type="button" data-action="export-graph" class="text-button"${rows.length?'':' disabled'}>Save graph</button></div></div><div id="chart" class="chart-host" tabindex="0" role="region" aria-label="Results graph, scroll horizontally if needed">${graphSvg(id,c,rows,m.showSD,m.showTruth)}</div><p class="chart-caption">${esc(d.aim)}</p><details id="evidence-details"><summary>Interpret these observations</summary><div class="detail-content"><p>${esc(analysisText(id,c,rows))}</p></div></details></section>
-      <div class="bottom-grid"><section class="results"><h2>Experiment record</h2>${resultTables(id,rows,row?.id,c)}<div class="export-row"><button type="button" data-action="export-csv"${m.series.some(a=>a.rows.length)?'':' disabled'}>Export all series CSV</button><span class="export-hint">Includes raw values, means, controls, seeds and versions.</span></div></section><section class="notebook"><h2>Your notebook</h2><div><label for="prediction">Prediction</label><textarea id="prediction" data-note="prediction" maxlength="4000" placeholder="What do you expect, and why?">${esc(m.prediction)}</textarea></div><div><label for="conclusion">Conclusion &amp; next investigation</label><textarea id="conclusion" data-note="conclusion" maxlength="4000" placeholder="Use a number from your results. Explain a limitation and what you would test next.">${esc(m.conclusion)}</textarea></div><p>Text is saved as written. Scientific explanations need teacher review; they are not automatically graded.</p></section></div>
-      <section class="support" aria-label="Help and explanations"><details id="hint-details"><summary>A hint for your investigation</summary><div class="detail-content"><p>${esc(d.hint)}</p></div></details><details id="science-details"><summary>Biological explanation &amp; model limits</summary><div class="detail-content"><p>${esc(d.explanation)}</p><p class="model-warning">${esc(d.limitation)}</p></div></details><details id="teacher-details"><summary>${window.LabI18n.zh?'教师说明':'Teacher notes'}</summary><div class="detail-content"><p class="teacher-text">${esc(d.teacher)}</p><p>${window.LabI18n.zh?'五个模块是教学模拟，不统一标注为任何考试局的 AS 或 core practical。数字常数未由真实数据校准。网页、图表与 CSV 使用同一份实验记录。重置保留设置与种子、清除当前模块数据及笔记；按相同顺序操作可复现。不同实验的记录互不影响。':'These five modules are teaching simulations and are not uniformly designated as any examination board practicals. Numerical constants are not calibrated against real data. The page, graph and CSV use the same records. Reset clears this experiment’s data and notes but keeps its settings and seed; the same sequence reproduces results. Records are separate across experiments.'}</p><p>Model ${C.MODEL}; random generator ${C.RNG}; analysis ${C.ANALYSIS}.</p><ul class="sources-list">${d.sources.map(([label,url])=>`<li><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a> (opens online)</li>`).join('')}</ul><p><a href="guide.html?lang=${window.LabI18n.zh?'zh':'en'}">Local science and model notes</a></p></div></details></section>`;
+      <div class="bottom-grid"><section class="results"><h2>Experiment record</h2>${resultTables(id,rows,row?.id,c)}<div class="export-row"><button type="button" data-action="export-csv"${m.series.some(a=>a.rows.length)?'':' disabled'}>Export all series CSV</button><span class="export-hint">Includes raw values, means, controls, seeds and versions.</span></div></section></div>
+      `;
     openDetails.forEach(key=>{if($(key))$(key).open=true;});lastRendered=id;
     if(focus&&$(focus))$(focus).focus({preventScroll:true});
   }
   function readConfig(){const m=moduleState(),raw={...m.config};document.querySelectorAll('.config-field').forEach(el=>raw[el.name]=el.value);return C.validate(state.selected,raw);}
   function commit(){try{moduleState().config=readConfig();$('form-error').textContent='';return true;}catch(e){$('form-error').textContent=e.message;return false;}}
-  function ensureSeries(){const m=moduleState(),key=C.protocolKey(state.selected,m.config);let s=m.series.find(a=>a.key===key);if(!s){if(m.series.length>=40)throw Error('This experiment has 40 series. Save your notebook, then reset it before starting another.');s={key,config:{...m.config},rows:[]};m.series.push(s);}return s;}
+  function ensureSeries(){const m=moduleState(),key=C.protocolKey(state.selected,m.config);let s=m.series.find(a=>a.key===key);if(!s){if(m.series.length>=40)throw Error('This experiment has 40 series. Save your data, then reset it before starting another.');s={key,config:{...m.config},rows:[]};m.series.push(s);}return s;}
   function run(batch=false,manualCell=null){
     if(!commit())return;
     const id=state.selected,m=moduleState(),c=m.config;
@@ -184,22 +184,22 @@
         if(c.strategy==='manual'&&manualCell===null){announce('Choose an unsampled square on the meadow.');return;}
         const order=C.sampleOrder(c).filter(i=>!s.rows.some(r=>r.cellIndex===i));
         const chosen=manualCell===null?order.slice(0,batch?c.batch:1):[manualCell];
-        if(total+chosen.length>2000)throw Error('Save your notebook and reset an experiment before adding more than 2,000 observations.');
+        if(total+chosen.length>2000)throw Error('Save your data and reset an experiment before adding more than 2,000 observations.');
         for(const cell of chosen){s.rows.push(C.quadrat(c,s.rows,cell));added++;}
         if(!added){announce('All eligible quadrats in this series have been sampled. Reset or change the sampling strategy to investigate again.');render();return;}
       }else{
         const levels=batch?C.defs[id].levels:[c.x],repeats=batch?c.repeats:1,amount=levels.length*repeats;
-        if(s.rows.length+amount>300||total+amount>2000)throw Error('Observation limit reached. Save your notebook, then reset this experiment.');
+        if(s.rows.length+amount>300||total+amount>2000)throw Error('Observation limit reached. Save your data, then reset this experiment.');
         for(const x of levels)for(let j=0;j<repeats;j++){const rep=s.rows.filter(r=>r.x===x).length+1;s.rows.push(C.sample(id,c,x,rep));added++;}
       }
       m.observedId=s.rows.at(-1).id;save();render();announce(`${added} fresh ${id==='ecology'?'quadrat observations':'samples'} recorded. Earlier observations are unchanged.`);
     }catch(e){announce(e.message,true);}
   }
   function download(filename,content,type){const blob=new Blob([type.startsWith('image/svg')?window.LabI18n.svg(content):content],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);announce('Download started. Check your downloads folder.');}
-  function saveJson(){save();download('Biology-Lab-notebook-'+C.VERSION+'.json',JSON.stringify(state,null,2),'application/json;charset=utf-8');}
+  function saveJson(){save();const data=JSON.parse(JSON.stringify(state));for(const m of Object.values(data.modules)){delete m.prediction;delete m.conclusion;}download('Biology-Lab-data-'+C.VERSION+'.json',JSON.stringify(data,null,2),'application/json;charset=utf-8');}
   function confirmation(kind,data){
     pending={kind,data};const reset=kind==='reset';
-    $('confirmation').innerHTML=`<section class="confirm-box" role="alertdialog" aria-labelledby="confirm-title"><h3 id="confirm-title">${reset?'Reset '+esc(C.defs[data].name)+'?':'Open this saved notebook?'}</h3><p>${reset?'This clears this experiment’s measurements and notes. It keeps the current setup and seed so you can reproduce a run. Other experiments are untouched.':'This replaces the current notebook in this browser. Save your current notebook first if you want to keep it.'}</p><div class="confirm-actions"><button type="button" id="confirm-save">Save current notebook</button><button type="button" id="confirm-yes" class="danger-button">${reset?'Reset experiment':'Open notebook'}</button><button type="button" id="confirm-cancel">Cancel</button></div></section>`;
+    $('confirmation').innerHTML=`<section class="confirm-box" role="alertdialog" aria-labelledby="confirm-title"><h3 id="confirm-title">${reset?'Reset '+esc(C.defs[data].name)+'?':'Load this saved experiment data?'}</h3><p>${reset?'This clears this experiment’s measurements. It keeps the current setup and seed so you can reproduce a run. Other experiments are untouched.':'This replaces the current experiment data in this browser. Save the current data first if you want to keep them.'}</p><div class="confirm-actions"><button type="button" id="confirm-save">Save current data</button><button type="button" id="confirm-yes" class="danger-button">${reset?'Reset experiment':'Load data'}</button><button type="button" id="confirm-cancel">Cancel</button></div></section>`;
     $('confirm-cancel').focus({preventScroll:true});
   }
   function clearConfirmation(){pending=null;$('confirmation').innerHTML='';}
@@ -236,16 +236,16 @@
   $('open-json').addEventListener('click',()=>$('import-file').click());
   $('import-file').addEventListener('change',async e=>{
     const file=e.target.files[0];e.target.value='';if(!file)return;
-    if(file.size>2*1024*1024){announce('Choose a notebook smaller than 2 MiB. Your current work is unchanged.',true);return;}
-    try{const data=validateNotebook(JSON.parse(await file.text()));confirmation('import',data);}catch(err){announce(err.message||'The notebook could not be opened. Your current work is unchanged.',true);}
+    if(file.size>2*1024*1024){announce('Choose a data file smaller than 2 MiB. Your current work is unchanged.',true);return;}
+    try{const data=validateNotebook(JSON.parse(await file.text()));confirmation('import',data);}catch(err){announce(err.message||'The data file could not be opened. Your current work is unchanged.',true);}
   });
   $('confirmation').addEventListener('click',e=>{
     if(e.target.id==='confirm-save')saveJson();
     if(e.target.id==='confirm-cancel'){clearConfirmation();$('workspace').focus({preventScroll:true});}
     if(e.target.id==='confirm-yes'&&pending){
-      if(pending.kind==='reset'){const id=pending.data,c={...state.modules[id].config};state.modules[id]=freshModule(id);state.modules[id].config=c;}
+      if(pending.kind==='reset'){const id=pending.data,c={...state.modules[id].config};const legacy={prediction:state.modules[id].prediction,conclusion:state.modules[id].conclusion};state.modules[id]=freshModule(id);Object.assign(state.modules[id],legacy);state.modules[id].config=c;}
       else state=pending.data;
-      clearConfirmation();save();render();announce('Notebook updated. The current setup and recorded values are shown.');$('workspace').focus({preventScroll:true});
+      clearConfirmation();save();render();announce('Experiment data updated. The current setup and recorded values are shown.');$('workspace').focus({preventScroll:true});
     }
   });
   window.addEventListener('pagehide',save);

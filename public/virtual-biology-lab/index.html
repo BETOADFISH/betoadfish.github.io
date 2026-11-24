@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
   <title>Biology Lab — five virtual investigations</title>
   <link rel="stylesheet" href="styles.css">
   <script src="models.js" defer></script>
   <script src="model-zh.js" defer></script>
+  <script src="theme.js"></script>
   <script src="i18n.js" defer></script>
   <script src="app.js" defer></script>
 </head>
@@ -30,15 +31,15 @@
           <span id="save-status" class="save-status" role="status">Ready</span>
           <a id="lab-language" class="text-button" href="?lang=zh" lang="zh-CN">中文</a>
           <button id="projection" type="button" class="text-button" aria-pressed="false">Projection view</button>
-          <button id="save-json" type="button" class="text-button">Save notebook</button>
-          <button id="open-json" type="button" class="text-button">Open notebook</button>
+          <button id="save-json" type="button" class="text-button">Save experiment data</button>
+          <button id="open-json" type="button" class="text-button">Load experiment data</button>
           <input id="import-file" type="file" accept=".json,application/json" hidden>
         </div>
       </header>
       <div id="global-message" class="global-message" role="status" aria-live="polite"></div>
       <div id="confirmation"></div>
       <main id="workspace" tabindex="-1"></main>
-      <footer class="page-footer">Simulated data, not real measurements. Models are simplified and have not been calibrated against experimental data.<br>Designed for investigation and discussion; this demo does not certify completion of any examination-board practical.</footer>
+
     </div>
   </div>
   <noscript><p class="noscript">Enable JavaScript in your browser to run the five experiments. All required files are included locally.</p></noscript>

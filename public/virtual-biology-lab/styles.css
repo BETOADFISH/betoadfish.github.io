@@ -39,3 +39,27 @@ main{padding:25px 28px 12px;max-width:1480px}.experiment-heading{margin-bottom:2
 @media(max-width:820px){.experiment-button[aria-pressed=true]{box-shadow:none;border-bottom:2px solid var(--teal)}}
 @media(max-width:620px){.chart-tools .text-button{font-size:11px}}
 @media(max-width:1100px) and (min-width:621px){.ecology-bench{grid-template-columns:1fr}}
+/* Theme follows the host portfolio, or the system when opened independently. */
+.bottom-grid{grid-template-columns:minmax(0,1fr)}
+html[data-theme=dark]{color-scheme:dark;--ink:#e7eee9;--muted:#a8b8ad;--base:#111714;--paper:#19221c;--line:#33443a;--teal:#a4d7b4;--blue:#b5d7e7;--accent:#a4d7b4!important;--soft:#263a2d!important}
+html[data-theme=dark] body,html[data-theme=dark] .sidebar,html[data-theme=dark] .topbar{background:#111714;color:#e7eee9}
+html[data-theme=dark] .main-shell,html[data-theme=dark] .workbench,html[data-theme=dark] .bench-area,html[data-theme=dark] .chart-section,html[data-theme=dark] .table-wrap,html[data-theme=dark] .table-empty{background:#19221c;border-color:#33443a;color:#e7eee9}
+html[data-theme=dark] .setup,html[data-theme=dark] caption,html[data-theme=dark] th{background:#202c24;border-color:#33443a;color:#d5e3d8}
+html[data-theme=dark] button,html[data-theme=dark] select,html[data-theme=dark] input[type=number],html[data-theme=dark] textarea{background:#202c24;border-color:#52695a;color:#e7eee9}
+html[data-theme=dark] button:hover:not(:disabled){background:#2f4135;border-color:#8bb99a}
+html[data-theme=dark] .primary-button{background:#a4d7b4;border-color:#a4d7b4;color:#142219}
+html[data-theme=dark] .primary-button:hover:not(:disabled){background:#c0e7c7;color:#142219}
+html[data-theme=dark] .text-button,html[data-theme=dark] .reset-link,html[data-theme=dark] .experiment-button{background:transparent;border-color:transparent;color:#c3d2c6}
+html[data-theme=dark] .experiment-button[aria-pressed=true]{background:#304536;color:#effaf1}
+html[data-theme=dark] .experiment-button small,html[data-theme=dark] .side-intro,html[data-theme=dark] .side-footer,html[data-theme=dark] .simulation-label,html[data-theme=dark] .question,html[data-theme=dark] .steps,html[data-theme=dark] .steps span,html[data-theme=dark] .seed-help,html[data-theme=dark] .bench-title span,html[data-theme=dark] .fixed-conditions,html[data-theme=dark] .bench-source,html[data-theme=dark] .series-state,html[data-theme=dark] .chart-caption,html[data-theme=dark] .export-hint,html[data-theme=dark] .save-status,html[data-theme=dark] .field-caption{color:#b4c7b8}
+html[data-theme=dark] a{color:#a4d7b4}html[data-theme=dark] .brand{color:#e7eee9}
+html[data-theme=dark] .bench-readout,html[data-theme=dark] .analysis-note,html[data-theme=dark] tr.selected{background:#263a2d;color:#d9e9dc}
+html[data-theme=dark] .bench-readout .value,html[data-theme=dark] td button{color:#a4d7b4}
+html[data-theme=dark] .fixed-conditions,html[data-theme=dark] th,html[data-theme=dark] td,html[data-theme=dark] details{border-color:#33443a}
+html[data-theme=dark] .global-message{background:#263a2d;color:#d9e9dc}html[data-theme=dark] .global-message.error,html[data-theme=dark] .form-error{background:#482b27;color:#ffe2cf}
+html[data-theme=dark] .confirm-box{background:#342f24;border-color:#756443;color:#f2e6d0}html[data-theme=dark] .danger-button{color:#ffc5b9;border-color:#a76e65}
+html[data-theme=dark] .apparatus{filter:invert(.88) hue-rotate(180deg) saturate(.8)}
+html[data-theme=dark] .data-chart rect[fill="white"]{fill:#19221c}html[data-theme=dark] .data-chart text{fill:#c9dace}html[data-theme=dark] .data-chart line{stroke:#45614d}html[data-theme=dark] .data-chart path[fill="none"]{stroke:#9bc9a8}html[data-theme=dark] .data-chart path[fill]:not([fill="none"]){fill:#a4d7b4}html[data-theme=dark] .graph-point{fill:#19221c;stroke:#b9e5c4}
+html[data-theme=dark] .field-scene{background:#263a2d;border-color:#83a787}html[data-theme=dark] .quadrat-cell{border-color:#5b7862;color:#e7eee9}html[data-theme=dark] .quadrat-cell.sampled{background:#4a7562;color:#fff}html[data-theme=dark] .plant-map circle{fill:#a1cfa6}html[data-theme=dark] .field-true{color:#b9e5c4}
+@media(max-width:820px){html[data-theme=dark] .sidebar{border-color:#33443a}}
+@media print{html[data-theme=dark] body,html[data-theme=dark] .main-shell,html[data-theme=dark] .workbench,html[data-theme=dark] .bench-area,html[data-theme=dark] .chart-section{background:white;color:#111}html[data-theme=dark] .apparatus{filter:none}html[data-theme=dark] .data-chart rect[fill="white"]{fill:white}html[data-theme=dark] .data-chart text{fill:#222}}
